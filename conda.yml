@@ -15,3 +15,6 @@ dependencies:
   - pip:
       - python-dotenv
       - ydata-profiling
+      - scrapy
+      - selenium
+      - beautifulsoup4
