@@ -6,60 +6,7 @@ import pandas
 import os
 import csv
 
-
-pokemon_go = [
-    "Clodsire", "Diggersby", "Forretress", "Lapras", "Jellicent", "Corsola (Galarian)",
-    "Dusclops", "Samurott", "Gligar", "Clodsire", "Feraligatr", "Golisopod", "Mandibuzz",
-    "Corviknight", "Gastrodon", "Steelix", "Stunfisk", "Dusknoir", "Carbink", "Dedenne",
-    "Morpeko (Full Belly)", "Togedemaru", "Cradily", "Marowak", "Primeape", "Furret",
-    "Pangoro", "Bastiodon", "Emolga", "Runerigus", "Azumarill", "Grumpig", "Quagsire",
-    "Sableye", "Bellibolt", "Dragalge", "Malamar", "Araquanid", "Claydol", "Metang",
-    "Moltres (Galarian)", "Tinkaton", "Toxapex", "Aurorus", "Togetic", "Weezing (Galarian)",
-    "Golurk", "Jumpluff", "Marowak (Alolan)", "Scizor", "Blastoise", "Clefable", "Lickitung",
-    "Annihilape", "Bronzong", "Sandslash (Alolan)", "Victreebel", "Golisopod", "Lurantis",
-    "Swampert", "Whiscash", "Greninja", "Machamp", "Vespiquen", "Guzzlord", "Registeel",
-    "Tinkatuff", "Dewott", "Armarouge", "Linoone", "Drapion", "Tentacruel", "Gliscor",
-    "Hakamo-o", "Raichu", "Wigglytuff", "Dunsparce", "Medicham", "Goodra", "Dachsbun",
-    "Stunfisk (Galarian)", "Swalot", "Talonflame", "Froslass", "Pachirisu", "Wormadam (Trash)",
-    "Lanturn", "Lickilicky", "Hippopotas", "Lairon", "Nidoqueen", "Spiritomb", "Ninetales",
-    "Regirock", "Qwilfish", "Thievul", "Skeledirge", "Electrode (Hisuian)", "Ninetales (Alolan)",
-    "Barbaracle", "Hippowdon", "Gallade", "Sealeo", "Serperior", "Zapdos", "Amoonguss", "Klefki",
-    "Toxicroak", "Dewgong", "Farfetch'd (Galarian)", "Donphan", "Dragonair", "Toxtricity",
-    "Magnezone", "Walrein", "Farfetch'd", "Florges", "Magcargo", "Bellossom", "Mew",
-    "Sirfetch'd", "Ledian", "Electivire", "Kommo-o", "Skarmory", "Dragonite",
-    "Castform (Sunny)", "Genesect", "Zweilous", "Arctibax", "Charjabug", "Qwilfish (Hisuian)",
-    "Urshifu (Single Strike)", "Chesnaught", "Gogoat", "Ursaring", "Venusaur", "Gourgeist (Super)",
-    "Marshtomp", "Meganium", "Umbreon", "Glalie", "Piloswine", "Crustle", "Salazzle",
-    "Machoke", "Miltank", "Altaria", "Castform (Rainy)", "Giratina (Origin)", "Spinda",
-    "Gallade", "Sandslash", "Cofagrigus", "Tropius", "Magneton", "Raichu (Alolan)", "Dragapult",
-    "Mightyena", "Cetoddle", "Nidorina", "Oranguru", "Wailmer", "Whimsicott", "Ferrothorn",
-    "Gourgeist (Large)", "Mantine", "Suicune", "Cresselia", "Trevenant", "Aggron", "Relicanth",
-    "Wailord", "Gengar", "Lileep", "Bombirdier", "Fletchinder", "Gourgeist (Average)", "Greedent",
-    "Overqwil", "Tauros (Aqua)", "Wartortle", "Abomasnow", "Castform", "Cetitan", "Pawniard",
-    "Typhlosion", "Lokix", "Roserade", "Samurott (Hisuian)", "Decidueye", "Haunter", "Leavanny",
-    "Kingambit", "Perrserker", "Skuntank", "Beedrill", "Empoleon", "Ariados", "Hariyama",
-    "Hydreigon", "Poliwrath", "Kricketune", "Venomoth", "Drampa", "Gourgeist (Small)", "Scrafty",
-    "Starmie", "Grimer (Alolan)", "Gyarados", "Avalugg", "Ferrothorn", "Raikou", "Scyther",
-    "Drifloon", "Galvantula", "Litleo", "Servine", "Castform (Snowy)", "Pelipper", "Dugtrio (Alolan)",
-    "Magnemite", "Flygon", "Pawmot", "Turtonator", "Golett", "Frillish", "Furfrou", "Grimer",
-    "Hawlucha", "Pidgeot", "Oinkologne (Female)", "Dubwool", "Pumpkaboo (Large)", "Raticate (Alolan)",
-    "Regice", "Arcanine", "Bewear", "Sneasler", "Charizard", "Machop", "Lucario", "Pawmo",
-    "Zangoose", "Mantyke", "Rapidash (Galarian)", "Sylveon", "Tapu Fini", "Ampharos",
-    "Aromatisse", "Rapidash", "Rhyperior", "Grafaiai", "Politoed", "Mawile", "Typhlosion (Hisuian)",
-    "Kangaskhan", "Sceptile", "Vaporeon", "Escavalier", "Bibarel", "Kleavor", "Magmar",
-    "Munchlax", "Centiskorch", "Golem (Alolan)", "Pinsir", "Armaldo", "Celesteela", "Crocalor",
-    "Mamoswine", "Noctowl", "Druddigon", "Heliolisk", "Staravia", "Dugtrio", "Magmortar",
-    "Klang", "Muk", "Passimian", "Rhydon", "Slowking (Galarian)", "Parasect", "Excadrill",
-    "Primarina", "Tauros (Combat)", "Fraxure", "Heatran", "Kecleon", "Mienshao", "Obstagoon",
-    "Seaking", "Tyrunt", "Articuno (Galarian)", "Palossand", "Sandshrew (Alolan)", "Togekiss",
-    "Vullaby", "Deoxys (Defense)", "Zygarde", "Golbat", "Staraptor", "Sandshrew",
-    "Dhelmise", "Braixen", "Gholdengo", "Girafarig", "Drilbur", "Hypno", "Ivysaur", "Lunatone",
-    "Jirachi", "Incineroar", "Slowbro (Galarian)", "Hitmontop", "Muk (Alolan)", "Pyroar",
-    "Bruxish", "Golem", "Lugia", "Scolipede", "Baxcalibur", "Solrock", "Chansey", "Chimecho",
-    "Dartrix", "Granbull", "Quilladin", "Alomomola"
-]
-
-
+from pokemon_list import pokemon_go #imports pokemon list
 
 # The CSV filename
 filename = "poke_battles.csv"
