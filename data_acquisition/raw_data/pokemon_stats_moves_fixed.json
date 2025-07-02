@@ -1,0 +1,1337 @@
+[
+    {
+        "name": "Zygarde (50% Forme)",
+        "filtered_stats": {},
+        "fast_moves": [],
+        "charged_moves": [],
+        "recommended_fast_move": null,
+        "recommended_charged_moves": []
+    },
+    {
+        "name": "Mr. Mime",
+        "filtered_stats": {
+            "Attack": "0",
+            "Defense": "0",
+            "Stamina": "0",
+            "Overall": "0"
+        },
+        "fast_moves": [],
+        "charged_moves": [],
+        "recommended_fast_move": null,
+        "recommended_charged_moves": []
+    },
+    {
+        "name": "Cherrim (Sunshine)",
+        "filtered_stats": {
+            "Attack": "0",
+            "Defense": "0",
+            "Stamina": "0",
+            "Overall": "0"
+        },
+        "fast_moves": [],
+        "charged_moves": [],
+        "recommended_fast_move": null,
+        "recommended_charged_moves": []
+    },
+    {
+        "name": "Wyrdeer",
+        "filtered_stats": {
+            "Attack": "127",
+            "Defense": "96.7",
+            "Stamina": "143",
+            "Overall": "1758"
+        },
+        "fast_moves": [
+            "Confusion",
+            "Tackle",
+            "Zen Headbutt"
+        ],
+        "charged_moves": [
+            "Wild Charge",
+            "Stomp",
+            "Megahorn",
+            "Psychic"
+        ],
+        "recommended_fast_move": "Confusion",
+        "recommended_charged_moves": [
+            "Wild Charge",
+            "Stomp"
+        ]
+    },
+    {
+        "name": "Nuzleaf",
+        "filtered_stats": {
+            "Attack": "125.2",
+            "Defense": "78.1",
+            "Stamina": "157",
+            "Overall": "1536"
+        },
+        "fast_moves": [
+            "Feint Attack",
+            "Razor Leaf"
+        ],
+        "charged_moves": [
+            "Leaf Blade",
+            "Foul Play",
+            "Grass Knot",
+            "Return\u2020"
+        ],
+        "recommended_fast_move": "Feint Attack",
+        "recommended_charged_moves": [
+            "Leaf Blade",
+            "Foul Play"
+        ]
+    },
+    {
+        "name": "Teddiursa",
+        "filtered_stats": {
+            "Attack": "130.2",
+            "Defense": "90.7",
+            "Stamina": "142",
+            "Overall": "1678"
+        },
+        "fast_moves": [
+            "Lick",
+            "Scratch"
+        ],
+        "charged_moves": [
+            "Swift",
+            "Cross Chop",
+            "Trailblaze",
+            "Crunch",
+            "Play Rough",
+            "Return\u2020"
+        ],
+        "recommended_fast_move": "Lick",
+        "recommended_charged_moves": [
+            "Swift",
+            "Cross Chop"
+        ]
+    },
+    {
+        "name": "Onix",
+        "filtered_stats": {
+            "Attack": "84",
+            "Defense": "207.5",
+            "Stamina": "105",
+            "Overall": "1831"
+        },
+        "fast_moves": [
+            "Rock Throw",
+            "Tackle"
+        ],
+        "charged_moves": [
+            "Breaking Swipe",
+            "Stone Edge",
+            "Rock Slide*",
+            "Sand Tomb",
+            "Heavy Slam",
+            "Return\u2020",
+            "Iron Head*"
+        ],
+        "recommended_fast_move": "Rock Throw",
+        "recommended_charged_moves": [
+            "Breaking Swipe",
+            "Stone Edge"
+        ]
+    },
+    {
+        "name": "Zygarde (10% Forme)",
+        "filtered_stats": {},
+        "fast_moves": [],
+        "charged_moves": [],
+        "recommended_fast_move": null,
+        "recommended_charged_moves": []
+    },
+    {
+        "name": "Ambipom",
+        "filtered_stats": {
+            "Attack": "133.8",
+            "Defense": "99.9",
+            "Stamina": "124",
+            "Overall": "1659"
+        },
+        "fast_moves": [
+            "Astonish",
+            "Scratch"
+        ],
+        "charged_moves": [
+            "Aerial Ace",
+            "Return\u2020",
+            "Low Sweep",
+            "Hyper Beam"
+        ],
+        "recommended_fast_move": "Astonish",
+        "recommended_charged_moves": [
+            "Aerial Ace",
+            "Return\u2020"
+        ]
+    },
+    {
+        "name": "Lycanroc (Dusk)",
+        "filtered_stats": {
+            "Attack": "145.1",
+            "Defense": "92.5",
+            "Stamina": "115",
+            "Overall": "1545"
+        },
+        "fast_moves": [
+            "Sucker Punch",
+            "Counter",
+            "Rock Throw"
+        ],
+        "charged_moves": [
+            "Stone Edge",
+            "Trailblaze",
+            "Crunch",
+            "Iron Head"
+        ],
+        "recommended_fast_move": "Sucker Punch",
+        "recommended_charged_moves": [
+            "Stone Edge",
+            "Trailblaze"
+        ]
+    },
+    {
+        "name": "Darmanitan (Galarian)",
+        "filtered_stats": {
+            "Attack": "0",
+            "Defense": "0",
+            "Stamina": "0",
+            "Overall": "0"
+        },
+        "fast_moves": [],
+        "charged_moves": [],
+        "recommended_fast_move": null,
+        "recommended_charged_moves": []
+    },
+    {
+        "name": "Meowstic (Male)",
+        "filtered_stats": {
+            "Attack": "0",
+            "Defense": "0",
+            "Stamina": "0",
+            "Overall": "0"
+        },
+        "fast_moves": [],
+        "charged_moves": [],
+        "recommended_fast_move": null,
+        "recommended_charged_moves": []
+    },
+    {
+        "name": "Mr. Rime",
+        "filtered_stats": {
+            "Attack": "0",
+            "Defense": "0",
+            "Stamina": "0",
+            "Overall": "0"
+        },
+        "fast_moves": [],
+        "charged_moves": [],
+        "recommended_fast_move": null,
+        "recommended_charged_moves": []
+    },
+    {
+        "name": "Mr. Mime (Galarian)",
+        "filtered_stats": {
+            "Attack": "0",
+            "Defense": "0",
+            "Stamina": "0",
+            "Overall": "0"
+        },
+        "fast_moves": [],
+        "charged_moves": [],
+        "recommended_fast_move": null,
+        "recommended_charged_moves": []
+    },
+    {
+        "name": "Rampardos",
+        "filtered_stats": {
+            "Attack": "164.5",
+            "Defense": "66.2",
+            "Stamina": "125",
+            "Overall": "1363"
+        },
+        "fast_moves": [
+            "Smack Down",
+            "Zen Headbutt"
+        ],
+        "charged_moves": [
+            "Rock Slide",
+            "Flamethrower",
+            "Outrage"
+        ],
+        "recommended_fast_move": "Smack Down",
+        "recommended_charged_moves": [
+            "Rock Slide",
+            "Flamethrower"
+        ]
+    },
+    {
+        "name": "Xatu",
+        "filtered_stats": {
+            "Attack": "132.8",
+            "Defense": "107.2",
+            "Stamina": "118",
+            "Overall": "1682"
+        },
+        "fast_moves": [
+            "Air Slash",
+            "Feint Attack"
+        ],
+        "charged_moves": [
+            "Aerial Ace",
+            "Future Sight",
+            "Ominous Wind",
+            "Return\u2020"
+        ],
+        "recommended_fast_move": "Air Slash",
+        "recommended_charged_moves": [
+            "Aerial Ace",
+            "Future Sight"
+        ]
+    },
+    {
+        "name": "Bergmite",
+        "filtered_stats": {
+            "Attack": "110.9",
+            "Defense": "113.4",
+            "Stamina": "135",
+            "Overall": "1699"
+        },
+        "fast_moves": [
+            "Tackle",
+            "Bite"
+        ],
+        "charged_moves": [
+            "Icy Wind",
+            "Crunch",
+            "Mirror Coat"
+        ],
+        "recommended_fast_move": "Tackle",
+        "recommended_charged_moves": [
+            "Icy Wind",
+            "Crunch"
+        ]
+    },
+    {
+        "name": "Bulbasaur (Shadow)",
+        "filtered_stats": {
+            "Attack": "111.7",
+            "Defense": "105.8",
+            "Stamina": "120",
+            "Overall": "1420"
+        },
+        "fast_moves": [
+            "Vine Whip",
+            "Tackle"
+        ],
+        "charged_moves": [
+            "Power Whip",
+            "Sludge Bomb",
+            "Seed Bomb",
+            "Frustration\u2020"
+        ],
+        "recommended_fast_move": "Vine Whip",
+        "recommended_charged_moves": [
+            "Power Whip",
+            "Sludge Bomb"
+        ]
+    },
+    {
+        "name": "Clawitzer",
+        "filtered_stats": {
+            "Attack": "134.4",
+            "Defense": "110.5",
+            "Stamina": "111",
+            "Overall": "1649"
+        },
+        "fast_moves": [
+            "Water Gun",
+            "Smack Down"
+        ],
+        "charged_moves": [
+            "Crabhammer",
+            "Dark Pulse",
+            "Ice Beam",
+            "Water Pulse"
+        ],
+        "recommended_fast_move": "Water Gun",
+        "recommended_charged_moves": [
+            "Crabhammer",
+            "Ice Beam"
+        ]
+    },
+    {
+        "name": "Deerling",
+        "filtered_stats": {
+            "Attack": "109.2",
+            "Defense": "96.6",
+            "Stamina": "142",
+            "Overall": "1499"
+        },
+        "fast_moves": [
+            "Tackle",
+            "Take Down"
+        ],
+        "charged_moves": [
+            "Wild Charge",
+            "Trailblaze",
+            "Seed Bomb",
+            "Energy Ball"
+        ],
+        "recommended_fast_move": "Tackle",
+        "recommended_charged_moves": [
+            "Wild Charge",
+            "Trailblaze"
+        ]
+    },
+    {
+        "name": "Shaymin (Sky)",
+        "filtered_stats": {
+            "Attack": "138.1",
+            "Defense": "93.6",
+            "Stamina": "124",
+            "Overall": "1604"
+        },
+        "fast_moves": [
+            "Magical Leaf",
+            "Hidden Power (Flying)",
+            "Hidden Power (Grass)",
+            "Hidden Power (Ground)",
+            "Hidden Power (Rock)",
+            "Hidden Power (Ice)",
+            "Hidden Power (Fire)",
+            "Hidden Power (Water)",
+            "Hidden Power (Electric)",
+            "Hidden Power (Fighting)",
+            "Hidden Power (Dark)",
+            "Hidden Power (Ghost)",
+            "Hidden Power (Psychic)",
+            "Hidden Power (Steel)",
+            "Hidden Power (Dragon)",
+            "Hidden Power (Bug)",
+            "Hidden Power (Poison)",
+            "Zen Headbutt"
+        ],
+        "charged_moves": [
+            "Grass Knot",
+            "Energy Ball",
+            "Seed Flare*",
+            "Solar Beam"
+        ],
+        "recommended_fast_move": "Magical Leaf",
+        "recommended_charged_moves": [
+            "Grass Knot",
+            "Energy Ball"
+        ]
+    },
+    {
+        "name": "Pupitar",
+        "filtered_stats": {
+            "Attack": "121",
+            "Defense": "112.7",
+            "Stamina": "136",
+            "Overall": "1856"
+        },
+        "fast_moves": [
+            "Bite",
+            "Rock Smash"
+        ],
+        "charged_moves": [
+            "Ancient Power",
+            "Dig",
+            "Crunch",
+            "Return\u2020"
+        ],
+        "recommended_fast_move": "Bite",
+        "recommended_charged_moves": [
+            "Ancient Power",
+            "Dig"
+        ]
+    },
+    {
+        "name": "Inteleon",
+        "filtered_stats": {
+            "Attack": "153.9",
+            "Defense": "89.6",
+            "Stamina": "105",
+            "Overall": "1449"
+        },
+        "fast_moves": [
+            "Water Gun",
+            "Pound"
+        ],
+        "charged_moves": [
+            "Surf",
+            "Shadow Ball",
+            "Water Pulse"
+        ],
+        "recommended_fast_move": "Water Gun",
+        "recommended_charged_moves": [
+            "Surf",
+            "Shadow Ball"
+        ]
+    },
+    {
+        "name": "Snover (Shadow)",
+        "filtered_stats": {
+            "Attack": "109.2",
+            "Defense": "100.8",
+            "Stamina": "142",
+            "Overall": "1564"
+        },
+        "fast_moves": [
+            "Powder Snow",
+            "Leafage",
+            "Ice Shard"
+        ],
+        "charged_moves": [
+            "Ice Beam",
+            "Energy Ball",
+            "Stomp",
+            "Frustration\u2020"
+        ],
+        "recommended_fast_move": "Powder Snow",
+        "recommended_charged_moves": [
+            "Ice Beam",
+            "Energy Ball"
+        ]
+    },
+    {
+        "name": "Drowzee",
+        "filtered_stats": {
+            "Attack": "87.3",
+            "Defense": "126.8",
+            "Stamina": "142",
+            "Overall": "1575"
+        },
+        "fast_moves": [
+            "Confusion",
+            "Pound"
+        ],
+        "charged_moves": [
+            "Psyshock",
+            "Return\u2020",
+            "Psychic",
+            "Psybeam"
+        ],
+        "recommended_fast_move": "Confusion",
+        "recommended_charged_moves": [
+            "Psyshock",
+            "Return\u2020"
+        ]
+    },
+    {
+        "name": "Elgyem",
+        "filtered_stats": {
+            "Attack": "134",
+            "Defense": "94.6",
+            "Stamina": "132",
+            "Overall": "1675"
+        },
+        "fast_moves": [
+            "Confusion",
+            "Astonish"
+        ],
+        "charged_moves": [
+            "Dark Pulse",
+            "Psychic",
+            "Psybeam"
+        ],
+        "recommended_fast_move": "Confusion",
+        "recommended_charged_moves": [
+            "Dark Pulse",
+            "Psychic"
+        ]
+    },
+    {
+        "name": "Gorebyss",
+        "filtered_stats": {
+            "Attack": "136.8",
+            "Defense": "118.4",
+            "Stamina": "101",
+            "Overall": "1638"
+        },
+        "fast_moves": [
+            "Water Gun",
+            "Confusion"
+        ],
+        "charged_moves": [
+            "Water Pulse",
+            "Psychic",
+            "Draining Kiss"
+        ],
+        "recommended_fast_move": "Water Gun",
+        "recommended_charged_moves": [
+            "Water Pulse",
+            "Psychic"
+        ]
+    },
+    {
+        "name": "Accelgor",
+        "filtered_stats": {
+            "Attack": "143.2",
+            "Defense": "84.2",
+            "Stamina": "129",
+            "Overall": "1557"
+        },
+        "fast_moves": [
+            "Water Shuriken",
+            "Acid",
+            "Infestation"
+        ],
+        "charged_moves": [
+            "Bug Buzz",
+            "Energy Ball*",
+            "Signal Beam",
+            "Focus Blast",
+            "Return\u2020",
+            "Acid Spray"
+        ],
+        "recommended_fast_move": "Water Shuriken",
+        "recommended_charged_moves": [
+            "Bug Buzz",
+            "Acid Spray"
+        ]
+    },
+    {
+        "name": "Porygon-Z (Shadow)",
+        "filtered_stats": {
+            "Attack": "148.6",
+            "Defense": "88.4",
+            "Stamina": "115",
+            "Overall": "1512"
+        },
+        "fast_moves": [
+            "Lock On",
+            "Charge Beam",
+            "Hidden Power (Ground)",
+            "Hidden Power (Ice)",
+            "Hidden Power (Rock)",
+            "Hidden Power (Fire)",
+            "Hidden Power (Water)",
+            "Hidden Power (Flying)",
+            "Hidden Power (Grass)",
+            "Hidden Power (Electric)",
+            "Hidden Power (Fighting)",
+            "Hidden Power (Ghost)",
+            "Hidden Power (Psychic)",
+            "Hidden Power (Dark)",
+            "Hidden Power (Steel)",
+            "Hidden Power (Dragon)",
+            "Hidden Power (Bug)",
+            "Hidden Power (Poison)"
+        ],
+        "charged_moves": [
+            "Tri Attack*",
+            "Blizzard",
+            "Zap Cannon",
+            "Hyper Beam",
+            "Solar Beam",
+            "Frustration\u2020"
+        ],
+        "recommended_fast_move": "Lock On",
+        "recommended_charged_moves": [
+            "Tri Attack*",
+            "Zap Cannon"
+        ]
+    },
+    {
+        "name": "Flabebe",
+        "filtered_stats": {
+            "Attack": "103.3",
+            "Defense": "113.4",
+            "Stamina": "119",
+            "Overall": "1395"
+        },
+        "fast_moves": [
+            "Vine Whip",
+            "Tackle"
+        ],
+        "charged_moves": [
+            "Dazzling Gleam",
+            "Psychic",
+            "Petal Blizzard"
+        ],
+        "recommended_fast_move": "Vine Whip",
+        "recommended_charged_moves": [
+            "Dazzling Gleam",
+            "Psychic"
+        ]
+    },
+    {
+        "name": "Rowlet",
+        "filtered_stats": {
+            "Attack": "98.3",
+            "Defense": "95.7",
+            "Stamina": "154",
+            "Overall": "1450"
+        },
+        "fast_moves": [
+            "Leafage",
+            "Magical Leaf",
+            "Tackle",
+            "Razor Leaf"
+        ],
+        "charged_moves": [
+            "Seed Bomb",
+            "Energy Ball"
+        ],
+        "recommended_fast_move": "Leafage",
+        "recommended_charged_moves": [
+            "Seed Bomb",
+            "Energy Ball"
+        ]
+    },
+    {
+        "name": "Reuniclus (Shadow)",
+        "filtered_stats": {
+            "Attack": "127.5",
+            "Defense": "93.6",
+            "Stamina": "147",
+            "Overall": "1756"
+        },
+        "fast_moves": [
+            "Hidden Power (Psychic)",
+            "Hidden Power (Ground)",
+            "Hidden Power (Rock)",
+            "Hidden Power (Ice)",
+            "Hidden Power (Flying)",
+            "Hidden Power (Fire)",
+            "Hidden Power (Electric)",
+            "Hidden Power (Water)",
+            "Hidden Power (Grass)",
+            "Hidden Power (Ghost)",
+            "Hidden Power (Dark)",
+            "Hidden Power (Fighting)",
+            "Hidden Power (Dragon)",
+            "Hidden Power (Steel)",
+            "Hidden Power (Bug)",
+            "Hidden Power (Poison)",
+            "Zen Headbutt"
+        ],
+        "charged_moves": [
+            "Psyshock",
+            "Shadow Ball",
+            "Thunder",
+            "Future Sight",
+            "Frustration\u2020"
+        ],
+        "recommended_fast_move": "Hidden Power (Psychic)",
+        "recommended_charged_moves": [
+            "Psyshock",
+            "Shadow Ball"
+        ]
+    },
+    {
+        "name": "Throh",
+        "filtered_stats": {
+            "Attack": "110.2",
+            "Defense": "107.7",
+            "Stamina": "170",
+            "Overall": "2020"
+        },
+        "fast_moves": [
+            "Low Kick",
+            "Zen Headbutt"
+        ],
+        "charged_moves": [
+            "Body Slam",
+            "Brick Break",
+            "Focus Blast",
+            "Low Sweep"
+        ],
+        "recommended_fast_move": "Low Kick",
+        "recommended_charged_moves": [
+            "Body Slam",
+            "Brick Break"
+        ]
+    },
+    {
+        "name": "Duosion (Shadow)",
+        "filtered_stats": {
+            "Attack": "149.2",
+            "Defense": "82.6",
+            "Stamina": "121",
+            "Overall": "1493"
+        },
+        "fast_moves": [
+            "Hidden Power (Psychic)",
+            "Hidden Power (Ground)",
+            "Hidden Power (Rock)",
+            "Hidden Power (Ice)",
+            "Hidden Power (Flying)",
+            "Hidden Power (Fire)",
+            "Hidden Power (Electric)",
+            "Hidden Power (Water)",
+            "Hidden Power (Fighting)",
+            "Hidden Power (Grass)",
+            "Hidden Power (Dark)",
+            "Hidden Power (Ghost)",
+            "Hidden Power (Dragon)",
+            "Hidden Power (Steel)",
+            "Hidden Power (Bug)",
+            "Hidden Power (Poison)",
+            "Zen Headbutt"
+        ],
+        "charged_moves": [
+            "Psyshock",
+            "Night Shade",
+            "Thunder",
+            "Frustration\u2020"
+        ],
+        "recommended_fast_move": "Hidden Power (Psychic)",
+        "recommended_charged_moves": [
+            "Psyshock",
+            "Night Shade"
+        ]
+    },
+    {
+        "name": "Snubbull",
+        "filtered_stats": {
+            "Attack": "127.7",
+            "Defense": "84",
+            "Stamina": "142",
+            "Overall": "1524"
+        },
+        "fast_moves": [
+            "Tackle",
+            "Bite"
+        ],
+        "charged_moves": [
+            "Crunch",
+            "Dazzling Gleam",
+            "Brick Break",
+            "Return\u2020"
+        ],
+        "recommended_fast_move": "Tackle",
+        "recommended_charged_moves": [
+            "Crunch",
+            "Dazzling Gleam"
+        ]
+    },
+    {
+        "name": "Solosis (Shadow)",
+        "filtered_stats": {
+            "Attack": "152.9",
+            "Defense": "79.8",
+            "Stamina": "120",
+            "Overall": "1465"
+        },
+        "fast_moves": [
+            "Hidden Power (Psychic)",
+            "Hidden Power (Ground)",
+            "Hidden Power (Rock)",
+            "Hidden Power (Ice)",
+            "Hidden Power (Flying)",
+            "Hidden Power (Electric)",
+            "Hidden Power (Fire)",
+            "Hidden Power (Water)",
+            "Hidden Power (Fighting)",
+            "Hidden Power (Grass)",
+            "Hidden Power (Ghost)",
+            "Hidden Power (Dark)",
+            "Hidden Power (Dragon)",
+            "Hidden Power (Steel)",
+            "Hidden Power (Bug)",
+            "Hidden Power (Poison)",
+            "Zen Headbutt"
+        ],
+        "charged_moves": [
+            "Psyshock",
+            "Night Shade",
+            "Thunder",
+            "Frustration\u2020"
+        ],
+        "recommended_fast_move": "Hidden Power (Psychic)",
+        "recommended_charged_moves": [
+            "Psyshock",
+            "Night Shade"
+        ]
+    },
+    {
+        "name": "Deoxys (Speed)",
+        "filtered_stats": {
+            "Attack": "140.7",
+            "Defense": "131.5",
+            "Stamina": "86",
+            "Overall": "1593"
+        },
+        "fast_moves": [
+            "Charge Beam",
+            "Zen Headbutt"
+        ],
+        "charged_moves": [
+            "Psycho Boost",
+            "Swift",
+            "Thunderbolt"
+        ],
+        "recommended_fast_move": "Charge Beam",
+        "recommended_charged_moves": [
+            "Psycho Boost",
+            "Swift"
+        ]
+    },
+    {
+        "name": "Anorith (Shadow)",
+        "filtered_stats": {
+            "Attack": "147",
+            "Defense": "92",
+            "Stamina": "113",
+            "Overall": "1530"
+        },
+        "fast_moves": [
+            "Struggle Bug",
+            "Scratch"
+        ],
+        "charged_moves": [
+            "Aqua Jet",
+            "Ancient Power",
+            "Cross Poison",
+            "Frustration\u2020"
+        ],
+        "recommended_fast_move": "Struggle Bug",
+        "recommended_charged_moves": [
+            "Aqua Jet",
+            "Cross Poison"
+        ]
+    },
+    {
+        "name": "Munna",
+        "filtered_stats": {
+            "Attack": "105.8",
+            "Defense": "89.9",
+            "Stamina": "166",
+            "Overall": "1580"
+        },
+        "fast_moves": [
+            "Charge Beam",
+            "Zen Headbutt"
+        ],
+        "charged_moves": [
+            "Psyshock",
+            "Dazzling Gleam",
+            "Psybeam"
+        ],
+        "recommended_fast_move": "Charge Beam",
+        "recommended_charged_moves": [
+            "Psyshock",
+            "Dazzling Gleam"
+        ]
+    },
+    {
+        "name": "Duosion",
+        "filtered_stats": {
+            "Attack": "149.2",
+            "Defense": "82.6",
+            "Stamina": "121",
+            "Overall": "1493"
+        },
+        "fast_moves": [
+            "Hidden Power (Psychic)",
+            "Hidden Power (Ground)",
+            "Hidden Power (Ice)",
+            "Hidden Power (Rock)",
+            "Hidden Power (Flying)",
+            "Hidden Power (Fire)",
+            "Hidden Power (Water)",
+            "Hidden Power (Electric)",
+            "Hidden Power (Fighting)",
+            "Hidden Power (Dark)",
+            "Hidden Power (Grass)",
+            "Hidden Power (Ghost)",
+            "Hidden Power (Dragon)",
+            "Hidden Power (Steel)",
+            "Hidden Power (Bug)",
+            "Hidden Power (Poison)",
+            "Zen Headbutt"
+        ],
+        "charged_moves": [
+            "Psyshock",
+            "Night Shade",
+            "Thunder",
+            "Return\u2020"
+        ],
+        "recommended_fast_move": "Hidden Power (Psychic)",
+        "recommended_charged_moves": [
+            "Psyshock",
+            "Night Shade"
+        ]
+    },
+    {
+        "name": "Solosis",
+        "filtered_stats": {
+            "Attack": "152.9",
+            "Defense": "79.8",
+            "Stamina": "120",
+            "Overall": "1465"
+        },
+        "fast_moves": [
+            "Hidden Power (Psychic)",
+            "Hidden Power (Ground)",
+            "Hidden Power (Rock)",
+            "Hidden Power (Ice)",
+            "Hidden Power (Flying)",
+            "Hidden Power (Fire)",
+            "Hidden Power (Electric)",
+            "Hidden Power (Water)",
+            "Hidden Power (Grass)",
+            "Hidden Power (Fighting)",
+            "Hidden Power (Ghost)",
+            "Hidden Power (Dark)",
+            "Hidden Power (Dragon)",
+            "Hidden Power (Steel)",
+            "Hidden Power (Bug)",
+            "Hidden Power (Poison)",
+            "Zen Headbutt"
+        ],
+        "charged_moves": [
+            "Psyshock",
+            "Night Shade",
+            "Thunder",
+            "Return\u2020"
+        ],
+        "recommended_fast_move": "Hidden Power (Psychic)",
+        "recommended_charged_moves": [
+            "Psyshock",
+            "Night Shade"
+        ]
+    },
+    {
+        "name": "Timburr (Shadow)",
+        "filtered_stats": {
+            "Attack": "125.2",
+            "Defense": "85.7",
+            "Stamina": "164",
+            "Overall": "1760"
+        },
+        "fast_moves": [
+            "Low Kick",
+            "Pound"
+        ],
+        "charged_moves": [
+            "Rock Tomb",
+            "Brick Break",
+            "Low Sweep",
+            "Frustration\u2020"
+        ],
+        "recommended_fast_move": "Low Kick",
+        "recommended_charged_moves": [
+            "Rock Tomb",
+            "Brick Break"
+        ]
+    },
+    {
+        "name": "Snubbull (Shadow)",
+        "filtered_stats": {
+            "Attack": "127.7",
+            "Defense": "84",
+            "Stamina": "142",
+            "Overall": "1524"
+        },
+        "fast_moves": [
+            "Tackle",
+            "Bite"
+        ],
+        "charged_moves": [
+            "Crunch",
+            "Dazzling Gleam",
+            "Brick Break",
+            "Frustration\u2020"
+        ],
+        "recommended_fast_move": "Tackle",
+        "recommended_charged_moves": [
+            "Crunch",
+            "Dazzling Gleam"
+        ]
+    },
+    {
+        "name": "Anorith",
+        "filtered_stats": {
+            "Attack": "147",
+            "Defense": "92",
+            "Stamina": "113",
+            "Overall": "1530"
+        },
+        "fast_moves": [
+            "Struggle Bug",
+            "Scratch"
+        ],
+        "charged_moves": [
+            "Aqua Jet",
+            "Ancient Power",
+            "Cross Poison",
+            "Return\u2020"
+        ],
+        "recommended_fast_move": "Struggle Bug",
+        "recommended_charged_moves": [
+            "Aqua Jet",
+            "Ancient Power"
+        ]
+    },
+    {
+        "name": "Regigigas (Shadow)",
+        "filtered_stats": {
+            "Attack": "139.3",
+            "Defense": "103.9",
+            "Stamina": "111",
+            "Overall": "1607"
+        },
+        "fast_moves": [
+            "Hidden Power (Ground)",
+            "Hidden Power (Rock)",
+            "Hidden Power (Ice)",
+            "Hidden Power (Fighting)",
+            "Hidden Power (Fire)",
+            "Hidden Power (Flying)",
+            "Hidden Power (Water)",
+            "Hidden Power (Electric)",
+            "Hidden Power (Grass)",
+            "Hidden Power (Ghost)",
+            "Hidden Power (Dark)",
+            "Hidden Power (Psychic)",
+            "Hidden Power (Dragon)",
+            "Hidden Power (Steel)",
+            "Hidden Power (Bug)",
+            "Hidden Power (Poison)",
+            "Zen Headbutt"
+        ],
+        "charged_moves": [
+            "Crush Grip*",
+            "Thunder",
+            "Focus Blast",
+            "Giga Impact",
+            "Frustration\u2020"
+        ],
+        "recommended_fast_move": "Hidden Power (Ice)",
+        "recommended_charged_moves": [
+            "Crush Grip*",
+            "Thunder"
+        ]
+    },
+    {
+        "name": "Spoink (Shadow)",
+        "filtered_stats": {
+            "Attack": "117.6",
+            "Defense": "115.1",
+            "Stamina": "140",
+            "Overall": "1896"
+        },
+        "fast_moves": [
+            "Zen Headbutt",
+            "Splash"
+        ],
+        "charged_moves": [
+            "Shadow Ball",
+            "Mirror Coat",
+            "Psybeam",
+            "Frustration\u2020"
+        ],
+        "recommended_fast_move": "Zen Headbutt",
+        "recommended_charged_moves": [
+            "Shadow Ball",
+            "Mirror Coat"
+        ]
+    },
+    {
+        "name": "Skiddo",
+        "filtered_stats": {
+            "Attack": "115.9",
+            "Defense": "98.3",
+            "Stamina": "151",
+            "Overall": "1722"
+        },
+        "fast_moves": [
+            "Rock Smash",
+            "Zen Headbutt"
+        ],
+        "charged_moves": [
+            "Seed Bomb",
+            "Rock Slide",
+            "Brick Break"
+        ],
+        "recommended_fast_move": "Rock Smash",
+        "recommended_charged_moves": [
+            "Seed Bomb",
+            "Rock Slide"
+        ]
+    },
+    {
+        "name": "Spoink",
+        "filtered_stats": {
+            "Attack": "117.6",
+            "Defense": "115.1",
+            "Stamina": "140",
+            "Overall": "1896"
+        },
+        "fast_moves": [
+            "Zen Headbutt",
+            "Splash"
+        ],
+        "charged_moves": [
+            "Shadow Ball",
+            "Return\u2020",
+            "Mirror Coat",
+            "Psybeam"
+        ],
+        "recommended_fast_move": "Zen Headbutt",
+        "recommended_charged_moves": [
+            "Shadow Ball",
+            "Return\u2020"
+        ]
+    },
+    {
+        "name": "Clefairy",
+        "filtered_stats": {
+            "Attack": "102.5",
+            "Defense": "103.3",
+            "Stamina": "157",
+            "Overall": "1664"
+        },
+        "fast_moves": [
+            "Zen Headbutt",
+            "Pound"
+        ],
+        "charged_moves": [
+            "Disarming Voice",
+            "Swift",
+            "Moonblast",
+            "Body Slam"
+        ],
+        "recommended_fast_move": "Zen Headbutt",
+        "recommended_charged_moves": [
+            "Disarming Voice",
+            "Swift"
+        ]
+    },
+    {
+        "name": "Kadabra",
+        "filtered_stats": {
+            "Attack": "163.6",
+            "Defense": "90",
+            "Stamina": "92",
+            "Overall": "1356"
+        },
+        "fast_moves": [
+            "Psycho Cut",
+            "Confusion"
+        ],
+        "charged_moves": [
+            "Shadow Ball",
+            "Dazzling Gleam",
+            "Return\u2020",
+            "Psybeam"
+        ],
+        "recommended_fast_move": "Psycho Cut",
+        "recommended_charged_moves": [
+            "Shadow Ball",
+            "Dazzling Gleam"
+        ]
+    },
+    {
+        "name": "Unown",
+        "filtered_stats": {
+            "Attack": "126.8",
+            "Defense": "89",
+            "Stamina": "125",
+            "Overall": "1413"
+        },
+        "fast_moves": [
+            "Hidden Power (Psychic)",
+            "Hidden Power (Ground)",
+            "Hidden Power (Rock)",
+            "Hidden Power (Ice)",
+            "Hidden Power (Fire)",
+            "Hidden Power (Flying)",
+            "Hidden Power (Water)",
+            "Hidden Power (Electric)",
+            "Hidden Power (Fighting)",
+            "Hidden Power (Grass)",
+            "Hidden Power (Ghost)",
+            "Hidden Power (Dark)",
+            "Hidden Power (Dragon)",
+            "Hidden Power (Steel)",
+            "Hidden Power (Bug)",
+            "Hidden Power (Poison)"
+        ],
+        "charged_moves": [
+            "Struggle"
+        ],
+        "recommended_fast_move": "Hidden Power (Psychic)",
+        "recommended_charged_moves": [
+            "Struggle"
+        ]
+    },
+    {
+        "name": "Mienfoo",
+        "filtered_stats": {
+            "Attack": "143.6",
+            "Defense": "93.8",
+            "Stamina": "116",
+            "Overall": "1563"
+        },
+        "fast_moves": [
+            "Low Kick",
+            "Pound"
+        ],
+        "charged_moves": [
+            "High Jump Kick*",
+            "Brick Break",
+            "Focus Blast",
+            "Low Sweep"
+        ],
+        "recommended_fast_move": "Low Kick",
+        "recommended_charged_moves": [
+            "High Jump Kick*",
+            "Brick Break"
+        ]
+    },
+    {
+        "name": "Slaking",
+        "filtered_stats": {
+            "Attack": "139.3",
+            "Defense": "83.6",
+            "Stamina": "138",
+            "Overall": "1608"
+        },
+        "fast_moves": [
+            "Yawn"
+        ],
+        "charged_moves": [
+            "Body Slam*",
+            "Earthquake",
+            "Play Rough",
+            "Hyper Beam"
+        ],
+        "recommended_fast_move": "Yawn",
+        "recommended_charged_moves": [
+            "Body Slam*",
+            "Earthquake"
+        ]
+    },
+    {
+        "name": "Slaking (Shadow)",
+        "filtered_stats": {
+            "Attack": "139.3",
+            "Defense": "83.6",
+            "Stamina": "138",
+            "Overall": "1608"
+        },
+        "fast_moves": [
+            "Yawn"
+        ],
+        "charged_moves": [
+            "Body Slam*",
+            "Earthquake",
+            "Play Rough",
+            "Hyper Beam",
+            "Frustration\u2020"
+        ],
+        "recommended_fast_move": "Yawn",
+        "recommended_charged_moves": [
+            "Body Slam*",
+            "Earthquake"
+        ]
+    }
+]
