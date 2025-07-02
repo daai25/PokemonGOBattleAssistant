@@ -40,13 +40,34 @@ pokeTwo = random.choice(pokemon_go).lower()
 print(pokeOne)
 print(pokeTwo)
 
-poke_url = 'https://pvpoke.com/battle/1500/' + pokeOne + '/' + pokeTwo + '/11/0-1-1/0-1-1/'
+poke_url = 'https://pvpoke.com/battle/'
 print(poke_url)
 driver.get(poke_url)
-time.sleep(5)
-
+# time.sleep(3)  # wait for page to load
 html = driver.page_source
 soup = BeautifulSoup(html, 'html.parser')
+
+# Find the first Pokemon search input (adjust the selector to match the real element)
+search1 = driver.find_element("css selector", "input[placeholder='Search name']")  
+search1.send_keys(pokeOne)
+time.sleep(1)  # pause to let suggestions load if any
+search1.send_keys("\n")  # hit Enter to select the Pokemon
+
+# Find the second Pokemon search input (you’ll need to adjust selector if there are multiple inputs with same placeholder)
+search2 = driver.find_elements("css selector", "input[placeholder='Search name']")[1]
+search2.send_keys(pokeTwo)
+time.sleep(1)
+search2.send_keys("\n")
+# Find and click the Battle button (example selector, adjust as needed)
+
+
+#SOMETHING IS WRONG HERE
+time.sleep(15) 
+battle_button = driver.find_element("css selector", "button.battle-btn.button")
+battle_button.click()
+time.sleep(15)  # wait for battle result page to load
+
+
 
 
 # Now soup includes JavaScript-rendered content
