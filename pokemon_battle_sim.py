@@ -34,7 +34,7 @@ accept_all_button = WebDriverWait(driver, 5).until(
 )
 accept_all_button.click()
 time.sleep(3)
-for i in range(550):
+for i in range(491):
     pokeOne = random.choice(pokemon_go).lower()
     pokeTwo = random.choice(pokemon_go).lower()
     print(f"Battle {i+1}: {pokeOne} vs {pokeTwo}")
@@ -66,7 +66,7 @@ for i in range(550):
     )
     battle_button.click()
 
-    time.sleep(2)
+    # time.sleep(2)
 
     html = driver.page_source
 
