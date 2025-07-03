@@ -24,26 +24,23 @@ driver = webdriver.Chrome()
 driver.get("https://pvpoke.com/battle/")
 
 # Accept cookies only once
-try:
-    accept_button = WebDriverWait(driver, 5).until(
-        EC.element_to_be_clickable((By.CLASS_NAME, "ncmp__btn"))
-    )
-    accept_button.click()
+accept_button = WebDriverWait(driver, 5).until(
+    EC.element_to_be_clickable((By.CLASS_NAME, "ncmp__btn"))
+)
+accept_button.click()
 
-    accept_all_button = WebDriverWait(driver, 5).until(
-        EC.element_to_be_clickable((By.XPATH, "//button[text()='Accept All']"))
-    )
-    accept_all_button.click()
-except TimeoutException:
-    print("No cookie popup or already accepted.")
-
+accept_all_button = WebDriverWait(driver, 5).until(
+    EC.element_to_be_clickable((By.XPATH, "//button[text()='Accept All']"))
+)
+accept_all_button.click()
+time.sleep(3)
 for i in range(550):
     pokeOne = random.choice(pokemon_go).lower()
     pokeTwo = random.choice(pokemon_go).lower()
     print(f"Battle {i+1}: {pokeOne} vs {pokeTwo}")
 
     driver.get("https://pvpoke.com/battle/")
-    time.sleep(3)  # wait for page to load
+    time.sleep(1)  # wait for page to load
 
     # Enter first Pokémon
     search1 = WebDriverWait(driver, 10).until(
@@ -51,7 +48,7 @@ for i in range(550):
     )
     search1.clear()
     search1.send_keys(pokeOne)
-    time.sleep(1)
+    time.sleep(.3)
     search1.send_keys("\n")
 
     # Enter second Pokémon (second input)
@@ -60,7 +57,7 @@ for i in range(550):
     )[1]
     search2.clear()
     search2.send_keys(pokeTwo)
-    time.sleep(1)
+    time.sleep(.3)
     search2.send_keys("\n")
 
     # Click battle button
@@ -69,7 +66,7 @@ for i in range(550):
     )
     battle_button.click()
 
-    time.sleep(5)
+    time.sleep(2)
 
     html = driver.page_source
 
