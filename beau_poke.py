@@ -15,9 +15,6 @@ from pokemon_list import pokemon_go #imports pokemon list
 
 # The CSV filename
 filename = "poke_battles.csv"
-# with open(filename, mode='w', newline='') as file:
-#     writer = csv.writer(file)
-#     writer.writerow(['Winner', 'Loser', 'Battle Time'])
 
 # Function to write a row to CSV (creates file with header if it doesn't exist)
 def write_battle_result(winner, loser):
@@ -33,9 +30,6 @@ def write_battle_result(winner, loser):
         
         # Write the data row
         writer.writerow([winner, loser])
-
-
-
 
 # print(len(pokemon_go))
 
@@ -78,23 +72,14 @@ battle_button.click()
 time.sleep(5)  # wait for battle result page to load
 
 
-# Now soup includes JavaScript-rendered content
 html = driver.page_source
-# print(html)
-# soup = BeautifulSoup(html, 'html.parser')
-# name = soup.find('div', class_='battle-summary-line')
 
-# print(f'\n\n{name.find('wins')}\n\n')
-#print(f"\n{html.find('wins')}\n")
 if html.find('wins') == -1: #pokeOne has lost
     loser = pokeOne
     winner = pokeTwo
 else: #pokeOne has Won
     loser = pokeTwo
     winner = pokeOne
-
-#<div class="battle-summary-line"><span class="name">Mamoswine</span> wins in <span class="time">20.5s</span> with a battle rating of <span class="rating close-loss" style="background-color: rgb(136, 43, 145);"><span></span>354</span></div>
-# print(f'\n{name}\n')
 
 write_battle_result(winner, loser)
 
