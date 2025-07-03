@@ -1,4 +1,4 @@
-name: sample
+name: pokemon_go_battle_assistant
 channels:
   - anaconda
   - conda-forge
@@ -18,3 +18,7 @@ dependencies:
       - scrapy
       - selenium
       - beautifulsoup4
+      - imagehash
+      - duckduckgo-search
+      - pillow
+      - requests

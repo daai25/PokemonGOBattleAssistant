@@ -1,13 +1,11 @@
-# Sample Project
-Change `sample` to the respective project name in
+# Pokémon GO Battle Assistant
 
-* filename of .yml file
-* environment name in .yml-file
-* in the commands below
+This project was developed as part of the DAAI Summer School 2025. It aims to support **Pokémon GO** players by:
+
+1. Helping them choose the best Pokémon for a battle, based on statistical predictions.
+2. Recognizing Pokémon from images using deep learning.
 
 Adapted the `LICENSE` as required.
-
-Provide a brief description of the project here.
 
 ## Project Organisation
 According to [Is It Ops That Make Data Science Scientific? Archives of Data Science, Series A, vol 8, p. 12, 2022.](https://publikationen.bibliothek.kit.edu/1000150238/152958955)
@@ -41,14 +39,14 @@ $ conda env create -f conda.yml
 1. modify template.yml
 2. run `conda env update`:
 ```sh
-$ conda env update --name sample --file conda.yml --prune
+$ conda env update --name pokemon_go_battle_assistant --file conda.yml --prune
 ```
-`prune` uninstalls dependencies which were removed from sample.yml
+`prune` uninstalls dependencies which were removed from conda.yml
 
 **Use** environment:
 before working on the project always make sure you have the environment activated:
 ```sh
-$ conda activate sample
+$ conda activate pokemon_go_battle_assistant
 ```
 
 **Check the version** of a specific package (e.g. `html5lib`) in the environment:
@@ -70,7 +68,7 @@ $ conda info --envs
 
 **Remove** environment:
 ```sh
-$ conda env remove -n sample
+$ conda env remove -n pokemon_go_battle_assistant
 ```
 
 See the complete documentation on [managing conda-environments](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html).
@@ -164,9 +162,15 @@ From now on, every update just needs:
 2. Check the website locally by opening the  `docs/build/index.html`
 3. Push all updated files into the `main` branch. This will trigger a github action that
     - pushes an update to the `github-pages` branch
-    - renders and publishes the site to https://<your user handle>.github.io/sample/
+    - renders and publishes the site to https://<your user handle>.github.io/pokemon_go_battle_assistant/
 
 ## Further Information
 * "About Readmes" on Github
 https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes
 * [Python Dev Guide](refs/python_dev_guide.md)
+
+
+## Data Sources
+
+- **Battle Simulations**: [pvpoke.com](https://pvpoke.com/)
+- **Pokémon Images**: Web image search using `duckduckgo_search`
