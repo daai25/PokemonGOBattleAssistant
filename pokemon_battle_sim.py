@@ -8,7 +8,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import TimeoutException
 
-from pokemon_list import pokemon_go  # your Pokémon list
+from pokemon_list import pokemon_go  # pokemon_go (list)
 
 filename = "poke_battles.csv"
 
@@ -37,7 +37,7 @@ try:
 except TimeoutException:
     print("No cookie popup or already accepted.")
 
-for i in range(200):
+for i in range(550):
     pokeOne = random.choice(pokemon_go).lower()
     pokeTwo = random.choice(pokemon_go).lower()
     print(f"Battle {i+1}: {pokeOne} vs {pokeTwo}")
@@ -69,7 +69,7 @@ for i in range(200):
     )
     battle_button.click()
 
-    time.sleep(5)  # wait for result to load
+    time.sleep(5)
 
     html = driver.page_source
 
