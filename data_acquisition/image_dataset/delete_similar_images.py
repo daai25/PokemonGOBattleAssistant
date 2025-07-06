@@ -9,7 +9,7 @@ root_folder = os.path.join(script_dir, "compressed_dataset_pokemon_images")
 hashes = {}
 
 # Schwellenwert für Ähnlichkeit (0 = identisch, bis ca. 5-10 für sehr ähnlich)
-threshold = 0
+threshold = 5
 
 # Alle Bilder in Subfoldern durchlaufen
 for dirpath, _, filenames in os.walk(root_folder):
@@ -27,11 +27,13 @@ for dirpath, _, filenames in os.walk(root_folder):
                         print(f"similar: {filepath} ≈ {existing_file}")
                         # Zum Löschen:
                         os.remove(filepath)
+                        print(f"[!!] Deleted: {filepath}")
                         found_duplicate = True
                         break
 
                 if not found_duplicate:
                     hashes[img_hash] = filepath
+                    #print(f"unique: {filepath}")
 
             except Exception as e:
                 print(f"Error {filepath}: {e}")
