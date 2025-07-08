@@ -1,21 +1,17 @@
 # Project Charta
 ## Problem Definition
-Formulate the problem and important information about the domain and/or business area in which the product is to be developed: What exactly is the problem and the expected benefit of the project? Why should we undertake this effort?   
-This includes a summary of the most important findings from the user analysis: relevant segments and user groups. Describe the problems and needs of the users of the product to be developed. 
+New players coming to Pokemon Go are going to struggle with the highly complex combat system. There is much to consider such as type weaknesses, charged moves, fast moves, pokemon stats, and more. 
+Another problem that new players will have is identifying the mant different pokemon and learning what their names are. Given there is over 800 pokemon in pokemon go it'll be no easy task. 
 
-Stakeholders: List the people involved in and affected by the project. Describe their goals and relationships with each other. Visualisation in the form of a stakeholder map can provide a quick overview.
-
-You can reference more detailed analyses such as individual "personas" or interviews in separate documents in the appendix.
-
-## Situation Assessment
+## Situation Assessment HAVE NOT DONE.
 Describe the available resources (personnel, material, (software) tools, infrastructure, etc.) and time as well as restrictions and constraints. Possible risks that may arise during the project are also identified.
 
 ## Project Goals and Success Criteria
-When is the project successful from a client/stakeholder perspective: Formulate (qualitative) objectives, wherever possible, corresponding key metrics and the target values to be achieved within the project.
+For our battle assistant to be successful it needs to boost the winrate for new players overall while utilizing multiple aspects for pokemon fights.
 
-It is also often helpful to specify what is explicitly excluded from the project objectives (out of scope).
+For our image recognition to be successful it should be able to recognize a pokemon and output the correct name with a high accuracy rate.
 
-## Data Mining Goals
+## Data Mining Goals HAVE NOT DONE. WRITTEN WHEN MODEL IS DONE
 Map the problem definition, datasets to be used and primary objective onto a data mining task, e.g.:
 
 * Classification
@@ -65,4 +61,64 @@ gantt
 ```
 
 ## Roles and Contact Details
-List the people involved in the development work here with their role titles, tasks and contact details
+**Caleb Boerma:**
+
+Roles:
+
+    - Programmer
+
+    - documentation writer
+
+Tasks:
+
+    - Battle Simulation
+
+    - writing project charta documentation
+
+Contact info:
+
+    - Email: Boermaca@mail.gvsu.edu
+
+**Diego:**
+
+Roles:
+
+    -  Programmer
+
+Tasks:
+
+    - Battle Simulation
+
+Contact info:
+
+    - Email: 
+
+**Dylan Baumann:**
+
+Roles:
+
+    -  image scraper
+
+Tasks:
+
+    - scrape images
+
+Contact info:
+
+    - Email: baumadyl@students.zhaw.ch
+
+**Max Vangsted:**
+
+Roles:
+
+    - data scraper
+
+    - documentation writer
+
+Tasks:
+
+    - writing data report documentation
+
+Contact info:
+
+    - Email: vangsmax@students.zhaw.ch
