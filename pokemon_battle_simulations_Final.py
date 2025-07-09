@@ -10,23 +10,16 @@ from selenium.webdriver.support.ui import Select
 from selenium.common.exceptions import TimeoutException
 
 from pokemon_list import pokemon_go  # pokemon_go (list)
-# pokemon_data = open("pokemon_data.csv", mode='r')
-# battle_data = open("battle_data.csv", mode='a', newline="")
-# writer = csv.writer("battle_data.csv")
 driver = webdriver.Chrome()
 driver.get("https://pvpoke.com/battle/")
 
-def write_battle_data(winner, loser):
-    # Find data from winner and loser in pokemon_data
-    # copy it and paste it into battle data spots
-    ### CHECK IF WINNER HAS ALL THE DATA ACTUALLY NEEDED. IF NOT, WE WILL NEED TO SCRAPE SOME DATA FROM THE HTML.
-    
+def write_battle_data(winner, loser, win_fast_type, win_chg_1, win_chg_2, lose_fast_type, lose_chg_1, lose_chg_2):
     df = pd.read_csv("cp1500_all_overall_rankings.csv")
 
     winner_row = df[df["Pokemon"].str.lower() == winner.lower()]
     loser_row = df[df["Pokemon"].str.lower() == loser.lower()]
 
-        # Extract first matching row
+    # Extract first matching row
     w = winner_row.iloc[0]
     l = loser_row.iloc[0]
 
@@ -36,9 +29,9 @@ def write_battle_data(winner, loser):
         w["Fast Move"],
         w["Charged Move 1"],
         w["Charged Move 2"],
-        None,
-        None,
-        None,
+        win_fast_type,
+        win_chg_1,
+        win_chg_2,
         w["Dex"],
         w["Attack"],
         w["Defense"],
@@ -50,9 +43,9 @@ def write_battle_data(winner, loser):
         l["Fast Move"],
         l["Charged Move 1"],
         l["Charged Move 2"],
-        None,
-        None,
-        None,
+        lose_fast_type,
+        lose_chg_1,
+        lose_chg_2,
         l["Dex"],
         l["Attack"],
         l["Defense"],
@@ -60,7 +53,7 @@ def write_battle_data(winner, loser):
         l["Score"]
     ]
 
-    with open('poke_battles.csv', 'a', newline='', encoding='utf-8') as f_out:
+    with open('battle_data.csv', 'a', newline='', encoding='utf-8') as f_out:
         writer = csv.writer(f_out)
         writer.writerow(output_row)
         print(f"Battle data between {winner} and {loser} written to poke_battles.csv")
@@ -106,10 +99,34 @@ def battle_simulator(pokeOne, pokeTwo):
 
     html = driver.page_source
 
+    move_select = driver.find_elements(By.CLASS_NAME, 'fast')
+    type_one = move_select[0].get_attribute("class").split()
+    pokeOne_fast_type = type_one[-1]
+    type_two = move_select[1].get_attribute("class").split()
+    pokeTwo_fast_type = type_two[-1]
+
+    #print(pokeOne_fast_type)
+    #print(pokeTwo_fast_type)
+
+    # Get charged move types for both pokemon
+    move_select = driver.find_elements(By.CLASS_NAME, 'charged')
+    type_one = move_select[0].get_attribute("class").split()
+    pokeOne_chg_type_1 = type_one[-1]
+    type_two = move_select[1].get_attribute("class").split()
+    pokeOne_chg_type_2 = type_two[-1]
+
+    type_three = move_select[2].get_attribute("class").split()
+    pokeTwo_chg_type_1 = type_three[-1]
+    type_four = move_select[3].get_attribute("class").split()
+    pokeTwo_chg_type_2 = type_four[-1]
+
+    #print(pokeOne_chg_type_1, pokeOne_chg_type_2)
+    #print(pokeTwo_chg_type_1, pokeTwo_chg_type_2)
+
     if html.find('wins') != -1:  # pokeOne wins
-        return pokeOne, pokeTwo
+        return pokeOne, pokeTwo, pokeOne_fast_type, pokeOne_chg_type_1, pokeOne_chg_type_2, pokeTwo_fast_type, pokeTwo_chg_type_1, pokeTwo_chg_type_2
     else: # pokeTwo wins
-        return pokeTwo, pokeOne
+        return pokeTwo, pokeOne, pokeTwo_fast_type, pokeTwo_chg_type_1, pokeTwo_chg_type_2, pokeOne_fast_type, pokeOne_chg_type_1, pokeOne_chg_type_2
 
 #Accept cookies only once
 try:
@@ -124,17 +141,16 @@ try:
     accept_all_button.click()
 except TimeoutException:
     print("No cookie popup or already accepted.")
+
 count = 0
 for i in range(15000):
     print('battle_',count)
     pokeOne = random.choice(pokemon_go).lower()
     pokeTwo = random.choice(pokemon_go).lower()
-    winner, loser = battle_simulator(pokeOne, pokeTwo)
-    write_battle_data(winner, loser)
-    # time.sleep(2)
+    battle_data = battle_simulator(pokeOne, pokeTwo)
+    write_battle_data(battle_data[0], battle_data[1], battle_data[2], battle_data[3], battle_data[4], battle_data[5], battle_data[6], battle_data[7])
+    time.sleep(1)
     count += 1
 
 time.sleep(5)
 driver.quit()
-# battle_data.close()
-# pokemon_data.close()
