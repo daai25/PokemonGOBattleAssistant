@@ -17,7 +17,7 @@ The project utilizes three main data sources: Pokémon statistics and moves from
 - **Data procurement**: 
   - Web scraping using Selenium WebDriver and BeautifulSoup
   - Automated extraction of Pokémon attack/defense/stamina stats, fast moves, charged moves, and recommended movesets
-  - Scripts: `dynamic_scraper.ipynb`
+  - Scripts: `Poke_stats_Scraper.ipynb`
 - **Legal aspects**: Public data available on PvPoke.com, used for educational/research purposes
 - **Data governance**: Public data, no personal information
 - **Variables**: 
