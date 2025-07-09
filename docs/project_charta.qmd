@@ -1,10 +1,31 @@
 # Project Charta
 ## Problem Definition
 New players coming to Pokemon Go are going to struggle with the highly complex combat system. There is much to consider such as type weaknesses, charged moves, fast moves, pokemon stats, and more. 
+
 Another problem that new players will have is identifying the mant different pokemon and learning what their names are. Given there is over 800 pokemon in pokemon go it'll be no easy task. 
 
-## Situation Assessment HAVE NOT DONE.
-Describe the available resources (personnel, material, (software) tools, infrastructure, etc.) and time as well as restrictions and constraints. Possible risks that may arise during the project are also identified.
+## Situation Assessment
+
+We are developing a **Pokémon battle assistant** that recommends the best Pokemon choices for players during battles. Additionally, we are creating an **image recognition model** that identifies Pokémon based on images and outputs their names.
+
+We will use Python libraries such as `pandas`, `selenium`, and `csv` for data processing and automation. Our data source and battle simulations will rely entirely on [pvpoke.com](https://pvpoke.com). ChatGPT will assist us with coding and other support tasks.
+
+### Constraints
+
+- The project must be completed within **4 weeks**, requiring careful planning and time management.
+- The team size is limited to four members
+- Complete dependency on pvpoke.com for battle data and simulations; potential risk if the site changes or becomes unavailable.
+- The image recognition model’s accuracy depends on the quality and quantity of training data.
+
+### Risks
+
+- Potential changes in pvpoke.com’s site structure or access policies could disrupt data gathering and simulations.
+- Insufficient training data or poor labeling could reduce image recognition model performance.
+- Integration challenges between the battle assistant and the image recognition model or difficulties with Python libraries.
+- The tight 4-week timeline may limit thorough testing, optimization, and documentation.
+- Risk of scope creep if project goals are not clearly defined and managed.
+
+
 
 ## Project Goals and Success Criteria
 For our battle assistant to be successful it needs to boost the winrate for new players overall while utilizing multiple aspects for pokemon fights.
@@ -33,92 +54,90 @@ Divide the project into individual phases, describe them briefly and draw up a p
 
 ![Project Plan](pics/gantt-mermaid.png){#fig-project-plan}
 
+**DELETE THIS BELOW LATER FOR NOW ITS HELPFUL THOUGH**
 See [Mermaid syntax for Gantt charts](https://mermaid.js.org/syntax/gantt.html). It might not be displayed correctly in Safari &#8594; use Chrome. [Live editor with export functionality](https://mermaid.live/)
 
 ```mermaid
 gantt
-    title A Gantt Diagram
-    dateFormat YYYY-MM-DD
-    tickInterval 5day
-    section Project Understanding
-        Define problem,     :a1, 2024-07-01, 1d
-        Determine project goals     :a2, 2024-07-01, 1d
-        List available resources     :a3, 2024-07-02, 1d
-        Set data mining goals    :a4, 2024-07-03, 1d
-        Create project plan    :a5, 2024-07-03, 1d
-        Project checkpoint: milestone, m1, 2024-07-04, 4m
-    section Data Acquisition and Exploration
-        Acquire data :a6, 2024-07-02, 2d
-        Exploratory data analysis   :a7, 2024-07-03, 2d
-        
-    section Modelling
-        Create initial model   :a8, 2024-07-09, 1d
-        Additional feature engineering :a9, 2024-07-10, 1d
-        Prepare modelling report :a10, 2024-07-10, 2h
-    section Evaluation
-        Prepare presentation :a10, 2024-07-10, 2h
-        Project presentation : milestone, m2, 2024-07-11, 4m
+    title Project Plan
+    dateFormat  YYYY-MM-DD
+    tickInterval 3day
+    section Beginning
+    understanding problem :a1, 2025-06-30, 2d
+    section Data Collection
+    scrapping pokemon Stats :a2, 2025-07-01, 3d
+    creating pokemon battle simulator :a3, 2025-07-01, 5d
+    scrapping pokemon images :a6, 2025-07-02, 3d
+    recording pokemon battle onto csv :a4, 2025-07-06, 3d
+    data collection finished :milestone, 2025-07-09
+
+    section Data cleaning
+    cleaning pokemon images :a5, 2025-07-07, 3d
+
 ```
 
 ## Roles and Contact Details
-**Caleb Boerma:**
+### Caleb Boerma
 
-Roles:
+**Roles:**
 
-    - Programmer
+- Programmer  
+- Documentation Writer
 
-    - documentation writer
+**Tasks:**
 
-Tasks:
+- Battle Simulation  
+- Writing project charter documentation
 
-    - Battle Simulation
+**Contact Info:**
 
-    - writing project charta documentation
+- Email: [Boermaca@mail.gvsu.edu](mailto:Boermaca@mail.gvsu.edu)
 
-Contact info:
+---
 
-    - Email: Boermaca@mail.gvsu.edu
+### Diego De Jong
 
-**Diego:**
+**Roles:**
 
-Roles:
+- Programmer
 
-    -  Programmer
+**Tasks:**
 
-Tasks:
+- Battle Simulation
 
-    - Battle Simulation
+**Contact Info:**
 
-Contact info:
+- Email: [dejondie@mail.gvsu.edu](mailto:dejondie@mail.gvsu.edu)
 
-    - Email: 
+---
 
-**Dylan Baumann:**
+### Dylan Baumann
 
-Roles:
+**Roles:**
 
-    -  image scraper
+- Scraper Developer
 
-Tasks:
+**Tasks:**
 
-    - scrape images
+- Image Scraper
 
-Contact info:
+**Contact Info:**
 
-    - Email: baumadyl@students.zhaw.ch
+- Email: [baumadyl@students.zhaw.ch](mailto:baumadyl@students.zhaw.ch)
 
-**Max Vangsted:**
+---
 
-Roles:
+### Max Vangsted
 
-    - data scraper
+**Roles:**
 
-    - documentation writer
+- Scraper Developer  
+- Documentation Writer
 
-Tasks:
+**Tasks:**
 
-    - writing data report documentation
+- Writing data report documentation
 
-Contact info:
+**Contact Info:**
 
-    - Email: vangsmax@students.zhaw.ch
+- Email: [vangsmax@students.zhaw.ch](mailto:vangsmax@students.zhaw.ch)
