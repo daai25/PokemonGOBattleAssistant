@@ -1,5 +1,4 @@
 Pokemon,Score,Dex,Type 1,Type 2,Attack,Defense,Stamina,Stat Product,Level,CP,Fast Move,Charged Move 1,Charged Move 2,Charged Move 1 Count,Charged Move 2 Count,Buddy Distance,Charged Move Cost
-Clodsire,94.4,980,poison,ground,94.2,119.4,209,2352152,29,1490,Poison Sting,Sludge Bomb,Earthquake,6,8,3,50000
 Diggersby,93.6,660,normal,ground,96.3,141.2,171,2324733,48,1496,Quick Attack,Fire Punch,Scorching Sands,5,7,1,10000
 Forretress,93.6,205,bug,steel,110.2,141.6,130,2028758,25,1496,Bug Bite,Sand Tomb,Rock Tomb,14,17,5,75000
 Lapras,92.9,131,water,ice,104.7,114,179,2135530,21.5,1497,Psywave,Sparkling Aria,Ice Beam,12,14,5,75000
@@ -90,7 +89,6 @@ Bronzong,86.7,437,steel,psychic,111.3,151.8,119,2010401,25.5,1498,Metal Sound,Ps
 Sandslash (Alolan),86.7,28,ice,steel,116.6,132.6,124,1917384,23,1500,Shadow Claw,Ice Punch,Drill Run,5,6,3,50000
 Bastiodon (Shadow),86.6,411,rock,steel,81.1,246.7,138,2761698,47.5,1498,Smack Down,Stone Edge,Flamethrower,7,7,5,75000
 Victreebel,86.6,71,grass,poison,135.8,94.8,128,1648364,23,1500,Acid,Leaf Blade,Sludge Bomb,5,7,3,50000
-Golisopod,86.5,768,bug,water,125.2,133.6,107,1788916,17.5,1498,Shadow Claw,Aqua Jet,X-Scissor,5,5,1,10000
 Swampert (Shadow),86.5,260,water,ground,123,108.6,136,1815930,18.5,1498,Mud Shot,Hydro Cannon,Sludge,5,5,3,10000
 Victreebel (Shadow),86.5,71,grass,poison,135.8,94.8,128,1648364,23,1500,Acid,Leaf Blade,Sludge Bomb,5,7,3,50000
 Lurantis,86.4,754,grass,none,126.9,114.6,121,1760366,23.5,1495,Fury Cutter,Leaf Blade,Superpower,9,10,3,50000
