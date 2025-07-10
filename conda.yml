@@ -18,3 +18,4 @@ dependencies:
       - scrapy
       - selenium
       - beautifulsoup4
+      - pandas
