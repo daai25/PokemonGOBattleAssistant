@@ -7,40 +7,53 @@ The project utilizes three main data sources: Pokémon statistics and moves from
 ### Overview Raw Datasets
 | Name | Source | Storage location |
 |----------------|-----------------------------------------|--------------------------------------------------------------------------|
-| Pokemon Stats & Moves | PvPoke.com Rankings Web Scraping | `data_acquisition/data_scraping/raw_data/pokemon_stats_moves.json` |
+| Pokemon Stats & Rankings | PvPoke.com CSV dataset | `data_acquisition/processed_data/all_overall_rankings.csv` |
 | Battle Simulation Data | PvPoke.com Battle Simulator | `data_acquisition/battle_simulations/raw_data/battle_results.json` |
 | Pokemon Image Dataset | DuckDuckGo Search API | `data_acquisition/image_dataset/compressed_dataset_pokemon_images/` |
 
-### Details Dataset 1: Pokemon Stats & Moves
-- **Description**: Contains comprehensive Pokémon statistics, movesets, and meta rankings for PvP battles
-- **Data source**: [PvPoke.com rankings page](https://pvpoke.com/rankings/)
+### Details Dataset 1: Pokemon Stats & Rankings
+- **Description**: Contains comprehensive Pokémon statistics, battle performance metrics, movesets, and meta rankings for PvP battles
+- **Data source**: 
+  - Originally: [PvPoke.com rankings page](https://pvpoke.com/rankings/) via web scraping
+  - Final source: Comprehensive CSV dataset from PvPoke.com with detailed Pokemon battle statistics
 - **Data procurement**: 
-  - Web scraping using Selenium WebDriver and BeautifulSoup
-  - Automated extraction of Pokémon attack/defense/stamina stats, fast moves, charged moves, and recommended movesets
-  - Scripts: `Poke_stats_Scraper.ipynb`
-- **Legal aspects**: Public data available on PvPoke.com, used for educational/research purposes
+  - Initial approach: Web scraping using Selenium WebDriver and BeautifulSoup
+    - Automated extraction of Pokémon attack/defense/stamina stats, fast moves, charged moves, and recommended movesets
+    - Scripts: `Poke_stats_Scraper.ipynb`
+  - Final approach: Found a more comprehensive CSV dataset with detailed battle metrics and Pokemon parameters
+    - This dataset provided extensive information including Stat Product, CP, Level, Charged Move Counts, and Buddy Distance
+- **Legal aspects**: Public data available for educational/research purposes
 - **Data governance**: Public data, no personal information
 - **Variables**: 
-    Attack, Defense, Stamina stats, available moves, Pokémon types
+    Pokemon name, Score, Pokedex number, Type 1 & 2, Attack, Defense, Stamina stats, Stat Product, Level, CP, Fast Move, Charged Moves, Charged Move Counts, Buddy Distance, Charged Move Cost
 
 #### Data Catalogue
 | Column index | Column name | Datatype | Values (Range, validation rules) | Short description |
 |---|---|---|---|---|
-| 1 | name | String | Pokemon species names | Unique identifier for each Pokemon |
-| 2 | attack | Float | 50-300 | Attack stat value |
-| 3 | defense | Float | 50-300 | Defense stat value |
-| 4 | stamina | Integer | 80-500 | HP/Stamina stat value |
-| 5 | overall | Integer | 1000-3000 | Overall rating score |
-| 6 | fast_moves | Array | List of move names | Available fast attack moves |
-| 7 | charged_moves | Array | List of move names | Available charged attack moves |
-| 8 | recommended_fast_move | String | Single move name or null | Optimal fast move recommendation |
-| 9 | recommended_charged_moves | Array | List of move names | Optimal charged move recommendations |
+| 1 | Pokemon | String | Pokemon species names | Unique identifier for each Pokemon |
+| 2 | Score | Float | 0-100 | Overall battle performance rating |
+| 3 | Dex | Integer | 1-1000+ | Pokedex number identifier |
+| 4 | Type 1 | String | Pokemon type names | Primary type of the Pokemon |
+| 5 | Type 2 | String | Pokemon type names or "none" | Secondary type of the Pokemon (if any) |
+| 6 | Attack | Float | 50-300 | Attack stat value |
+| 7 | Defense | Float | 50-300 | Defense stat value |
+| 8 | Stamina | Integer | 80-500 | HP/Stamina stat value |
+| 9 | Stat Product | Integer | 1000000-3000000 | Combined stat product (Attack × Defense × Stamina) |
+| 10 | Level | Float | 1-50 | Pokemon level for battle league |
+| 11 | CP | Integer | 0-1500 | Combat Power value |
+| 12 | Fast Move | String | Move names | Fast attack move for battle |
+| 13 | Charged Move 1 | String | Move names | Primary charged attack move |
+| 14 | Charged Move 2 | String | Move names | Secondary charged attack move |
+| 15 | Charged Move 1 Count | Integer | 1-20+ | Energy requirement for Charged Move 1 |
+| 16 | Charged Move 2 Count | Integer | 1-20+ | Energy requirement for Charged Move 2 |
+| 17 | Buddy Distance | Integer | 1-20 | Walking distance (km) required as buddy |
+| 18 | Charged Move Cost | Integer | 10000-100000 | Stardust cost to unlock second charged move |
 
 #### Data Quality
-- **Completeness**: 727 unique Pokémon entries with complete stat information
-- **Accuracy**: Data validated against official PvPoke rankings
+- **Completeness**: 727 unique Pokémon entries with complete stat information in the final dataset
+- **Accuracy**: Data validated against official game statistics
 - **Consistency**: Standardized naming conventions and data formats
-- **Duplicates**: 2 duplicate entries identified (Clodsire, Golisopod) - removed during preprocessing
+- **Duplicates**: No duplicates in the final dataset (originally found 2 duplicate entries - Clodsire, Golisopod)
 
 ### Details Dataset 2: Battle Simulation Data <span style="color: red;">Need to change</span>
 - **Description**: Contains battle outcome data from simulated 1v1 Pokémon battles
