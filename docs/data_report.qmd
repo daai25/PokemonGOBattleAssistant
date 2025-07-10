@@ -11,6 +11,8 @@ The project utilizes three main data sources: Pokémon statistics and moves from
 | Battle Simulation Data | PvPoke.com Battle Simulator | `data_acquisition/battle_simulations/raw_data/battle_results.json` |
 | Pokemon Image Dataset | DuckDuckGo Search API | `data_acquisition/image_dataset/compressed_dataset_pokemon_images/` |
 
+**Note**: The Pokemon Stats & Rankings dataset was subsequently vectorized and stored as `all_overall_rankings_vectorized.csv` in the `data_acquisition/vectorized_data/` directory for machine learning model development.
+
 ### Details Dataset 1: Pokemon Stats & Rankings
 - **Description**: Contains comprehensive Pokémon statistics, battle performance metrics, movesets, and meta rankings for PvP battles
 - **Data source**: 
@@ -104,23 +106,32 @@ The project utilizes three main data sources: Pokémon statistics and moves from
 ### Overview Processed Datasets <span style="color: red;">Need to change</span>
 | Name | Source | Storage location |
 |----------------|-----------------------------------------|--------------------------------------------------------------------------|
-| Training Dataset Pokemon Stats | Pokemon Stats & Moves | `processed_data/pokemon_training_data.csv` |
+| Vectorized Pokemon Dataset | Pokemon Stats & Rankings | `data_acquisition/vectorized_data/all_overall_rankings_vectorized.csv` |
 | Image Training Dataset | Pokemon Image Dataset | `processed_data/image_dataset/train_test_split/` |
 | Battle Outcome Dataset | Battle Simulation Data | `processed_data/battle_outcomes_processed.csv` |
 
-### Details Processed Dataset 1: Training Dataset Pokemon Stats
-- **Description**: Cleaned and feature-engineered dataset combining Pokémon statistics with battle performance metrics
+### Details Processed Dataset 1: Vectorized Pokemon Dataset
+- **Description**: Vectorized version of the Pokemon Stats & Rankings dataset for machine learning applications
 - **Processing steps**: 
   - Removal of duplicate entries
+  - Vectorization of categorical features (Pokemon types, moves)
   - Feature engineering: type effectiveness calculations, stat ratios, move type diversity
-  - Encoding of categorical variables (Pokémon types, move types)
+  - Encoding of categorical variables using numerical mapping dictionaries
   - Normalization of numerical features
-  - Train/validation/test split (70/15/15)
-- **Access method**: CSV files accessible via pandas DataFrame loading
+  - Preparation for model input
+- **Vectorization process**:
+  - Categorical features converted to numerical representations using mapping dictionaries
+  - Types, fast moves, and charged moves encoded using dedicated mapping files:
+    - `data_acquisition/dictionarie/type_to_number.csv`
+    - `data_acquisition/dictionarie/fast_move_to_number.csv`
+    - `data_acquisition/dictionarie/charged_move_to_number.csv`
+  - Vectorization performed in `pokemon_vectorization.ipynb`
+- **Access method**: CSV file accessible via pandas DataFrame loading
 
 #### Data Catalogue
-- Enhanced feature set with engineered variables
-- Standardized numerical ranges
+- Vectorized feature set with all categorical variables converted to numerical representations
+- Standardized numerical ranges for model compatibility
+- Preserves all information from the original dataset in machine learning-ready format
 
 ### Details Processed Dataset 2: Image Training Dataset <span style="color: red;">Need to change</span>
 - **Description**: Preprocessed and augmented image dataset for computer vision model training
