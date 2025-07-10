@@ -1,0 +1,300 @@
+Charged_Move,Number
+none,0
+Acid Spray,1
+Acrobatics,2
+Acrobatics*,3
+Aerial Ace,4
+Aeroblast,5
+Aeroblast*,6
+Air Cutter,7
+Air Cutter*,8
+Ancient Power,9
+Ancient Power*,10
+Aqua Jet,11
+Aqua Jet*,12
+Aqua Tail,13
+Aqua Tail*,14
+Aura Sphere,15
+Aura Sphere*,16
+Aura Wheel,17
+Aurora Beam,18
+Avalanche,19
+Avalanche*,20
+Blast Burn,21
+Blast Burn*,22
+Blaze Kick,23
+Blizzard,24
+Blizzard*,25
+Body Slam,26
+Body Slam*,27
+Bone Club,28
+Boomburst,29
+Boomburst*,30
+Brave Bird,31
+Breaking Swipe,32
+Breaking Swipe*,33
+Brick Break,34
+Brick Break*,35
+Brine,36
+Brine*,37
+Brutal Swing,38
+Brutal Swing*,39
+Bubble Beam,40
+Bug Buzz,41
+Bug Buzz*,42
+Bulldoze,43
+Bulldoze*,44
+Clanging Scales,45
+Clanging Scales*,46
+Close Combat,47
+Crabhammer,48
+Cross Chop,49
+Cross Chop*,50
+Cross Poison,51
+Crunch,52
+Crush Grip,53
+Crush Grip*,54
+Dark Pulse,55
+Dark Pulse*,56
+Darkest Lariat,57
+Dazzling Gleam,58
+Dazzling Gleam*,59
+Dig,60
+Disarming Voice,61
+Discharge,62
+Discharge*,63
+Doom Desire,64
+Double Iron Bash,65
+Double Iron Bash*,66
+Draco Meteor,67
+Draco Meteor*,68
+Dragon Ascent,69
+Dragon Ascent*,70
+Dragon Claw,71
+Dragon Energy,72
+Dragon Energy*,73
+Dragon Pulse,74
+Dragon Pulse*,75
+Drain Punch*,76
+Draining Kiss,77
+Drill Peck,78
+Drill Run,79
+Drill Run*,80
+Dynamic Punch,81
+Earth Power,82
+Earth Power*,83
+Earthquake,84
+Earthquake*,85
+Energy Ball,86
+Energy Ball*,87
+Feather Dance,88
+Fell Stinger,89
+Fire Blast,90
+Fire Blast*,91
+Fire Punch,92
+Fire Punch*,93
+Flame Burst,94
+Flame Charge,95
+Flame Wheel,96
+Flamethrower,97
+Flamethrower*,98
+Flash Cannon,99
+Flower Trick,100
+Fly,101
+Flying Press,102
+Focus Blast,103
+Foul Play,104
+Frenzy Plant,105
+Frenzy Plant*,106
+Frustration,107
+Frustration†,108
+Future Sight,109
+Giga Impact,110
+Grass Knot,111
+Grass Knot*,112
+Gunk Shot,113
+Gyro Ball,114
+Heat Wave,115
+Heat Wave*,116
+Heavy Slam,117
+High Horsepower,118
+High Horsepower*,119
+High Jump Kick,120
+High Jump Kick*,121
+Horn Attack,122
+Hurricane,123
+Hurricane*,124
+Hydro Cannon,125
+Hydro Cannon*,126
+Hydro Pump,127
+Hyper Beam,128
+Hyper Beam*,129
+Hyper Fang,130
+Ice Beam,131
+Ice Beam*,132
+Ice Punch,133
+Ice Punch*,134
+Icicle Spear,135
+Icicle Spear*,136
+Icy Wind,137
+Icy Wind*,138
+Iron Head,139
+Iron Head*,140
+Last Resort,141
+Last Resort*,142
+Leaf Blade,143
+Leaf Storm,144
+Leaf Tornado,145
+Liquidation,146
+Low Sweep,147
+Lunge,148
+Luster Purge,149
+Luster Purge*,150
+Magma Storm,151
+Magma Storm*,152
+Magnet Bomb,153
+Megahorn,154
+Megahorn*,155
+Meteor Beam,156
+Meteor Beam*,157
+Meteor Mash,158
+Meteor Mash*,159
+Mirror Coat,160
+Mirror Shot,161
+Mist Ball,162
+Mist Ball*,163
+Moonblast,164
+Moonblast*,165
+Mud Bomb,166
+Muddy Water,167
+Mystical Fire,168
+Nature's Madness,169
+Nature's Madness*,170
+Night Shade,171
+Night Slash,172
+Night Slash*,173
+Obstruct*,174
+Octazooka,175
+Ominous Wind,176
+Ominous Wind*,177
+Origin Pulse,178
+Origin Pulse*,179
+Outrage,180
+Outrage*,181
+Overheat,182
+Parabolic Charge,183
+Payback,184
+Payback*,185
+Petal Blizzard,186
+Play Rough,187
+Poison Fang,188
+Poltergeist,189
+Poltergeist*,190
+Power Gem,191
+Power Whip,192
+Power Whip*,193
+Power-Up Punch,194
+Precipice Blades,195
+Precipice Blades*,196
+Psybeam,197
+Psybeam*,198
+Psybeam†,199
+Psychic,200
+Psychic Fangs,201
+Psychic Fangs*,202
+Psychic*,203
+Psycho Boost,204
+Psyshock,205
+Psyshock*,206
+Psystrike,207
+Psystrike*,208
+Rage Fist,209
+Rage Fist*,210
+Razor Shell,211
+Razor Shell*,212
+Return,213
+Return†,214
+Rock Blast,215
+Rock Slide,216
+Rock Slide*,217
+Rock Tomb,218
+Rock Tomb*,219
+Rock Wrecker,220
+Rock Wrecker*,221
+Sacred Fire*,222
+Sand Tomb,223
+Scald,224
+Scald*,225
+Scorching Sands,226
+Seed Bomb,227
+Seed Flare,228
+Seed Flare*,229
+Shadow Ball,230
+Shadow Ball*,231
+Shadow Bone,232
+Shadow Bone*,233
+Shadow Force*,234
+Shadow Punch,235
+Shadow Punch*,236
+Shadow Sneak,237
+Signal Beam,238
+Signal Beam*,239
+Silver Wind,240
+Skull Bash,241
+Sky Attack,242
+Sky Attack*,243
+Sludge,244
+Sludge Bomb,245
+Sludge Wave,246
+Sludge Wave*,247
+Solar Beam,248
+Sparkling Aria,249
+Spirit Shackle,250
+Stomp,251
+Stomp*,252
+Stone Edge,253
+Stone Edge*,254
+Struggle,255
+Submission,256
+Submission*,257
+Superpower,258
+Superpower*,259
+Surf,260
+Surf*,261
+Swift,262
+Synchronoise,263
+Synchronoise*,264
+Techno Blast (Normal),265
+Techno Blast (Normal)*,266
+Thunder,267
+Thunder Cage,268
+Thunder Cage*,269
+Thunder Punch,270
+Thunder Punch*,271
+Thunder*,272
+Thunderbolt,273
+Thunderbolt*,274
+Torch Song,275
+Trailblaze,276
+Tri Attack,277
+Tri Attack*,278
+Triple Axel,279
+Twister,280
+Twister*,281
+Upper Hand,282
+V-Create,283
+Vise Grip,284
+Water Pulse,285
+Water Pulse*,286
+Weather Ball (Fire),287
+Weather Ball (Fire)*,288
+Weather Ball (Ice),289
+Weather Ball (Normal),290
+Weather Ball (Rock),291
+Weather Ball (Water),292
+Wild Charge,293
+Wild Charge*,294
+Wrap,295
+X-Scissor,296
+Zap Cannon,297
+Zap Cannon*,298
