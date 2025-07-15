@@ -3,7 +3,7 @@ from PIL import Image
 import imagehash
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
-root_dir = os.path.join(script_dir, "dataset_pokemon_images")
+root_dir = os.path.join(script_dir, "last_dataset")
 
 image_extensions = [".jpg", ".jpeg", ".png", ".bmp", ".gif", ".tiff"]
 

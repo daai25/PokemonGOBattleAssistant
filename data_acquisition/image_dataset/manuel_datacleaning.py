@@ -1,4 +1,4 @@
-import sys, os, glob, math
+import sys, os, glob, math, json
 from PyQt5.QtCore import Qt, QSize, QAbstractTableModel
 from PyQt5.QtGui import QImage, QPen, QColor
 from PyQt5.QtWidgets import (
@@ -11,6 +11,21 @@ from PIL import Image
 NUMBER_OF_COLUMNS = 8
 CELL_PADDING = 10
 HIGHLIGHT_COLOR = QColor(0, 120, 215)  # Blue for selection border
+DONE_FILE = "done_folders.json"
+
+
+def load_done_folders():
+    """Load finished folders from JSON"""
+    if os.path.exists(DONE_FILE):
+        with open(DONE_FILE, "r") as f:
+            return set(json.load(f))
+    return set()
+
+
+def save_done_folders(done_folders):
+    """Save finished folders to JSON"""
+    with open(DONE_FILE, "w") as f:
+        json.dump(list(done_folders), f)
 
 
 class PreviewDelegate(QStyledItemDelegate):
@@ -62,11 +77,14 @@ class MainWindow(QMainWindow):
     def __init__(self, folder):
         super().__init__()
         self.folder = folder
-        self.current_index = 0
-        self.subfolders = [f.path for f in os.scandir(folder) if f.is_dir()]
+        self.done_folders = load_done_folders()
+        self.subfolders = [f.path for f in os.scandir(folder) if f.is_dir() and f.path not in self.done_folders]
+
         if not self.subfolders:
-            QMessageBox.critical(self, "Error", "No subfolders found.")
-            sys.exit(1)
+            QMessageBox.information(self, "Fertig!", "Alle Ordner sind bereits als fertig markiert.")
+            sys.exit(0)
+
+        self.current_index = 0
 
         # Widgets
         self.title_label = QLabel()
@@ -80,9 +98,11 @@ class MainWindow(QMainWindow):
         self.prev_button.clicked.connect(self.prev_folder)
         self.next_button = QPushButton("Next Folder ▶")
         self.next_button.clicked.connect(self.next_folder)
-
         self.crop_button = QPushButton("Crop Selected Images (Overwrite)")
         self.crop_button.clicked.connect(self.crop_selected_images)
+
+        self.mark_done_button = QPushButton("Ordner als fertig markieren ✅")
+        self.mark_done_button.clicked.connect(self.mark_folder_done)
 
         self.table = QTableView()
         self.table.setSelectionBehavior(QTableView.SelectItems)
@@ -95,6 +115,7 @@ class MainWindow(QMainWindow):
         button_layout.addWidget(self.prev_button)
         button_layout.addWidget(self.next_button)
         button_layout.addWidget(self.crop_button)
+        button_layout.addWidget(self.mark_done_button)
 
         main_layout = QVBoxLayout()
         main_layout.addWidget(self.title_label)
@@ -106,12 +127,12 @@ class MainWindow(QMainWindow):
         container.setLayout(main_layout)
         self.setCentralWidget(container)
 
-        # Shortcuts for navigation and deletion
+        # Shortcuts
         QShortcut(Qt.Key_Left, self, activated=self.prev_folder)
         QShortcut(Qt.Key_Right, self, activated=self.next_folder)
         QShortcut(Qt.Key_Delete, self, activated=self.delete_selected)
 
-        # Load initial folder
+        # Load first folder
         self.load_folder(0)
         self.resize(1000, 700)
 
@@ -189,20 +210,29 @@ class MainWindow(QMainWindow):
             try:
                 img = Image.open(path)
                 width, height = img.size
-                # Crop area relative to image size
                 crop_box = (
-                    int(width * 0.08),    # left
-                    int(height * 0.05),   # top
-                    int(width * 0.92),    # right
-                    int(height * 0.45)    # bottom
+                    int(width * 0.08), int(height * 0.05),
+                    int(width * 0.92), int(height * 0.45)
                 )
                 cropped = img.crop(crop_box)
-                cropped.save(path)  # overwrite original
+                cropped.save(path)
             except Exception as e:
                 print("Error cropping:", e)
 
         QMessageBox.information(self, "Done", f"Cropped and saved {len(files)} images.")
         self.load_folder(self.current_index)
+
+    def mark_folder_done(self):
+        folder = self.subfolders[self.current_index]
+        self.done_folders.add(folder)
+        save_done_folders(self.done_folders)
+        QMessageBox.information(self, "Fertig", f"Ordner '{os.path.basename(folder)}' wurde als fertig markiert.")
+        self.subfolders.pop(self.current_index)
+        if not self.subfolders:
+            QMessageBox.information(self, "Fertig!", "Alle Ordner sind fertig.")
+            sys.exit(0)
+        else:
+            self.load_folder(self.current_index % len(self.subfolders))
 
 
 if __name__ == "__main__":
