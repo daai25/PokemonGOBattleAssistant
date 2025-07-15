@@ -1,37 +1,51 @@
 ---
-title: "About This Documentation"
+title: "Pokemon GO Battle Assistant"
+subtitle: "A Machine Learning-Based Battle Prediction System"
 ---
 
-![The Data Science Process @DoemerKempf2022_1000150238](pics/dsprocess.svg)
+## Introduction
 
+The Pokemon GO Battle Assistant is an advanced prediction system that uses machine learning to help trainers make strategic decisions in Pokemon GO battles. By analyzing Pokemon statistics, battle mechanics, and historical performance data, our system predicts battle outcomes with high accuracy and provides recommendations for optimal team composition.
 
-This is an example on how to incorporate executable Python code and show a figure output:
+## Key Features
 
-```{python}
-#| label: fig-demo
-#| fig-cap: "A simple demonstration of executable Python code producing a figure object."
-#| #| echo: true
-#| code-fold: true
-import matplotlib.pyplot as plt
-import numpy as np
+- **Battle Outcome Prediction**: Predicts the winner of 1v1 Pokemon battles using machine learning models
+- **Pokemon Image Recognition**: Identifies Pokemon from images using Deep Learning computer vision models
+- **Type & Move Analysis**: Evaluates effectiveness of different Pokemon types in battle
+- **Data-Driven Insights**: Uses data from thousands of simulated battles for training
 
-# Generate sample data
-x = np.linspace(0, 2*np.pi, 100)
-y = np.sin(x)
+## Data Sources
 
-# Create the plot
-fig, ax = plt.subplots(figsize=(8, 5))
+Our system utilizes three primary data sources:
 
-ax.plot(x, y, color='blue', linewidth=2)
+1. **Pokemon Statistics & Rankings**: Comprehensive dataset of Pokemon attributes from [PvPoke rankings site](https://pvpoke.com/rankings/)
+2. **Battle Simulation Data**: 15,000+ simulated battle outcomes with detailed performance metrics from [PvPoke battles site](https://pvpoke.com/battle/)
+3. **Pokemon Image Dataset**: Collection of Pokemon images retrieved via DuckDuckGo Search API for training the image recognition model
 
-ax.set_xlabel('x')
-ax.set_ylabel('y')
-ax.set_title('Plot title')
+## Machine Learning Approach
 
-ax.spines['top'].set_visible(False)
-ax.spines['right'].set_visible(False)
+Our system evaluates multiple machine learning models to find the optimal solution for battle prediction:
 
-plt.show()
-```
+- **Logistic Regression**: A baseline model for binary classification
+- **Random Forest Classifier**: An ensemble method that builds multiple decision trees
+- **Gradient Boosting**: Advanced ensemble technique that builds trees sequentially
 
-Then the figure can be referenced with @fig-demo.
+After rigorous evaluation and cross-validation, the best performing model is selected for deployment. The selected model learns complex patterns in:
+
+- Pokemon type effectiveness relationships
+- Stat advantages/disadvantages
+- Move selection
+- Overall battle performance
+
+The image recognition component utilizes a Convolutional Neural Network (CNN) trained on the Pokemon image dataset to identify Pokemon from photos.
+
+For detailed information about our approach, see the [Modelling Report](modelling_report.qmd).
+
+## Project Documentation
+
+This documentation provides comprehensive details on:
+
+- [Data Collection & Processing](data_report.qmd)
+- [Modelling Approach & Results](modelling_report.qmd)
+- [Evaluation Metrics & Performance](evaluation.qmd)
+- [Project Development Process](project_charta.qmd)

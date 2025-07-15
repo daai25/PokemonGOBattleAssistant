@@ -1,58 +1,170 @@
 # Data Report
-All information on the data used in the project is compiled in the data report in order to ensure the traceability and reproducibility of the results and to enable a systematic expansion of the database.
+All information on the data used in the Pokemon GO Battle Assistant project is compiled in this data report to ensure traceability and reproducibility of the results and to enable systematic expansion of the database.
 
-Typically, in the exploratory analysis of the acquired raw data, quality and other issues are identified, which require pre-processing, merging of individual datasets and feature engineering into processed datasets. Therefore, this template provides a separate section for the processed data, which then serves as a starting point for the modelling activities. This needs to be adapted to the specific project requirements.
+The project utilizes three main data sources: Pokemon statistics and moves from the [PvPoke rankings site](https://pvpoke.com/rankings/), battle simulation data from the [PvPoke battles site](https://pvpoke.com/battle/), and image datasets collected through the Python library `duckduckgo_search`. These raw datasets undergo preprocessing and feature engineering to create processed datasets suitable for machine learning model development.
 
-## Raw data
+## Raw Data
 ### Overview Raw Datasets
-| Name | Quelle | Storage location |
+| Name | Source | Storage location |
 |----------------|-----------------------------------------|--------------------------------------------------------------------------|
-| Dataset 1      | Name/short description of the data source | Link and/or short description of the location where the data is stored, e.g. accessible to the team |
-| Dataset 2      | …                                       | …                                                                        |
+| Pokemon Stats & Rankings | PvPoke.com CSV dataset | `data_acquisition/processed_data/all_overall_rankings.csv` |
+| Battle Simulation Data | PvPoke.com Battle Simulator | `data_acquisition/vectorized_data/battle_data_numeric.csv` |
+| Pokemon Image Dataset | DuckDuckGo Search API | `data_acquisition/image_dataset/compressed_dataset_pokemon_images/` |
 
-### Details Dataset 1
-- Description of what information the dataset contains
-- Details of the data source/provider
-- Information on data procurement: description and possibly references to resources (download scripts, tools, online services, ...). Any new team member should be able to acquire the data indepentendently following these instructions.
-- Legal aspects of data use, licences, etc.
-- Data governance aspects: Categorisation of the data based on internal business requirements, e.g. public, business-relevant, personal
-- If applicable: categorisation into dependent (target variable, regressor) and independent (regressor) variables
-- ...
+**Note**: The Pokemon Stats & Rankings dataset was subsequently vectorized and stored as `all_overall_rankings_vectorized.csv` in the `data_acquisition/vectorized_data/` directory for machine learning model development.
+
+### Details Dataset 1: Pokemon Stats & Rankings
+- **Description**: Contains comprehensive Pokemon statistics, battle performance metrics, movesets, and meta rankings for PvP battles
+- **Data source**: 
+  - Originally: [PvPoke.com rankings page](https://pvpoke.com/rankings/) via web scraping
+  - Final source: Comprehensive CSV dataset from PvPoke.com with detailed Pokemon battle statistics
+- **Data procurement**: 
+  - Initial approach: Web scraping using Selenium WebDriver and BeautifulSoup
+    - Automated extraction of Pokemon attack/defense/stamina stats, fast moves, charged moves, and recommended movesets
+    - Scripts: `Poke_stats_Scraper.ipynb`
+  - Final approach: Found a more comprehensive CSV dataset with detailed battle metrics and Pokemon parameters
+    - This dataset provided extensive information including Stat Product, CP, Level, Charged Move Counts, and Buddy Distance
+- **Legal aspects**: Public data available for educational/research purposes
+- **Data governance**: Public data, no personal information
+- **Variables**: 
+    Pokemon name, Score, Pokedex number, Type 1 & 2, Attack, Defense, Stamina stats, Stat Product, Level, CP, Fast Move, Charged Moves, Charged Move Counts, Buddy Distance, Charged Move Cost
 
 #### Data Catalogue
-The data catalogue basically represents an extended schema of a relational database.
-
-| Column index | Column name |  Datatype | Values (Range, validation rules) | Short description |
+| Column index | Column name | Datatype | Values (Range, validation rules) | Short description |
 |---|---|---|---|---|
-| 1 |   |   |   |   |
-| 2 |   |   |   |   |
-|   |   |   |   |   |
-
-
-#### If applicable: Entity Relationship Diagram
-
+| 1 | Pokemon | String | Pokemon species names | Unique identifier for each Pokemon |
+| 2 | Score | Float | 0-100 | Overall battle performance rating |
+| 3 | Dex | Integer | 1-1000+ | Pokedex number identifier |
+| 4 | Type 1 | String | Pokemon type name | Primary type of the Pokemon |
+| 5 | Type 2 | String | Pokemon type name or "none" | Secondary type of the Pokemon (if any) |
+| 6 | Attack | Float | 50-300 | Attack stat value |
+| 7 | Defense | Float | 50-300 | Defense stat value |
+| 8 | Stamina | Integer | 80-500 | HP/Stamina stat value |
+| 9 | Stat Product | Integer | 1000000-3000000 | Combined stat product (Attack × Defense × Stamina) |
+| 10 | Level | Float | 1-50 | Pokemon level for battle league |
+| 11 | CP | Integer | 0-1500 | Combat Power value |
+| 12 | Fast Move | String | Move names | Fast attack move for battle |
+| 13 | Charged Move 1 | String | Move names | Primary charged attack move |
+| 14 | Charged Move 2 | String | Move names | Secondary charged attack move |
+| 15 | Charged Move 1 Count | Integer | 1-20+ | Energy requirement for Charged Move 1 |
+| 16 | Charged Move 2 Count | Integer | 1-20+ | Energy requirement for Charged Move 2 |
+| 17 | Buddy Distance | Integer | 1-20 | Walking distance (km) required as buddy |
+| 18 | Charged Move Cost | Integer | 10000-100000 | Stardust cost to unlock second charged move |
 
 #### Data Quality
+- **Completeness**: 727 unique Pokemon entries with complete stat information in the final dataset
+- **Accuracy**: Data validated against official game statistics
+- **Consistency**: Standardized naming conventions and data formats
+- **Duplicates**: No duplicates in the final dataset (originally found 2 duplicate entries - Clodsire, Golisopod)
 
-
-## Processed Data
-### Overview Processed Datasets
-| Name | Quelle | Storage location |
-|----------------|-----------------------------------------|--------------------------------------------------------------------------|
-| Processed Dataset 1      | Name/short description of the data source | Link and/or short description of the location where the data is stored, e.g. accessible to the team |
-| Processed Dataset 2      | …                                       | …                                                                        |
-
-### Details Processed Dataset 1
-- Description of what information the dataset contains
-- Details and reasons for the processing steps -> Traceability and ensuring reproducibility
-- How can the data be accessed? Description, scripts, tools, ...
-- ...
+### Details Dataset 2: Battle Simulation Data
+- **Description**: Contains vectorized numeric data from simulated 1v1 Pokemon battles for predicting battle outcomes
+- **Data source**: [PvPoke.com battle simulator](https://pvpoke.com/battle/) combined with Pokemon statistics dataset
+- **Data procurement**: 
+  - Web scraping using Selenium WebDriver and BeautifulSoup
+  - 15,000 battle scenarios simulated (generated using random sampling with Python's random number generator)
+- **Legal aspects**: Public simulation tool, data used for educational purposes
+- **Data governance**: Public data, computational results from simulator
+- **Variables**:
+    Pokemon types, moves, stats, and battle outcomes (win/loss)
 
 #### Data Catalogue
+| Column index | Column name | Datatype | Values (Range, validation rules) | Short description |
+|---|---|---|---|---|
+| 1 | left_pokemon_type_1 | String | Pokemon type name | Primary type of first Pokemon (numerically encoded) |
+| 2 | left_pokemon_type_2 | String | Pokemon type name or "none" | Secondary type of first Pokemon (numerically encoded) |
+| 3 | left_pokemon_fast_move | String | Pokemon fast move name | Fast move ID for first Pokemon |
+| 4 | left_pokemon_charge_move_1 | String | Pokemon charge move | First charged move ID for first Pokemon |
+| 5 | left_pokemon_charge_move_2 | String | Pokemon charge move | Second charged move ID for first Pokemon |
+| 6 | left_pokemon_fast_move_type | String | Pokemon fast move type | Type of fast move (numerically encoded) |
+| 7 | left_pokemon_charge_move_1_type | String | Pokemon charge move type | Type of first charged move (numerically encoded) |
+| 8 | left_pokemon_charge_move_2_type | String | Pokemon charge move type | Type of second charged move (numerically encoded) |
+| 9 | left_pokemon_dex | Integer | 1-1000+ | Pokedex number of first Pokemon |
+| 10 | left_pokemon_attack | Float | 50.0-300.0 | Attack stat of first Pokemon |
+| 11 | left_pokemon_defense | Float | 50.0-300.0 | Defense stat of first Pokemon |
+| 12 | left_pokemon_stamina | Integer | 80-500 | Stamina stat of first Pokemon |
+| 13 | left_pokemon_overall | Float | 0.0-100.0 | Overall performance rating of first Pokemon |
+| 14-26 | right_pokemon_* | Same as left | Same as left | Same attributes for second Pokemon |
+| 27 | winner | Integer | 0 or 1 | Battle outcome (0 = left Pokemon wins, 1 = right Pokemon wins) |
 
+#### Data Quality
+- **Completeness**: 15,132 battles with complete information for both Pokemon
+- **Balance**: Near-equal distribution of win/loss outcomes for predictive modeling
+- **Consistency**: All categorical variables consistently encoded using reference dictionaries
+- **Preprocessing**: All features numerically encoded for direct use in machine learning models
 
-#### If applicable: Entity Relationship Diagram
+### Details Dataset 3: Pokemon Image Dataset <span style="color: red;">Need to change</span>
+- **Description**: Image collection of Pokemon sprites for computer vision model training
+- **Data source**: DuckDuckGo Search API for image retrieval
+- **Data procurement**: 
+  - Automated image search and download using DuckDuckGo API
+  - Image filtering and quality control to ensure Pokemon-only content
+  - Image compression and standardization for model training
+  - Scripts: `download_images_duckduckgo.py`, `compress_images.py`, `delete_similar_images.py`
+- **Legal aspects**: Images sourced from public search results, fair use for research/educational purposes
+- **Data governance**: Public images, no personal data
+- **Variables**: 
+    Image pixel data, Pokemon species labels
 
+#### Data Catalogue
+| Column index | Column name | Datatype | Values (Range, validation rules) | Short description |
+|---|---|---|---|---|
+| 1 | image_path | String | File path to image | Location of Pokemon image file |
+| 2 | pokemon_name | String | Pokemon species name | Ground truth label for image |
+| 3 | image_size | Tuple | (width, height) in pixels | Standardized image dimensions |
+| 4 | file_format | String | .jpg, .png | Image file format |
 
-### Details Processed Dataset 2
-...
+#### Data Quality
+- **Coverage**: 727 Pokemon species with multiple image variants per species
+- **Quality Control**: Manual and automated filtering to remove non-Pokemon images
+- **Standardization**: Images compressed and resized for consistent model input
+- **Duplicates**: Similar images removed using hash comparison algorithms
+
+## Processed Data
+### Overview Processed Datasets <span style="color: red;">Need to change</span>
+| Name | Source | Storage location |
+|----------------|-----------------------------------------|--------------------------------------------------------------------------|
+| Vectorized Pokemon Dataset | Pokemon Stats & Rankings | `data_acquisition/vectorized_data/all_overall_rankings_vectorized.csv` |
+| Battle Outcome Dataset | Battle Simulation Data | `data_acquisition/vectorized_data/battle_data_numeric.csv` |
+| Image Training Dataset | Pokemon Image Dataset | `processed_data/image_dataset/train_test_split/` |
+
+### Details Processed Dataset 1: Vectorized Pokemon Dataset
+- **Description**: Vectorized version of the Pokemon Stats & Rankings dataset for machine learning applications
+- **Processing steps**: 
+  - Removal of duplicate entries
+  - Vectorization of categorical features (Pokemon types, moves)
+  - Feature engineering: type effectiveness calculations, stat ratios, move type diversity
+  - Encoding of categorical variables using numerical mapping dictionaries
+  - Normalization of numerical features
+  - Preparation for model input
+- **Vectorization process**:
+  - Categorical features converted to numerical representations using mapping dictionaries
+  - Types, fast moves, and charged moves encoded using dedicated mapping files:
+    - `data_acquisition/dictionarie/type_to_number.csv`
+    - `data_acquisition/dictionarie/fast_move_to_number.csv`
+    - `data_acquisition/dictionarie/charged_move_to_number.csv`
+  - Vectorization performed in `pokemon_vectorization.ipynb`
+- **Access method**: CSV file accessible via pandas DataFrame loading
+
+#### Data Catalogue
+- Vectorized feature set with all categorical variables converted to numerical representations
+- Standardized numerical ranges for model compatibility
+- Preserves all information from the original dataset in machine learning-ready format
+
+### Details Processed Dataset 2: Battle Outcome Dataset
+- **Description**: The battle_data_numeric.csv dataset is already processed and ready for machine learning
+- **Processing steps**:
+  - Categorical variables (Pokemon types, moves) numerically encoded using reference dictionaries
+  - Feature pairing to represent both Pokemon in each battle scenario
+  - Balancing of win/loss outcomes for unbiased model training
+  - Normalization of numerical features where appropriate
+- **Access method**: Structured CSV with all features in numeric format, directly suitable for ML model training
+
+### Details Processed Dataset 3: Image Training Dataset <span style="color: red;">Need to change</span>
+- **Description**: Preprocessed and augmented image dataset for computer vision model training
+- **Processing steps**:
+  - Image resizing to standard dimensions (224x224 pixels)
+  - Data augmentation (rotation, scaling, color adjustment)
+  - Train/validation/test split with stratified sampling
+  - Conversion to tensor format for deep learning frameworks
+- **Access method**: Directory structure with organized train/val/test folders
