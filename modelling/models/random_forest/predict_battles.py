@@ -53,9 +53,9 @@ def get_pokemon_features(pokemon_name, pokemon_data):
     return features
 
 def predict_battle_outcome(left_pokemon, right_pokemon, model, scaler):
-    """Predict the outcome of a battle between two Pokemon"""
+    """Predict the outcome of a battle between two Pokemon with symmetry handling"""
     # Create a feature vector for the battle
-    battle_features = [
+    battle_features_original = [
         # Left Pokemon features
         left_pokemon['type_1'], 
         left_pokemon['type_2'],
@@ -79,17 +79,56 @@ def predict_battle_outcome(left_pokemon, right_pokemon, model, scaler):
         right_pokemon['overall']
     ]
     
-    # Convert to numpy array and reshape
-    X = np.array(battle_features).reshape(1, -1)
+    # Create reversed order prediction (right vs left)
+    battle_features_reversed = [
+        # Right Pokemon features (now as left)
+        right_pokemon['type_1'], 
+        right_pokemon['type_2'],
+        right_pokemon['fast_move_type'],
+        right_pokemon['charge_move_1_type'],
+        right_pokemon['charge_move_2_type'],
+        right_pokemon['attack'],
+        right_pokemon['defense'],
+        right_pokemon['stamina'],
+        right_pokemon['overall'],
+        
+        # Left Pokemon features (now as right)
+        left_pokemon['type_1'], 
+        left_pokemon['type_2'],
+        left_pokemon['fast_move_type'],
+        left_pokemon['charge_move_1_type'],
+        left_pokemon['charge_move_2_type'],
+        left_pokemon['attack'],
+        left_pokemon['defense'],
+        left_pokemon['stamina'],
+        left_pokemon['overall']
+    ]
+    
+    # Convert to numpy arrays and reshape
+    X_original = np.array(battle_features_original).reshape(1, -1)
+    X_reversed = np.array(battle_features_reversed).reshape(1, -1)
     
     # Scale features
-    X_scaled = scaler.transform(X)
+    X_original_scaled = scaler.transform(X_original)
+    X_reversed_scaled = scaler.transform(X_reversed)
     
-    # Make prediction
-    prediction = model.predict(X_scaled)
-    probability = model.predict_proba(X_scaled)
+    # Make predictions for both orientations
+    prediction_original = model.predict(X_original_scaled)
+    probability_original = model.predict_proba(X_original_scaled)
     
-    return prediction[0], probability[0]
+    prediction_reversed = model.predict(X_reversed_scaled)
+    probability_reversed = model.predict_proba(X_reversed_scaled)
+    
+    # Adjust the reversed prediction (flip the result)
+    adjusted_prediction_reversed = 1 - prediction_reversed[0]
+    adjusted_probability_reversed = probability_reversed[0][::-1]
+    
+    # Average the probabilities from both directions for more robust prediction
+    avg_prediction = 1 if (probability_original[0][1] + adjusted_probability_reversed[1])/2 > 0.5 else 0
+    avg_probability = [(probability_original[0][0] + adjusted_probability_reversed[0])/2, 
+                      (probability_original[0][1] + adjusted_probability_reversed[1])/2]
+    
+    return avg_prediction, np.array(avg_probability)
 
 def main():
     """Main function to demonstrate model prediction"""
@@ -140,7 +179,10 @@ def main():
     
     # Display results
     print("\nBattle Prediction:")
-    print(f"Winner: {'First Pokemon' if prediction == 0 else 'Second Pokemon'}")
+    if prediction == 0:
+        print(f"Winner: {left_pokemon_name}")
+    else:
+        print(f"Winner: {right_pokemon_name}")
     print(f"Confidence: {max(probability) * 100:.2f}%")
 
 if __name__ == "__main__":
