@@ -22,3 +22,5 @@ dependencies:
       - duckduckgo-search
       - pillow
       - requests
+      - tensorflow
+      - PyQt5

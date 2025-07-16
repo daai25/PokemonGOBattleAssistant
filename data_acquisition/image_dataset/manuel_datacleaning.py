@@ -89,7 +89,7 @@ class MainWindow(QMainWindow):
                              len(glob.glob(os.path.join(f.path, "*.jpeg"))) + \
                              len(glob.glob(os.path.join(f.path, "*.png"))) + \
                              len(glob.glob(os.path.join(f.path, "*.gif")))
-                if num_images >= 30:
+                if num_images >= 35:
                     all_subfolders.append(f.path)
 
         if not all_subfolders:
