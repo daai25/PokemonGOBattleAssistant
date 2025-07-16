@@ -81,7 +81,7 @@ class MainWindow(QMainWindow):
         self.done_file = os.path.join(self.folder, "done_folders.json")
         self.done_folders = load_done_folders(self.done_file)
 
-        # 📂 Alle Subfolder mit >= 30 Bildern laden
+        # Alle Subfolder mit >= 30 Bildern laden
         all_subfolders = []
         for f in os.scandir(folder):
             if f.is_dir() and f.path not in self.done_folders:
