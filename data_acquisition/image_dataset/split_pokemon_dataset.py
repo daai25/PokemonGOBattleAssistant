@@ -22,7 +22,7 @@ os.makedirs(test_folder, exist_ok=True)
 for pokemon_name in os.listdir(source_folder):
     pokemon_path = os.path.join(source_folder, pokemon_name)
     if not os.path.isdir(pokemon_path):
-        continue # Skip files, only process folders
+        continue 
 
     # Get list of all image files
     images = [f for f in os.listdir(pokemon_path) if os.path.isfile(os.path.join(pokemon_path, f))]
