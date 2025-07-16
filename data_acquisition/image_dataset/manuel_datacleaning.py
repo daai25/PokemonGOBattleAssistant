@@ -11,20 +11,21 @@ from PIL import Image
 NUMBER_OF_COLUMNS = 8
 CELL_PADDING = 10
 HIGHLIGHT_COLOR = QColor(0, 120, 215)  # Blue for selection border
-DONE_FILE = "done_folders.json"
 
+# Wähle hier, welche Person du bist (1 oder 2)
+PERSON = 1
 
-def load_done_folders():
+def load_done_folders(path):
     """Load finished folders from JSON"""
-    if os.path.exists(DONE_FILE):
-        with open(DONE_FILE, "r") as f:
+    if os.path.exists(path):
+        with open(path, "r") as f:
             return set(json.load(f))
     return set()
 
 
-def save_done_folders(done_folders):
+def save_done_folders(path, done_folders):
     """Save finished folders to JSON"""
-    with open(DONE_FILE, "w") as f:
+    with open(path, "w") as f:
         json.dump(list(done_folders), f)
 
 
@@ -77,11 +78,33 @@ class MainWindow(QMainWindow):
     def __init__(self, folder):
         super().__init__()
         self.folder = folder
-        self.done_folders = load_done_folders()
-        self.subfolders = [f.path for f in os.scandir(folder) if f.is_dir() and f.path not in self.done_folders]
+        self.done_file = os.path.join(self.folder, "done_folders.json")
+        self.done_folders = load_done_folders(self.done_file)
+
+        # 📂 Alle Subfolder mit >= 30 Bildern laden
+        all_subfolders = []
+        for f in os.scandir(folder):
+            if f.is_dir() and f.path not in self.done_folders:
+                num_images = len(glob.glob(os.path.join(f.path, "*.jpg"))) + \
+                             len(glob.glob(os.path.join(f.path, "*.jpeg"))) + \
+                             len(glob.glob(os.path.join(f.path, "*.png"))) + \
+                             len(glob.glob(os.path.join(f.path, "*.gif")))
+                if num_images >= 30:
+                    all_subfolders.append(f.path)
+
+        if not all_subfolders:
+            QMessageBox.information(self, "Fertig!", "Keine Ordner mit ≥30 Bildern gefunden.")
+            sys.exit(0)
+
+        # 👥 Ordner aufteilen für zwei Personen
+        half = len(all_subfolders) // 2
+        if PERSON == 1:
+            self.subfolders = all_subfolders[half:]  # Untere Hälfte
+        else:
+            self.subfolders = all_subfolders[:half]  # Obere Hälfte
 
         if not self.subfolders:
-            QMessageBox.information(self, "Fertig!", "Alle Ordner sind bereits als fertig markiert.")
+            QMessageBox.information(self, "Fertig!", "Keine zugewiesenen Ordner für diese Person.")
             sys.exit(0)
 
         self.current_index = 0
@@ -225,7 +248,7 @@ class MainWindow(QMainWindow):
     def mark_folder_done(self):
         folder = self.subfolders[self.current_index]
         self.done_folders.add(folder)
-        save_done_folders(self.done_folders)
+        save_done_folders(self.done_file, self.done_folders)
         QMessageBox.information(self, "Fertig", f"Ordner '{os.path.basename(folder)}' wurde als fertig markiert.")
         self.subfolders.pop(self.current_index)
         if not self.subfolders:
