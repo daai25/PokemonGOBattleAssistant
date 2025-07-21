@@ -61,19 +61,32 @@ gantt
     title Project Plan
     dateFormat  YYYY-MM-DD
     tickInterval 3day
+
     section Beginning
     understanding problem :a1, 2025-06-30, 2d
+
     section Data Collection
     scrapping pokemon Stats :a2, 2025-07-01, 3d
     creating pokemon battle simulator :a3, 2025-07-01, 5d
     scrapping pokemon images :a6, 2025-07-02, 3d
     recording pokemon battle onto csv :a4, 2025-07-06, 3d
-    data collection finished :milestone, 2025-07-09
+    data collection (version one) finished :milestone, 2025-07-09
+    data collection (version two) started :a7, 2025-07-09
+    data collection (version two) finished :milestone, 2025-07-10
+    data collection (version three) created :a8, 2025-07-16
+    data collection (version three) finished :milestone, 2025-07-19
 
     section Data cleaning
     cleaning pokemon images :a5, 2025-07-07, 3d
 
+    section Model Training
+    logistic regression model created :a9, 2025-07-10
+    random forest model created :a10, 2025-07-09
+    gradient bosting model created :a11, 2025-07-????
+
+
 ```
+
 
 ## Roles and Contact Details
 ### Caleb Boerma
