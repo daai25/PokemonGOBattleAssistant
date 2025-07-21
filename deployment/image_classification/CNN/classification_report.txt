@@ -1,0 +1,733 @@
+                         precision    recall  f1-score   support
+
+              Abomasnow       0.67      0.75      0.71         8
+                  Absol       0.43      0.50      0.46         6
+               Accelgor       0.56      0.71      0.62         7
+             Aerodactyl       0.20      0.17      0.18         6
+                 Aggron       0.60      0.50      0.55         6
+                  Aipom       0.67      0.57      0.62         7
+               Alakazam       0.60      0.43      0.50         7
+              Alomomola       0.60      0.43      0.50         7
+                Altaria       0.33      0.43      0.38         7
+                 Amaura       1.00      0.33      0.50         6
+                Ambipom       0.67      0.57      0.62         7
+              Amoonguss       1.00      0.67      0.80         6
+               Ampharos       0.75      0.50      0.60         6
+             Annihilape       0.50      0.67      0.57         6
+                Anorith       1.00      0.50      0.67         6
+               Appletun       1.00      0.80      0.89         5
+              Araquanid       0.50      0.43      0.46         7
+                  Arbok       0.60      0.43      0.50         7
+               Arboliva       0.83      1.00      0.91         5
+               Arcanine       0.45      0.71      0.56         7
+     Arcanine (Hisuian)       0.50      0.67      0.57         6
+                 Archen       0.50      0.33      0.40         6
+               Archeops       0.80      0.67      0.73         6
+               Arctibax       1.00      0.33      0.50         3
+                Ariados       1.00      0.83      0.91         6
+                Armaldo       0.86      0.86      0.86         7
+              Armarouge       0.40      0.40      0.40         5
+             Aromatisse       0.60      1.00      0.75         6
+                   Aron       0.00      0.00      0.00         3
+               Articuno       0.17      0.12      0.14         8
+    Articuno (Galarian)       0.50      0.50      0.50         4
+                 Audino       0.57      0.67      0.62         6
+                Aurorus       0.44      0.57      0.50         7
+                Avalugg       0.00      0.00      0.00         6
+      Avalugg (Hisuian)       0.67      1.00      0.80         4
+                   Axew       1.00      0.67      0.80         6
+                  Azelf       1.00      0.67      0.80         6
+              Azumarill       0.75      0.86      0.80         7
+                Banette       1.00      0.50      0.67         4
+             Barbaracle       1.00      0.67      0.80         6
+               Basculin       0.75      0.60      0.67         5
+              Bastiodon       0.58      0.88      0.70         8
+             Baxcalibur       0.75      0.60      0.67         5
+                Bayleef       0.45      0.62      0.53         8
+                Beartic       0.83      0.71      0.77         7
+              Beautifly       0.75      1.00      0.86         6
+               Beedrill       0.67      0.50      0.57         8
+               Beheeyem       0.75      0.50      0.60         6
+              Bellibolt       1.00      0.67      0.80         6
+              Bellossom       1.00      0.86      0.92         7
+               Bergmite       0.75      0.86      0.80         7
+                 Bewear       0.75      0.86      0.80         7
+                Bibarel       0.67      0.57      0.62         7
+                Bisharp       0.75      0.60      0.67         5
+              Blastoise       0.40      0.57      0.47         7
+               Blaziken       0.50      0.40      0.44         5
+                Blissey       0.33      1.00      0.50         6
+                Boldore       0.75      0.43      0.55         7
+                Boltund       0.20      0.17      0.18         6
+             Bombirdier       0.62      0.83      0.71         6
+                 Bonsly       1.00      0.83      0.91         6
+             Bouffalant       0.80      0.67      0.73         6
+                Braixen       0.80      0.67      0.73         6
+               Braviary       0.75      0.43      0.55         7
+     Braviary (Hisuian)       0.62      0.71      0.67         7
+                Breloom       1.00      0.86      0.92         7
+                Brionne       0.44      0.57      0.50         7
+               Bronzong       0.30      0.43      0.35         7
+                Bruxish       0.86      1.00      0.92         6
+              Bulbasaur       0.71      0.71      0.71         7
+                Buneary       0.67      0.33      0.44         6
+             Butterfree       0.56      0.62      0.59         8
+               Buzzwole       0.36      0.71      0.48         7
+               Cacturne       0.27      0.50      0.35         6
+               Camerupt       0.31      0.57      0.40         7
+                Carbink       0.75      0.38      0.50         8
+              Carnivine       1.00      1.00      1.00         6
+             Carracosta       0.56      0.83      0.67         6
+               Castform       0.17      0.25      0.20         4
+       Castform (Rainy)       1.00      0.71      0.83         7
+       Castform (Snowy)       0.45      0.71      0.56         7
+       Castform (Sunny)       0.75      0.86      0.80         7
+                 Celebi       0.43      0.43      0.43         7
+             Celesteela       0.71      0.71      0.71         7
+            Centiskorch       0.50      0.60      0.55         5
+              Ceruledge       0.50      0.67      0.57         6
+                Cetitan       0.00      0.00      0.00         6
+               Cetoddle       0.33      0.20      0.25         5
+             Chandelure       0.80      0.57      0.67         7
+                Chansey       0.50      0.44      0.47         9
+              Charizard       1.00      0.67      0.80         6
+              Charjabug       1.00      0.57      0.73         7
+             Charmeleon       0.57      0.50      0.53         8
+                 Chatot       1.00      0.71      0.83         7
+     Cherrim (Overcast)       1.00      0.83      0.91         6
+     Cherrim (Sunshine)       0.67      0.57      0.62         7
+             Chesnaught       0.50      0.57      0.53         7
+                Chespin       0.57      0.57      0.57         7
+               Chimecho       1.00      0.71      0.83         7
+               Chinchou       0.62      0.71      0.67         7
+               Cinccino       0.55      0.75      0.63         8
+              Cinderace       0.50      0.17      0.25         6
+               Clamperl       0.71      0.83      0.77         6
+              Clauncher       0.67      0.33      0.44         6
+              Clawitzer       0.71      0.83      0.77         6
+                Claydol       0.88      0.88      0.88         8
+               Clefable       0.46      0.75      0.57         8
+               Clefairy       0.67      0.29      0.40         7
+               Clodsire       1.00      0.40      0.57         5
+               Cloyster       0.43      0.75      0.55         8
+             Cofagrigus       0.75      0.60      0.67         5
+              Combusken       0.83      1.00      0.91         5
+                 Comfey       0.67      0.57      0.62         7
+             Conkeldurr       1.00      0.83      0.91         6
+               Corphish       0.80      0.57      0.67         7
+                Corsola       0.86      0.86      0.86         7
+     Corsola (Galarian)       0.50      0.40      0.44         5
+            Corviknight       0.60      0.75      0.67         4
+            Corvisquire       1.00      0.17      0.29         6
+           Crabominable       0.83      0.71      0.77         7
+             Crabrawler       0.75      0.50      0.60         6
+                Cradily       0.75      1.00      0.86         6
+              Crawdaunt       0.62      0.71      0.67         7
+              Cresselia       0.38      0.75      0.50         8
+                 Crobat       0.67      0.29      0.40         7
+               Crocalor       0.83      1.00      0.91         5
+               Croconaw       0.83      0.71      0.77         7
+                Crustle       0.60      1.00      0.75         6
+              Cryogonal       0.50      0.67      0.57         6
+                 Cubone       0.33      0.12      0.18         8
+                Cursola       0.33      0.20      0.25         5
+               Dachsbun       0.40      0.40      0.40         5
+  Darmanitan (Galarian)       0.67      0.67      0.67         3
+  Darmanitan (Standard)       0.67      0.67      0.67         3
+                Dartrix       0.80      0.67      0.73         6
+               Darumaka       0.80      0.80      0.80         5
+    Darumaka (Galarian)       0.00      0.00      0.00         3
+              Decidueye       1.00      0.60      0.75         5
+    Decidueye (Hisuian)       0.50      0.50      0.50         4
+                Dedenne       0.80      0.67      0.73         6
+               Deerling       1.00      0.25      0.40         4
+               Delcatty       0.33      0.57      0.42         7
+                Delphox       0.50      0.67      0.57         6
+       Deoxys (Defense)       0.40      0.33      0.36         6
+         Deoxys (Speed)       1.00      0.33      0.50         6
+                Dewgong       0.00      0.00      0.00         7
+                 Dewott       1.00      0.50      0.67         6
+               Dhelmise       0.62      1.00      0.77         5
+                Diancie       1.00      0.67      0.80         3
+              Diggersby       0.50      0.33      0.40         6
+                 Dodrio       1.00      0.43      0.60         7
+                 Dolliv       0.33      0.50      0.40         4
+                Donphan       1.00      0.33      0.50         6
+               Dragalge       1.00      0.67      0.80         6
+              Dragapult       0.75      0.50      0.60         6
+              Dragonair       0.29      0.29      0.29         7
+              Dragonite       0.75      0.86      0.80         7
+               Drakloak       1.00      0.80      0.89         5
+                 Drampa       0.00      0.00      0.00         6
+                Drapion       0.23      0.43      0.30         7
+               Drifblim       0.71      0.71      0.71         7
+               Drifloon       0.86      0.86      0.86         7
+                Drilbur       0.83      0.71      0.77         7
+               Drizzile       0.60      0.60      0.60         5
+                Drowzee       0.57      1.00      0.73         8
+              Druddigon       0.71      0.71      0.71         7
+                Dubwool       0.57      0.80      0.67         5
+                Dugtrio       0.62      0.71      0.67         7
+       Dugtrio (Alolan)       0.62      0.83      0.71         6
+              Dunsparce       0.71      0.71      0.71         7
+                Duosion       0.67      0.67      0.67         6
+                 Durant       0.00      0.00      0.00         3
+               Dusclops       0.67      0.67      0.67         6
+               Dusknoir       0.60      0.86      0.71         7
+                 Dustox       0.67      1.00      0.80         8
+                Dwebble       0.75      0.50      0.60         6
+              Eelektrik       0.50      0.67      0.57         6
+             Eelektross       0.71      0.62      0.67         8
+                  Eevee       0.50      0.43      0.46         7
+               Eldegoss       0.80      0.67      0.73         6
+             Electabuzz       0.50      0.25      0.33         8
+             Electivire       0.55      0.75      0.63         8
+              Electrode       0.25      0.33      0.29         3
+    Electrode (Hisuian)       1.00      1.00      1.00         4
+                 Elekid       0.33      0.25      0.29         8
+                 Elgyem       1.00      0.86      0.92         7
+                 Emboar       0.67      1.00      0.80         6
+                 Emolga       1.00      0.75      0.86         8
+               Empoleon       0.86      0.86      0.86         7
+                  Entei       0.60      0.43      0.50         7
+             Escavalier       1.00      0.71      0.83         7
+                 Espeon       0.75      0.38      0.50         8
+                 Espurr       0.50      0.50      0.50         6
+              Excadrill       0.60      0.43      0.50         7
+              Exeggcute       0.47      0.88      0.61         8
+              Exeggutor       0.50      0.29      0.36         7
+     Exeggutor (Alolan)       1.00      0.17      0.29         6
+                Exploud       0.75      0.86      0.80         7
+                Falinks       0.33      0.40      0.36         5
+             Farfetch'd       0.44      0.57      0.50         7
+  Farfetch'd (Galarian)       1.00      0.50      0.67         6
+                 Fearow       0.58      0.88      0.70         8
+             Feraligatr       0.62      0.71      0.67         7
+              Ferroseed       0.44      0.80      0.57         5
+             Ferrothorn       0.33      0.17      0.22         6
+                Flaaffy       0.50      0.62      0.56         8
+                Flabebe       0.80      0.67      0.73         6
+                Flapple       0.17      0.25      0.20         4
+                Flareon       0.54      0.78      0.64         9
+            Fletchinder       0.80      0.57      0.67         7
+               Floatzel       0.67      0.57      0.62         7
+                Floette       0.33      0.40      0.36         5
+              Floragato       0.67      0.40      0.50         5
+                Florges       0.60      0.50      0.55         6
+                 Flygon       0.78      0.88      0.82         8
+             Forretress       0.47      1.00      0.64         7
+                Fraxure       0.67      0.57      0.62         7
+               Frigibax       0.67      0.67      0.67         3
+               Frillish       0.00      0.00      0.00         4
+              Frogadier       1.00      0.33      0.50         6
+               Froslass       0.50      0.62      0.56         8
+                Fuecoco       0.67      1.00      0.80         6
+                Furfrou       0.50      0.25      0.33         4
+                 Furret       0.50      0.71      0.59         7
+                 Gabite       0.86      0.86      0.86         7
+                Gallade       0.75      0.50      0.60         6
+             Galvantula       0.67      0.75      0.71         8
+               Garbodor       0.83      0.71      0.77         7
+               Garchomp       0.71      0.71      0.71         7
+              Gardevoir       0.43      0.43      0.43         7
+              Gastrodon       0.83      0.83      0.83         6
+               Genesect       1.00      0.50      0.67         6
+                 Gengar       0.67      0.57      0.62         7
+                Geodude       0.33      0.25      0.29         8
+       Geodude (Alolan)       0.00      0.00      0.00         5
+              Gholdengo       0.25      0.57      0.35         7
+               Gigalith       0.62      0.83      0.71         6
+              Girafarig       0.50      0.33      0.40         6
+      Giratina (Origin)       1.00      0.60      0.75         5
+                Glaceon       0.80      0.50      0.62         8
+                 Glalie       0.71      0.83      0.77         6
+                 Gligar       0.29      0.33      0.31         6
+                Gliscor       1.00      0.67      0.80         6
+                  Gloom       1.00      0.50      0.67         4
+                 Gogoat       0.67      0.67      0.67         6
+                 Golbat       0.60      0.75      0.67         8
+                Goldeen       0.80      0.50      0.62         8
+                Golduck       0.62      0.62      0.62         8
+                  Golem       1.00      0.33      0.50         3
+         Golem (Alolan)       0.83      0.83      0.83         6
+                 Golett       1.00      0.60      0.75         5
+              Golisopod       0.33      0.50      0.40         6
+                 Golurk       0.83      0.83      0.83         6
+                 Goodra       1.00      0.20      0.33         5
+               Gorebyss       0.45      0.71      0.56         7
+             Gothitelle       0.40      0.40      0.40         5
+              Gothorita       0.60      0.50      0.55         6
+    Gourgeist (Average)       0.12      0.17      0.14         6
+      Gourgeist (Large)       0.14      0.20      0.17         5
+      Gourgeist (Small)       0.00      0.00      0.00         6
+      Gourgeist (Super)       0.00      0.00      0.00         5
+               Grafaiai       1.00      0.60      0.75         5
+               Granbull       0.67      0.29      0.40         7
+               Graveler       0.75      0.33      0.46         9
+      Graveler (Alolan)       0.75      0.60      0.67         5
+               Greedent       0.25      0.40      0.31         5
+               Greninja       0.25      0.20      0.22         5
+                 Grimer       0.40      0.40      0.40         5
+        Grimer (Alolan)       0.67      0.67      0.67         6
+                 Grotle       1.00      0.71      0.83         7
+                Grovyle       0.50      1.00      0.67         7
+              Growlithe       0.57      0.57      0.57         7
+    Growlithe (Hisuian)       0.50      0.20      0.29         5
+                Grumpig       0.78      1.00      0.88         7
+               Gumshoos       0.75      0.50      0.60         6
+                Gurdurr       0.80      0.67      0.73         6
+               Guzzlord       0.75      1.00      0.86         6
+               Gyarados       0.14      0.33      0.20         6
+               Hakamo-o       1.00      0.67      0.80         6
+               Hariyama       1.00      0.86      0.92         7
+              Hatterene       0.75      0.75      0.75         4
+                Hattrem       0.67      0.33      0.44         6
+                Haunter       0.43      0.75      0.55         4
+               Hawlucha       0.83      0.71      0.77         7
+                Haxorus       0.71      0.83      0.77         6
+                Heatmor       0.57      0.67      0.62         6
+                Heatran       0.57      0.57      0.57         7
+              Heliolisk       0.75      1.00      0.86         6
+              Heracross       0.71      0.71      0.71         7
+                Herdier       0.75      0.86      0.80         7
+             Hippopotas       0.83      0.71      0.77         7
+              Hippowdon       0.88      1.00      0.93         7
+             Hitmonchan       0.71      0.71      0.71         7
+              Hitmonlee       0.57      0.57      0.57         7
+              Hitmontop       0.44      0.57      0.50         7
+                  Ho-Oh       1.00      0.50      0.67         6
+              Honchkrow       0.78      1.00      0.88         7
+                  Hoopa       1.00      0.75      0.86         4
+               Houndoom       1.00      0.17      0.29         6
+               Houndour       0.75      0.43      0.55         7
+             Houndstone       0.67      0.40      0.50         5
+                Huntail       0.80      0.57      0.67         7
+              Hydreigon       0.50      0.50      0.50         4
+                  Hypno       0.50      0.50      0.50         4
+               Illumise       0.33      0.83      0.48         6
+             Incineroar       1.00      0.50      0.67         6
+              Infernape       0.83      0.83      0.83         6
+               Inteleon       0.83      0.83      0.83         6
+                Ivysaur       0.50      0.57      0.53         7
+              Jellicent       0.50      0.40      0.44         5
+                Jirachi       0.80      0.50      0.62         8
+                Jolteon       0.50      0.75      0.60         8
+               Jumpluff       0.86      0.86      0.86         7
+                   Jynx       1.00      0.71      0.83         7
+                 Kabuto       1.00      0.50      0.67         4
+               Kabutops       0.60      0.43      0.50         7
+                Kadabra       0.67      0.33      0.44         6
+             Kangaskhan       0.37      1.00      0.54         7
+             Karrablast       0.50      0.40      0.44         5
+                Kartana       1.00      0.83      0.91         6
+                Kecleon       0.83      0.83      0.83         6
+              Kingambit       1.00      0.20      0.33         5
+                Kingdra       0.33      0.43      0.38         7
+                Kingler       1.00      0.71      0.83         7
+                  Klang       0.00      0.00      0.00         3
+                Kleavor       0.40      0.33      0.36         6
+                 Klefki       1.00      0.29      0.44         7
+              Klinklang       0.25      0.33      0.29         6
+                Koffing       0.57      0.50      0.53         8
+                 Komala       1.00      0.57      0.73         7
+                Kommo-o       0.67      0.86      0.75         7
+                 Krabby       0.67      0.50      0.57         4
+             Kricketune       0.71      0.83      0.77         6
+               Krokorok       0.50      0.86      0.63         7
+             Krookodile       0.60      1.00      0.75         6
+                  Kubfu       0.75      0.60      0.67         5
+                 Lairon       0.08      0.29      0.12         7
+                Lampent       0.75      0.43      0.55         7
+   Landorus (Incarnate)       1.00      0.60      0.75         5
+                Lanturn       1.00      0.14      0.25         7
+                 Lapras       0.60      0.75      0.67         8
+               Larvesta       1.00      0.33      0.50         6
+                 Latias       0.22      0.40      0.29         5
+                 Latios       0.50      0.25      0.33         4
+                Leafeon       0.78      0.78      0.78         9
+               Leavanny       1.00      0.33      0.50         6
+                 Ledian       0.50      0.57      0.53         7
+             Lickilicky       0.44      0.88      0.58         8
+              Lickitung       0.67      0.57      0.62         7
+                Liepard       1.00      0.57      0.73         7
+                 Lileep       0.75      0.50      0.60         6
+              Lilligant       1.00      0.80      0.89         5
+                Linoone       0.67      0.67      0.67         6
+     Linoone (Galarian)       0.33      0.20      0.25         5
+                 Litleo       0.75      0.50      0.60         6
+                  Lokix       0.00      0.00      0.00         5
+                 Lombre       0.60      0.50      0.55         6
+                Lopunny       1.00      0.40      0.57         5
+                Loudred       0.50      0.43      0.46         7
+                Lucario       1.00      0.50      0.67         6
+               Ludicolo       0.86      0.86      0.86         7
+                  Lugia       0.43      0.50      0.46         6
+               Lumineon       0.67      0.67      0.67         6
+               Lunatone       1.00      1.00      1.00         5
+               Lurantis       0.46      1.00      0.63         6
+                  Luxio       0.43      0.50      0.46         6
+                 Luxray       0.67      0.67      0.67         6
+        Lycanroc (Dusk)       0.22      0.33      0.27         6
+      Lycanroc (Midday)       0.00      0.00      0.00         5
+    Lycanroc (Midnight)       0.83      0.83      0.83         6
+                Machamp       0.33      0.88      0.48         8
+                Machoke       0.67      0.25      0.36         8
+                 Machop       0.50      0.25      0.33         8
+                  Magby       0.60      0.50      0.55         6
+               Magcargo       0.43      0.50      0.46         6
+                 Magmar       0.50      0.50      0.50         8
+              Magmortar       0.80      0.57      0.67         7
+              Magnemite       1.00      0.43      0.60         7
+               Magneton       0.67      0.44      0.53         9
+              Magnezone       0.83      0.71      0.77         7
+                Malamar       0.50      0.43      0.46         7
+              Mamoswine       0.56      0.71      0.62         7
+              Mandibuzz       0.62      0.71      0.67         7
+              Manectric       0.50      0.50      0.50         8
+                 Mankey       0.50      0.71      0.59         7
+                Mantine       0.80      0.57      0.67         7
+                Mantyke       0.43      0.43      0.43         7
+               Maractus       1.00      0.80      0.89         5
+                Marowak       0.20      0.14      0.17         7
+       Marowak (Alolan)       0.33      0.33      0.33         6
+              Marshtomp       0.10      0.43      0.17         7
+             Masquerain       0.86      0.75      0.80         8
+               Maushold       0.00      0.00      0.00         5
+                 Mawile       0.60      0.50      0.55         6
+               Medicham       1.00      0.60      0.75         5
+               Meganium       0.67      0.67      0.67         6
+               Melmetal       0.75      0.60      0.67         5
+                 Meltan       0.75      0.60      0.67         5
+            Meowscarada       0.80      0.80      0.80         5
+      Meowstic (Female)       0.75      0.60      0.67         5
+        Meowstic (Male)       0.67      1.00      0.80         6
+                Mesprit       0.50      0.80      0.62         5
+              Metagross       0.80      0.67      0.73         6
+                 Metang       0.75      0.50      0.60         6
+                    Mew       0.00      0.00      0.00         6
+                Mienfoo       0.60      0.50      0.55         6
+               Mienshao       1.00      0.67      0.80         6
+              Mightyena       0.20      0.20      0.20         5
+                Milotic       0.67      0.86      0.75         7
+                Miltank       1.00      0.86      0.92         7
+                  Minun       0.50      0.80      0.62         5
+             Misdreavus       0.80      0.89      0.84         9
+              Mismagius       0.67      0.86      0.75         7
+                Moltres       0.33      0.38      0.35         8
+     Moltres (Galarian)       0.40      0.57      0.47         7
+               Monferno       1.00      0.83      0.91         6
+   Morpeko (Full Belly)       0.71      0.83      0.77         6
+                 Mothim       1.00      0.67      0.80         6
+               Mr. Mime       1.00      0.71      0.83         7
+    Mr. Mime (Galarian)       0.60      0.50      0.55         6
+               Mr. Rime       1.00      0.80      0.89         5
+                    Muk       0.17      0.17      0.17         6
+           Muk (Alolan)       1.00      0.83      0.91         6
+               Munchlax       0.83      0.83      0.83         6
+                  Munna       0.50      0.25      0.33         4
+                Murkrow       0.71      0.83      0.77         6
+               Musharna       1.00      0.50      0.67         6
+              Naganadel       0.50      0.67      0.57         6
+               Nidoking       0.75      0.50      0.60         6
+              Nidoqueen       0.25      0.17      0.20         6
+               Nidorina       0.50      0.33      0.40         6
+               Nidorino       0.50      0.33      0.40         6
+              Ninetales       0.33      0.86      0.48         7
+     Ninetales (Alolan)       0.25      0.75      0.38         4
+                Ninjask       0.75      0.50      0.60         6
+                Noctowl       0.40      0.57      0.47         7
+                Noivern       0.67      0.33      0.44         6
+               Nosepass       1.00      1.00      1.00         6
+                Nuzleaf       0.75      0.50      0.60         6
+              Obstagoon       0.75      0.60      0.67         5
+              Octillery       0.88      1.00      0.93         7
+                 Oddish       0.57      0.57      0.57         7
+             Oinkologne       0.67      0.80      0.73         5
+    Oinkologne (Female)       1.00      0.50      0.67         2
+                Omanyte       0.75      0.50      0.60         6
+                Omastar       0.20      0.33      0.25         6
+                   Onix       1.00      0.33      0.50         3
+               Oranguru       1.00      0.67      0.80         6
+       Oricorio (Baile)       0.80      0.80      0.80         5
+        Oricorio (Pa'u)       0.60      0.50      0.55         6
+     Oricorio (Pom-Pom)       0.83      1.00      0.91         5
+       Oricorio (Sensu)       0.86      1.00      0.92         6
+               Overqwil       1.00      1.00      1.00         5
+              Pachirisu       1.00      0.67      0.80         6
+              Palossand       0.60      0.60      0.60         5
+              Palpitoad       1.00      0.83      0.91         6
+                Pancham       0.55      0.86      0.67         7
+                Pangoro       0.67      0.67      0.67         6
+               Parasect       0.75      0.86      0.80         7
+              Passimian       1.00      0.50      0.67         6
+                  Pawmo       0.75      0.50      0.60         6
+                 Pawmot       0.50      0.40      0.44         5
+               Pawniard       0.67      0.33      0.44         6
+               Pelipper       0.67      0.75      0.71         8
+             Perrserker       0.57      0.67      0.62         6
+                Persian       0.33      0.67      0.44         3
+       Persian (Alolan)       0.00      0.00      0.00         7
+                 Phanpy       1.00      1.00      1.00         7
+                Pidgeot       0.40      0.67      0.50         6
+              Pidgeotto       0.50      0.17      0.25         6
+                Pignite       0.71      0.83      0.77         6
+              Piloswine       0.00      0.00      0.00         6
+                 Pineco       0.67      0.25      0.36         8
+                 Pinsir       0.67      0.67      0.67         6
+                 Piplup       0.86      0.86      0.86         7
+                 Plusle       0.33      0.67      0.44         6
+                Poipole       0.67      0.40      0.50         5
+               Politoed       0.75      0.43      0.55         7
+              Poliwhirl       0.07      0.14      0.10         7
+              Poliwrath       0.10      0.29      0.14         7
+            Polteageist       0.71      1.00      0.83         5
+                 Ponyta       0.60      0.50      0.55         6
+      Ponyta (Galarian)       0.67      1.00      0.80         6
+                Popplio       0.67      0.57      0.62         7
+                Porygon       1.00      0.50      0.67         6
+              Porygon-Z       0.71      0.71      0.71         7
+               Porygon2       0.55      0.86      0.67         7
+              Primarina       0.67      0.57      0.62         7
+               Primeape       0.38      0.43      0.40         7
+               Prinplup       1.00      0.83      0.91         6
+              Probopass       0.62      1.00      0.76         8
+    Pumpkaboo (Average)       0.50      0.40      0.44         5
+      Pumpkaboo (Large)       0.25      0.29      0.27         7
+      Pumpkaboo (Small)       0.00      0.00      0.00         7
+      Pumpkaboo (Super)       0.50      0.43      0.46         7
+                Pupitar       0.40      0.29      0.33         7
+                Purugly       0.88      1.00      0.93         7
+                 Pyroar       0.60      0.75      0.67         4
+               Quagsire       1.00      0.57      0.73         7
+              Quaquaval       0.33      0.60      0.43         5
+               Quaxwell       0.67      0.80      0.73         5
+                Quilava       0.40      0.57      0.47         7
+              Quilladin       1.00      0.80      0.89         5
+               Qwilfish       1.00      0.40      0.57         5
+     Qwilfish (Hisuian)       0.57      0.80      0.67         5
+                 Raboot       0.57      0.67      0.62         6
+                 Raichu       0.70      0.88      0.78         8
+        Raichu (Alolan)       0.75      0.50      0.60         6
+                 Raikou       0.57      0.80      0.67         5
+              Rampardos       0.50      0.17      0.25         6
+               Rapidash       0.38      0.43      0.40         7
+    Rapidash (Galarian)       0.50      0.25      0.33         4
+               Raticate       0.57      0.57      0.57         7
+      Raticate (Alolan)       1.00      1.00      1.00         6
+               Rayquaza       0.50      0.33      0.40         6
+                 Regice       0.25      0.33      0.29         6
+              Regidrago       1.00      0.80      0.89         5
+              Regieleki       0.33      0.20      0.25         5
+               Regirock       0.60      0.50      0.55         6
+              Registeel       0.71      0.71      0.71         7
+              Relicanth       0.80      0.57      0.67         7
+              Reuniclus       0.60      0.50      0.55         6
+              Revavroom       0.33      0.25      0.29         4
+                 Rhydon       0.80      0.57      0.67         7
+                Rhyhorn       0.75      0.43      0.55         7
+              Rhyperior       0.54      1.00      0.70         7
+               Ribombee       0.44      0.57      0.50         7
+              Rillaboom       0.71      0.83      0.77         6
+             Roggenrola       1.00      0.67      0.80         6
+                Roselia       0.67      0.80      0.73         5
+               Roserade       0.67      0.67      0.67         6
+                  Rotom       1.00      0.25      0.40         4
+          Rotom (Frost)       0.86      0.86      0.86         7
+           Rotom (Heat)       0.67      0.67      0.67         6
+            Rotom (Mow)       0.78      1.00      0.88         7
+           Rotom (Wash)       0.50      0.57      0.53         7
+                 Rowlet       0.62      0.71      0.67         7
+                Rufflet       0.67      0.29      0.40         7
+              Runerigus       0.40      0.50      0.44         4
+                Sableye       0.33      0.29      0.31         7
+              Salamence       0.75      0.50      0.60         6
+               Salazzle       0.42      0.83      0.56         6
+               Samurott       0.50      0.60      0.55         5
+     Samurott (Hisuian)       1.00      0.60      0.75         5
+              Sandshrew       0.38      0.38      0.38         8
+     Sandshrew (Alolan)       1.00      0.80      0.89         5
+              Sandslash       0.67      0.57      0.62         7
+     Sandslash (Alolan)       0.57      0.67      0.62         6
+              Sandygast       0.29      0.71      0.42         7
+                   Sawk       0.83      0.71      0.77         7
+               Sawsbuck       1.00      0.50      0.67         4
+               Sceptile       0.62      0.83      0.71         6
+                 Scizor       0.44      0.88      0.58         8
+              Scolipede       0.46      0.86      0.60         7
+                Scrafty       0.83      0.71      0.77         7
+                Scraggy       0.71      0.83      0.77         6
+                Scyther       0.60      0.38      0.46         8
+                 Seadra       0.33      0.43      0.38         7
+                Seaking       0.50      0.50      0.50         4
+                 Sealeo       1.00      0.71      0.83         7
+                   Seel       0.67      0.67      0.67         6
+             Seismitoad       0.62      0.83      0.71         6
+              Serperior       1.00      0.80      0.89         5
+                Servine       0.60      1.00      0.75         6
+                Seviper       0.86      0.86      0.86         7
+               Sharpedo       1.00      0.50      0.67         6
+         Shaymin (Land)       1.00      0.57      0.73         7
+          Shaymin (Sky)       0.71      0.71      0.71         7
+                Shelgon       0.50      0.29      0.36         7
+                Shellos       0.75      0.50      0.60         6
+                Shiftry       0.57      0.50      0.53         8
+              Shiinotic       1.00      0.50      0.67         6
+               Sigilyph       1.00      0.86      0.92         7
+               Simipour       0.86      0.86      0.86         7
+               Simisage       0.60      1.00      0.75         6
+               Simisear       0.40      0.33      0.36         6
+             Sirfetch'd       0.57      0.80      0.67         5
+               Skarmory       0.88      0.88      0.88         8
+             Skeledirge       0.56      0.83      0.67         6
+                 Skiddo       0.83      0.83      0.83         6
+                Skorupi       0.67      0.29      0.40         7
+                 Skrelp       1.00      0.80      0.89         5
+               Skuntank       0.62      0.71      0.67         7
+                Slaking       0.43      0.50      0.46         6
+                Sliggoo       0.75      0.50      0.60         6
+                Slowbro       0.31      0.57      0.40         7
+     Slowbro (Galarian)       1.00      0.75      0.86         4
+               Slowking       0.62      0.83      0.71         6
+    Slowking (Galarian)       0.50      0.57      0.53         7
+               Slowpoke       0.33      0.33      0.33         6
+    Slowpoke (Galarian)       0.44      0.57      0.50         7
+               Slurpuff       0.56      0.71      0.62         7
+               Smoochum       0.67      1.00      0.80         8
+                Sneasel       1.00      0.71      0.83         7
+      Sneasel (Hisuian)       0.33      0.29      0.31         7
+               Sneasler       0.50      0.67      0.57         6
+                Snorlax       0.89      0.89      0.89         9
+                 Snover       0.80      0.67      0.73         6
+               Snubbull       0.67      0.75      0.71         8
+                Solosis       1.00      0.17      0.29         6
+                Solrock       0.43      0.43      0.43         7
+                 Spinda       0.55      0.86      0.67         7
+              Spiritomb       1.00      0.83      0.91         6
+                 Spoink       0.86      0.86      0.86         7
+               Spritzee       1.00      0.33      0.50         6
+              Stakataka       1.00      0.67      0.80         6
+               Stantler       0.11      0.17      0.13         6
+              Staraptor       0.50      0.43      0.46         7
+               Staravia       0.80      0.67      0.73         6
+                Starmie       0.86      0.86      0.86         7
+                Steelix       0.20      0.14      0.17         7
+            Stonjourner       0.57      0.80      0.67         5
+              Stoutland       0.67      0.57      0.62         7
+                Stufful       1.00      1.00      1.00         6
+               Stunfisk       0.60      0.50      0.55         6
+    Stunfisk (Galarian)       1.00      0.60      0.75         5
+                 Stunky       1.00      0.57      0.73         7
+              Sudowoodo       0.57      0.50      0.53         8
+                Suicune       1.00      0.83      0.91         6
+               Sunflora       0.56      0.83      0.67         6
+               Swadloon       0.33      0.67      0.44         6
+                 Swalot       0.86      1.00      0.92         6
+               Swampert       1.00      0.60      0.75         5
+                 Swanna       0.36      0.83      0.50         6
+                Swellow       0.75      0.50      0.60         6
+                Swirlix       1.00      0.17      0.29         6
+                Swoobat       0.43      0.43      0.43         7
+                Sylveon       0.36      0.62      0.45         8
+             Talonflame       0.80      0.50      0.62         8
+                Tangela       0.50      0.67      0.57         6
+              Tangrowth       0.38      0.43      0.40         7
+              Tapu Fini       0.78      1.00      0.88         7
+                 Tauros       0.44      0.50      0.47         8
+          Tauros (Aqua)       0.00      0.00      0.00         7
+         Tauros (Blaze)       0.17      0.14      0.15         7
+        Tauros (Combat)       0.00      0.00      0.00         6
+              Teddiursa       0.57      0.80      0.67         5
+              Tentacool       1.00      0.71      0.83         7
+             Tentacruel       0.56      0.62      0.59         8
+                Thievul       1.00      0.43      0.60         7
+                  Throh       1.00      0.86      0.92         7
+  Thundurus (Incarnate)       0.83      1.00      0.91         5
+               Thwackey       1.00      0.71      0.83         7
+                Timburr       1.00      0.83      0.91         6
+               Tinkaton       0.33      0.14      0.20         7
+              Tinkatuff       0.17      0.20      0.18         5
+               Tirtouga       0.43      0.50      0.46         6
+             Togedemaru       0.60      0.86      0.71         7
+               Togekiss       1.00      0.38      0.55         8
+                Togetic       0.57      0.67      0.62         6
+                Torkoal       0.80      0.57      0.67         7
+   Tornadus (Incarnate)       1.00      0.67      0.80         6
+               Torracat       0.47      0.88      0.61         8
+               Torterra       0.50      0.50      0.50         8
+               Totodile       0.60      0.43      0.50         7
+              Toucannon       0.71      0.71      0.71         7
+                Toxapex       0.86      0.86      0.86         7
+              Toxicroak       0.80      0.57      0.67         7
+             Toxtricity       0.50      0.75      0.60         4
+              Tranquill       0.57      0.67      0.62         6
+               Trapinch       0.44      0.57      0.50         7
+              Trevenant       0.67      0.75      0.71         8
+                Tropius       1.00      0.88      0.93         8
+               Trumbeak       0.56      0.71      0.62         7
+               Tsareena       0.83      0.71      0.77         7
+             Turtonator       0.67      0.86      0.75         7
+                Turtwig       0.80      0.57      0.67         7
+             Typhlosion       0.60      0.43      0.50         7
+   Typhlosion (Hisuian)       0.50      0.80      0.62         5
+              Tyranitar       0.67      0.57      0.62         7
+              Tyrantrum       0.55      0.86      0.67         7
+                 Tyrunt       0.60      0.75      0.67         4
+                Umbreon       1.00      0.44      0.62         9
+               Unfezant       1.00      0.57      0.73         7
+                  Unown       0.33      0.50      0.40         6
+               Ursaluna       0.33      0.20      0.25         5
+               Ursaring       0.50      0.43      0.46         7
+ Urshifu (Rapid Strike)       0.33      0.57      0.42         7
+Urshifu (Single Strike)       0.25      0.40      0.31         5
+                   Uxie       0.60      0.60      0.60         5
+              Vanillish       0.27      0.43      0.33         7
+              Vanilluxe       0.42      0.71      0.53         7
+               Vaporeon       0.27      0.38      0.32         8
+                 Varoom       0.25      0.20      0.22         5
+               Venomoth       0.60      0.43      0.50         7
+               Venusaur       0.67      0.57      0.62         7
+              Vespiquen       0.44      0.57      0.50         7
+                Vibrava       0.25      0.25      0.25         8
+                Victini       0.40      0.29      0.33         7
+             Victreebel       0.88      0.78      0.82         9
+               Vigoroth       0.57      0.57      0.57         7
+               Vikavolt       0.50      0.29      0.36         7
+              Vileplume       0.60      0.75      0.67         8
+               Vivillon       0.50      0.20      0.29         5
+                Volbeat       0.80      1.00      0.89         4
+              Volcanion       0.71      0.83      0.77         6
+                Vullaby       0.83      0.71      0.77         7
+                Wailmer       0.78      1.00      0.88         7
+                Wailord       0.83      0.71      0.77         7
+                Walrein       0.33      0.62      0.43         8
+              Wartortle       0.43      0.38      0.40         8
+                Watchog       0.80      0.57      0.67         7
+                Weavile       1.00      1.00      1.00         7
+             Weepinbell       0.83      0.71      0.77         7
+                Weezing       0.33      0.33      0.33         6
+     Weezing (Galarian)       0.86      1.00      0.92         6
+             Whimsicott       0.60      0.86      0.71         7
+             Whirlipede       0.67      0.40      0.50         5
+               Whiscash       0.83      0.62      0.71         8
+             Wigglytuff       0.80      0.50      0.62         8
+              Wobbuffet       0.83      0.71      0.77         7
+       Wormadam (Plant)       0.50      0.67      0.57         6
+       Wormadam (Sandy)       0.86      0.86      0.86         7
+       Wormadam (Trash)       0.70      1.00      0.82         7
+                Wugtrio       1.00      0.20      0.33         5
+                Wyrdeer       0.75      0.50      0.60         6
+                   Xatu       1.00      0.71      0.83         7
+                  Yanma       1.00      0.57      0.73         7
+                Yanmega       1.00      0.71      0.83         7
+               Zangoose       0.60      0.50      0.55         6
+                 Zapdos       0.50      0.12      0.20         8
+      Zapdos (Galarian)       0.62      0.83      0.71         6
+              Zebstrika       0.33      0.38      0.35         8
+                Zoroark       0.33      0.33      0.33         3
+               Zweilous       0.44      0.67      0.53         6
+    Zygarde (10% Forme)       0.50      0.50      0.50         4
+    Zygarde (50% Forme)       0.50      0.60      0.55         5
+
+               accuracy                           0.60      4571
+              macro avg       0.65      0.59      0.59      4571
+           weighted avg       0.65      0.60      0.60      4571
