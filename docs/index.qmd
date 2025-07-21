@@ -30,7 +30,7 @@ Our system evaluates multiple machine learning models to find the optimal soluti
 - **Random Forest Classifier**: An ensemble method that builds multiple decision trees
 - **Gradient Boosting**: Advanced ensemble technique that builds trees sequentially
 
-After rigorous evaluation and cross-validation, the best performing model is selected for deployment. The selected model learns complex patterns in:
+After rigorous evaluation and cross-validation, the best performing model is the gradient boosting model, and is selected for deployment. The selected model learns complex patterns in:
 
 - Pokemon type effectiveness relationships
 - Stat advantages/disadvantages
