@@ -2,7 +2,7 @@
 ## Problem Definition
 New players coming to Pokemon Go are going to struggle with the highly complex combat system. There is much to consider such as type weaknesses, charged moves, fast moves, pokemon stats, and more. 
 
-Another problem that new players will have is identifying the mant different pokemon and learning what their names are. Given there is over 800 pokemon in pokemon go it'll be no easy task. 
+Another problem that new players will have is identifying the many different pokemon and learning their names. Given that there are over 800 pokemon in pokemon go, it'll be no easy task. 
 
 ## Situation Assessment
 
@@ -24,7 +24,6 @@ We will use Python libraries such as `pandas`, `selenium`, and `csv` for data pr
 - Integration challenges between the battle assistant and the image recognition model or difficulties with Python libraries.
 - The tight 4-week timeline may limit thorough testing, optimization, and documentation.
 - Risk of scope creep if project goals are not clearly defined and managed.
-
 
 
 ## Project Goals and Success Criteria
@@ -86,7 +85,7 @@ gantt
 
 **Tasks:**
 
-- Battle Simulation  
+- Battle Simulation and data collection
 - Writing project charter documentation
 
 **Contact Info:**
@@ -103,7 +102,9 @@ gantt
 
 **Tasks:**
 
-- Battle Simulation
+- Battle Simulation and data collection
+- Linear Regression Model
+- Assist with documentation
 
 **Contact Info:**
 

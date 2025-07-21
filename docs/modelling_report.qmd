@@ -2,6 +2,11 @@
 The report should summarise the details of the modelling activities, e.g. machine learning experiments. 
 
 ## Initial situation
+Our aim of the modellng is to be able to accurately predict who the winner of a pokemon battle is when given two pokemon.
+The data set used is the (pokemon_data.csv) 
+Our independant variables are all of the stats for the pokemon (type, moves, attack, defence, etc.), and our dependant variable is the 'win' variable.
+We created several models, including Logistic Regression, Random Forest, and Gradient Boosting. For our final product, we will be using the Gradient Boosting Model.
+
 - Aim of the modelling - consistent with *Data Mining Goals* in the project charta
 - Data set(s) and/or feature set used (references to the data report)
 - Description of the independent variables and (if applicable) the target variable
@@ -9,13 +14,23 @@ The report should summarise the details of the modelling activities, e.g. machin
 
 ## Model Descriptions
 Overview of the models used and/or implemented and their configurations 
-
 - Detailed description of the model used (e.g. literature references, specification of the software library, exact module, version or other implementation details etc.)
 - Graphical representation of the modelling pipeline
 - If applicable: link to the code of the modelling pipeline, version information in code repository, configuration files
 - If possible, links to the artefacts of the executed modelling pipeline (training experiment)
 - Link to the literature in which the model/method is described
 - Hyperparameters
+
+***Logistic Regression Model***
+The logistic regression model uses the pandas, numpy, and sklearn libraries. For our specific project, it used python version 3.15.5.
+The modeling pipeline goes in the following order: Raw Data, Data Preprocessing, Feature Selection, Train/Test Split, Model Training, Model Evaluation, Prediction and Deployment.
+
+***Random Forest Model***
+
+***Gradient Boosting Model***
+
+
+
 
 ## Results
 Key figures dependent on the model and modelling objective
