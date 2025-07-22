@@ -21,15 +21,17 @@ Overview of the models used and/or implemented and their configurations
 - Link to the literature in which the model/method is described
 - Hyperparameters
 
-***Logistic Regression Model***
+***Logistic Regression Model*** 
+The logistic regression model works by predicting the probability of a binary outcome by applying a sigmoid function to a weighted sum of input features.
 The logistic regression model uses the pandas, numpy, and sklearn libraries. For our specific project, it used python version 3.15.5.
 The modeling pipeline goes in the following order: Raw Data, Data Preprocessing, Feature Selection, Train/Test Split, Model Training, Model Evaluation, Prediction and Deployment.
 
 ***Random Forest Model***
+The random forest model works by making predictions by combining the results of many decision trees, each trained on random subsets of the data and features, which improves accuracy and reduces overfitting.
 
 ***Gradient Boosting Model***
 
-
+***Category Boosting Model***
 
 
 ## Results
