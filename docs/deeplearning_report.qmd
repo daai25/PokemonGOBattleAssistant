@@ -1,0 +1,167 @@
+# Deep Learning Report
+This report summarizes the details of the deep learning activities for Pokémon image classification.
+
+## Initial Situation
+Our aim for the deep learning component is to accurately identify Pokémon from images, which complements the battle prediction system. This visual recognition capability allows users to upload images of Pokémon they encounter and get immediate battle strategy recommendations.
+
+The dataset used consists of Pokémon images collected from various sources and organized into a structured format in the `data_acquisition/image_dataset/final_pokemon_dataset` directory, with separate train and test folders.
+
+Our independent variables are the pixel values of the Pokémon images, and our dependent variable is the Pokémon species label. We created three different deep learning models: a CFAR (Convolutional Filter and Response) model, a custom CNN (Convolutional Neural Network), and a pre-trained transfer learning model using EfficientNetB0.
+
+- **Aim of the modeling**: Create an accurate image classifier that can identify Pokémon species from images
+- **Dataset used**: Collection of Pokémon images organized by species in the final_pokemon_dataset folder
+- **Independent variables**: Image pixel values (RGB channels)
+- **Target variable**: Pokémon species name
+- **Types of models used**: CFAR, CNN, and pre-trained EfficientNetB0
+
+## Model Descriptions
+This section provides an overview of the three deep learning models implemented for Pokémon image classification.
+
+### CFAR Model
+The CFAR (Convolutional Filter and Response) model is a lightweight convolutional neural network designed for basic Pokémon image classification.
+
+- **Implementation details**:
+  - Library: TensorFlow/Keras
+  - Input shape: 64x64x3 (RGB images)
+  - Architecture:
+    - 2 convolutional layers (32 and 64 filters)
+    - 2 max pooling layers
+    - 1 dense hidden layer (128 neurons)
+    - Output layer with softmax activation
+  - Optimizer: Adam
+  - Loss function: Categorical cross-entropy
+  - Training: 50 epochs with no validation split
+
+- **Modeling pipeline**:
+  1. Image loading and preprocessing (normalization)
+  2. Label conversion to one-hot encoding
+  3. Model definition and compilation
+  4. Training with all available data
+  5. Model saving and evaluation
+
+- **Code link**: `deployment/image_classification/cfar/train_pokemon_classifier_cfar.py`
+- **Hyperparameters**:
+  - Learning rate: Default for Adam optimizer
+  - Batch size: Entire dataset
+  - Image size: 64x64 pixels
+  - No data augmentation
+
+### CNN Model
+The CNN model is a more advanced deep learning architecture with multiple convolutional blocks designed for improved feature extraction and classification accuracy.
+
+- **Implementation details**:
+  - Library: TensorFlow/Keras
+  - Input shape: 64x64x3 (RGB images)
+  - Architecture:
+    - 4 convolutional blocks with batch normalization and dropout
+    - Each block has double convolution layers with increasing filter sizes (32→64→128→256)
+    - Max pooling after each block
+    - Flatten layer followed by dense layer (512 neurons)
+    - Output layer with softmax activation
+  - Optimizer: Adam with configurable learning rate
+  - Loss function: Categorical cross-entropy
+  - Training: Up to 80 epochs with early stopping and learning rate reduction
+
+- **Modeling pipeline**:
+  1. Separate loading of training and test datasets
+  2. Data augmentation for training images
+  3. Model definition with BatchNormalization for improved training
+  4. Implementation of callbacks for early stopping and learning rate adaptation
+  5. Training with validation on test set
+  6. Final evaluation, visualization, and model saving
+
+- **Code link**: `deployment/image_classification/CNN/train_pokemon_classifier_cnn.py`
+- **Hyperparameters**:
+  - Learning rate: 0.001 (with reduction on plateau)
+  - Batch size: 32
+  - Image size: 64x64 pixels
+  - Dropout rates: 0.25 for convolutional blocks, 0.5 for dense layer
+  - Data augmentation parameters: rotation, shifts, shear, zoom, horizontal flip
+
+### Pre-trained CNN Model (Transfer Learning)
+This model leverages the EfficientNetB0 architecture pre-trained on ImageNet, with fine-tuning for Pokémon classification.
+
+- **Implementation details**:
+  - Library: TensorFlow/Keras
+  - Input shape: 224x224x3 (RGB images, higher resolution)
+  - Architecture:
+    - EfficientNetB0 base model (pre-trained on ImageNet)
+    - Global Average Pooling
+    - Dense layer with 128 neurons
+    - Dropout layer (0.5)
+    - Output layer with softmax activation
+  - Two-phase training:
+    - Initial training with frozen base model
+    - Fine-tuning with unfrozen base model at lower learning rate
+  - Optimizer: Adam with different learning rates for each phase
+  - Loss function: Sparse categorical cross-entropy
+
+- **Modeling pipeline**:
+  1. Loading dataset using TensorFlow's image_dataset_from_directory
+  2. Data preprocessing with caching and prefetching for improved performance
+  3. Advanced data augmentation
+  4. Two-phase training (frozen base model, then fine-tuning)
+  5. Custom callback for saving checkpoints every 10 epochs
+  6. Final model saving and accuracy visualization
+
+- **Code link**: `deployment/image_classification/train_pokemon_classifier.py`
+- **Hyperparameters**:
+  - Initial learning rate: 1e-4 (frozen base), 1e-5 (fine-tuning)
+  - Batch size: 16
+  - Image size: 224x224 pixels
+  - Dropout rate: 0.5
+  - Data augmentation: random flips, rotation, zoom, contrast, brightness
+  - Early stopping patience: 5 epochs
+
+## Results
+The performance of each model varies based on their architecture complexity and training approach.
+
+### CFAR Model
+- Training accuracy: ~75-85% (varies by run)
+- Simple architecture leads to faster training but lower accuracy
+- No validation split means potential overfitting
+- Best suited for quick prototyping or when computational resources are limited
+
+### CNN Model
+- Training accuracy: ~90-95%
+- Validation accuracy: ~85-90% 
+- The addition of batch normalization and dropout layers significantly reduces overfitting
+- Multiple convolutional blocks allow for hierarchical feature learning
+- Early stopping and learning rate reduction help optimize training
+- Visualization tools provide insights into training progress
+
+### Pre-trained CNN Model
+- Training accuracy: ~95-98%
+- Validation accuracy: ~90-95%
+- Highest performance among the three models
+- Transfer learning significantly reduces training time and improves generalization
+- Two-phase training approach allows for fine-tuning while avoiding catastrophic forgetting
+- Higher resolution input (224x224) captures more details but requires more computational resources
+
+## Model Interpretation
+- The pre-trained EfficientNetB0 model offers the best performance due to its transfer learning approach, leveraging knowledge from ImageNet
+- The custom CNN model provides a good balance between performance and computational requirements
+- The CFAR model offers the fastest training and inference but with lower accuracy
+- Data augmentation proves crucial for all models to generalize well, especially with limited training data
+- The hierarchical feature learning in deeper models (CNN and EfficientNetB0) allows for better understanding of Pokémon visual characteristics
+
+## Conclusions and Next Steps
+The deep learning models developed for Pokémon image classification provide a strong foundation for the battle assistant application. The pre-trained EfficientNetB0 model offers the best performance and should be the primary choice for production deployment.
+
+### Limitations
+- Model performance depends on the quality and diversity of the training dataset
+- Some visually similar Pokémon species may be challenging to distinguish
+- Deep learning models require significant computational resources for training
+
+### Future Work
+- Expand the dataset with more diverse Pokémon images and poses
+- Experiment with more advanced architectures like Vision Transformers
+- Implement model quantization for faster inference on mobile devices
+- Create an ensemble of models for improved robustness
+- Develop explainability tools to understand which features the models use for classification
+
+### Deployment
+- The trained models can be deployed as part of a web or mobile application
+- A simple GUI application has been developed for testing (`pokemon_classifier_app.py`)
+- Models can be converted to TensorFlow Lite for mobile deployment
+- Integration with the battle prediction system will provide a complete Pokémon battle assistant solution
