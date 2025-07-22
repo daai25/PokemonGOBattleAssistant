@@ -80,10 +80,6 @@ model = Sequential([
     Conv2D(128, (3, 3), activation='relu'),
     MaxPooling2D(2, 2),
     
-    # Fourth convolutional block
-    Conv2D(256, (3, 3), activation='relu'),
-    MaxPooling2D(2, 2),
-    
     # Fully connected layers
     Flatten(),
     Dense(256, activation='relu'),
@@ -101,8 +97,14 @@ history = model.fit(
     verbose=1
 )
 
-# Save the model so we can use it later
+# Save the model in Keras format
+model_name = f"pokemon_classifier_cfar_{int(history.history['val_accuracy'][-1]*100)}.keras"
+model.save(model_name, save_format='keras')
+print(f"Model saved as '{model_name}'")
+
+# Also save in h5 format for compatibility
 model.save("pokemon_classifier_50.h5")
+print("Model also saved as 'pokemon_classifier_50.h5' for compatibility")
 
 # Show statistics on the training:
 plt.figure(figsize=(12, 5))
