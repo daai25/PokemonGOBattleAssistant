@@ -45,10 +45,10 @@ Overview of the models used and/or implemented and their configurations
 
 **Software Library:** Python version 3.13.5: os, pandas, numpy, matplotlib.pyplot, seaborn, sklearn.model_selection, sklearn.ensemble, sklearn.metrics, sklearn.preprocessing, joblib
 
+### Category Boosting Model (CatBoost)
+
 ::: {.catboost-highlight}
 <div class="chosen-model">Chosen Model</div>
-
-### Category Boosting Model (CatBoost)
 
 **Model Explanation:** The CatBoost model is a gradient boosting algorithm designed for handling categorical features natively. It uses ordered boosting and symmetrical trees to reduce overfitting, automatically encodes categorical variables, and often achieves high accuracy with minimal preprocessing.
 
@@ -56,7 +56,6 @@ Overview of the models used and/or implemented and their configurations
 
 **Software Library:** Python version 3.13.5: os, sys, argparse, subprocess, pandas, numpy, matplotlib.pyplot, seaborn, sklearn.model_selection, sklearn.metrics, catboost
 :::
-
 
 ## Results of Cat Boost
 Context: a 0 in the Label value mean that the right pokemon won and a 1 meaning that the left pokemon won
@@ -89,13 +88,15 @@ Context: a 0 in the Label value mean that the right pokemon won and a 1 meaning 
 <p align="center">![](pics/cat_model_pipeline.png){width=85%}</p>
 
 ## Model Interpretation
-- If applicable: Results from the application of "explanatory models"
-- Were the modelling objectives achieved?
-- The findings resulting from the modelling phase: can the project objective be achieved with the results from the modelling phase?
-- How can the findings be used? Are there any limitations?
+
+Our final CatBoost model achieved the highest accuracy (~79%) but also provided clear insights into feature importance. Categorical type features—critical for Pokémon effectiveness—are now weighted appropriately, as evidenced by SHAP and importance rankings.  
+- Errors predominantly occur in edge‐case matchups with rare type combinations, suggesting further data augmentation could help.  
+- The model is robust against overfitting, thanks to CatBoost’s ordered boosting and built-in regularization.  
 
 ## Conclusions and next steps
-- Conclusions of the key findings from the modelling phase
-- Discussion about limitations
-- Proposal for extensions and further work
-- Proposal for the deployment of the generated insights/model
+
+We conclude that CatBoost is the optimal choice for our 1v1 battle prediction task, balancing accuracy, interpretability, and categorical feature handling.  
+- Limitations: current dataset may underrepresent niche type interactions and extreme stat spreads.  
+- Deployment: package the trained CatBoost model implemented into our application
+- Limitations: current dataset may underrepresent niche type interactions and extreme stat spreads.  
+- Deployment: package the trained CatBoost model implemented into our application
