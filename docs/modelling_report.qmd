@@ -27,17 +27,23 @@ Overview of the models used and/or implemented and their configurations
 
 **Application:** As an initial baseline, logistic regression was trained alongside our ensemble models. While computationally efficient and straightforward to interpret, it plateaued at ~50% accuracy—no better than random guessing—so we discontinued its development early.
 
+**Software Library:** Python version 3.15.5: pandas, numpy, and sklearn libraries
+
 ### Random Forest Model
 
 **Model Explanation:** The random forest model works by making predictions by combining the results of many decision trees, each trained on random subsets of the data and features, which improves accuracy and reduces overfitting.
 
 **Application:** After hyperparameter tuning via grid search, the random forest classifier achieved ~69% validation accuracy. Although competitive with gradient boosting’s ~72%, its treatment of categorical Pokémon type features proved slightly less effective, leading us to concentrate further efforts on boosting methods.
 
+**Software Library:** Python version 3.13.5: os, pandas, numpy, matplotlib.pyplot, seaborn, sklearn.model_selection, sklearn.ensemble, sklearn.metrics, sklearn.preprocessing, joblib
+
 ### Gradient Boosting Model
 
 **Model Explanation:** The gradient boosting model is an ensemble technique that builds decision trees sequentially, where each new tree is trained to correct the errors (residuals) of the previous ensemble. It optimizes a loss function via gradient descent in function space, reducing bias and improving predictive performance.
 
 **Application:** Leveraging iterative feature engineering—such as stat ratio features—the gradient boosting model’s performance climbed to ~75% accuracy. However, feature‐importance analysis revealed underweighting of categorical type attributes, motivating a search for a model with stronger native categorical support.
+
+**Software Library:** Python version 3.13.5: os, pandas, numpy, matplotlib.pyplot, seaborn, sklearn.model_selection, sklearn.ensemble, sklearn.metrics, sklearn.preprocessing, joblib
 
 ::: {.catboost-highlight}
 <div class="chosen-model">Chosen Model</div>
@@ -47,15 +53,40 @@ Overview of the models used and/or implemented and their configurations
 **Model Explanation:** The CatBoost model is a gradient boosting algorithm designed for handling categorical features natively. It uses ordered boosting and symmetrical trees to reduce overfitting, automatically encodes categorical variables, and often achieves high accuracy with minimal preprocessing.
 
 **Application:** By adopting CatBoost, which natively encodes categorical variables, we immediately saw validation accuracy jump to ~78%. With additional fine-tuning of iterations, learning rate, and tree depth, performance rose to ~79%. Feature importance plots confirmed that Pokémon types were now appropriately prioritized, solidifying CatBoost as our final production model.
+
+**Software Library:** Python version 3.13.5: os, sys, argparse, subprocess, pandas, numpy, matplotlib.pyplot, seaborn, sklearn.model_selection, sklearn.metrics, catboost
 :::
 
 
-## Results
-Key figures dependent on the model and modelling objective
+## Results of Cat Boost
+Context: a 0 in the Label value mean that the right pokemon won and a 1 meaning that the left pokemon won
 
-- RMSD, ROC/Lift-Charts, AUC, Confusion Matrix, Accuracy, Precision, Recall
-- Coherence, Perplexity, ... 
-- If applicable: analyses/plots of (hyper)parameter screenings
+**Accuracy:** 0.7910
+
+**Precision:** 0.7920
+
+**Recall:** 0.7791
+
+**F1 Score:** 0.7855
+
+**Classification Report:**
+
+| Label        | Precision | Recall | F1-Score | Support |
+|--------------|----------:|-------:|---------:|--------:|
+| 0            |      0.79 |   0.80 |     0.80 |    2035 |
+| 1            |      0.79 |   0.78 |     0.79 |    1965 |
+| accuracy     |           |        |     0.79 |    4000 |
+| macro avg    |      0.79 |   0.79 |     0.79 |    4000 |
+| weighted avg |      0.79 |   0.79 |     0.79 |    4000 |
+
+### Model Visualizations
+
+![](pics/roc_curve.png){width=70%}
+
+![](pics/confusion_matrix.png){width=70%}
+
+<p style="text-align:center; font-size:1.4em;"><strong>Model Pipeline</strong></p>
+<p align="center">![](pics/cat_model_pipeline.png){width=85%}</p>
 
 ## Model Interpretation
 - If applicable: Results from the application of "explanatory models"
