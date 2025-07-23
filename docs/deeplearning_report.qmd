@@ -24,27 +24,60 @@ The CFAR (Convolutional Filter and Response) model is a lightweight convolutiona
   - Library: TensorFlow/Keras
   - Input shape: 64x64x3 (RGB images)
   - Architecture:
-    - 2 convolutional layers (32 and 64 filters)
-    - 2 max pooling layers
-    - 1 dense hidden layer (128 neurons)
+    - 3 convolutional layers (32, 64, and 128 filters)
+    - 3 max pooling layers
+    - 1 dense hidden layer (256 neurons)
     - Output layer with softmax activation
   - Optimizer: Adam
   - Loss function: Categorical cross-entropy
-  - Training: 50 epochs with no validation split
+  - Training: 30 epochs with validation after each epoch
 
 - **Modeling pipeline**:
-  1. Image loading and preprocessing (normalization)
-  2. Label conversion to one-hot encoding
-  3. Model definition and compilation
-  4. Training with all available data
-  5. Model saving and evaluation
+  ```{mermaid}
+flowchart LR
+    subgraph input [Input]
+    I[64x64x3 RGB Image]
+    end
+    
+    subgraph conv1 [Layer 1]
+    C1[Conv2D 32 Filters] --> MP1[MaxPooling]
+    end
+    
+    subgraph conv2 [Layer 2]
+    C2[Conv2D 64 Filters] --> MP2[MaxPooling]
+    end
+    
+    subgraph conv3 [Layer 3]
+    C3[Conv2D 128 Filters] --> MP3[MaxPooling]
+    end
+    
+    subgraph dense [Dense Layers]
+    F[Flatten] --> D1[Dense 256 neurons]
+    D1 --> Out[Output Layer]
+    end
+    
+    I --> C1
+    MP1 --> C2
+    MP2 --> C3
+    MP3 --> F
+    
+    style input fill:#e1f5fe
+    style conv1 fill:#ffecb3
+    style conv2 fill:#ffecb3
+    style conv3 fill:#ffecb3
+    style dense fill:#e8f5e9
+```
+
+*The diagram above illustrates the architecture of the CFAR model. Starting with an input RGB image (64x64x3), the data flows through three convolutional layers with increasing filter sizes (32, 64, and 128), each followed by a MaxPooling operation to reduce dimensionality. The feature maps from the final convolutional layer are flattened and passed through a dense layer with 256 neurons, which connects to the output layer for classification. This sequential structure enables the model to progressively extract and refine features from the input images before making the final classification decision.*
 
 - **Code link**: `deployment/image_classification/cfar/train_pokemon_classifier_cfar.py`
 - **Hyperparameters**:
   - Learning rate: Default for Adam optimizer
-  - Batch size: Entire dataset
+  - Batch size: 32
   - Image size: 64x64 pixels
   - No data augmentation
+
+
 
 ### CNN Model
 The CNN model is a more advanced deep learning architecture with multiple convolutional blocks designed for improved feature extraction and classification accuracy.
@@ -63,12 +96,68 @@ The CNN model is a more advanced deep learning architecture with multiple convol
   - Training: Up to 80 epochs with early stopping and learning rate reduction
 
 - **Modeling pipeline**:
-  1. Separate loading of training and test datasets
-  2. Data augmentation for training images
-  3. Model definition with BatchNormalization for improved training
-  4. Implementation of callbacks for early stopping and learning rate adaptation
-  5. Training with validation on test set
-  6. Final evaluation, visualization, and model saving
+
+  ```{mermaid}
+flowchart LR
+    subgraph input [Input]
+    I[64x64x3 RGB Image]
+    end
+    
+    subgraph conv1 [Block 1]
+    C1A[Conv2D 32] --> BN1A[BatchNorm]
+    BN1A --> C1B[Conv2D 32] 
+    C1B --> BN1B[BatchNorm]
+    BN1B --> MP1[MaxPooling]
+    MP1 --> D1[Dropout 0.25]
+    end
+    
+    subgraph conv2 [Block 2]
+    C2A[Conv2D 64] --> BN2A[BatchNorm]
+    BN2A --> C2B[Conv2D 64] 
+    C2B --> BN2B[BatchNorm]
+    BN2B --> MP2[MaxPooling]
+    MP2 --> D2[Dropout 0.25]
+    end
+    
+    subgraph conv3 [Block 3]
+    C3A[Conv2D 128] --> BN3A[BatchNorm]
+    BN3A --> C3B[Conv2D 128] 
+    C3B --> BN3B[BatchNorm]
+    BN3B --> MP3[MaxPooling]
+    MP3 --> D3[Dropout 0.25]
+    end
+    
+    subgraph conv4 [Block 4]
+    C4A[Conv2D 256] --> BN4A[BatchNorm]
+    BN4A --> C4B[Conv2D 256] 
+    C4B --> BN4B[BatchNorm]
+    BN4B --> MP4[MaxPooling]
+    MP4 --> D4[Dropout 0.25]
+    end
+    
+    subgraph dense [Dense Layers]
+    F[Flatten] --> DL1[Dense 512]
+    DL1 --> BN5[BatchNorm]
+    BN5 --> D5[Dropout 0.5]
+    D5 --> Out[Output Layer]
+    end
+    
+    I --> C1A
+    D1 --> C2A
+    D2 --> C3A
+    D3 --> C4A
+    D4 --> F
+    
+    style input fill:#e1f5fe
+    style conv1 fill:#ffecb3
+    style conv2 fill:#ffe082
+    style conv3 fill:#ffd54f
+    style conv4 fill:#ffca28
+    style dense fill:#e8f5e9
+```
+
+*The diagram above illustrates the more complex CNN architecture used for Pokémon classification. This model features four convolutional blocks with progressively increasing filter sizes (32→64→128→256), each implementing a double convolution pattern. Every block follows the same structure: two convolutional layers, each followed by batch normalization, then max pooling, and finally dropout (0.25) to prevent overfitting. After the convolutional blocks, the data is flattened and passed through a dense layer with 512 neurons, followed by batch normalization and a higher dropout rate (0.5) before the final classification layer. This architecture significantly outperforms the simpler CFAR model by incorporating modern deep learning techniques like batch normalization and employing a deeper structure for more sophisticated feature extraction.*
+
 
 - **Code link**: `deployment/image_classification/CNN/train_pokemon_classifier_cnn.py`
 - **Hyperparameters**:
@@ -77,6 +166,8 @@ The CNN model is a more advanced deep learning architecture with multiple convol
   - Image size: 64x64 pixels
   - Dropout rates: 0.25 for convolutional blocks, 0.5 for dense layer
   - Data augmentation parameters: rotation, shifts, shear, zoom, horizontal flip
+
+
 
 ### Pre-trained CNN Model (Transfer Learning)
 This model leverages the EfficientNetB0 architecture pre-trained on ImageNet, with fine-tuning for Pokémon classification.
@@ -104,6 +195,51 @@ This model leverages the EfficientNetB0 architecture pre-trained on ImageNet, wi
   5. Custom callback for saving checkpoints every 10 epochs
   6. Final model saving and accuracy visualization
 
+  ```{mermaid}
+flowchart LR
+    subgraph input [Input]
+    I[224x224x3 RGB Image]
+    end
+    
+    subgraph aug [Data Augmentation]
+    A1[Random Flip] --> A2[Random Rotation]
+    A2 --> A3[Random Zoom]
+    A3 --> A4[Random Contrast]
+    A4 --> A5[Random Brightness]
+    end
+    
+    subgraph preproc [Preprocessing]
+    P[EfficientNet Preprocessing]
+    end
+    
+    subgraph base [Base Model]
+    EB[EfficientNetB0 Pretrained\non ImageNet]
+    end
+    
+    subgraph head [Classification Head]
+    GAP[Global Average Pooling] --> D1[Dense 128]
+    D1 --> DO[Dropout 0.5]
+    DO --> Out[Output Layer]
+    end
+    
+    subgraph training [Training Process]
+    T1[Phase 1: Frozen Base\nLearning Rate: 1e-4] --> T2[Phase 2: Fine-tuning\nLearning Rate: 1e-5]
+    end
+    
+    I --> A1
+    A5 --> P
+    P --> EB
+    EB --> GAP
+    Out --> training
+    
+    style input fill:#e1f5fe
+    style aug fill:#fff9c4
+    style preproc fill:#f3e5f5
+    style base fill:#ffccbc
+    style head fill:#e8f5e9
+    style training fill:#e0f2f1
+```
+
 - **Code link**: `deployment/image_classification/train_pokemon_classifier.py`
 - **Hyperparameters**:
   - Initial learning rate: 1e-4 (frozen base), 1e-5 (fine-tuning)
@@ -114,21 +250,29 @@ This model leverages the EfficientNetB0 architecture pre-trained on ImageNet, wi
   - Early stopping patience: 5 epochs
 
 ## Results
-The performance of each model varies based on their architecture complexity and training approach.
+The performance of each model varies based on their architecture complexity and training approach. Our model development followed an iterative process: we first implemented the lightweight CFAR model alongside a basic CNN architecture. Based on the promising results of the CNN approach, we further refined the CNN architecture by adding batch normalization, dropout layers, and implementing double convolution patterns. As a third strategy, we adopted transfer learning by training an EfficientNetB0 pre-trained model to expand our comparison of different deep learning approaches.
 
 ### CFAR Model
-- Training accuracy: ~75-85% (varies by run)
+- Training accuracy: ~95%
+- Validation accuracy: ~24%
 - Simple architecture leads to faster training but lower accuracy
-- No validation split means potential overfitting
 - Best suited for quick prototyping or when computational resources are limited
 
+![Training History for CFAR Model](pics/training_history_cfar.png)
+
+*The figure above shows the training history of the CFAR model over 30 epochs. The left plot displays accuracy metrics, where training accuracy (blue line) steadily increases to approximately 95% while validation accuracy (orange line) plateaus around 24%, indicating significant overfitting. The right plot shows loss metrics, with training loss (blue) decreasing to near zero while validation loss (orange) increases dramatically after the initial epochs, further confirming the model's poor generalization abilities.*
+
 ### CNN Model
-- Training accuracy: ~90-95%
-- Validation accuracy: ~85-90% 
+- Training accuracy: ~70-75%
+- Validation accuracy: ~68% 
 - The addition of batch normalization and dropout layers significantly reduces overfitting
 - Multiple convolutional blocks allow for hierarchical feature learning
 - Early stopping and learning rate reduction help optimize training
 - Visualization tools provide insights into training progress
+
+![Training History for CNN Model](pics/training_history_cnn.png)
+
+*The figure above illustrates the CNN model's training history over 50 epochs. The accuracy plot (left) shows a more balanced progression between training (blue) and test/validation (orange) accuracy, both reaching approximately 70-75%. The loss plot (right) demonstrates how both training and test losses decrease steadily and remain relatively close together throughout training. This indicates the CNN model achieves better generalization performance than the CFAR model, with the regularization techniques (batch normalization and dropout) effectively mitigating overfitting.*
 
 ### Pre-trained CNN Model
 - Training accuracy: ~95-98%
