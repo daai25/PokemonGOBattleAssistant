@@ -1,6 +1,12 @@
+import os
+import sys
 import pandas as pd
 import csv
 import streamlit as st
+
+# add project root to path and import the CatBoost predictor
+sys.path.insert(0, os.getcwd())
+from modelling.models.cat_boost.predict_battles import predict_battle
 
 
 # Page setup
@@ -9,7 +15,8 @@ st.set_page_config(page_title="Pokémon Battle Predictor", page_icon="⚔️", l
 # Initialize session state for dynamic inputs on the left side
 if "your_pokemon_count" not in st.session_state:
     st.session_state.your_pokemon_count = 1  # start with one input on the left
-df = pd.read_csv("cp1500_all_overall_rankings.csv")  # Load your dataset here
+csv_path = os.path.join("data_acquisition", "processed_data", "all_pokemon.csv")
+df = pd.read_csv(csv_path)  # Load your dataset here
 # Title / Subtitle
 st.title("Pokemon Go Battle Assistant")
 st.caption("This is a simple Streamlit application that helps you pick which Pokemon to use in a battle. " \
@@ -55,42 +62,35 @@ battle = st.button('Battle')
 
 def battle_model(opponent, player):
     # Check for empty inputs
-    if not opponent and not player:
-        st.error("Please enter both opponent's and your Pokemon.")
-        return
-    if not opponent:
-        st.error("Please enter the opponent's Pokemon.")
-        return
-    if not player:
-        st.error("Please enter your Pokemon.")
-        return
-    opponent_data = df[df.iloc[:, 0] == opponent.capitalize()]
-    player_data = df[df.iloc[:, 0] == player.capitalize()]
-    if opponent_data.empty:
-        st.error("The opponent's Pokémon is not found in the dataset. Please check the spelling.")
-        return
-    if player_data.empty:
-        st.error("Your Pokémon is not found in the dataset. Please check the spelling.")
-        return
-
-    
-    # input their data and run them through the model
-    # return the probability that player wins
-    return 0.75
+    if not opponent or not player:
+        st.error("Please enter both opponent's and your Pokémon.")
+        return None
+    try:
+        # call CatBoost prediction: returns (winner_name, [prob_left, prob_right], confidence)
+        winner, proba, _ = predict_battle(player, opponent)
+    except Exception as e:
+        st.error(f"Prediction error for {player}: {e}")
+        return None
+    # proba[1] is probability that 'player' (left) wins
+    return proba[1]
 
 # Battle button click
 if battle:
     probability_dict = {}
     for pokemon in your_team:
-        probability = battle_model(opponent_pokemon, pokemon)
-        if probability is not None:
-            probability_dict[pokemon] = probability
-        else:
-            st.error(f"An error occurred while calculating the battle probability for {pokemon}.")
+        if pokemon:
+            win_prob = battle_model(opponent_pokemon, pokemon)
+            if win_prob is not None:
+                probability_dict[pokemon] = win_prob
 
-    best_pokemon = None
-    for pokemon, probability in probability_dict.items():
-        if best_pokemon is None or probability > probability_dict[best_pokemon]:
-            best_pokemon = pokemon
-    st.write(f"Probability that your {best_pokemon} wins: {probability_dict[best_pokemon] * 100}%")
-    
+    if probability_dict:
+        # choose the team member with highest win probability
+        best = max(probability_dict, key=probability_dict.get)
+        best_prob = probability_dict[best]
+        if best_prob > 0.5:
+            st.success(f"Pick {best} – win chance {best_prob*100:.1f}%")
+        else:
+            st.warning(f"None of your pokemon is favored to win. Least likely to lose: {best} (win chance {best_prob*100:.1f}%)")
+    else:
+        st.error("No valid Pokémon for prediction.")
+
