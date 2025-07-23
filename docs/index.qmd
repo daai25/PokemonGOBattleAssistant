@@ -19,7 +19,7 @@ The Pokemon GO Battle Assistant is an advanced prediction system that uses machi
 Our system utilizes three primary data sources:
 
 1. **Pokemon Statistics & Rankings**: Comprehensive dataset of Pokemon attributes from [PvPoke rankings site](https://pvpoke.com/rankings/)
-2. **Battle Simulation Data**: 15,000+ simulated battle outcomes with detailed performance metrics from [PvPoke battles site](https://pvpoke.com/battle/)
+2. **Battle Simulation Data**: 20,000 simulated battle outcomes with detailed performance metrics from [PvPoke battles site](https://pvpoke.com/battle/)
 3. **Pokemon Image Dataset**: Collection of Pokemon images retrieved via DuckDuckGo Search API for training the image recognition model
 
 ## Machine Learning Approach
@@ -29,8 +29,9 @@ Our system evaluates multiple machine learning models to find the optimal soluti
 - **Logistic Regression**: A baseline model for binary classification
 - **Random Forest Classifier**: An ensemble method that builds multiple decision trees
 - **Gradient Boosting**: Advanced ensemble technique that builds trees sequentially
+- **CatBoost**: An ensemble method optimized for handling categorical features
 
-After rigorous evaluation and cross-validation, the best performing model is the gradient boosting model, and is selected for deployment. The selected model learns complex patterns in:
+After rigorous evaluation and cross-validation, the best performing model is the CatBoost model, and is selected for deployment. The selected model learns complex patterns in:
 
 - Pokemon type effectiveness relationships
 - Stat advantages/disadvantages

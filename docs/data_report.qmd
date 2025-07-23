@@ -27,7 +27,7 @@ The project utilizes three main data sources: Pokemon statistics and moves from 
 - **Legal aspects**: Public data available for educational/research purposes
 - **Data governance**: Public data, no personal information
 - **Variables**: 
-    Pokemon name, Score, Pokedex number, Type 1 & 2, Attack, Defense, Stamina stats, Stat Product, Level, CP, Fast Move, Charged Moves, Charged Move Counts, Buddy Distance, Charged Move Cost
+    Pokemon name, Score, Pokedex number, Type 1 & 2, Attack, Defense, Stamina stats, Stat Product, CP, Fast Move, Charged Moves, Charged Move Counts, Buddy Distance, Charged Move Cost
 
 #### Data Catalogue
 | Column index | Column name | Datatype | Values (Range, validation rules) | Short description |
@@ -62,7 +62,7 @@ The project utilizes three main data sources: Pokemon statistics and moves from 
 - **Data source**: [PvPoke.com battle simulator](https://pvpoke.com/battle/) combined with Pokemon statistics dataset
 - **Data procurement**: 
   - Web scraping using Selenium WebDriver and BeautifulSoup
-  - 15,000 battle scenarios simulated (generated using random sampling with Python's random number generator)
+  - 20,000 battle scenarios simulated (generated using random sampling with Python's random number generator)
 - **Legal aspects**: Public simulation tool, data used for educational purposes
 - **Data governance**: Public data, computational results from simulator
 - **Variables**:
@@ -88,7 +88,7 @@ The project utilizes three main data sources: Pokemon statistics and moves from 
 | 27 | winner | Integer | 0 or 1 | Battle outcome (0 = left Pokemon wins, 1 = right Pokemon wins) |
 
 #### Data Quality
-- **Completeness**: 15,132 battles with complete information for both Pokemon
+- **Completeness**: 20,000 battles with complete information for both Pokemon
 - **Balance**: Near-equal distribution of win/loss outcomes for predictive modeling
 - **Consistency**: All categorical variables consistently encoded using reference dictionaries
 - **Preprocessing**: All features numerically encoded for direct use in machine learning models
