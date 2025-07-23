@@ -12,7 +12,7 @@ from catboost import CatBoostClassifier
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..'))
 
 MODEL_PATH   = os.path.join(os.path.dirname(__file__), 'catboost_model.cbm')
-RANKINGS_CSV = os.path.join(ROOT, 'data_acquisition', 'vectorized_data', 'all_overall_rankings_full_gl.csv')
+RANKINGS_CSV = os.path.join(ROOT, 'data_acquisition', 'processed_data', 'all_pokemon.csv')
 
 FAST_MOVE_MAP_CSV    = os.path.join(ROOT, 'data_acquisition', 'dictionarie', 'fast_move_to_number.csv')
 CHARGED_MOVE_MAP_CSV = os.path.join(ROOT, 'data_acquisition', 'dictionarie', 'charged_move_to_number.csv')
