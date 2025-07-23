@@ -1,7 +1,7 @@
 import pandas as pd
 import streamlit as st
 from PIL import Image
-
+from simulator.pokemon_image_recognition import predict_and_display_results
 
 # Page setup
 st.set_page_config(page_title="Pokémon Image Identifier", page_icon="⚔️", layout="wide")
@@ -44,12 +44,19 @@ st.sidebar.success("Select Any Page from here")
 
 # Upload image
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
+left_col, right_col = st.columns([5, 5])
 
 if uploaded_file is not None:
     image = Image.open(uploaded_file)
-    #st.image(image, caption="Uploaded Image", use)
+    with left_col:
+        st.subheader("Uploaded Image")
+        st.image(image, use_container_width=True)
+    with right_col:
+        st.subheader("Image Details")
 
-    # Run the model to identify the Pokémon
+        pokemon_name, confidence = predict_and_display_results(uploaded_file)
+        st.write(f"Pokémon: {pokemon_name}")
+        st.write(f"Confidence: {confidence:.2f}%")
 
 #Pokeball
 st.markdown(
