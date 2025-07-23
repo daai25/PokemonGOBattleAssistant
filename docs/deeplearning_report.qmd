@@ -264,7 +264,7 @@ The performance of each model varies based on their architecture complexity and 
 
 ### CNN Model
 - Training accuracy: ~70-75%
-- Validation accuracy: ~68% 
+- Validation accuracy: ~65% 
 - The addition of batch normalization and dropout layers significantly reduces overfitting
 - Multiple convolutional blocks allow for hierarchical feature learning
 - Early stopping and learning rate reduction help optimize training

@@ -1,0 +1,4134 @@
+DETAILLIERTE AUSWERTUNG PRO POKEMON
+===================================
+
+Pokemon              Genauigkeit  Durchschn. Confidence Anzahl Testbilder
+----------------------------------------------------------------------
+Abomasnow            0.7500      80.50%              8              
+
+  Falsche Vorhersagen für Abomasnow (2/8):
+    - Als Darmanitan (Galarian) erkannt mit 49.86% Confidence
+    - Als Vanilluxe erkannt mit 42.29% Confidence
+
+Absol                0.6667      61.41%              6              
+
+  Falsche Vorhersagen für Absol (2/6):
+    - Als Gyarados erkannt mit 33.62% Confidence
+    - Als Gengar erkannt mit 30.89% Confidence
+
+Accelgor             0.8571      92.92%              7              
+
+  Falsche Vorhersagen für Accelgor (1/7):
+    - Als Uxie erkannt mit 64.01% Confidence
+
+Aerodactyl           0.6667      54.79%              6              
+
+  Falsche Vorhersagen für Aerodactyl (2/6):
+    - Als Moltres (Galarian) erkannt mit 37.51% Confidence
+    - Als Purugly erkannt mit 20.83% Confidence
+
+Aggron               0.5000      70.66%              6              
+
+  Falsche Vorhersagen für Aggron (3/6):
+    - Als Lairon erkannt mit 90.16% Confidence
+    - Als Electivire erkannt mit 8.35% Confidence
+    - Als Corviknight erkannt mit 51.18% Confidence
+
+Aipom                1.0000      94.71%              7              
+Alakazam             0.5714      73.07%              7              
+
+  Falsche Vorhersagen für Alakazam (3/7):
+    - Als Kadabra erkannt mit 89.31% Confidence
+    - Als Zapdos erkannt mit 19.46% Confidence
+    - Als Bruxish erkannt mit 37.38% Confidence
+
+Alomomola            0.7143      82.46%              7              
+
+  Falsche Vorhersagen für Alomomola (2/7):
+    - Als Wormadam (Trash) erkannt mit 72.30% Confidence
+    - Als Gorebyss erkannt mit 53.97% Confidence
+
+Altaria              0.5714      47.77%              7              
+
+  Falsche Vorhersagen für Altaria (3/7):
+    - Als Spiritomb erkannt mit 19.17% Confidence
+    - Als Cryogonal erkannt mit 23.48% Confidence
+    - Als Pidgeot erkannt mit 45.81% Confidence
+
+Amaura               0.6667      72.33%              6              
+
+  Falsche Vorhersagen für Amaura (2/6):
+    - Als Lileep erkannt mit 2.13% Confidence
+    - Als Aurorus erkannt mit 46.55% Confidence
+
+Ambipom              0.4286      78.85%              7              
+
+  Falsche Vorhersagen für Ambipom (4/7):
+    - Als Mienfoo erkannt mit 97.71% Confidence
+    - Als Sigilyph erkannt mit 7.92% Confidence
+    - Als Aipom erkannt mit 99.89% Confidence
+    - Als Sylveon erkannt mit 48.91% Confidence
+
+Amoonguss            0.5000      66.20%              6              
+
+  Falsche Vorhersagen für Amoonguss (3/6):
+    - Als Purugly erkannt mit 68.08% Confidence
+    - Als Oricorio (Pa'u) erkannt mit 45.57% Confidence
+    - Als Cetoddle erkannt mit 7.83% Confidence
+
+Ampharos             0.6667      74.56%              6              
+
+  Falsche Vorhersagen für Ampharos (2/6):
+    - Als Slowpoke (Galarian) erkannt mit 88.00% Confidence
+    - Als Pyroar erkannt mit 4.48% Confidence
+
+Annihilape           1.0000      86.15%              6              
+Anorith              0.5000      67.45%              6              
+
+  Falsche Vorhersagen für Anorith (3/6):
+    - Als Gardevoir erkannt mit 31.30% Confidence
+    - Als Ninjask erkannt mit 21.46% Confidence
+    - Als Yanmega erkannt mit 92.35% Confidence
+
+Appletun             0.8000      83.21%              5              
+
+  Falsche Vorhersagen für Appletun (1/5):
+    - Als Milotic erkannt mit 24.69% Confidence
+
+Araquanid            0.7143      80.27%              7              
+
+  Falsche Vorhersagen für Araquanid (2/7):
+    - Als Lycanroc (Midnight) erkannt mit 18.95% Confidence
+    - Als Kartana erkannt mit 51.89% Confidence
+
+Arbok                0.2857      63.07%              7              
+
+  Falsche Vorhersagen für Arbok (5/7):
+    - Als Grimer erkannt mit 31.42% Confidence
+    - Als Grimer erkannt mit 46.16% Confidence
+    - Als Sneasel (Hisuian) erkannt mit 51.77% Confidence
+    - Als Venusaur erkannt mit 38.26% Confidence
+    - Als Sneasel (Hisuian) erkannt mit 73.93% Confidence
+
+Arboliva             0.8000      77.84%              5              
+
+  Falsche Vorhersagen für Arboliva (1/5):
+    - Als Meganium erkannt mit 50.77% Confidence
+
+Arcanine             0.5714      65.56%              7              
+
+  Falsche Vorhersagen für Arcanine (3/7):
+    - Als Mothim erkannt mit 2.72% Confidence
+    - Als Ninetales erkannt mit 49.34% Confidence
+    - Als Primeape erkannt mit 61.86% Confidence
+
+Arcanine (Hisuian)   0.6667      95.72%              6              
+
+  Falsche Vorhersagen für Arcanine (Hisuian) (2/6):
+    - Als Arcanine erkannt mit 95.32% Confidence
+    - Als Zapdos (Galarian) erkannt mit 79.64% Confidence
+
+Archen               0.5000      54.49%              6              
+
+  Falsche Vorhersagen für Archen (3/6):
+    - Als Floatzel erkannt mit 68.22% Confidence
+    - Als Beedrill erkannt mit 10.47% Confidence
+    - Als Girafarig erkannt mit 4.34% Confidence
+
+Archeops             0.6667      81.51%              6              
+
+  Falsche Vorhersagen für Archeops (2/6):
+    - Als Vespiquen erkannt mit 80.16% Confidence
+    - Als Crabominable erkannt mit 21.98% Confidence
+
+Arctibax             0.0000      52.87%              3              
+
+  Falsche Vorhersagen für Arctibax (3/3):
+    - Als Prinplup erkannt mit 56.76% Confidence
+    - Als Kingdra erkannt mit 69.75% Confidence
+    - Als Darumaka (Galarian) erkannt mit 32.09% Confidence
+
+Ariados              0.6667      82.04%              6              
+
+  Falsche Vorhersagen für Ariados (2/6):
+    - Als Exploud erkannt mit 89.54% Confidence
+    - Als Kingambit erkannt mit 2.71% Confidence
+
+Armaldo              0.8571      90.52%              7              
+
+  Falsche Vorhersagen für Armaldo (1/7):
+    - Als Ninjask erkannt mit 33.66% Confidence
+
+Armarouge            0.4000      69.70%              5              
+
+  Falsche Vorhersagen für Armarouge (3/5):
+    - Als Flareon erkannt mit 64.95% Confidence
+    - Als Gholdengo erkannt mit 81.10% Confidence
+    - Als Kartana erkannt mit 2.66% Confidence
+
+Aromatisse           1.0000      99.73%              6              
+Aron                 0.3333      56.19%              3              
+
+  Falsche Vorhersagen für Aron (2/3):
+    - Als Carbink erkannt mit 67.22% Confidence
+    - Als Vanillish erkannt mit 28.04% Confidence
+
+Articuno             0.3750      50.51%              8              
+
+  Falsche Vorhersagen für Articuno (5/8):
+    - Als Aurorus erkannt mit 53.12% Confidence
+    - Als Suicune erkannt mit 40.88% Confidence
+    - Als Vanillish erkannt mit 25.03% Confidence
+    - Als Vanillish erkannt mit 55.89% Confidence
+    - Als Glaceon erkannt mit 19.04% Confidence
+
+Articuno (Galarian)  0.5000      63.33%              4              
+
+  Falsche Vorhersagen für Articuno (Galarian) (2/4):
+    - Als Mew erkannt mit 44.99% Confidence
+    - Als Drapion erkannt mit 62.27% Confidence
+
+Audino               0.6667      69.17%              6              
+
+  Falsche Vorhersagen für Audino (2/6):
+    - Als Slowking (Galarian) erkannt mit 16.20% Confidence
+    - Als Magnezone erkannt mit 1.89% Confidence
+
+Aurorus              1.0000      91.95%              7              
+Avalugg              0.6667      54.48%              6              
+
+  Falsche Vorhersagen für Avalugg (2/6):
+    - Als Pineco erkannt mit 4.50% Confidence
+    - Als Avalugg (Hisuian) erkannt mit 99.18% Confidence
+
+Avalugg (Hisuian)    1.0000      96.25%              4              
+Axew                 0.5000      64.53%              6              
+
+  Falsche Vorhersagen für Axew (3/6):
+    - Als Cacturne erkannt mit 32.20% Confidence
+    - Als Tyranitar erkannt mit 47.80% Confidence
+    - Als Rufflet erkannt mit 37.44% Confidence
+
+Azelf                1.0000      89.33%              6              
+Azumarill            0.8571      91.19%              7              
+
+  Falsche Vorhersagen für Azumarill (1/7):
+    - Als Golduck erkannt mit 41.45% Confidence
+
+Banette              0.5000      65.75%              4              
+
+  Falsche Vorhersagen für Banette (2/4):
+    - Als Slowking (Galarian) erkannt mit 32.74% Confidence
+    - Als Greedent erkannt mit 30.25% Confidence
+
+Barbaracle           0.8333      76.36%              6              
+
+  Falsche Vorhersagen für Barbaracle (1/6):
+    - Als Hydreigon erkannt mit 3.04% Confidence
+
+Basculin             0.6000      70.34%              5              
+
+  Falsche Vorhersagen für Basculin (2/5):
+    - Als Oricorio (Sensu) erkannt mit 40.03% Confidence
+    - Als Ferroseed erkannt mit 30.93% Confidence
+
+Bastiodon            0.8750      88.17%              8              
+
+  Falsche Vorhersagen für Bastiodon (1/8):
+    - Als Electivire erkannt mit 6.26% Confidence
+
+Baxcalibur           0.6000      67.80%              5              
+
+  Falsche Vorhersagen für Baxcalibur (2/5):
+    - Als Mankey erkannt mit 4.50% Confidence
+    - Als Butterfree erkannt mit 99.56% Confidence
+
+Bayleef              0.7500      89.92%              8              
+
+  Falsche Vorhersagen für Bayleef (2/8):
+    - Als Sandshrew erkannt mit 57.56% Confidence
+    - Als Tyranitar erkannt mit 79.68% Confidence
+
+Beartic              0.7143      87.22%              7              
+
+  Falsche Vorhersagen für Beartic (2/7):
+    - Als Abomasnow erkannt mit 69.76% Confidence
+    - Als Ninetales (Alolan) erkannt mit 85.72% Confidence
+
+Beautifly            1.0000      95.04%              6              
+Beedrill             0.5000      70.31%              8              
+
+  Falsche Vorhersagen für Beedrill (4/8):
+    - Als Electivire erkannt mit 52.96% Confidence
+    - Als Entei erkannt mit 86.80% Confidence
+    - Als Kadabra erkannt mit 3.67% Confidence
+    - Als Zapdos erkannt mit 28.29% Confidence
+
+Beheeyem             0.6667      73.67%              6              
+
+  Falsche Vorhersagen für Beheeyem (2/6):
+    - Als Amoonguss erkannt mit 18.45% Confidence
+    - Als Mew erkannt mit 28.62% Confidence
+
+Bellibolt            1.0000      88.84%              6              
+Bellossom            0.8571      93.50%              7              
+
+  Falsche Vorhersagen für Bellossom (1/7):
+    - Als Thwackey erkannt mit 55.57% Confidence
+
+Bergmite             0.7143      88.01%              7              
+
+  Falsche Vorhersagen für Bergmite (2/7):
+    - Als Avalugg (Hisuian) erkannt mit 57.13% Confidence
+    - Als Avalugg erkannt mit 60.12% Confidence
+
+Bewear               0.8571      92.25%              7              
+
+  Falsche Vorhersagen für Bewear (1/7):
+    - Als Greedent erkannt mit 53.71% Confidence
+
+Bibarel              0.5714      79.42%              7              
+
+  Falsche Vorhersagen für Bibarel (3/7):
+    - Als Dugtrio (Alolan) erkannt mit 89.59% Confidence
+    - Als Fearow erkannt mit 65.67% Confidence
+    - Als Seismitoad erkannt mit 2.21% Confidence
+
+Bisharp              0.6000      83.69%              5              
+
+  Falsche Vorhersagen für Bisharp (2/5):
+    - Als Urshifu (Rapid Strike) erkannt mit 89.18% Confidence
+    - Als Eelektrik erkannt mit 32.94% Confidence
+
+Blastoise            0.5714      64.79%              7              
+
+  Falsche Vorhersagen für Blastoise (3/7):
+    - Als Nidoking erkannt mit 30.71% Confidence
+    - Als Electivire erkannt mit 7.66% Confidence
+    - Als Ceruledge erkannt mit 20.75% Confidence
+
+Blaziken             0.4000      56.95%              5              
+
+  Falsche Vorhersagen für Blaziken (3/5):
+    - Als Breloom erkannt mit 41.63% Confidence
+    - Als Stantler erkannt mit 41.35% Confidence
+    - Als Lileep erkannt mit 9.74% Confidence
+
+Blissey              1.0000      91.11%              6              
+Boldore              0.5714      89.91%              7              
+
+  Falsche Vorhersagen für Boldore (3/7):
+    - Als Arbok erkannt mit 48.95% Confidence
+    - Als Misdreavus erkannt mit 86.04% Confidence
+    - Als Arbok erkannt mit 94.82% Confidence
+
+Boltund              0.3333      61.37%              6              
+
+  Falsche Vorhersagen für Boltund (4/6):
+    - Als Kommo-o erkannt mit 19.09% Confidence
+    - Als Kommo-o erkannt mit 27.98% Confidence
+    - Als Masquerain erkannt mit 79.69% Confidence
+    - Als Raichu (Alolan) erkannt mit 59.62% Confidence
+
+Bombirdier           0.8333      53.68%              6              
+
+  Falsche Vorhersagen für Bombirdier (1/6):
+    - Als Lugia erkannt mit 38.84% Confidence
+
+Bonsly               0.8333      76.04%              6              
+
+  Falsche Vorhersagen für Bonsly (1/6):
+    - Als Togetic erkannt mit 2.29% Confidence
+
+Bouffalant           0.3333      83.18%              6              
+
+  Falsche Vorhersagen für Bouffalant (4/6):
+    - Als Tauros (Combat) erkannt mit 60.23% Confidence
+    - Als Crustle erkannt mit 78.10% Confidence
+    - Als Tauros erkannt mit 78.35% Confidence
+    - Als Crustle erkannt mit 84.65% Confidence
+
+Braixen              0.8333      76.03%              6              
+
+  Falsche Vorhersagen für Braixen (1/6):
+    - Als Mothim erkannt mit 2.48% Confidence
+
+Braviary             0.4286      62.11%              7              
+
+  Falsche Vorhersagen für Braviary (4/7):
+    - Als Talonflame erkannt mit 67.56% Confidence
+    - Als Tauros (Blaze) erkannt mit 24.11% Confidence
+    - Als Braviary (Hisuian) erkannt mit 95.82% Confidence
+    - Als Aurorus erkannt mit 7.98% Confidence
+
+Braviary (Hisuian)   0.7143      64.82%              7              
+
+  Falsche Vorhersagen für Braviary (Hisuian) (2/7):
+    - Als Braviary erkannt mit 81.64% Confidence
+    - Als Gourgeist (Average) erkannt mit 30.36% Confidence
+
+Breloom              1.0000      98.81%              7              
+Brionne              0.5714      62.46%              7              
+
+  Falsche Vorhersagen für Brionne (3/7):
+    - Als Rayquaza erkannt mit 42.63% Confidence
+    - Als Lugia erkannt mit 35.33% Confidence
+    - Als Moltres erkannt mit 4.33% Confidence
+
+Bronzong             0.5714      76.42%              7              
+
+  Falsche Vorhersagen für Bronzong (3/7):
+    - Als Bulbasaur erkannt mit 45.93% Confidence
+    - Als Bulbasaur erkannt mit 95.08% Confidence
+    - Als Gabite erkannt mit 34.81% Confidence
+
+Bruxish              1.0000      88.57%              6              
+Bulbasaur            0.8571      75.18%              7              
+
+  Falsche Vorhersagen für Bulbasaur (1/7):
+    - Als Duosion erkannt mit 20.76% Confidence
+
+Buneary              0.3333      61.81%              6              
+
+  Falsche Vorhersagen für Buneary (4/6):
+    - Als Solrock erkannt mit 43.67% Confidence
+    - Als Conkeldurr erkannt mit 60.69% Confidence
+    - Als Lickitung erkannt mit 29.72% Confidence
+    - Als Noctowl erkannt mit 37.86% Confidence
+
+Butterfree           0.8750      79.83%              8              
+
+  Falsche Vorhersagen für Butterfree (1/8):
+    - Als Sigilyph erkannt mit 3.71% Confidence
+
+Buzzwole             0.7143      77.48%              7              
+
+  Falsche Vorhersagen für Buzzwole (2/7):
+    - Als Kricketune erkannt mit 47.32% Confidence
+    - Als Cinderace erkannt mit 54.41% Confidence
+
+Cacturne             0.3333      52.89%              6              
+
+  Falsche Vorhersagen für Cacturne (4/6):
+    - Als Darumaka erkannt mit 2.31% Confidence
+    - Als Arboliva erkannt mit 64.54% Confidence
+    - Als Tyranitar erkannt mit 59.46% Confidence
+    - Als Celebi erkannt mit 46.93% Confidence
+
+Camerupt             0.5714      78.22%              7              
+
+  Falsche Vorhersagen für Camerupt (3/7):
+    - Als Arcanine erkannt mit 41.88% Confidence
+    - Als Thievul erkannt mit 84.05% Confidence
+    - Als Charmeleon erkannt mit 30.04% Confidence
+
+Carbink              0.5000      60.25%              8              
+
+  Falsche Vorhersagen für Carbink (4/8):
+    - Als Swanna erkannt mit 53.60% Confidence
+    - Als Grumpig erkannt mit 79.40% Confidence
+    - Als Persian (Alolan) erkannt mit 45.79% Confidence
+    - Als Persian (Alolan) erkannt mit 23.78% Confidence
+
+Carnivine            1.0000      99.88%              6              
+Carracosta           0.8333      86.35%              6              
+
+  Falsche Vorhersagen für Carracosta (1/6):
+    - Als Tangela erkannt mit 42.41% Confidence
+
+Castform             0.5000      32.78%              4              
+
+  Falsche Vorhersagen für Castform (2/4):
+    - Als Hattrem erkannt mit 24.50% Confidence
+    - Als Jirachi erkannt mit 46.05% Confidence
+
+Castform (Rainy)     0.7143      73.15%              7              
+
+  Falsche Vorhersagen für Castform (Rainy) (2/7):
+    - Als Donphan erkannt mit 14.48% Confidence
+    - Als Wigglytuff erkannt mit 41.45% Confidence
+
+Castform (Snowy)     0.8571      89.95%              7              
+
+  Falsche Vorhersagen für Castform (Snowy) (1/7):
+    - Als Rhyhorn erkannt mit 41.93% Confidence
+
+Castform (Sunny)     1.0000      94.29%              7              
+Celebi               0.4286      77.09%              7              
+
+  Falsche Vorhersagen für Celebi (4/7):
+    - Als Dunsparce erkannt mit 38.67% Confidence
+    - Als Ninetales erkannt mit 69.54% Confidence
+    - Als Leavanny erkannt mit 38.52% Confidence
+    - Als Celesteela erkannt mit 95.99% Confidence
+
+Celesteela           0.7143      76.82%              7              
+
+  Falsche Vorhersagen für Celesteela (2/7):
+    - Als Kecleon erkannt mit 47.98% Confidence
+    - Als Scyther erkannt mit 19.94% Confidence
+
+Centiskorch          0.0000      55.05%              5              
+
+  Falsche Vorhersagen für Centiskorch (5/5):
+    - Als Rapidash erkannt mit 56.02% Confidence
+    - Als Alakazam erkannt mit 49.58% Confidence
+    - Als Electabuzz erkannt mit 44.23% Confidence
+    - Als Alakazam erkannt mit 81.45% Confidence
+    - Als Heatmor erkannt mit 43.99% Confidence
+
+Ceruledge            0.5000      69.37%              6              
+
+  Falsche Vorhersagen für Ceruledge (3/6):
+    - Als Mantine erkannt mit 59.43% Confidence
+    - Als Meowstic (Male) erkannt mit 61.15% Confidence
+    - Als Articuno (Galarian) erkannt mit 31.75% Confidence
+
+Cetitan              0.1667      50.01%              6              
+
+  Falsche Vorhersagen für Cetitan (5/6):
+    - Als Abomasnow erkannt mit 78.03% Confidence
+    - Als Golisopod erkannt mit 45.24% Confidence
+    - Als Skeledirge erkannt mit 4.41% Confidence
+    - Als Steelix erkannt mit 54.42% Confidence
+    - Als Golisopod erkannt mit 78.36% Confidence
+
+Cetoddle             0.4000      39.88%              5              
+
+  Falsche Vorhersagen für Cetoddle (3/5):
+    - Als Maushold erkannt mit 39.42% Confidence
+    - Als Durant erkannt mit 43.96% Confidence
+    - Als Sylveon erkannt mit 20.37% Confidence
+
+Chandelure           0.8571      84.86%              7              
+
+  Falsche Vorhersagen für Chandelure (1/7):
+    - Als Skeledirge erkannt mit 49.80% Confidence
+
+Chansey              0.6667      80.25%              9              
+
+  Falsche Vorhersagen für Chansey (3/9):
+    - Als Tinkatuff erkannt mit 67.71% Confidence
+    - Als Mew erkannt mit 31.08% Confidence
+    - Als Stufful erkannt mit 78.66% Confidence
+
+Charizard            0.6667      68.32%              6              
+
+  Falsche Vorhersagen für Charizard (2/6):
+    - Als Centiskorch erkannt mit 31.51% Confidence
+    - Als Nidoking erkannt mit 20.34% Confidence
+
+Charjabug            0.5714      62.57%              7              
+
+  Falsche Vorhersagen für Charjabug (3/7):
+    - Als Simipour erkannt mit 54.40% Confidence
+    - Als Kecleon erkannt mit 24.27% Confidence
+    - Als Ho-Oh erkannt mit 16.05% Confidence
+
+Charmeleon           0.5000      65.09%              8              
+
+  Falsche Vorhersagen für Charmeleon (4/8):
+    - Als Skeledirge erkannt mit 96.66% Confidence
+    - Als Golbat erkannt mit 27.98% Confidence
+    - Als Moltres erkannt mit 31.74% Confidence
+    - Als Ledian erkannt mit 25.92% Confidence
+
+Chatot               0.7143      76.97%              7              
+
+  Falsche Vorhersagen für Chatot (2/7):
+    - Als Unfezant erkannt mit 21.84% Confidence
+    - Als Florges erkannt mit 17.65% Confidence
+
+Cherrim (Overcast)   0.8333      86.09%              6              
+
+  Falsche Vorhersagen für Cherrim (Overcast) (1/6):
+    - Als Pangoro erkannt mit 41.90% Confidence
+
+Cherrim (Sunshine)   0.8571      86.56%              7              
+
+  Falsche Vorhersagen für Cherrim (Sunshine) (1/7):
+    - Als Reuniclus erkannt mit 28.54% Confidence
+
+Chesnaught           0.7143      86.40%              7              
+
+  Falsche Vorhersagen für Chesnaught (2/7):
+    - Als Celebi erkannt mit 65.65% Confidence
+    - Als Flygon erkannt mit 43.62% Confidence
+
+Chespin              0.8571      75.25%              7              
+
+  Falsche Vorhersagen für Chespin (1/7):
+    - Als Magmar erkannt mit 1.99% Confidence
+
+Chimecho             0.7143      76.51%              7              
+
+  Falsche Vorhersagen für Chimecho (2/7):
+    - Als Typhlosion erkannt mit 13.98% Confidence
+    - Als Yanma erkannt mit 22.14% Confidence
+
+Chinchou             0.8571      90.03%              7              
+
+  Falsche Vorhersagen für Chinchou (1/7):
+    - Als Cresselia erkannt mit 51.02% Confidence
+
+Cinccino             0.7500      85.07%              8              
+
+  Falsche Vorhersagen für Cinccino (2/8):
+    - Als Litleo erkannt mit 1.97% Confidence
+    - Als Audino erkannt mit 91.96% Confidence
+
+Cinderace            0.3333      67.74%              6              
+
+  Falsche Vorhersagen für Cinderace (4/6):
+    - Als Moltres (Galarian) erkannt mit 52.63% Confidence
+    - Als Ursaring erkannt mit 36.74% Confidence
+    - Als Castform (Sunny) erkannt mit 57.60% Confidence
+    - Als Flareon erkannt mit 61.81% Confidence
+
+Clamperl             0.8333      83.73%              6              
+
+  Falsche Vorhersagen für Clamperl (1/6):
+    - Als Exeggcute erkannt mit 2.54% Confidence
+
+Clauncher            0.6667      73.43%              6              
+
+  Falsche Vorhersagen für Clauncher (2/6):
+    - Als Venusaur erkannt mit 29.71% Confidence
+    - Als Arctibax erkannt mit 22.54% Confidence
+
+Clawitzer            0.8333      83.51%              6              
+
+  Falsche Vorhersagen für Clawitzer (1/6):
+    - Als Kingdra erkannt mit 21.06% Confidence
+
+Claydol              0.7500      84.65%              8              
+
+  Falsche Vorhersagen für Claydol (2/8):
+    - Als Malamar erkannt mit 66.39% Confidence
+    - Als Urshifu (Single Strike) erkannt mit 63.10% Confidence
+
+Clefable             0.8750      78.01%              8              
+
+  Falsche Vorhersagen für Clefable (1/8):
+    - Als Raticate erkannt mit 22.78% Confidence
+
+Clefairy             0.7143      77.56%              7              
+
+  Falsche Vorhersagen für Clefairy (2/7):
+    - Als Raticate erkannt mit 16.69% Confidence
+    - Als Exeggcute erkannt mit 85.55% Confidence
+
+Clodsire             0.4000      73.39%              5              
+
+  Falsche Vorhersagen für Clodsire (3/5):
+    - Als Tauros erkannt mit 68.25% Confidence
+    - Als Lugia erkannt mit 38.45% Confidence
+    - Als Mandibuzz erkannt mit 63.92% Confidence
+
+Cloyster             0.7500      87.14%              8              
+
+  Falsche Vorhersagen für Cloyster (2/8):
+    - Als Carracosta erkannt mit 80.10% Confidence
+    - Als Venomoth erkannt mit 57.87% Confidence
+
+Cofagrigus           1.0000      79.81%              5              
+Combusken            1.0000      93.59%              5              
+Comfey               0.8571      78.05%              7              
+
+  Falsche Vorhersagen für Comfey (1/7):
+    - Als Pidgeot erkannt mit 28.92% Confidence
+
+Conkeldurr           0.6667      79.11%              6              
+
+  Falsche Vorhersagen für Conkeldurr (2/6):
+    - Als Dustox erkannt mit 44.87% Confidence
+    - Als Kangaskhan erkannt mit 29.90% Confidence
+
+Corphish             0.8571      87.95%              7              
+
+  Falsche Vorhersagen für Corphish (1/7):
+    - Als Lycanroc (Dusk) erkannt mit 54.84% Confidence
+
+Corsola              1.0000      90.32%              7              
+Corsola (Galarian)   0.6000      71.82%              5              
+
+  Falsche Vorhersagen für Corsola (Galarian) (2/5):
+    - Als Corsola erkannt mit 98.54% Confidence
+    - Als Togedemaru erkannt mit 46.36% Confidence
+
+Corviknight          0.7500      69.46%              4              
+
+  Falsche Vorhersagen für Corviknight (1/4):
+    - Als Garchomp erkannt mit 55.94% Confidence
+
+Corvisquire          0.6667      71.10%              6              
+
+  Falsche Vorhersagen für Corvisquire (2/6):
+    - Als Magnezone erkannt mit 91.39% Confidence
+    - Als Meowstic (Male) erkannt mit 18.79% Confidence
+
+Crabominable         0.7143      93.37%              7              
+
+  Falsche Vorhersagen für Crabominable (2/7):
+    - Als Sandslash (Alolan) erkannt mit 86.98% Confidence
+    - Als Zangoose erkannt mit 72.21% Confidence
+
+Crabrawler           0.5000      66.84%              6              
+
+  Falsche Vorhersagen für Crabrawler (3/6):
+    - Als Tapu Fini erkannt mit 9.07% Confidence
+    - Als Galvantula erkannt mit 26.86% Confidence
+    - Als Poliwrath erkannt mit 72.05% Confidence
+
+Cradily              1.0000      96.97%              6              
+Crawdaunt            0.7143      85.63%              7              
+
+  Falsche Vorhersagen für Crawdaunt (2/7):
+    - Als Tentacruel erkannt mit 39.54% Confidence
+    - Als Scizor erkannt mit 68.25% Confidence
+
+Cresselia            0.7500      80.79%              8              
+
+  Falsche Vorhersagen für Cresselia (2/8):
+    - Als Vanillish erkannt mit 34.61% Confidence
+    - Als Armaldo erkannt mit 49.36% Confidence
+
+Crobat               0.7143      61.66%              7              
+
+  Falsche Vorhersagen für Crobat (2/7):
+    - Als Girafarig erkannt mit 6.63% Confidence
+    - Als Espeon erkannt mit 66.27% Confidence
+
+Crocalor             1.0000      99.76%              5              
+Croconaw             0.8571      81.57%              7              
+
+  Falsche Vorhersagen für Croconaw (1/7):
+    - Als Gyarados erkannt mit 95.28% Confidence
+
+Crustle              0.8333      84.75%              6              
+
+  Falsche Vorhersagen für Crustle (1/6):
+    - Als Bouffalant erkannt mit 46.14% Confidence
+
+Cryogonal            0.8333      62.19%              6              
+
+  Falsche Vorhersagen für Cryogonal (1/6):
+    - Als Electivire erkannt mit 8.28% Confidence
+
+Cubone               0.3750      51.87%              8              
+
+  Falsche Vorhersagen für Cubone (5/8):
+    - Als Noctowl erkannt mit 51.70% Confidence
+    - Als Marowak erkannt mit 81.61% Confidence
+    - Als Poliwhirl erkannt mit 6.96% Confidence
+    - Als Teddiursa erkannt mit 3.78% Confidence
+    - Als Togetic erkannt mit 25.67% Confidence
+
+Cursola              0.2000      41.57%              5              
+
+  Falsche Vorhersagen für Cursola (4/5):
+    - Als Cetitan erkannt mit 60.81% Confidence
+    - Als Poliwrath erkannt mit 23.98% Confidence
+    - Als Abomasnow erkannt mit 47.02% Confidence
+    - Als Shiinotic erkannt mit 1.97% Confidence
+
+Dachsbun             0.4000      67.65%              5              
+
+  Falsche Vorhersagen für Dachsbun (3/5):
+    - Als Magmar erkannt mit 72.90% Confidence
+    - Als Uxie erkannt mit 2.65% Confidence
+    - Als Stantler erkannt mit 63.63% Confidence
+
+Darmanitan (Galarian) 0.6667      51.95%              3              
+
+  Falsche Vorhersagen für Darmanitan (Galarian) (1/3):
+    - Als Maushold erkannt mit 26.65% Confidence
+
+Darmanitan (Standard) 0.6667      74.97%              3              
+
+  Falsche Vorhersagen für Darmanitan (Standard) (1/3):
+    - Als Drapion erkannt mit 24.93% Confidence
+
+Dartrix              0.6667      67.95%              6              
+
+  Falsche Vorhersagen für Dartrix (2/6):
+    - Als Deerling erkannt mit 17.38% Confidence
+    - Als Girafarig erkannt mit 3.59% Confidence
+
+Darumaka             0.8000      90.07%              5              
+
+  Falsche Vorhersagen für Darumaka (1/5):
+    - Als Delphox erkannt mit 52.93% Confidence
+
+Darumaka (Galarian)  0.0000      34.66%              3              
+
+  Falsche Vorhersagen für Darumaka (Galarian) (3/3):
+    - Als Altaria erkannt mit 28.72% Confidence
+    - Als Exeggcute erkannt mit 50.13% Confidence
+    - Als Togekiss erkannt mit 25.11% Confidence
+
+Decidueye            0.6000      68.13%              5              
+
+  Falsche Vorhersagen für Decidueye (2/5):
+    - Als Noctowl erkannt mit 45.66% Confidence
+    - Als Centiskorch erkannt mit 7.38% Confidence
+
+Decidueye (Hisuian)  0.2500      45.57%              4              
+
+  Falsche Vorhersagen für Decidueye (Hisuian) (3/4):
+    - Als Simisage erkannt mit 23.72% Confidence
+    - Als Ariados erkannt mit 33.57% Confidence
+    - Als Krokorok erkannt mit 25.09% Confidence
+
+Dedenne              0.5000      81.57%              6              
+
+  Falsche Vorhersagen für Dedenne (3/6):
+    - Als Solrock erkannt mit 97.34% Confidence
+    - Als Kadabra erkannt mit 99.27% Confidence
+    - Als Sandshrew erkannt mit 54.13% Confidence
+
+Deerling             0.5000      57.87%              4              
+
+  Falsche Vorhersagen für Deerling (2/4):
+    - Als Beedrill erkannt mit 17.59% Confidence
+    - Als Oricorio (Pom-Pom) erkannt mit 34.58% Confidence
+
+Delcatty             0.8571      72.42%              7              
+
+  Falsche Vorhersagen für Delcatty (1/7):
+    - Als Moltres erkannt mit 4.91% Confidence
+
+Delphox              0.8333      78.97%              6              
+
+  Falsche Vorhersagen für Delphox (1/6):
+    - Als Plusle erkannt mit 52.79% Confidence
+
+Deoxys (Defense)     0.6667      78.32%              6              
+
+  Falsche Vorhersagen für Deoxys (Defense) (2/6):
+    - Als Skeledirge erkannt mit 59.41% Confidence
+    - Als Manectric erkannt mit 32.64% Confidence
+
+Deoxys (Speed)       0.5000      65.56%              6              
+
+  Falsche Vorhersagen für Deoxys (Speed) (3/6):
+    - Als Moltres (Galarian) erkannt mit 40.48% Confidence
+    - Als Trevenant erkannt mit 39.32% Confidence
+    - Als Thievul erkannt mit 31.24% Confidence
+
+Dewgong              0.2857      44.26%              7              
+
+  Falsche Vorhersagen für Dewgong (5/7):
+    - Als Onix erkannt mit 4.79% Confidence
+    - Als Swanna erkannt mit 73.22% Confidence
+    - Als Poliwrath erkannt mit 20.49% Confidence
+    - Als Raticate erkannt mit 8.18% Confidence
+    - Als Seel erkannt mit 75.46% Confidence
+
+Dewott               0.6667      76.18%              6              
+
+  Falsche Vorhersagen für Dewott (2/6):
+    - Als Marshtomp erkannt mit 33.42% Confidence
+    - Als Golett erkannt mit 32.40% Confidence
+
+Dhelmise             1.0000      99.31%              5              
+Diancie              0.6667      67.67%              3              
+
+  Falsche Vorhersagen für Diancie (1/3):
+    - Als Moltres erkannt mit 5.15% Confidence
+
+Diggersby            0.3333      51.69%              6              
+
+  Falsche Vorhersagen für Diggersby (4/6):
+    - Als Cubone erkannt mit 60.15% Confidence
+    - Als Togedemaru erkannt mit 38.38% Confidence
+    - Als Rhydon erkannt mit 50.02% Confidence
+    - Als Cinccino erkannt mit 38.71% Confidence
+
+Dodrio               0.7143      72.26%              7              
+
+  Falsche Vorhersagen für Dodrio (2/7):
+    - Als Scrafty erkannt mit 66.04% Confidence
+    - Als Flygon erkannt mit 4.03% Confidence
+
+Dolliv               0.7500      65.66%              4              
+
+  Falsche Vorhersagen für Dolliv (1/4):
+    - Als Mothim erkannt mit 4.19% Confidence
+
+Donphan              0.0000      43.04%              6              
+
+  Falsche Vorhersagen für Donphan (6/6):
+    - Als Lairon erkannt mit 44.08% Confidence
+    - Als Sawk erkannt mit 28.80% Confidence
+    - Als Relicanth erkannt mit 58.60% Confidence
+    - Als Vibrava erkannt mit 14.84% Confidence
+    - Als Trapinch erkannt mit 27.07% Confidence
+    - Als Rhyhorn erkannt mit 84.87% Confidence
+
+Dragalge             0.6667      66.53%              6              
+
+  Falsche Vorhersagen für Dragalge (2/6):
+    - Als Flygon erkannt mit 15.94% Confidence
+    - Als Sandslash (Alolan) erkannt mit 15.98% Confidence
+
+Dragapult            0.6667      64.71%              6              
+
+  Falsche Vorhersagen für Dragapult (2/6):
+    - Als Diancie erkannt mit 27.80% Confidence
+    - Als Moltres (Galarian) erkannt mit 33.82% Confidence
+
+Dragonair            0.4286      58.84%              7              
+
+  Falsche Vorhersagen für Dragonair (4/7):
+    - Als Articuno erkannt mit 26.09% Confidence
+    - Als Quaquaval erkannt mit 25.80% Confidence
+    - Als Electabuzz erkannt mit 62.76% Confidence
+    - Als Pupitar erkannt mit 87.62% Confidence
+
+Dragonite            0.7143      85.34%              7              
+
+  Falsche Vorhersagen für Dragonite (2/7):
+    - Als Pawmo erkannt mit 74.78% Confidence
+    - Als Pawmo erkannt mit 70.92% Confidence
+
+Drakloak             0.6000      76.39%              5              
+
+  Falsche Vorhersagen für Drakloak (2/5):
+    - Als Wobbuffet erkannt mit 83.70% Confidence
+    - Als Metagross erkannt mit 49.31% Confidence
+
+Drampa               0.3333      55.83%              6              
+
+  Falsche Vorhersagen für Drampa (4/6):
+    - Als Passimian erkannt mit 38.73% Confidence
+    - Als Wigglytuff erkannt mit 60.52% Confidence
+    - Als Klefki erkannt mit 33.12% Confidence
+    - Als Graveler (Alolan) erkannt mit 33.22% Confidence
+
+Drapion              0.5714      70.63%              7              
+
+  Falsche Vorhersagen für Drapion (3/7):
+    - Als Drifblim erkannt mit 60.46% Confidence
+    - Als Venomoth erkannt mit 23.05% Confidence
+    - Als Gorebyss erkannt mit 25.73% Confidence
+
+Drifblim             0.8571      83.96%              7              
+
+  Falsche Vorhersagen für Drifblim (1/7):
+    - Als Flaaffy erkannt mit 28.55% Confidence
+
+Drifloon             0.8571      89.73%              7              
+
+  Falsche Vorhersagen für Drifloon (1/7):
+    - Als Aipom erkannt mit 30.48% Confidence
+
+Drilbur              0.5714      71.23%              7              
+
+  Falsche Vorhersagen für Drilbur (3/7):
+    - Als Lampent erkannt mit 24.60% Confidence
+    - Als Pineco erkannt mit 25.24% Confidence
+    - Als Aromatisse erkannt mit 59.55% Confidence
+
+Drizzile             0.8000      76.03%              5              
+
+  Falsche Vorhersagen für Drizzile (1/5):
+    - Als Carracosta erkannt mit 17.94% Confidence
+
+Drowzee              0.8750      92.98%              8              
+
+  Falsche Vorhersagen für Drowzee (1/8):
+    - Als Ninetales erkannt mit 44.22% Confidence
+
+Druddigon            0.8571      80.38%              7              
+
+  Falsche Vorhersagen für Druddigon (1/7):
+    - Als Claydol erkannt mit 29.53% Confidence
+
+Dubwool              0.8000      83.12%              5              
+
+  Falsche Vorhersagen für Dubwool (1/5):
+    - Als Hitmonchan erkannt mit 38.45% Confidence
+
+Dugtrio              0.8571      79.90%              7              
+
+  Falsche Vorhersagen für Dugtrio (1/7):
+    - Als Dugtrio (Alolan) erkannt mit 88.07% Confidence
+
+Dugtrio (Alolan)     1.0000      93.54%              6              
+Dunsparce            0.7143      79.71%              7              
+
+  Falsche Vorhersagen für Dunsparce (2/7):
+    - Als Sandshrew erkannt mit 14.18% Confidence
+    - Als Simisage erkannt mit 55.43% Confidence
+
+Duosion              0.8333      64.85%              6              
+
+  Falsche Vorhersagen für Duosion (1/6):
+    - Als Elgyem erkannt mit 27.21% Confidence
+
+Durant               0.6667      46.01%              3              
+
+  Falsche Vorhersagen für Durant (1/3):
+    - Als Obstagoon erkannt mit 31.76% Confidence
+
+Dusclops             0.6667      74.98%              6              
+
+  Falsche Vorhersagen für Dusclops (2/6):
+    - Als Toxtricity erkannt mit 9.71% Confidence
+    - Als Sandslash (Alolan) erkannt mit 68.61% Confidence
+
+Dusknoir             0.8571      85.49%              7              
+
+  Falsche Vorhersagen für Dusknoir (1/7):
+    - Als Bastiodon erkannt mit 54.37% Confidence
+
+Dustox               1.0000      99.68%              8              
+Dwebble              0.8333      71.81%              6              
+
+  Falsche Vorhersagen für Dwebble (1/6):
+    - Als Teddiursa erkannt mit 3.37% Confidence
+
+Eelektrik            0.6667      80.94%              6              
+
+  Falsche Vorhersagen für Eelektrik (2/6):
+    - Als Eelektross erkannt mit 76.86% Confidence
+    - Als Quagsire erkannt mit 27.71% Confidence
+
+Eelektross           0.6250      70.54%              8              
+
+  Falsche Vorhersagen für Eelektross (3/8):
+    - Als Eelektrik erkannt mit 99.35% Confidence
+    - Als Mr. Rime erkannt mit 26.92% Confidence
+    - Als Samurott erkannt mit 35.30% Confidence
+
+Eevee                0.4286      53.44%              7              
+
+  Falsche Vorhersagen für Eevee (4/7):
+    - Als Teddiursa erkannt mit 23.57% Confidence
+    - Als Buneary erkannt mit 36.20% Confidence
+    - Als Lanturn erkannt mit 17.19% Confidence
+    - Als Moltres erkannt mit 7.56% Confidence
+
+Eldegoss             0.3333      48.71%              6              
+
+  Falsche Vorhersagen für Eldegoss (4/6):
+    - Als Scyther erkannt mit 41.48% Confidence
+    - Als Ninjask erkannt mit 29.63% Confidence
+    - Als Beedrill erkannt mit 73.20% Confidence
+    - Als Masquerain erkannt mit 9.77% Confidence
+
+Electabuzz           0.5000      74.46%              8              
+
+  Falsche Vorhersagen für Electabuzz (4/8):
+    - Als Zapdos erkannt mit 99.99% Confidence
+    - Als Elekid erkannt mit 70.44% Confidence
+    - Als Venusaur erkannt mit 6.65% Confidence
+    - Als Electivire erkannt mit 95.33% Confidence
+
+Electivire           0.7500      90.00%              8              
+
+  Falsche Vorhersagen für Electivire (2/8):
+    - Als Electabuzz erkannt mit 32.50% Confidence
+    - Als Electabuzz erkannt mit 91.48% Confidence
+
+Electrode            0.3333      47.46%              3              
+
+  Falsche Vorhersagen für Electrode (2/3):
+    - Als Munna erkannt mit 24.40% Confidence
+    - Als Arcanine erkannt mit 18.22% Confidence
+
+Electrode (Hisuian)  1.0000      99.21%              4              
+Elekid               0.7500      65.04%              8              
+
+  Falsche Vorhersagen für Elekid (2/8):
+    - Als Zapdos erkannt mit 75.02% Confidence
+    - Als Sandshrew erkannt mit 49.61% Confidence
+
+Elgyem               0.8571      77.61%              7              
+
+  Falsche Vorhersagen für Elgyem (1/7):
+    - Als Maractus erkannt mit 2.06% Confidence
+
+Emboar               1.0000      99.92%              6              
+Emolga               0.8750      84.12%              8              
+
+  Falsche Vorhersagen für Emolga (1/8):
+    - Als Sunflora erkannt mit 57.00% Confidence
+
+Empoleon             0.7143      82.32%              7              
+
+  Falsche Vorhersagen für Empoleon (2/7):
+    - Als Luxio erkannt mit 17.19% Confidence
+    - Als Samurott erkannt mit 62.69% Confidence
+
+Entei                0.5714      51.58%              7              
+
+  Falsche Vorhersagen für Entei (3/7):
+    - Als Ninjask erkannt mit 45.41% Confidence
+    - Als Ninjask erkannt mit 28.68% Confidence
+    - Als Heatran erkannt mit 39.75% Confidence
+
+Escavalier           0.8571      94.51%              7              
+
+  Falsche Vorhersagen für Escavalier (1/7):
+    - Als Lickitung erkannt mit 75.59% Confidence
+
+Espeon               0.2500      69.55%              8              
+
+  Falsche Vorhersagen für Espeon (6/8):
+    - Als Grumpig erkannt mit 99.87% Confidence
+    - Als Mew erkannt mit 44.92% Confidence
+    - Als Clefable erkannt mit 56.12% Confidence
+    - Als Drapion erkannt mit 87.64% Confidence
+    - Als Spritzee erkannt mit 47.68% Confidence
+    - Als Flaaffy erkannt mit 38.74% Confidence
+
+Espurr               0.6667      70.28%              6              
+
+  Falsche Vorhersagen für Espurr (2/6):
+    - Als Flaaffy erkannt mit 56.14% Confidence
+    - Als Banette erkannt mit 79.44% Confidence
+
+Excadrill            0.4286      68.24%              7              
+
+  Falsche Vorhersagen für Excadrill (4/7):
+    - Als Dubwool erkannt mit 63.22% Confidence
+    - Als Kingler erkannt mit 2.59% Confidence
+    - Als Scizor erkannt mit 84.02% Confidence
+    - Als Muk (Alolan) erkannt mit 31.44% Confidence
+
+Exeggcute            0.8750      98.19%              8              
+
+  Falsche Vorhersagen für Exeggcute (1/8):
+    - Als Ninetales erkannt mit 96.23% Confidence
+
+Exeggutor            0.4286      62.61%              7              
+
+  Falsche Vorhersagen für Exeggutor (4/7):
+    - Als Swadloon erkannt mit 48.45% Confidence
+    - Als Bayleef erkannt mit 43.02% Confidence
+    - Als Farfetch'd erkannt mit 31.72% Confidence
+    - Als Zapdos erkannt mit 39.38% Confidence
+
+Exeggutor (Alolan)   0.1667      56.32%              6              
+
+  Falsche Vorhersagen für Exeggutor (Alolan) (5/6):
+    - Als Vibrava erkannt mit 34.85% Confidence
+    - Als Stantler erkannt mit 64.90% Confidence
+    - Als Exeggutor erkannt mit 89.58% Confidence
+    - Als Simisage erkannt mit 21.24% Confidence
+    - Als Dolliv erkannt mit 27.51% Confidence
+
+Exploud              0.8571      99.80%              7              
+
+  Falsche Vorhersagen für Exploud (1/7):
+    - Als Toxtricity erkannt mit 98.90% Confidence
+
+Falinks              0.6000      67.80%              5              
+
+  Falsche Vorhersagen für Falinks (2/5):
+    - Als Skeledirge erkannt mit 11.10% Confidence
+    - Als Krokorok erkannt mit 28.62% Confidence
+
+Farfetch'd           0.2857      47.60%              7              
+
+  Falsche Vorhersagen für Farfetch'd (5/7):
+    - Als Machamp erkannt mit 13.50% Confidence
+    - Als Persian erkannt mit 45.74% Confidence
+    - Als Rowlet erkannt mit 17.65% Confidence
+    - Als Tauros erkannt mit 19.93% Confidence
+    - Als Zapdos erkannt mit 39.75% Confidence
+
+Farfetch'd (Galarian) 0.5000      66.38%              6              
+
+  Falsche Vorhersagen für Farfetch'd (Galarian) (3/6):
+    - Als Emolga erkannt mit 46.61% Confidence
+    - Als Piplup erkannt mit 11.61% Confidence
+    - Als Zebstrika erkannt mit 73.54% Confidence
+
+Fearow               0.7500      94.35%              8              
+
+  Falsche Vorhersagen für Fearow (2/8):
+    - Als Bibarel erkannt mit 79.82% Confidence
+    - Als Kangaskhan erkannt mit 92.10% Confidence
+
+Feraligatr           0.8571      80.55%              7              
+
+  Falsche Vorhersagen für Feraligatr (1/7):
+    - Als Kingdra erkannt mit 54.72% Confidence
+
+Ferroseed            0.8000      76.01%              5              
+
+  Falsche Vorhersagen für Ferroseed (1/5):
+    - Als Kingdra erkannt mit 25.09% Confidence
+
+Ferrothorn           0.6667      63.49%              6              
+
+  Falsche Vorhersagen für Ferrothorn (2/6):
+    - Als Ferroseed erkannt mit 75.24% Confidence
+    - Als Pinsir erkannt mit 18.67% Confidence
+
+Flaaffy              0.7500      69.53%              8              
+
+  Falsche Vorhersagen für Flaaffy (2/8):
+    - Als Chansey erkannt mit 35.18% Confidence
+    - Als Sylveon erkannt mit 44.82% Confidence
+
+Flabebe              0.6667      82.23%              6              
+
+  Falsche Vorhersagen für Flabebe (2/6):
+    - Als Smoochum erkannt mit 18.95% Confidence
+    - Als Bewear erkannt mit 94.10% Confidence
+
+Flapple              0.2500      61.45%              4              
+
+  Falsche Vorhersagen für Flapple (3/4):
+    - Als Crawdaunt erkannt mit 27.93% Confidence
+    - Als Pidgeotto erkannt mit 65.81% Confidence
+    - Als Pidgeotto erkannt mit 71.38% Confidence
+
+Flareon              0.8889      93.30%              9              
+
+  Falsche Vorhersagen für Flareon (1/9):
+    - Als Dachsbun erkannt mit 46.12% Confidence
+
+Fletchinder          0.7143      79.53%              7              
+
+  Falsche Vorhersagen für Fletchinder (2/7):
+    - Als Swellow erkannt mit 2.85% Confidence
+    - Als Heatran erkannt mit 98.19% Confidence
+
+Floatzel             0.5714      68.33%              7              
+
+  Falsche Vorhersagen für Floatzel (3/7):
+    - Als Scrafty erkannt mit 79.39% Confidence
+    - Als Torracat erkannt mit 19.86% Confidence
+    - Als Noctowl erkannt mit 78.73% Confidence
+
+Floette              0.6000      53.88%              5              
+
+  Falsche Vorhersagen für Floette (2/5):
+    - Als Lurantis erkannt mit 52.39% Confidence
+    - Als Zangoose erkannt mit 49.58% Confidence
+
+Floragato            0.4000      82.82%              5              
+
+  Falsche Vorhersagen für Floragato (3/5):
+    - Als Bulbasaur erkannt mit 99.09% Confidence
+    - Als Gardevoir erkannt mit 98.37% Confidence
+    - Als Axew erkannt mit 52.33% Confidence
+
+Florges              0.5000      77.42%              6              
+
+  Falsche Vorhersagen für Florges (3/6):
+    - Als Venusaur erkannt mit 20.78% Confidence
+    - Als Meganium erkannt mit 78.72% Confidence
+    - Als Claydol erkannt mit 65.51% Confidence
+
+Flygon               0.8750      89.90%              8              
+
+  Falsche Vorhersagen für Flygon (1/8):
+    - Als Flapple erkannt mit 39.34% Confidence
+
+Forretress           1.0000      89.36%              7              
+Fraxure              0.5714      73.46%              7              
+
+  Falsche Vorhersagen für Fraxure (3/7):
+    - Als Haxorus erkannt mit 35.62% Confidence
+    - Als Magneton erkannt mit 23.44% Confidence
+    - Als Yanmega erkannt mit 58.11% Confidence
+
+Frigibax             0.6667      91.10%              3              
+
+  Falsche Vorhersagen für Frigibax (1/3):
+    - Als Castform (Snowy) erkannt mit 88.35% Confidence
+
+Frillish             0.2500      38.91%              4              
+
+  Falsche Vorhersagen für Frillish (3/4):
+    - Als Croconaw erkannt mit 16.75% Confidence
+    - Als Brionne erkannt mit 19.05% Confidence
+    - Als Nidorina erkannt mit 33.88% Confidence
+
+Frogadier            0.6667      83.84%              6              
+
+  Falsche Vorhersagen für Frogadier (2/6):
+    - Als Huntail erkannt mit 63.10% Confidence
+    - Als Quaxwell erkannt mit 94.27% Confidence
+
+Froslass             0.7500      80.10%              8              
+
+  Falsche Vorhersagen für Froslass (2/8):
+    - Als Cetitan erkannt mit 21.03% Confidence
+    - Als Avalugg erkannt mit 72.85% Confidence
+
+Fuecoco              1.0000      92.98%              6              
+Furfrou              0.5000      66.50%              4              
+
+  Falsche Vorhersagen für Furfrou (2/4):
+    - Als Ponyta (Galarian) erkannt mit 82.87% Confidence
+    - Als Aurorus erkannt mit 3.15% Confidence
+
+Furret               0.7143      74.76%              7              
+
+  Falsche Vorhersagen für Furret (2/7):
+    - Als Sylveon erkannt mit 78.14% Confidence
+    - Als Gumshoos erkannt mit 19.75% Confidence
+
+Gabite               0.8571      95.07%              7              
+
+  Falsche Vorhersagen für Gabite (1/7):
+    - Als Genesect erkannt mit 85.42% Confidence
+
+Gallade              0.3333      81.42%              6              
+
+  Falsche Vorhersagen für Gallade (4/6):
+    - Als Gardevoir erkannt mit 94.92% Confidence
+    - Als Gardevoir erkannt mit 62.05% Confidence
+    - Als Aggron erkannt mit 37.74% Confidence
+    - Als Marowak (Alolan) erkannt mit 96.72% Confidence
+
+Galvantula           0.7500      76.29%              8              
+
+  Falsche Vorhersagen für Galvantula (2/8):
+    - Als Kricketune erkannt mit 2.20% Confidence
+    - Als Drampa erkannt mit 36.96% Confidence
+
+Garbodor             0.5714      78.72%              7              
+
+  Falsche Vorhersagen für Garbodor (3/7):
+    - Als Buzzwole erkannt mit 70.10% Confidence
+    - Als Fraxure erkannt mit 64.28% Confidence
+    - Als Urshifu (Single Strike) erkannt mit 40.42% Confidence
+
+Garchomp             0.8571      87.14%              7              
+
+  Falsche Vorhersagen für Garchomp (1/7):
+    - Als Eelektross erkannt mit 47.68% Confidence
+
+Gardevoir            0.7143      57.25%              7              
+
+  Falsche Vorhersagen für Gardevoir (2/7):
+    - Als Empoleon erkannt mit 4.17% Confidence
+    - Als Primarina erkannt mit 33.55% Confidence
+
+Gastrodon            0.6667      82.20%              6              
+
+  Falsche Vorhersagen für Gastrodon (2/6):
+    - Als Milotic erkannt mit 5.32% Confidence
+    - Als Ludicolo erkannt mit 88.48% Confidence
+
+Genesect             0.3333      62.86%              6              
+
+  Falsche Vorhersagen für Genesect (4/6):
+    - Als Koffing erkannt mit 89.26% Confidence
+    - Als Espurr erkannt mit 49.85% Confidence
+    - Als Venusaur erkannt mit 4.33% Confidence
+    - Als Scizor erkannt mit 77.25% Confidence
+
+Gengar               0.5714      86.27%              7              
+
+  Falsche Vorhersagen für Gengar (3/7):
+    - Als Annihilape erkannt mit 88.07% Confidence
+    - Als Houndstone erkannt mit 28.13% Confidence
+    - Als Haunter erkannt mit 88.01% Confidence
+
+Geodude              0.1250      56.46%              8              
+
+  Falsche Vorhersagen für Geodude (7/8):
+    - Als Poliwhirl erkannt mit 84.36% Confidence
+    - Als Machop erkannt mit 25.40% Confidence
+    - Als Omanyte erkannt mit 88.15% Confidence
+    - Als Pyroar erkannt mit 6.05% Confidence
+    - Als Omanyte erkannt mit 7.78% Confidence
+    - Als Graveler erkannt mit 41.31% Confidence
+    - Als Geodude (Alolan) erkannt mit 99.87% Confidence
+
+Geodude (Alolan)     0.2000      41.05%              5              
+
+  Falsche Vorhersagen für Geodude (Alolan) (4/5):
+    - Als Thundurus (Incarnate) erkannt mit 15.07% Confidence
+    - Als Graveler erkannt mit 53.39% Confidence
+    - Als Torkoal erkannt mit 51.15% Confidence
+    - Als Articuno erkannt mit 45.18% Confidence
+
+Gholdengo            0.7143      79.56%              7              
+
+  Falsche Vorhersagen für Gholdengo (2/7):
+    - Als Vibrava erkannt mit 29.76% Confidence
+    - Als Dragonite erkannt mit 59.01% Confidence
+
+Gigalith             0.8333      81.34%              6              
+
+  Falsche Vorhersagen für Gigalith (1/6):
+    - Als Toxtricity erkannt mit 3.87% Confidence
+
+Girafarig            0.3333      54.69%              6              
+
+  Falsche Vorhersagen für Girafarig (4/6):
+    - Als Raichu erkannt mit 63.99% Confidence
+    - Als Moltres erkannt mit 34.72% Confidence
+    - Als Galvantula erkannt mit 15.98% Confidence
+    - Als Elekid erkannt mit 23.41% Confidence
+
+Giratina (Origin)    0.8000      89.46%              5              
+
+  Falsche Vorhersagen für Giratina (Origin) (1/5):
+    - Als Urshifu (Rapid Strike) erkannt mit 75.32% Confidence
+
+Glaceon              0.5000      61.10%              8              
+
+  Falsche Vorhersagen für Glaceon (4/8):
+    - Als Frillish erkannt mit 50.79% Confidence
+    - Als Porygon2 erkannt mit 82.25% Confidence
+    - Als Bronzong erkannt mit 57.54% Confidence
+    - Als Girafarig erkannt mit 3.09% Confidence
+
+Glalie               0.5000      63.73%              6              
+
+  Falsche Vorhersagen für Glalie (3/6):
+    - Als Sandslash (Alolan) erkannt mit 26.06% Confidence
+    - Als Mr. Mime (Galarian) erkannt mit 8.78% Confidence
+    - Als Magneton erkannt mit 49.03% Confidence
+
+Gligar               0.6667      71.66%              6              
+
+  Falsche Vorhersagen für Gligar (2/6):
+    - Als Granbull erkannt mit 25.54% Confidence
+    - Als Drapion erkannt mit 73.17% Confidence
+
+Gliscor              0.6667      80.65%              6              
+
+  Falsche Vorhersagen für Gliscor (2/6):
+    - Als Braviary erkannt mit 33.31% Confidence
+    - Als Luxio erkannt mit 50.69% Confidence
+
+Gloom                0.5000      71.37%              4              
+
+  Falsche Vorhersagen für Gloom (2/4):
+    - Als Vileplume erkannt mit 90.01% Confidence
+    - Als Vileplume erkannt mit 82.95% Confidence
+
+Gogoat               0.8333      90.94%              6              
+
+  Falsche Vorhersagen für Gogoat (1/6):
+    - Als Mamoswine erkannt mit 55.26% Confidence
+
+Golbat               0.8750      91.31%              8              
+
+  Falsche Vorhersagen für Golbat (1/8):
+    - Als Cloyster erkannt mit 31.33% Confidence
+
+Goldeen              0.5000      73.69%              8              
+
+  Falsche Vorhersagen für Goldeen (4/8):
+    - Als Zangoose erkannt mit 91.85% Confidence
+    - Als Poliwhirl erkannt mit 22.05% Confidence
+    - Als Zangoose erkannt mit 95.20% Confidence
+    - Als Feraligatr erkannt mit 40.59% Confidence
+
+Golduck              0.6250      77.17%              8              
+
+  Falsche Vorhersagen für Golduck (3/8):
+    - Als Zapdos erkannt mit 16.23% Confidence
+    - Als Murkrow erkannt mit 84.34% Confidence
+    - Als Seadra erkannt mit 35.21% Confidence
+
+Golem                0.6667      69.90%              3              
+
+  Falsche Vorhersagen für Golem (1/3):
+    - Als Butterfree erkannt mit 14.63% Confidence
+
+Golem (Alolan)       0.8333      97.84%              6              
+
+  Falsche Vorhersagen für Golem (Alolan) (1/6):
+    - Als Staravia erkannt mit 88.32% Confidence
+
+Golett               0.6000      74.87%              5              
+
+  Falsche Vorhersagen für Golett (2/5):
+    - Als Seadra erkannt mit 56.46% Confidence
+    - Als Manectric erkannt mit 19.96% Confidence
+
+Golisopod            0.5000      56.01%              6              
+
+  Falsche Vorhersagen für Golisopod (3/6):
+    - Als Zebstrika erkannt mit 96.69% Confidence
+    - Als Venusaur erkannt mit 20.85% Confidence
+    - Als Rhydon erkannt mit 22.10% Confidence
+
+Golurk               0.6667      88.57%              6              
+
+  Falsche Vorhersagen für Golurk (2/6):
+    - Als Celesteela erkannt mit 73.08% Confidence
+    - Als Thwackey erkannt mit 59.60% Confidence
+
+Goodra               0.6000      44.53%              5              
+
+  Falsche Vorhersagen für Goodra (2/5):
+    - Als Victreebel erkannt mit 2.90% Confidence
+    - Als Cursola erkannt mit 35.22% Confidence
+
+Gorebyss             0.8571      81.43%              7              
+
+  Falsche Vorhersagen für Gorebyss (1/7):
+    - Als Jumpluff erkannt mit 5.39% Confidence
+
+Gothitelle           0.2000      49.16%              5              
+
+  Falsche Vorhersagen für Gothitelle (4/5):
+    - Als Houndstone erkannt mit 25.12% Confidence
+    - Als Gothorita erkannt mit 41.59% Confidence
+    - Als Relicanth erkannt mit 13.63% Confidence
+    - Als Gothorita erkannt mit 78.20% Confidence
+
+Gothorita            0.6667      77.49%              6              
+
+  Falsche Vorhersagen für Gothorita (2/6):
+    - Als Grumpig erkannt mit 72.15% Confidence
+    - Als Gothitelle erkannt mit 56.96% Confidence
+
+Gourgeist (Average)  0.0000      57.91%              6              
+
+  Falsche Vorhersagen für Gourgeist (Average) (6/6):
+    - Als Gourgeist (Small) erkannt mit 43.73% Confidence
+    - Als Gourgeist (Small) erkannt mit 53.09% Confidence
+    - Als Gourgeist (Super) erkannt mit 92.76% Confidence
+    - Als Gourgeist (Super) erkannt mit 48.57% Confidence
+    - Als Gourgeist (Small) erkannt mit 27.90% Confidence
+    - Als Gourgeist (Large) erkannt mit 81.39% Confidence
+
+Gourgeist (Large)    0.4000      68.36%              5              
+
+  Falsche Vorhersagen für Gourgeist (Large) (3/5):
+    - Als Gourgeist (Super) erkannt mit 57.34% Confidence
+    - Als Gourgeist (Super) erkannt mit 55.99% Confidence
+    - Als Gourgeist (Small) erkannt mit 89.67% Confidence
+
+Gourgeist (Small)    0.0000      65.62%              6              
+
+  Falsche Vorhersagen für Gourgeist (Small) (6/6):
+    - Als Gourgeist (Large) erkannt mit 76.53% Confidence
+    - Als Gourgeist (Super) erkannt mit 58.87% Confidence
+    - Als Gourgeist (Large) erkannt mit 37.08% Confidence
+    - Als Gourgeist (Large) erkannt mit 87.25% Confidence
+    - Als Gourgeist (Large) erkannt mit 81.39% Confidence
+    - Als Gourgeist (Large) erkannt mit 52.59% Confidence
+
+Gourgeist (Super)    0.6000      60.93%              5              
+
+  Falsche Vorhersagen für Gourgeist (Super) (2/5):
+    - Als Gourgeist (Small) erkannt mit 70.12% Confidence
+    - Als Gourgeist (Large) erkannt mit 81.39% Confidence
+
+Grafaiai             0.6000      62.66%              5              
+
+  Falsche Vorhersagen für Grafaiai (2/5):
+    - Als Galvantula erkannt mit 13.39% Confidence
+    - Als Mothim erkannt mit 6.42% Confidence
+
+Granbull             0.5714      64.12%              7              
+
+  Falsche Vorhersagen für Granbull (3/7):
+    - Als Typhlosion erkannt mit 5.37% Confidence
+    - Als Clefable erkannt mit 73.18% Confidence
+    - Als Flaaffy erkannt mit 41.67% Confidence
+
+Graveler             0.7778      63.96%              9              
+
+  Falsche Vorhersagen für Graveler (2/9):
+    - Als Scyther erkannt mit 30.28% Confidence
+    - Als Graveler (Alolan) erkannt mit 99.98% Confidence
+
+Graveler (Alolan)    0.8000      92.61%              5              
+
+  Falsche Vorhersagen für Graveler (Alolan) (1/5):
+    - Als Trapinch erkannt mit 92.90% Confidence
+
+Greedent             0.8000      74.15%              5              
+
+  Falsche Vorhersagen für Greedent (1/5):
+    - Als Decidueye (Hisuian) erkannt mit 35.54% Confidence
+
+Greninja             0.6000      55.73%              5              
+
+  Falsche Vorhersagen für Greninja (2/5):
+    - Als Ceruledge erkannt mit 77.52% Confidence
+    - Als Sigilyph erkannt mit 13.52% Confidence
+
+Grimer               0.8000      82.34%              5              
+
+  Falsche Vorhersagen für Grimer (1/5):
+    - Als Muk erkannt mit 76.28% Confidence
+
+Grimer (Alolan)      0.6667      81.83%              6              
+
+  Falsche Vorhersagen für Grimer (Alolan) (2/6):
+    - Als Tyranitar erkannt mit 15.28% Confidence
+    - Als Bastiodon erkannt mit 75.88% Confidence
+
+Grotle               0.7143      76.26%              7              
+
+  Falsche Vorhersagen für Grotle (2/7):
+    - Als Chespin erkannt mit 19.49% Confidence
+    - Als Dedenne erkannt mit 28.20% Confidence
+
+Grovyle              0.8571      89.96%              7              
+
+  Falsche Vorhersagen für Grovyle (1/7):
+    - Als Carnivine erkannt mit 92.53% Confidence
+
+Growlithe            0.2857      60.58%              7              
+
+  Falsche Vorhersagen für Growlithe (5/7):
+    - Als Torkoal erkannt mit 71.59% Confidence
+    - Als Arcanine erkannt mit 63.33% Confidence
+    - Als Arcanine erkannt mit 19.15% Confidence
+    - Als Rapidash erkannt mit 51.62% Confidence
+    - Als Arcanine erkannt mit 55.97% Confidence
+
+Growlithe (Hisuian)  0.6000      69.02%              5              
+
+  Falsche Vorhersagen für Growlithe (Hisuian) (2/5):
+    - Als Beedrill erkannt mit 75.47% Confidence
+    - Als Klefki erkannt mit 49.60% Confidence
+
+Grumpig              1.0000      96.35%              7              
+Gumshoos             0.6667      72.10%              6              
+
+  Falsche Vorhersagen für Gumshoos (2/6):
+    - Als Stunfisk (Galarian) erkannt mit 43.84% Confidence
+    - Als Bayleef erkannt mit 50.91% Confidence
+
+Gurdurr              0.6667      89.45%              6              
+
+  Falsche Vorhersagen für Gurdurr (2/6):
+    - Als Kangaskhan erkannt mit 61.16% Confidence
+    - Als Escavalier erkannt mit 80.98% Confidence
+
+Guzzlord             1.0000      92.49%              6              
+Gyarados             0.6667      56.95%              6              
+
+  Falsche Vorhersagen für Gyarados (2/6):
+    - Als Simipour erkannt mit 71.68% Confidence
+    - Als Archeops erkannt mit 16.94% Confidence
+
+Hakamo-o             0.6667      81.83%              6              
+
+  Falsche Vorhersagen für Hakamo-o (2/6):
+    - Als Luxio erkannt mit 43.06% Confidence
+    - Als Rufflet erkannt mit 83.04% Confidence
+
+Hariyama             0.8571      88.91%              7              
+
+  Falsche Vorhersagen für Hariyama (1/7):
+    - Als Octillery erkannt mit 36.45% Confidence
+
+Hatterene            0.7500      72.90%              4              
+
+  Falsche Vorhersagen für Hatterene (1/4):
+    - Als Sawk erkannt mit 80.72% Confidence
+
+Hattrem              0.3333      64.01%              6              
+
+  Falsche Vorhersagen für Hattrem (4/6):
+    - Als Togekiss erkannt mit 97.68% Confidence
+    - Als Gorebyss erkannt mit 37.92% Confidence
+    - Als Snover erkannt mit 11.34% Confidence
+    - Als Musharna erkannt mit 37.86% Confidence
+
+Haunter              1.0000      78.35%              4              
+Hawlucha             0.7143      80.61%              7              
+
+  Falsche Vorhersagen für Hawlucha (2/7):
+    - Als Sableye erkannt mit 30.34% Confidence
+    - Als Thwackey erkannt mit 34.03% Confidence
+
+Haxorus              1.0000      93.47%              6              
+Heatmor              0.5000      90.21%              6              
+
+  Falsche Vorhersagen für Heatmor (3/6):
+    - Als Heatran erkannt mit 90.35% Confidence
+    - Als Tauros erkannt mit 51.38% Confidence
+    - Als Zapdos (Galarian) erkannt mit 99.88% Confidence
+
+Heatran              1.0000      92.10%              7              
+Heliolisk            0.8333      81.68%              6              
+
+  Falsche Vorhersagen für Heliolisk (1/6):
+    - Als Zapdos erkannt mit 27.95% Confidence
+
+Heracross            0.7143      61.10%              7              
+
+  Falsche Vorhersagen für Heracross (2/7):
+    - Als Girafarig erkannt mit 2.39% Confidence
+    - Als Golbat erkannt mit 38.12% Confidence
+
+Herdier              0.7143      80.96%              7              
+
+  Falsche Vorhersagen für Herdier (2/7):
+    - Als Drilbur erkannt mit 19.01% Confidence
+    - Als Stoutland erkannt mit 48.93% Confidence
+
+Hippopotas           0.8571      84.06%              7              
+
+  Falsche Vorhersagen für Hippopotas (1/7):
+    - Als Pawmo erkannt mit 31.41% Confidence
+
+Hippowdon            1.0000      93.55%              7              
+Hitmonchan           0.8571      76.20%              7              
+
+  Falsche Vorhersagen für Hitmonchan (1/7):
+    - Als Venusaur erkannt mit 12.29% Confidence
+
+Hitmonlee            0.7143      90.49%              7              
+
+  Falsche Vorhersagen für Hitmonlee (2/7):
+    - Als Omanyte erkannt mit 66.22% Confidence
+    - Als Exeggcute erkannt mit 78.56% Confidence
+
+Hitmontop            0.7143      78.89%              7              
+
+  Falsche Vorhersagen für Hitmontop (2/7):
+    - Als Espeon erkannt mit 45.75% Confidence
+    - Als Mew erkannt mit 19.67% Confidence
+
+Ho-Oh                0.3333      72.02%              6              
+
+  Falsche Vorhersagen für Ho-Oh (4/6):
+    - Als Archeops erkannt mit 72.51% Confidence
+    - Als Turtonator erkannt mit 48.83% Confidence
+    - Als Dugtrio (Alolan) erkannt mit 79.31% Confidence
+    - Als Victini erkannt mit 31.75% Confidence
+
+Honchkrow            0.8571      93.42%              7              
+
+  Falsche Vorhersagen für Honchkrow (1/7):
+    - Als Greninja erkannt mit 54.59% Confidence
+
+Hoopa                1.0000      96.83%              4              
+Houndoom             0.3333      49.30%              6              
+
+  Falsche Vorhersagen für Houndoom (4/6):
+    - Als Flareon erkannt mit 34.47% Confidence
+    - Als Absol erkannt mit 31.63% Confidence
+    - Als Houndour erkannt mit 35.81% Confidence
+    - Als Mightyena erkannt mit 35.64% Confidence
+
+Houndour             0.4286      46.02%              7              
+
+  Falsche Vorhersagen für Houndour (4/7):
+    - Als Litleo erkannt mit 47.99% Confidence
+    - Als Armaldo erkannt mit 9.15% Confidence
+    - Als Scizor erkannt mit 29.50% Confidence
+    - Als Latias erkannt mit 24.29% Confidence
+
+Houndstone           0.4000      49.92%              5              
+
+  Falsche Vorhersagen für Houndstone (3/5):
+    - Als Togekiss erkannt mit 10.29% Confidence
+    - Als Cloyster erkannt mit 81.40% Confidence
+    - Als Kingambit erkannt mit 10.89% Confidence
+
+Huntail              0.5714      77.45%              7              
+
+  Falsche Vorhersagen für Huntail (3/7):
+    - Als Zapdos (Galarian) erkannt mit 21.26% Confidence
+    - Als Golett erkannt mit 62.49% Confidence
+    - Als Clauncher erkannt mit 58.93% Confidence
+
+Hydreigon            0.5000      65.19%              4              
+
+  Falsche Vorhersagen für Hydreigon (2/4):
+    - Als Naganadel erkannt mit 62.38% Confidence
+    - Als Moltres (Galarian) erkannt mit 40.53% Confidence
+
+Hypno                0.5000      61.94%              4              
+
+  Falsche Vorhersagen für Hypno (2/4):
+    - Als Monferno erkannt mit 29.02% Confidence
+    - Als Raticate erkannt mit 23.26% Confidence
+
+Illumise             1.0000      93.32%              6              
+Incineroar           0.6667      82.62%              6              
+
+  Falsche Vorhersagen für Incineroar (2/6):
+    - Als Buzzwole erkannt mit 75.60% Confidence
+    - Als Buzzwole erkannt mit 99.91% Confidence
+
+Infernape            0.8333      85.52%              6              
+
+  Falsche Vorhersagen für Infernape (1/6):
+    - Als Simisage erkannt mit 64.18% Confidence
+
+Inteleon             0.6667      75.74%              6              
+
+  Falsche Vorhersagen für Inteleon (2/6):
+    - Als Gothorita erkannt mit 17.13% Confidence
+    - Als Empoleon erkannt mit 55.09% Confidence
+
+Ivysaur              0.7143      82.02%              7              
+
+  Falsche Vorhersagen für Ivysaur (2/7):
+    - Als Swadloon erkannt mit 55.62% Confidence
+    - Als Swadloon erkannt mit 31.00% Confidence
+
+Jellicent            0.4000      55.81%              5              
+
+  Falsche Vorhersagen für Jellicent (3/5):
+    - Als Crustle erkannt mit 3.25% Confidence
+    - Als Clamperl erkannt mit 47.56% Confidence
+    - Als Piplup erkannt mit 46.21% Confidence
+
+Jirachi              0.6250      76.99%              8              
+
+  Falsche Vorhersagen für Jirachi (3/8):
+    - Als Sandshrew erkannt mit 46.73% Confidence
+    - Als Boltund erkannt mit 39.01% Confidence
+    - Als Manectric erkannt mit 60.47% Confidence
+
+Jolteon              0.7500      80.19%              8              
+
+  Falsche Vorhersagen für Jolteon (2/8):
+    - Als Seadra erkannt mit 13.29% Confidence
+    - Als Dedenne erkannt mit 57.17% Confidence
+
+Jumpluff             1.0000      98.16%              7              
+Jynx                 0.7143      81.52%              7              
+
+  Falsche Vorhersagen für Jynx (2/7):
+    - Als Aggron erkannt mit 42.95% Confidence
+    - Als Venusaur erkannt mit 30.37% Confidence
+
+Kabuto               0.5000      79.19%              4              
+
+  Falsche Vorhersagen für Kabuto (2/4):
+    - Als Kabutops erkannt mit 85.65% Confidence
+    - Als Lunatone erkannt mit 31.42% Confidence
+
+Kabutops             0.5714      61.74%              7              
+
+  Falsche Vorhersagen für Kabutops (3/7):
+    - Als Sandslash erkannt mit 30.53% Confidence
+    - Als Pinsir erkannt mit 33.47% Confidence
+    - Als Machamp erkannt mit 39.91% Confidence
+
+Kadabra              0.3333      65.63%              6              
+
+  Falsche Vorhersagen für Kadabra (4/6):
+    - Als Exeggcute erkannt mit 71.42% Confidence
+    - Als Beheeyem erkannt mit 35.38% Confidence
+    - Als Zapdos erkannt mit 52.97% Confidence
+    - Als Sudowoodo erkannt mit 66.23% Confidence
+
+Kangaskhan           0.8571      97.01%              7              
+
+  Falsche Vorhersagen für Kangaskhan (1/7):
+    - Als Nuzleaf erkannt mit 94.00% Confidence
+
+Karrablast           0.4000      41.31%              5              
+
+  Falsche Vorhersagen für Karrablast (3/5):
+    - Als Magnezone erkannt mit 1.72% Confidence
+    - Als Vespiquen erkannt mit 45.77% Confidence
+    - Als Roggenrola erkannt mit 34.87% Confidence
+
+Kartana              1.0000      92.69%              6              
+Kecleon              0.8333      89.38%              6              
+
+  Falsche Vorhersagen für Kecleon (1/6):
+    - Als Drapion erkannt mit 39.52% Confidence
+
+Kingambit            0.2000      71.08%              5              
+
+  Falsche Vorhersagen für Kingambit (4/5):
+    - Als Beautifly erkannt mit 70.45% Confidence
+    - Als Bisharp erkannt mit 60.80% Confidence
+    - Als Empoleon erkannt mit 26.31% Confidence
+    - Als Forretress erkannt mit 97.85% Confidence
+
+Kingdra              0.4286      49.27%              7              
+
+  Falsche Vorhersagen für Kingdra (4/7):
+    - Als Seadra erkannt mit 60.62% Confidence
+    - Als Porygon2 erkannt mit 23.81% Confidence
+    - Als Seadra erkannt mit 44.34% Confidence
+    - Als Hydreigon erkannt mit 2.07% Confidence
+
+Kingler              0.7143      74.70%              7              
+
+  Falsche Vorhersagen für Kingler (2/7):
+    - Als Scizor erkannt mit 92.03% Confidence
+    - Als Slowpoke erkannt mit 23.34% Confidence
+
+Klang                0.6667      73.53%              3              
+
+  Falsche Vorhersagen für Klang (1/3):
+    - Als Chesnaught erkannt mit 92.29% Confidence
+
+Kleavor              0.3333      54.77%              6              
+
+  Falsche Vorhersagen für Kleavor (4/6):
+    - Als Cubone erkannt mit 20.91% Confidence
+    - Als Ursaluna erkannt mit 37.23% Confidence
+    - Als Cinderace erkannt mit 4.41% Confidence
+    - Als Tauros (Blaze) erkannt mit 68.75% Confidence
+
+Klefki               0.2857      49.89%              7              
+
+  Falsche Vorhersagen für Klefki (5/7):
+    - Als Togetic erkannt mit 25.91% Confidence
+    - Als Camerupt erkannt mit 60.49% Confidence
+    - Als Klinklang erkannt mit 40.70% Confidence
+    - Als Girafarig erkannt mit 4.55% Confidence
+    - Als Talonflame erkannt mit 25.78% Confidence
+
+Klinklang            0.5000      62.56%              6              
+
+  Falsche Vorhersagen für Klinklang (3/6):
+    - Als Sandslash (Alolan) erkannt mit 35.81% Confidence
+    - Als Sandslash (Alolan) erkannt mit 64.65% Confidence
+    - Als Noctowl erkannt mit 8.78% Confidence
+
+Koffing              0.5000      66.71%              8              
+
+  Falsche Vorhersagen für Koffing (4/8):
+    - Als Brionne erkannt mit 36.83% Confidence
+    - Als Exploud erkannt mit 57.20% Confidence
+    - Als Weezing erkannt mit 31.14% Confidence
+    - Als Weezing erkannt mit 27.47% Confidence
+
+Komala               0.4286      77.55%              7              
+
+  Falsche Vorhersagen für Komala (4/7):
+    - Als Swoobat erkannt mit 55.44% Confidence
+    - Als Wartortle erkannt mit 85.00% Confidence
+    - Als Shiftry erkannt mit 56.20% Confidence
+    - Als Ceruledge erkannt mit 47.71% Confidence
+
+Kommo-o              0.5714      82.41%              7              
+
+  Falsche Vorhersagen für Kommo-o (3/7):
+    - Als Dusknoir erkannt mit 70.08% Confidence
+    - Als Hakamo-o erkannt mit 50.33% Confidence
+    - Als Electabuzz erkannt mit 61.84% Confidence
+
+Krabby               0.5000      64.49%              4              
+
+  Falsche Vorhersagen für Krabby (2/4):
+    - Als Mr. Mime erkannt mit 26.93% Confidence
+    - Als Corphish erkannt mit 67.31% Confidence
+
+Kricketune           0.8333      97.37%              6              
+
+  Falsche Vorhersagen für Kricketune (1/6):
+    - Als Masquerain erkannt mit 90.87% Confidence
+
+Krokorok             0.5714      75.27%              7              
+
+  Falsche Vorhersagen für Krokorok (3/7):
+    - Als Linoone (Galarian) erkannt mit 48.35% Confidence
+    - Als Bastiodon erkannt mit 70.20% Confidence
+    - Als Raticate (Alolan) erkannt mit 31.43% Confidence
+
+Krookodile           1.0000      98.44%              6              
+Kubfu                0.6000      70.33%              5              
+
+  Falsche Vorhersagen für Kubfu (2/5):
+    - Als Farfetch'd erkannt mit 23.90% Confidence
+    - Als Farfetch'd erkannt mit 34.97% Confidence
+
+Lairon               0.5714      50.69%              7              
+
+  Falsche Vorhersagen für Lairon (3/7):
+    - Als Poliwhirl erkannt mit 29.17% Confidence
+    - Als Cloyster erkannt mit 31.08% Confidence
+    - Als Poliwhirl erkannt mit 14.59% Confidence
+
+Lampent              0.4286      72.45%              7              
+
+  Falsche Vorhersagen für Lampent (4/7):
+    - Als Urshifu (Rapid Strike) erkannt mit 93.95% Confidence
+    - Als Muk erkannt mit 46.53% Confidence
+    - Als Mienshao erkannt mit 76.78% Confidence
+    - Als Gothorita erkannt mit 5.06% Confidence
+
+Landorus (Incarnate) 0.8000      91.29%              5              
+
+  Falsche Vorhersagen für Landorus (Incarnate) (1/5):
+    - Als Crocalor erkannt mit 89.01% Confidence
+
+Lanturn              0.4286      55.77%              7              
+
+  Falsche Vorhersagen für Lanturn (4/7):
+    - Als Muk (Alolan) erkannt mit 36.02% Confidence
+    - Als Chinchou erkannt mit 90.19% Confidence
+    - Als Chinchou erkannt mit 76.32% Confidence
+    - Als Regice erkannt mit 21.45% Confidence
+
+Lapras               0.8750      92.19%              8              
+
+  Falsche Vorhersagen für Lapras (1/8):
+    - Als Lugia erkannt mit 86.79% Confidence
+
+Larvesta             0.6667      60.08%              6              
+
+  Falsche Vorhersagen für Larvesta (2/6):
+    - Als Skarmory erkannt mit 39.81% Confidence
+    - Als Masquerain erkannt mit 3.61% Confidence
+
+Latias               0.6000      56.87%              5              
+
+  Falsche Vorhersagen für Latias (2/5):
+    - Als Milotic erkannt mit 15.50% Confidence
+    - Als Girafarig erkannt mit 3.80% Confidence
+
+Latios               0.5000      54.36%              4              
+
+  Falsche Vorhersagen für Latios (2/4):
+    - Als Sableye erkannt mit 5.97% Confidence
+    - Als Wartortle erkannt mit 51.56% Confidence
+
+Leafeon              0.7778      86.37%              9              
+
+  Falsche Vorhersagen für Leafeon (2/9):
+    - Als Simisage erkannt mit 81.90% Confidence
+    - Als Moltres erkannt mit 3.12% Confidence
+
+Leavanny             0.5000      65.36%              6              
+
+  Falsche Vorhersagen für Leavanny (3/6):
+    - Als Vibrava erkannt mit 13.20% Confidence
+    - Als Flygon erkannt mit 35.37% Confidence
+    - Als Swadloon erkannt mit 48.20% Confidence
+
+Ledian               0.5714      73.11%              7              
+
+  Falsche Vorhersagen für Ledian (3/7):
+    - Als Gourgeist (Small) erkannt mit 35.27% Confidence
+    - Als Greninja erkannt mit 95.88% Confidence
+    - Als Bellossom erkannt mit 33.86% Confidence
+
+Lickilicky           0.7500      89.37%              8              
+
+  Falsche Vorhersagen für Lickilicky (2/8):
+    - Als Eldegoss erkannt mit 33.32% Confidence
+    - Als Snubbull erkannt mit 89.98% Confidence
+
+Lickitung            0.8571      86.88%              7              
+
+  Falsche Vorhersagen für Lickitung (1/7):
+    - Als Snubbull erkannt mit 52.23% Confidence
+
+Liepard              0.5714      87.02%              7              
+
+  Falsche Vorhersagen für Liepard (3/7):
+    - Als Typhlosion (Hisuian) erkannt mit 77.64% Confidence
+    - Als Luxray erkannt mit 90.20% Confidence
+    - Als Luxio erkannt mit 41.31% Confidence
+
+Lileep               0.5000      67.34%              6              
+
+  Falsche Vorhersagen für Lileep (3/6):
+    - Als Stufful erkannt mit 57.57% Confidence
+    - Als Malamar erkannt mit 28.26% Confidence
+    - Als Ambipom erkannt mit 22.37% Confidence
+
+Lilligant            0.8000      76.20%              5              
+
+  Falsche Vorhersagen für Lilligant (1/5):
+    - Als Leafeon erkannt mit 35.78% Confidence
+
+Linoone              0.8333      75.82%              6              
+
+  Falsche Vorhersagen für Linoone (1/6):
+    - Als Piloswine erkannt mit 25.41% Confidence
+
+Linoone (Galarian)   0.8000      62.78%              5              
+
+  Falsche Vorhersagen für Linoone (Galarian) (1/5):
+    - Als Drapion erkannt mit 45.53% Confidence
+
+Litleo               1.0000      93.43%              6              
+Lokix                0.4000      68.50%              5              
+
+  Falsche Vorhersagen für Lokix (3/5):
+    - Als Perrserker erkannt mit 37.82% Confidence
+    - Als Pangoro erkannt mit 89.44% Confidence
+    - Als Kommo-o erkannt mit 77.29% Confidence
+
+Lombre               0.6667      62.71%              6              
+
+  Falsche Vorhersagen für Lombre (2/6):
+    - Als Houndoom erkannt mit 2.58% Confidence
+    - Als Cacturne erkannt mit 31.49% Confidence
+
+Lopunny              0.4000      67.26%              5              
+
+  Falsche Vorhersagen für Lopunny (3/5):
+    - Als Noctowl erkannt mit 62.97% Confidence
+    - Als Buneary erkannt mit 45.27% Confidence
+    - Als Ninetales erkannt mit 28.11% Confidence
+
+Loudred              0.7143      70.70%              7              
+
+  Falsche Vorhersagen für Loudred (2/7):
+    - Als Electivire erkannt mit 4.67% Confidence
+    - Als Kingambit erkannt mit 37.59% Confidence
+
+Lucario              0.8333      74.77%              6              
+
+  Falsche Vorhersagen für Lucario (1/6):
+    - Als Venusaur erkannt mit 4.08% Confidence
+
+Ludicolo             0.8571      96.14%              7              
+
+  Falsche Vorhersagen für Ludicolo (1/7):
+    - Als Servine erkannt mit 86.19% Confidence
+
+Lugia                0.3333      58.64%              6              
+
+  Falsche Vorhersagen für Lugia (4/6):
+    - Als Swanna erkannt mit 44.24% Confidence
+    - Als Pupitar erkannt mit 61.70% Confidence
+    - Als Persian (Alolan) erkannt mit 20.68% Confidence
+    - Als Obstagoon erkannt mit 40.59% Confidence
+
+Lumineon             0.8333      92.26%              6              
+
+  Falsche Vorhersagen für Lumineon (1/6):
+    - Als Qwilfish erkannt mit 77.20% Confidence
+
+Lunatone             1.0000      99.76%              5              
+Lurantis             1.0000      99.66%              6              
+Luxio                0.6667      78.29%              6              
+
+  Falsche Vorhersagen für Luxio (2/6):
+    - Als Urshifu (Rapid Strike) erkannt mit 63.10% Confidence
+    - Als Rayquaza erkannt mit 83.43% Confidence
+
+Luxray               0.8333      69.71%              6              
+
+  Falsche Vorhersagen für Luxray (1/6):
+    - Als Luxio erkannt mit 33.33% Confidence
+
+Lycanroc (Dusk)      0.5000      65.63%              6              
+
+  Falsche Vorhersagen für Lycanroc (Dusk) (3/6):
+    - Als Camerupt erkannt mit 48.70% Confidence
+    - Als Cinderace erkannt mit 31.76% Confidence
+    - Als Kabutops erkannt mit 81.49% Confidence
+
+Lycanroc (Midday)    0.2000      58.02%              5              
+
+  Falsche Vorhersagen für Lycanroc (Midday) (4/5):
+    - Als Skarmory erkannt mit 22.68% Confidence
+    - Als Tyrantrum erkannt mit 59.37% Confidence
+    - Als Meowstic (Male) erkannt mit 58.54% Confidence
+    - Als Furret erkannt mit 55.07% Confidence
+
+Lycanroc (Midnight)  0.8333      75.93%              6              
+
+  Falsche Vorhersagen für Lycanroc (Midnight) (1/6):
+    - Als Typhlosion (Hisuian) erkannt mit 44.15% Confidence
+
+Machamp              0.8750      90.86%              8              
+
+  Falsche Vorhersagen für Machamp (1/8):
+    - Als Geodude (Alolan) erkannt mit 89.13% Confidence
+
+Machoke              0.5000      64.21%              8              
+
+  Falsche Vorhersagen für Machoke (4/8):
+    - Als Dubwool erkannt mit 54.03% Confidence
+    - Als Chesnaught erkannt mit 16.43% Confidence
+    - Als Azumarill erkannt mit 25.43% Confidence
+    - Als Garchomp erkannt mit 74.21% Confidence
+
+Machop               0.6250      83.74%              8              
+
+  Falsche Vorhersagen für Machop (3/8):
+    - Als Machoke erkannt mit 99.99% Confidence
+    - Als Oricorio (Pom-Pom) erkannt mit 44.08% Confidence
+    - Als Croconaw erkannt mit 75.56% Confidence
+
+Magby                0.6667      70.70%              6              
+
+  Falsche Vorhersagen für Magby (2/6):
+    - Als Scrafty erkannt mit 22.96% Confidence
+    - Als Moltres erkannt mit 3.60% Confidence
+
+Magcargo             0.5000      60.46%              6              
+
+  Falsche Vorhersagen für Magcargo (3/6):
+    - Als Buzzwole erkannt mit 34.97% Confidence
+    - Als Pinsir erkannt mit 18.88% Confidence
+    - Als Scolipede erkannt mit 14.94% Confidence
+
+Magmar               0.5000      78.36%              8              
+
+  Falsche Vorhersagen für Magmar (4/8):
+    - Als Flareon erkannt mit 98.31% Confidence
+    - Als Simisear erkannt mit 68.81% Confidence
+    - Als Zapdos erkannt mit 21.95% Confidence
+    - Als Zapdos erkannt mit 40.81% Confidence
+
+Magmortar            0.5714      80.96%              7              
+
+  Falsche Vorhersagen für Magmortar (3/7):
+    - Als Buzzwole erkannt mit 41.62% Confidence
+    - Als Flareon erkannt mit 88.95% Confidence
+    - Als Turtonator erkannt mit 37.11% Confidence
+
+Magnemite            0.5714      77.16%              7              
+
+  Falsche Vorhersagen für Magnemite (3/7):
+    - Als Magneton erkannt mit 25.96% Confidence
+    - Als Magneton erkannt mit 99.84% Confidence
+    - Als Magneton erkannt mit 36.49% Confidence
+
+Magneton             0.7778      78.46%              9              
+
+  Falsche Vorhersagen für Magneton (2/9):
+    - Als Zapdos erkannt mit 52.63% Confidence
+    - Als Zapdos erkannt mit 21.48% Confidence
+
+Magnezone            0.8571      88.19%              7              
+
+  Falsche Vorhersagen für Magnezone (1/7):
+    - Als Magneton erkannt mit 65.39% Confidence
+
+Malamar              0.4286      65.34%              7              
+
+  Falsche Vorhersagen für Malamar (4/7):
+    - Als Revavroom erkannt mit 83.59% Confidence
+    - Als Greninja erkannt mit 59.64% Confidence
+    - Als Eelektross erkannt mit 9.76% Confidence
+    - Als Varoom erkannt mit 34.06% Confidence
+
+Mamoswine            0.7143      79.95%              7              
+
+  Falsche Vorhersagen für Mamoswine (2/7):
+    - Als Reuniclus erkannt mit 70.76% Confidence
+    - Als Primeape erkannt mit 40.71% Confidence
+
+Mandibuzz            0.7143      90.85%              7              
+
+  Falsche Vorhersagen für Mandibuzz (2/7):
+    - Als Vullaby erkannt mit 94.99% Confidence
+    - Als Krokorok erkannt mit 48.36% Confidence
+
+Manectric            0.5000      61.40%              8              
+
+  Falsche Vorhersagen für Manectric (4/8):
+    - Als Togetic erkannt mit 2.74% Confidence
+    - Als Gholdengo erkannt mit 57.68% Confidence
+    - Als Clauncher erkannt mit 26.27% Confidence
+    - Als Croconaw erkannt mit 75.81% Confidence
+
+Mankey               0.8571      83.83%              7              
+
+  Falsche Vorhersagen für Mankey (1/7):
+    - Als Vigoroth erkannt mit 15.81% Confidence
+
+Mantine              0.7143      68.83%              7              
+
+  Falsche Vorhersagen für Mantine (2/7):
+    - Als Swellow erkannt mit 66.37% Confidence
+    - Als Cursola erkannt mit 33.17% Confidence
+
+Mantyke              0.5714      74.04%              7              
+
+  Falsche Vorhersagen für Mantyke (3/7):
+    - Als Dewgong erkannt mit 59.70% Confidence
+    - Als Articuno erkannt mit 61.59% Confidence
+    - Als Vaporeon erkannt mit 43.53% Confidence
+
+Maractus             1.0000      96.59%              5              
+Marowak              0.4286      60.94%              7              
+
+  Falsche Vorhersagen für Marowak (4/7):
+    - Als Greedent erkannt mit 52.18% Confidence
+    - Als Eldegoss erkannt mit 46.55% Confidence
+    - Als Cinccino erkannt mit 60.32% Confidence
+    - Als Marowak (Alolan) erkannt mit 99.94% Confidence
+
+Marowak (Alolan)     0.1667      42.53%              6              
+
+  Falsche Vorhersagen für Marowak (Alolan) (5/6):
+    - Als Carbink erkannt mit 46.00% Confidence
+    - Als Abomasnow erkannt mit 28.89% Confidence
+    - Als Zebstrika erkannt mit 40.91% Confidence
+    - Als Varoom erkannt mit 26.77% Confidence
+    - Als Lairon erkannt mit 45.84% Confidence
+
+Marshtomp            0.4286      68.55%              7              
+
+  Falsche Vorhersagen für Marshtomp (4/7):
+    - Als Golett erkannt mit 18.17% Confidence
+    - Als Quaquaval erkannt mit 65.48% Confidence
+    - Als Gyarados erkannt mit 18.67% Confidence
+    - Als Gabite erkannt mit 97.07% Confidence
+
+Masquerain           0.7500      86.37%              8              
+
+  Falsche Vorhersagen für Masquerain (2/8):
+    - Als Latias erkannt mit 60.24% Confidence
+    - Als Lurantis erkannt mit 71.22% Confidence
+
+Maushold             0.4000      37.51%              5              
+
+  Falsche Vorhersagen für Maushold (3/5):
+    - Als Seel erkannt mit 21.08% Confidence
+    - Als Abomasnow erkannt mit 54.10% Confidence
+    - Als Magnemite erkannt mit 24.39% Confidence
+
+Mawile               0.5000      66.69%              6              
+
+  Falsche Vorhersagen für Mawile (3/6):
+    - Als Jynx erkannt mit 59.10% Confidence
+    - Als Aipom erkannt mit 42.18% Confidence
+    - Als Hypno erkannt mit 11.37% Confidence
+
+Medicham             0.8000      78.32%              5              
+
+  Falsche Vorhersagen für Medicham (1/5):
+    - Als Meowscarada erkannt mit 21.54% Confidence
+
+Meganium             0.8333      90.79%              6              
+
+  Falsche Vorhersagen für Meganium (1/6):
+    - Als Flabebe erkannt mit 46.31% Confidence
+
+Melmetal             0.6000      76.14%              5              
+
+  Falsche Vorhersagen für Melmetal (2/5):
+    - Als Ribombee erkannt mit 70.37% Confidence
+    - Als Bastiodon erkannt mit 36.05% Confidence
+
+Meltan               0.8000      66.84%              5              
+
+  Falsche Vorhersagen für Meltan (1/5):
+    - Als Skeledirge erkannt mit 48.20% Confidence
+
+Meowscarada          0.8000      93.48%              5              
+
+  Falsche Vorhersagen für Meowscarada (1/5):
+    - Als Floragato erkannt mit 90.22% Confidence
+
+Meowstic (Female)    0.8000      71.16%              5              
+
+  Falsche Vorhersagen für Meowstic (Female) (1/5):
+    - Als Altaria erkannt mit 29.59% Confidence
+
+Meowstic (Male)      1.0000      82.27%              6              
+Mesprit              0.8000      85.23%              5              
+
+  Falsche Vorhersagen für Mesprit (1/5):
+    - Als Mew erkannt mit 26.35% Confidence
+
+Metagross            0.6667      83.56%              6              
+
+  Falsche Vorhersagen für Metagross (2/6):
+    - Als Lairon erkannt mit 52.84% Confidence
+    - Als Quaxwell erkannt mit 49.01% Confidence
+
+Metang               0.3333      60.54%              6              
+
+  Falsche Vorhersagen für Metang (4/6):
+    - Als Golbat erkannt mit 73.60% Confidence
+    - Als Pineco erkannt mit 6.61% Confidence
+    - Als Seismitoad erkannt mit 51.72% Confidence
+    - Als Mantyke erkannt mit 41.40% Confidence
+
+Mew                  0.3333      24.05%              6              
+
+  Falsche Vorhersagen für Mew (4/6):
+    - Als Zapdos erkannt mit 8.43% Confidence
+    - Als Sylveon erkannt mit 8.55% Confidence
+    - Als Golbat erkannt mit 34.72% Confidence
+    - Als Gorebyss erkannt mit 58.55% Confidence
+
+Mienfoo              0.6667      74.10%              6              
+
+  Falsche Vorhersagen für Mienfoo (2/6):
+    - Als Delphox erkannt mit 46.36% Confidence
+    - Als Growlithe erkannt mit 71.14% Confidence
+
+Mienshao             0.6667      77.10%              6              
+
+  Falsche Vorhersagen für Mienshao (2/6):
+    - Als Diancie erkannt mit 20.41% Confidence
+    - Als Granbull erkannt mit 43.61% Confidence
+
+Mightyena            0.4000      50.45%              5              
+
+  Falsche Vorhersagen für Mightyena (3/5):
+    - Als Masquerain erkannt mit 4.48% Confidence
+    - Als Dusclops erkannt mit 77.40% Confidence
+    - Als Cursola erkannt mit 29.09% Confidence
+
+Milotic              0.8571      75.43%              7              
+
+  Falsche Vorhersagen für Milotic (1/7):
+    - Als Omastar erkannt mit 36.36% Confidence
+
+Miltank              0.8571      89.83%              7              
+
+  Falsche Vorhersagen für Miltank (1/7):
+    - Als Alomomola erkannt mit 95.05% Confidence
+
+Minun                0.8000      80.29%              5              
+
+  Falsche Vorhersagen für Minun (1/5):
+    - Als Mantyke erkannt mit 4.05% Confidence
+
+Misdreavus           0.8889      82.00%              9              
+
+  Falsche Vorhersagen für Misdreavus (1/9):
+    - Als Toxicroak erkannt mit 36.87% Confidence
+
+Mismagius            0.8571      84.52%              7              
+
+  Falsche Vorhersagen für Mismagius (1/7):
+    - Als Gliscor erkannt mit 37.54% Confidence
+
+Moltres              0.3750      76.15%              8              
+
+  Falsche Vorhersagen für Moltres (5/8):
+    - Als Moltres (Galarian) erkannt mit 99.94% Confidence
+    - Als Aerodactyl erkannt mit 18.30% Confidence
+    - Als Centiskorch erkannt mit 64.32% Confidence
+    - Als Moltres (Galarian) erkannt mit 99.15% Confidence
+    - Als Moltres (Galarian) erkannt mit 99.57% Confidence
+
+Moltres (Galarian)   0.7143      74.99%              7              
+
+  Falsche Vorhersagen für Moltres (Galarian) (2/7):
+    - Als Oricorio (Baile) erkannt mit 45.93% Confidence
+    - Als Electabuzz erkannt mit 55.84% Confidence
+
+Monferno             0.8333      87.45%              6              
+
+  Falsche Vorhersagen für Monferno (1/6):
+    - Als Arcanine erkannt mit 25.18% Confidence
+
+Morpeko (Full Belly) 1.0000      93.89%              6              
+Mothim               0.6667      71.07%              6              
+
+  Falsche Vorhersagen für Mothim (2/6):
+    - Als Servine erkannt mit 15.00% Confidence
+    - Als Eevee erkannt mit 54.06% Confidence
+
+Mr. Mime             0.7143      85.11%              7              
+
+  Falsche Vorhersagen für Mr. Mime (2/7):
+    - Als Wigglytuff erkannt mit 62.10% Confidence
+    - Als Zapdos erkannt mit 36.58% Confidence
+
+Mr. Mime (Galarian)  0.5000      69.58%              6              
+
+  Falsche Vorhersagen für Mr. Mime (Galarian) (3/6):
+    - Als Gothorita erkannt mit 25.64% Confidence
+    - Als Carbink erkannt mit 35.43% Confidence
+    - Als Urshifu (Rapid Strike) erkannt mit 58.51% Confidence
+
+Mr. Rime             0.8000      82.88%              5              
+
+  Falsche Vorhersagen für Mr. Rime (1/5):
+    - Als Vikavolt erkannt mit 14.42% Confidence
+
+Muk                  0.3333      59.98%              6              
+
+  Falsche Vorhersagen für Muk (4/6):
+    - Als Tinkatuff erkannt mit 46.44% Confidence
+    - Als Cloyster erkannt mit 56.03% Confidence
+    - Als Grimer erkannt mit 93.72% Confidence
+    - Als Nidoking erkannt mit 23.96% Confidence
+
+Muk (Alolan)         1.0000      77.98%              6              
+Munchlax             0.8333      85.63%              6              
+
+  Falsche Vorhersagen für Munchlax (1/6):
+    - Als Wailmer erkannt mit 39.84% Confidence
+
+Munna                0.2500      78.13%              4              
+
+  Falsche Vorhersagen für Munna (3/4):
+    - Als Chansey erkannt mit 64.65% Confidence
+    - Als Corsola erkannt mit 89.15% Confidence
+    - Als Hattrem erkannt mit 58.73% Confidence
+
+Murkrow              0.6667      78.52%              6              
+
+  Falsche Vorhersagen für Murkrow (2/6):
+    - Als Munchlax erkannt mit 53.52% Confidence
+    - Als Misdreavus erkannt mit 17.69% Confidence
+
+Musharna             0.5000      75.35%              6              
+
+  Falsche Vorhersagen für Musharna (3/6):
+    - Als Lurantis erkannt mit 25.05% Confidence
+    - Als Blissey erkannt mit 75.14% Confidence
+    - Als Sylveon erkannt mit 96.23% Confidence
+
+Naganadel            1.0000      81.60%              6              
+Nidoking             0.5000      69.41%              6              
+
+  Falsche Vorhersagen für Nidoking (3/6):
+    - Als Drapion erkannt mit 44.35% Confidence
+    - Als Koffing erkannt mit 9.39% Confidence
+    - Als Beheeyem erkannt mit 62.98% Confidence
+
+Nidoqueen            0.1667      47.86%              6              
+
+  Falsche Vorhersagen für Nidoqueen (5/6):
+    - Als Gyarados erkannt mit 43.77% Confidence
+    - Als Palpitoad erkannt mit 78.82% Confidence
+    - Als Venusaur erkannt mit 3.08% Confidence
+    - Als Nidoking erkannt mit 15.75% Confidence
+    - Als Blastoise erkannt mit 70.47% Confidence
+
+Nidorina             0.3333      60.09%              6              
+
+  Falsche Vorhersagen für Nidorina (4/6):
+    - Als Glaceon erkannt mit 43.29% Confidence
+    - Als Pupitar erkannt mit 51.67% Confidence
+    - Als Absol erkannt mit 25.64% Confidence
+    - Als Seadra erkannt mit 55.81% Confidence
+
+Nidorino             0.5000      67.58%              6              
+
+  Falsche Vorhersagen für Nidorino (3/6):
+    - Als Aromatisse erkannt mit 29.96% Confidence
+    - Als Zapdos erkannt mit 15.91% Confidence
+    - Als Gorebyss erkannt mit 64.41% Confidence
+
+Ninetales            0.8571      95.29%              7              
+
+  Falsche Vorhersagen für Ninetales (1/7):
+    - Als Drowzee erkannt mit 70.21% Confidence
+
+Ninetales (Alolan)   0.7500      63.55%              4              
+
+  Falsche Vorhersagen für Ninetales (Alolan) (1/4):
+    - Als Klang erkannt mit 47.86% Confidence
+
+Ninjask              0.6667      83.36%              6              
+
+  Falsche Vorhersagen für Ninjask (2/6):
+    - Als Kartana erkannt mit 36.28% Confidence
+    - Als Sylveon erkannt mit 67.25% Confidence
+
+Noctowl              0.5714      66.98%              7              
+
+  Falsche Vorhersagen für Noctowl (3/7):
+    - Als Bibarel erkannt mit 19.72% Confidence
+    - Als Blastoise erkannt mit 36.23% Confidence
+    - Als Scyther erkannt mit 52.00% Confidence
+
+Noivern              0.3333      60.71%              6              
+
+  Falsche Vorhersagen für Noivern (4/6):
+    - Als Klefki erkannt mit 54.98% Confidence
+    - Als Grafaiai erkannt mit 34.06% Confidence
+    - Als Mismagius erkannt mit 43.33% Confidence
+    - Als Naganadel erkannt mit 42.46% Confidence
+
+Nosepass             1.0000      99.48%              6              
+Nuzleaf              0.6667      80.15%              6              
+
+  Falsche Vorhersagen für Nuzleaf (2/6):
+    - Als Exeggcute erkannt mit 88.01% Confidence
+    - Als Mesprit erkannt mit 4.51% Confidence
+
+Obstagoon            0.8000      90.27%              5              
+
+  Falsche Vorhersagen für Obstagoon (1/5):
+    - Als Weezing (Galarian) erkannt mit 71.57% Confidence
+
+Octillery            1.0000      96.92%              7              
+Oddish               0.8571      79.97%              7              
+
+  Falsche Vorhersagen für Oddish (1/7):
+    - Als Clefable erkannt mit 12.72% Confidence
+
+Oinkologne           0.8000      64.03%              5              
+
+  Falsche Vorhersagen für Oinkologne (1/5):
+    - Als Lanturn erkannt mit 4.81% Confidence
+
+Oinkologne (Female)  0.5000      76.40%              2              
+
+  Falsche Vorhersagen für Oinkologne (Female) (1/2):
+    - Als Oinkologne erkannt mit 59.64% Confidence
+
+Omanyte              0.6667      77.47%              6              
+
+  Falsche Vorhersagen für Omanyte (2/6):
+    - Als Poliwhirl erkannt mit 9.07% Confidence
+    - Als Omastar erkannt mit 68.43% Confidence
+
+Omastar              0.5000      62.11%              6              
+
+  Falsche Vorhersagen für Omastar (3/6):
+    - Als Slowbro erkannt mit 10.54% Confidence
+    - Als Rhyhorn erkannt mit 45.25% Confidence
+    - Als Blastoise erkannt mit 31.20% Confidence
+
+Onix                 0.3333      40.42%              3              
+
+  Falsche Vorhersagen für Onix (2/3):
+    - Als Machop erkannt mit 34.72% Confidence
+    - Als Kabutops erkannt mit 37.89% Confidence
+
+Oranguru             0.6667      86.41%              6              
+
+  Falsche Vorhersagen für Oranguru (2/6):
+    - Als Typhlosion erkannt mit 82.96% Confidence
+    - Als Revavroom erkannt mit 54.70% Confidence
+
+Oricorio (Baile)     1.0000      71.03%              5              
+Oricorio (Pa'u)      0.6667      81.51%              6              
+
+  Falsche Vorhersagen für Oricorio (Pa'u) (2/6):
+    - Als Sylveon erkannt mit 62.49% Confidence
+    - Als Teddiursa erkannt mit 35.88% Confidence
+
+Oricorio (Pom-Pom)   1.0000      99.72%              5              
+Oricorio (Sensu)     0.8333      88.58%              6              
+
+  Falsche Vorhersagen für Oricorio (Sensu) (1/6):
+    - Als Naganadel erkannt mit 34.28% Confidence
+
+Overqwil             1.0000      94.88%              5              
+Pachirisu            0.8333      75.87%              6              
+
+  Falsche Vorhersagen für Pachirisu (1/6):
+    - Als Swanna erkannt mit 37.66% Confidence
+
+Palossand            0.6000      81.14%              5              
+
+  Falsche Vorhersagen für Palossand (2/5):
+    - Als Sandygast erkannt mit 73.78% Confidence
+    - Als Trapinch erkannt mit 69.69% Confidence
+
+Palpitoad            0.6667      66.88%              6              
+
+  Falsche Vorhersagen für Palpitoad (2/6):
+    - Als Milotic erkannt mit 27.17% Confidence
+    - Als Klinklang erkannt mit 25.89% Confidence
+
+Pancham              0.7143      69.63%              7              
+
+  Falsche Vorhersagen für Pancham (2/7):
+    - Als Drilbur erkannt mit 40.44% Confidence
+    - Als Exeggutor erkannt mit 24.02% Confidence
+
+Pangoro              0.5000      66.93%              6              
+
+  Falsche Vorhersagen für Pangoro (3/6):
+    - Als Aggron erkannt mit 69.47% Confidence
+    - Als Obstagoon erkannt mit 47.37% Confidence
+    - Als Obstagoon erkannt mit 27.79% Confidence
+
+Parasect             0.8571      84.50%              7              
+
+  Falsche Vorhersagen für Parasect (1/7):
+    - Als Starmie erkannt mit 7.92% Confidence
+
+Passimian            0.5000      74.78%              6              
+
+  Falsche Vorhersagen für Passimian (3/6):
+    - Als Honchkrow erkannt mit 18.00% Confidence
+    - Als Aurorus erkannt mit 96.62% Confidence
+    - Als Celebi erkannt mit 35.78% Confidence
+
+Pawmo                0.8333      79.14%              6              
+
+  Falsche Vorhersagen für Pawmo (1/6):
+    - Als Pawmot erkannt mit 97.23% Confidence
+
+Pawmot               0.6000      70.81%              5              
+
+  Falsche Vorhersagen für Pawmot (2/5):
+    - Als Pawmo erkannt mit 80.04% Confidence
+    - Als Milotic erkannt mit 1.80% Confidence
+
+Pawniard             0.6667      50.67%              6              
+
+  Falsche Vorhersagen für Pawniard (2/6):
+    - Als Sigilyph erkannt mit 9.02% Confidence
+    - Als Claydol erkannt mit 22.45% Confidence
+
+Pelipper             0.8750      88.98%              8              
+
+  Falsche Vorhersagen für Pelipper (1/8):
+    - Als Dunsparce erkannt mit 50.32% Confidence
+
+Perrserker           0.6667      59.87%              6              
+
+  Falsche Vorhersagen für Perrserker (2/6):
+    - Als Hydreigon erkannt mit 3.32% Confidence
+    - Als Typhlosion erkannt mit 24.26% Confidence
+
+Persian              0.3333      66.62%              3              
+
+  Falsche Vorhersagen für Persian (2/3):
+    - Als Deerling erkannt mit 31.56% Confidence
+    - Als Zapdos erkannt mit 78.84% Confidence
+
+Persian (Alolan)     0.4286      58.81%              7              
+
+  Falsche Vorhersagen für Persian (Alolan) (4/7):
+    - Als Venomoth erkannt mit 18.09% Confidence
+    - Als Goodra erkannt mit 29.94% Confidence
+    - Als Wailmer erkannt mit 15.38% Confidence
+    - Als Dewgong erkannt mit 84.57% Confidence
+
+Phanpy               1.0000      98.78%              7              
+Pidgeot              0.5000      65.40%              6              
+
+  Falsche Vorhersagen für Pidgeot (3/6):
+    - Als Hawlucha erkannt mit 15.49% Confidence
+    - Als Breloom erkannt mit 49.24% Confidence
+    - Als Combusken erkannt mit 41.46% Confidence
+
+Pidgeotto            0.5000      53.88%              6              
+
+  Falsche Vorhersagen für Pidgeotto (3/6):
+    - Als Breloom erkannt mit 49.53% Confidence
+    - Als Sandygast erkannt mit 38.63% Confidence
+    - Als Sandygast erkannt mit 56.35% Confidence
+
+Pignite              0.8333      87.46%              6              
+
+  Falsche Vorhersagen für Pignite (1/6):
+    - Als Elekid erkannt mit 26.08% Confidence
+
+Piloswine            0.3333      44.40%              6              
+
+  Falsche Vorhersagen für Piloswine (4/6):
+    - Als Trapinch erkannt mit 88.68% Confidence
+    - Als Zweilous erkannt mit 56.15% Confidence
+    - Als Raticate erkannt mit 15.75% Confidence
+    - Als Trapinch erkannt mit 17.26% Confidence
+
+Pineco               0.5000      76.68%              8              
+
+  Falsche Vorhersagen für Pineco (4/8):
+    - Als Whiscash erkannt mit 57.51% Confidence
+    - Als Pawmo erkannt mit 84.96% Confidence
+    - Als Exploud erkannt mit 69.49% Confidence
+    - Als Altaria erkannt mit 31.29% Confidence
+
+Pinsir               0.6667      64.10%              6              
+
+  Falsche Vorhersagen für Pinsir (2/6):
+    - Als Sigilyph erkannt mit 6.29% Confidence
+    - Als Zapdos erkannt mit 32.91% Confidence
+
+Piplup               0.5714      86.16%              7              
+
+  Falsche Vorhersagen für Piplup (3/7):
+    - Als Frigibax erkannt mit 99.03% Confidence
+    - Als Quaquaval erkannt mit 77.94% Confidence
+    - Als Beedrill erkannt mit 38.68% Confidence
+
+Plusle               1.0000      88.15%              6              
+Poipole              0.6000      77.02%              5              
+
+  Falsche Vorhersagen für Poipole (2/5):
+    - Als Togedemaru erkannt mit 88.82% Confidence
+    - Als Mothim erkannt mit 5.03% Confidence
+
+Politoed             0.5714      73.68%              7              
+
+  Falsche Vorhersagen für Politoed (3/7):
+    - Als Tropius erkannt mit 39.51% Confidence
+    - Als Swadloon erkannt mit 63.74% Confidence
+    - Als Roselia erkannt mit 70.44% Confidence
+
+Poliwhirl            0.4286      61.88%              7              
+
+  Falsche Vorhersagen für Poliwhirl (4/7):
+    - Als Poliwrath erkannt mit 73.10% Confidence
+    - Als Poliwrath erkannt mit 73.76% Confidence
+    - Als Vanilluxe erkannt mit 29.09% Confidence
+    - Als Zapdos erkannt mit 23.09% Confidence
+
+Poliwrath            0.5714      74.37%              7              
+
+  Falsche Vorhersagen für Poliwrath (3/7):
+    - Als Poliwhirl erkannt mit 70.11% Confidence
+    - Als Poliwhirl erkannt mit 82.01% Confidence
+    - Als Mr. Mime erkannt mit 13.12% Confidence
+
+Polteageist          0.8000      75.52%              5              
+
+  Falsche Vorhersagen für Polteageist (1/5):
+    - Als Pachirisu erkannt mit 70.85% Confidence
+
+Ponyta               0.5000      68.59%              6              
+
+  Falsche Vorhersagen für Ponyta (3/6):
+    - Als Heliolisk erkannt mit 33.70% Confidence
+    - Als Moltres erkannt mit 4.96% Confidence
+    - Als Rapidash erkannt mit 78.80% Confidence
+
+Ponyta (Galarian)    1.0000      90.27%              6              
+Popplio              0.5714      62.89%              7              
+
+  Falsche Vorhersagen für Popplio (3/7):
+    - Als Togekiss erkannt mit 46.25% Confidence
+    - Als Basculin erkannt mit 58.17% Confidence
+    - Als Teddiursa erkannt mit 3.70% Confidence
+
+Porygon              0.8333      89.09%              6              
+
+  Falsche Vorhersagen für Porygon (1/6):
+    - Als Blissey erkannt mit 45.67% Confidence
+
+Porygon-Z            0.7143      82.46%              7              
+
+  Falsche Vorhersagen für Porygon-Z (2/7):
+    - Als Dunsparce erkannt mit 27.24% Confidence
+    - Als Loudred erkannt mit 50.13% Confidence
+
+Porygon2             0.7143      87.79%              7              
+
+  Falsche Vorhersagen für Porygon2 (2/7):
+    - Als Salamence erkannt mit 52.85% Confidence
+    - Als Probopass erkannt mit 67.91% Confidence
+
+Primarina            0.7143      74.63%              7              
+
+  Falsche Vorhersagen für Primarina (2/7):
+    - Als Magneton erkannt mit 73.27% Confidence
+    - Als Masquerain erkannt mit 4.23% Confidence
+
+Primeape             0.5714      60.66%              7              
+
+  Falsche Vorhersagen für Primeape (3/7):
+    - Als Sealeo erkannt mit 17.95% Confidence
+    - Als Mankey erkannt mit 31.69% Confidence
+    - Als Audino erkannt mit 39.36% Confidence
+
+Prinplup             0.8333      79.12%              6              
+
+  Falsche Vorhersagen für Prinplup (1/6):
+    - Als Piplup erkannt mit 47.44% Confidence
+
+Probopass            1.0000      99.53%              8              
+Pumpkaboo (Average)  0.4000      61.14%              5              
+
+  Falsche Vorhersagen für Pumpkaboo (Average) (3/5):
+    - Als Pumpkaboo (Super) erkannt mit 70.04% Confidence
+    - Als Pumpkaboo (Small) erkannt mit 78.04% Confidence
+    - Als Pumpkaboo (Large) erkannt mit 50.70% Confidence
+
+Pumpkaboo (Large)    0.2857      43.23%              7              
+
+  Falsche Vorhersagen für Pumpkaboo (Large) (5/7):
+    - Als Hariyama erkannt mit 20.04% Confidence
+    - Als Bouffalant erkannt mit 33.42% Confidence
+    - Als Heatmor erkannt mit 34.90% Confidence
+    - Als Pumpkaboo (Super) erkannt mit 42.75% Confidence
+    - Als Pumpkaboo (Super) erkannt mit 89.63% Confidence
+
+Pumpkaboo (Small)    0.0000      67.46%              7              
+
+  Falsche Vorhersagen für Pumpkaboo (Small) (7/7):
+    - Als Pumpkaboo (Super) erkannt mit 99.68% Confidence
+    - Als Pumpkaboo (Super) erkannt mit 83.85% Confidence
+    - Als Pumpkaboo (Super) erkannt mit 55.23% Confidence
+    - Als Pignite erkannt mit 83.09% Confidence
+    - Als Pumpkaboo (Large) erkannt mit 47.09% Confidence
+    - Als Pumpkaboo (Large) erkannt mit 33.38% Confidence
+    - Als Pumpkaboo (Super) erkannt mit 69.89% Confidence
+
+Pumpkaboo (Super)    0.5714      44.61%              7              
+
+  Falsche Vorhersagen für Pumpkaboo (Super) (3/7):
+    - Als Pumpkaboo (Large) erkannt mit 50.94% Confidence
+    - Als Pumpkaboo (Large) erkannt mit 53.32% Confidence
+    - Als Mawile erkannt mit 27.58% Confidence
+
+Pupitar              0.2857      52.64%              7              
+
+  Falsche Vorhersagen für Pupitar (5/7):
+    - Als Gengar erkannt mit 33.43% Confidence
+    - Als Gengar erkannt mit 44.23% Confidence
+    - Als Persian (Alolan) erkannt mit 49.99% Confidence
+    - Als Seel erkannt mit 52.34% Confidence
+    - Als Tangela erkannt mit 14.97% Confidence
+
+Purugly              1.0000      99.16%              7              
+Pyroar               0.5000      73.30%              4              
+
+  Falsche Vorhersagen für Pyroar (2/4):
+    - Als Audino erkannt mit 49.62% Confidence
+    - Als Pidgeot erkannt mit 43.57% Confidence
+
+Quagsire             0.5714      71.42%              7              
+
+  Falsche Vorhersagen für Quagsire (3/7):
+    - Als Mantyke erkannt mit 25.46% Confidence
+    - Als Nidorina erkannt mit 34.23% Confidence
+    - Als Azelf erkannt mit 55.60% Confidence
+
+Quaquaval            0.8000      84.42%              5              
+
+  Falsche Vorhersagen für Quaquaval (1/5):
+    - Als Milotic erkannt mit 89.81% Confidence
+
+Quaxwell             0.8000      67.65%              5              
+
+  Falsche Vorhersagen für Quaxwell (1/5):
+    - Als Lileep erkannt mit 3.83% Confidence
+
+Quilava              0.8571      83.02%              7              
+
+  Falsche Vorhersagen für Quilava (1/7):
+    - Als Victini erkannt mit 68.05% Confidence
+
+Quilladin            0.8000      93.43%              5              
+
+  Falsche Vorhersagen für Quilladin (1/5):
+    - Als Appletun erkannt mit 68.51% Confidence
+
+Qwilfish             0.6000      76.25%              5              
+
+  Falsche Vorhersagen für Qwilfish (2/5):
+    - Als Qwilfish (Hisuian) erkannt mit 82.63% Confidence
+    - Als Qwilfish (Hisuian) erkannt mit 92.70% Confidence
+
+Qwilfish (Hisuian)   1.0000      83.92%              5              
+Raboot               0.6667      84.68%              6              
+
+  Falsche Vorhersagen für Raboot (2/6):
+    - Als Zapdos (Galarian) erkannt mit 22.69% Confidence
+    - Als Camerupt erkannt mit 91.89% Confidence
+
+Raichu               0.8750      74.79%              8              
+
+  Falsche Vorhersagen für Raichu (1/8):
+    - Als Dragonite erkannt mit 77.45% Confidence
+
+Raichu (Alolan)      0.5000      68.98%              6              
+
+  Falsche Vorhersagen für Raichu (Alolan) (3/6):
+    - Als Pidgeot erkannt mit 49.19% Confidence
+    - Als Eevee erkannt mit 78.80% Confidence
+    - Als Rapidash erkannt mit 48.22% Confidence
+
+Raikou               0.8000      91.23%              5              
+
+  Falsche Vorhersagen für Raikou (1/5):
+    - Als Whiscash erkannt mit 57.04% Confidence
+
+Rampardos            0.1667      41.48%              6              
+
+  Falsche Vorhersagen für Rampardos (5/6):
+    - Als Pineco erkannt mit 32.75% Confidence
+    - Als Girafarig erkannt mit 8.25% Confidence
+    - Als Blastoise erkannt mit 34.17% Confidence
+    - Als Butterfree erkannt mit 72.81% Confidence
+    - Als Poliwhirl erkannt mit 10.77% Confidence
+
+Rapidash             0.8571      81.52%              7              
+
+  Falsche Vorhersagen für Rapidash (1/7):
+    - Als Flareon erkannt mit 63.47% Confidence
+
+Rapidash (Galarian)  0.2500      76.94%              4              
+
+  Falsche Vorhersagen für Rapidash (Galarian) (3/4):
+    - Als Golisopod erkannt mit 83.78% Confidence
+    - Als Drampa erkannt mit 99.61% Confidence
+    - Als Mew erkannt mit 41.33% Confidence
+
+Raticate             1.0000      87.91%              7              
+Raticate (Alolan)    1.0000      99.71%              6              
+Rayquaza             0.5000      70.47%              6              
+
+  Falsche Vorhersagen für Rayquaza (3/6):
+    - Als Kecleon erkannt mit 59.15% Confidence
+    - Als Bronzong erkannt mit 51.79% Confidence
+    - Als Sigilyph erkannt mit 61.18% Confidence
+
+Regice               0.5000      77.30%              6              
+
+  Falsche Vorhersagen für Regice (3/6):
+    - Als Avalugg erkannt mit 75.65% Confidence
+    - Als Sandslash (Alolan) erkannt mit 92.29% Confidence
+    - Als Tangrowth erkannt mit 20.67% Confidence
+
+Regidrago            1.0000      85.42%              5              
+Regieleki            0.6000      46.29%              5              
+
+  Falsche Vorhersagen für Regieleki (2/5):
+    - Als Quaquaval erkannt mit 18.24% Confidence
+    - Als Zapdos erkannt mit 48.46% Confidence
+
+Regirock             1.0000      89.47%              6              
+Registeel            0.7143      87.97%              7              
+
+  Falsche Vorhersagen für Registeel (2/7):
+    - Als Rhydon erkannt mit 51.14% Confidence
+    - Als Dubwool erkannt mit 68.71% Confidence
+
+Relicanth            0.7143      61.09%              7              
+
+  Falsche Vorhersagen für Relicanth (2/7):
+    - Als Floragato erkannt mit 39.41% Confidence
+    - Als Girafarig erkannt mit 2.31% Confidence
+
+Reuniclus            0.6667      66.00%              6              
+
+  Falsche Vorhersagen für Reuniclus (2/6):
+    - Als Meganium erkannt mit 49.47% Confidence
+    - Als Kingambit erkannt mit 5.17% Confidence
+
+Revavroom            0.2500      47.11%              4              
+
+  Falsche Vorhersagen für Revavroom (3/4):
+    - Als Varoom erkannt mit 25.64% Confidence
+    - Als Varoom erkannt mit 43.37% Confidence
+    - Als Raticate erkannt mit 19.45% Confidence
+
+Rhydon               0.8571      80.93%              7              
+
+  Falsche Vorhersagen für Rhydon (1/7):
+    - Als Pyroar erkannt mit 2.71% Confidence
+
+Rhyhorn              0.7143      80.85%              7              
+
+  Falsche Vorhersagen für Rhyhorn (2/7):
+    - Als Donphan erkannt mit 46.63% Confidence
+    - Als Persian (Alolan) erkannt mit 61.85% Confidence
+
+Rhyperior            0.7143      84.66%              7              
+
+  Falsche Vorhersagen für Rhyperior (2/7):
+    - Als Urshifu (Rapid Strike) erkannt mit 66.66% Confidence
+    - Als Houndoom erkannt mit 30.32% Confidence
+
+Ribombee             0.7143      87.12%              7              
+
+  Falsche Vorhersagen für Ribombee (2/7):
+    - Als Gholdengo erkannt mit 89.92% Confidence
+    - Als Falinks erkannt mit 48.96% Confidence
+
+Rillaboom            1.0000      90.03%              6              
+Roggenrola           0.6667      71.34%              6              
+
+  Falsche Vorhersagen für Roggenrola (2/6):
+    - Als Cinderace erkannt mit 32.43% Confidence
+    - Als Aurorus erkannt mit 1.96% Confidence
+
+Roselia              1.0000      96.58%              5              
+Roserade             0.8333      79.82%              6              
+
+  Falsche Vorhersagen für Roserade (1/6):
+    - Als Yanmega erkannt mit 2.90% Confidence
+
+Rotom                0.5000      57.89%              4              
+
+  Falsche Vorhersagen für Rotom (2/4):
+    - Als Eelektrik erkannt mit 32.40% Confidence
+    - Als Rotom (Wash) erkannt mit 42.57% Confidence
+
+Rotom (Frost)        1.0000      83.78%              7              
+Rotom (Heat)         0.8333      91.72%              6              
+
+  Falsche Vorhersagen für Rotom (Heat) (1/6):
+    - Als Corphish erkannt mit 87.74% Confidence
+
+Rotom (Mow)          0.8571      90.96%              7              
+
+  Falsche Vorhersagen für Rotom (Mow) (1/7):
+    - Als Deerling erkannt mit 46.53% Confidence
+
+Rotom (Wash)         0.8571      76.91%              7              
+
+  Falsche Vorhersagen für Rotom (Wash) (1/7):
+    - Als Octillery erkannt mit 64.28% Confidence
+
+Rowlet               0.8571      81.74%              7              
+
+  Falsche Vorhersagen für Rowlet (1/7):
+    - Als Chesnaught erkannt mit 72.44% Confidence
+
+Rufflet              0.5714      58.57%              7              
+
+  Falsche Vorhersagen für Rufflet (3/7):
+    - Als Mankey erkannt mit 23.21% Confidence
+    - Als Magneton erkannt mit 26.22% Confidence
+    - Als Lunatone erkannt mit 32.66% Confidence
+
+Runerigus            0.7500      63.11%              4              
+
+  Falsche Vorhersagen für Runerigus (1/4):
+    - Als Lycanroc (Midnight) erkannt mit 78.03% Confidence
+
+Sableye              0.7143      71.84%              7              
+
+  Falsche Vorhersagen für Sableye (2/7):
+    - Als Salazzle erkannt mit 95.82% Confidence
+    - Als Rotom (Frost) erkannt mit 39.69% Confidence
+
+Salamence            0.6667      52.04%              6              
+
+  Falsche Vorhersagen für Salamence (2/6):
+    - Als Centiskorch erkannt mit 2.13% Confidence
+    - Als Chatot erkannt mit 21.75% Confidence
+
+Salazzle             0.5000      81.04%              6              
+
+  Falsche Vorhersagen für Salazzle (3/6):
+    - Als Hydreigon erkannt mit 37.29% Confidence
+    - Als Annihilape erkannt mit 74.55% Confidence
+    - Als Oricorio (Baile) erkannt mit 74.46% Confidence
+
+Samurott             0.6000      67.22%              5              
+
+  Falsche Vorhersagen für Samurott (2/5):
+    - Als Lucario erkannt mit 87.03% Confidence
+    - Als Girafarig erkannt mit 2.89% Confidence
+
+Samurott (Hisuian)   0.6000      83.42%              5              
+
+  Falsche Vorhersagen für Samurott (Hisuian) (2/5):
+    - Als Magneton erkannt mit 99.81% Confidence
+    - Als Magneton erkannt mit 51.00% Confidence
+
+Sandshrew            0.7500      82.82%              8              
+
+  Falsche Vorhersagen für Sandshrew (2/8):
+    - Als Castform (Sunny) erkannt mit 41.38% Confidence
+    - Als Raticate erkannt mit 94.41% Confidence
+
+Sandshrew (Alolan)   0.6000      62.07%              5              
+
+  Falsche Vorhersagen für Sandshrew (Alolan) (2/5):
+    - Als Vanillish erkannt mit 40.51% Confidence
+    - Als Mantine erkannt mit 26.28% Confidence
+
+Sandslash            0.5714      73.92%              7              
+
+  Falsche Vorhersagen für Sandslash (3/7):
+    - Als Raticate erkannt mit 37.84% Confidence
+    - Als Zapdos erkannt mit 81.81% Confidence
+    - Als Sandshrew erkannt mit 42.06% Confidence
+
+Sandslash (Alolan)   0.5000      66.63%              6              
+
+  Falsche Vorhersagen für Sandslash (Alolan) (3/6):
+    - Als Cryogonal erkannt mit 43.98% Confidence
+    - Als Avalugg erkannt mit 57.51% Confidence
+    - Als Ninetales (Alolan) erkannt mit 48.12% Confidence
+
+Sandygast            0.7143      86.62%              7              
+
+  Falsche Vorhersagen für Sandygast (2/7):
+    - Als Simisear erkannt mit 39.99% Confidence
+    - Als Elekid erkannt mit 66.93% Confidence
+
+Sawk                 0.5714      70.81%              7              
+
+  Falsche Vorhersagen für Sawk (3/7):
+    - Als Poliwhirl erkannt mit 63.05% Confidence
+    - Als Crabominable erkannt mit 27.15% Confidence
+    - Als Electivire erkannt mit 7.79% Confidence
+
+Sawsbuck             0.5000      66.12%              4              
+
+  Falsche Vorhersagen für Sawsbuck (2/4):
+    - Als Rillaboom erkannt mit 69.49% Confidence
+    - Als Ludicolo erkannt mit 11.65% Confidence
+
+Sceptile             0.8333      86.40%              6              
+
+  Falsche Vorhersagen für Sceptile (1/6):
+    - Als Baxcalibur erkannt mit 36.97% Confidence
+
+Scizor               0.7500      78.92%              8              
+
+  Falsche Vorhersagen für Scizor (2/8):
+    - Als Rotom (Heat) erkannt mit 42.59% Confidence
+    - Als Corphish erkannt mit 86.78% Confidence
+
+Scolipede            0.8571      98.92%              7              
+
+  Falsche Vorhersagen für Scolipede (1/7):
+    - Als Volcanion erkannt mit 97.33% Confidence
+
+Scrafty              1.0000      87.60%              7              
+Scraggy              1.0000      85.26%              6              
+Scyther              0.5000      55.43%              8              
+
+  Falsche Vorhersagen für Scyther (4/8):
+    - Als Serperior erkannt mit 31.74% Confidence
+    - Als Leafeon erkannt mit 15.16% Confidence
+    - Als Cacturne erkannt mit 75.60% Confidence
+    - Als Golisopod erkannt mit 20.17% Confidence
+
+Seadra               0.5714      85.80%              7              
+
+  Falsche Vorhersagen für Seadra (3/7):
+    - Als Manectric erkannt mit 88.99% Confidence
+    - Als Wartortle erkannt mit 70.26% Confidence
+    - Als Manectric erkannt mit 96.35% Confidence
+
+Seaking              0.7500      68.16%              4              
+
+  Falsche Vorhersagen für Seaking (1/4):
+    - Als Froslass erkannt mit 84.30% Confidence
+
+Sealeo               0.8571      81.27%              7              
+
+  Falsche Vorhersagen für Sealeo (1/7):
+    - Als Pelipper erkannt mit 63.44% Confidence
+
+Seel                 0.8333      80.65%              6              
+
+  Falsche Vorhersagen für Seel (1/6):
+    - Als Rufflet erkannt mit 11.98% Confidence
+
+Seismitoad           0.8333      89.47%              6              
+
+  Falsche Vorhersagen für Seismitoad (1/6):
+    - Als Toxapex erkannt mit 41.58% Confidence
+
+Serperior            0.8000      92.62%              5              
+
+  Falsche Vorhersagen für Serperior (1/5):
+    - Als Deoxys (Speed) erkannt mit 85.41% Confidence
+
+Servine              0.8333      83.79%              6              
+
+  Falsche Vorhersagen für Servine (1/6):
+    - Als Jumpluff erkannt mit 16.96% Confidence
+
+Seviper              0.8571      93.51%              7              
+
+  Falsche Vorhersagen für Seviper (1/7):
+    - Als Guzzlord erkannt mit 55.08% Confidence
+
+Sharpedo             0.5000      68.77%              6              
+
+  Falsche Vorhersagen für Sharpedo (3/6):
+    - Als Quaquaval erkannt mit 24.66% Confidence
+    - Als Centiskorch erkannt mit 1.82% Confidence
+    - Als Falinks erkannt mit 90.66% Confidence
+
+Shaymin (Land)       0.8571      81.91%              7              
+
+  Falsche Vorhersagen für Shaymin (Land) (1/7):
+    - Als Pancham erkannt mit 40.69% Confidence
+
+Shaymin (Sky)        0.7143      60.68%              7              
+
+  Falsche Vorhersagen für Shaymin (Sky) (2/7):
+    - Als Thwackey erkannt mit 35.90% Confidence
+    - Als Roserade erkannt mit 26.85% Confidence
+
+Shelgon              0.7143      73.13%              7              
+
+  Falsche Vorhersagen für Shelgon (2/7):
+    - Als Kubfu erkannt mit 75.74% Confidence
+    - Als Weezing erkannt mit 78.77% Confidence
+
+Shellos              0.5000      66.59%              6              
+
+  Falsche Vorhersagen für Shellos (3/6):
+    - Als Deerling erkannt mit 18.98% Confidence
+    - Als Lickitung erkannt mit 66.21% Confidence
+    - Als Sunflora erkannt mit 41.29% Confidence
+
+Shiftry              0.6250      77.69%              8              
+
+  Falsche Vorhersagen für Shiftry (3/8):
+    - Als Revavroom erkannt mit 29.84% Confidence
+    - Als Infernape erkannt mit 1.82% Confidence
+    - Als Forretress erkannt mit 93.97% Confidence
+
+Shiinotic            1.0000      96.47%              6              
+Sigilyph             1.0000      98.40%              7              
+Simipour             0.7143      71.34%              7              
+
+  Falsche Vorhersagen für Simipour (2/7):
+    - Als Piplup erkannt mit 60.47% Confidence
+    - Als Hydreigon erkannt mit 3.89% Confidence
+
+Simisage             0.6667      69.68%              6              
+
+  Falsche Vorhersagen für Simisage (2/6):
+    - Als Reuniclus erkannt mit 19.52% Confidence
+    - Als Thwackey erkannt mit 55.51% Confidence
+
+Simisear             0.3333      69.34%              6              
+
+  Falsche Vorhersagen für Simisear (4/6):
+    - Als Plusle erkannt mit 45.68% Confidence
+    - Als Centiskorch erkannt mit 60.14% Confidence
+    - Als Charmeleon erkannt mit 81.99% Confidence
+    - Als Dachsbun erkannt mit 30.07% Confidence
+
+Sirfetch'd           0.8000      76.44%              5              
+
+  Falsche Vorhersagen für Sirfetch'd (1/5):
+    - Als Piplup erkannt mit 68.10% Confidence
+
+Skarmory             1.0000      97.12%              8              
+Skeledirge           0.8333      85.53%              6              
+
+  Falsche Vorhersagen für Skeledirge (1/6):
+    - Als Heatmor erkannt mit 44.75% Confidence
+
+Skiddo               0.8333      75.95%              6              
+
+  Falsche Vorhersagen für Skiddo (1/6):
+    - Als Girafarig erkannt mit 2.82% Confidence
+
+Skorupi              0.7143      67.36%              7              
+
+  Falsche Vorhersagen für Skorupi (2/7):
+    - Als Ninjask erkannt mit 3.84% Confidence
+    - Als Oricorio (Baile) erkannt mit 50.78% Confidence
+
+Skrelp               0.8000      94.55%              5              
+
+  Falsche Vorhersagen für Skrelp (1/5):
+    - Als Butterfree erkannt mit 74.46% Confidence
+
+Skuntank             0.7143      74.57%              7              
+
+  Falsche Vorhersagen für Skuntank (2/7):
+    - Als Hitmonchan erkannt mit 28.32% Confidence
+    - Als Ledian erkannt mit 18.56% Confidence
+
+Slaking              0.8333      83.71%              6              
+
+  Falsche Vorhersagen für Slaking (1/6):
+    - Als Greedent erkannt mit 54.07% Confidence
+
+Sliggoo              0.6667      76.38%              6              
+
+  Falsche Vorhersagen für Sliggoo (2/6):
+    - Als Pachirisu erkannt mit 74.18% Confidence
+    - Als Espurr erkannt mit 50.03% Confidence
+
+Slowbro              0.5714      71.76%              7              
+
+  Falsche Vorhersagen für Slowbro (3/7):
+    - Als Vanillish erkannt mit 33.89% Confidence
+    - Als Slaking erkannt mit 71.47% Confidence
+    - Als Pineco erkannt mit 2.19% Confidence
+
+Slowbro (Galarian)   0.7500      56.65%              4              
+
+  Falsche Vorhersagen für Slowbro (Galarian) (1/4):
+    - Als Munna erkannt mit 25.92% Confidence
+
+Slowking             0.8333      82.53%              6              
+
+  Falsche Vorhersagen für Slowking (1/6):
+    - Als Rufflet erkannt mit 25.47% Confidence
+
+Slowking (Galarian)  0.5714      76.89%              7              
+
+  Falsche Vorhersagen für Slowking (Galarian) (3/7):
+    - Als Cloyster erkannt mit 44.40% Confidence
+    - Als Slowpoke (Galarian) erkannt mit 76.31% Confidence
+    - Als Articuno (Galarian) erkannt mit 42.26% Confidence
+
+Slowpoke             0.3333      64.31%              6              
+
+  Falsche Vorhersagen für Slowpoke (4/6):
+    - Als Slowpoke (Galarian) erkannt mit 53.53% Confidence
+    - Als Blissey erkannt mit 64.04% Confidence
+    - Als Lickitung erkannt mit 39.16% Confidence
+    - Als Slowbro erkannt mit 34.65% Confidence
+
+Slowpoke (Galarian)  0.8571      68.28%              7              
+
+  Falsche Vorhersagen für Slowpoke (Galarian) (1/7):
+    - Als Vileplume erkannt mit 18.00% Confidence
+
+Slurpuff             0.8571      82.15%              7              
+
+  Falsche Vorhersagen für Slurpuff (1/7):
+    - Als Sylveon erkannt mit 34.16% Confidence
+
+Smoochum             0.8750      87.86%              8              
+
+  Falsche Vorhersagen für Smoochum (1/8):
+    - Als Clefairy erkannt mit 17.77% Confidence
+
+Sneasel              0.7143      81.76%              7              
+
+  Falsche Vorhersagen für Sneasel (2/7):
+    - Als Porygon-Z erkannt mit 60.73% Confidence
+    - Als Raticate erkannt mit 24.31% Confidence
+
+Sneasel (Hisuian)    0.4286      48.85%              7              
+
+  Falsche Vorhersagen für Sneasel (Hisuian) (4/7):
+    - Als Cursola erkannt mit 24.92% Confidence
+    - Als Mandibuzz erkannt mit 45.83% Confidence
+    - Als Sneasler erkannt mit 46.50% Confidence
+    - Als Croconaw erkannt mit 31.92% Confidence
+
+Sneasler             0.5000      60.57%              6              
+
+  Falsche Vorhersagen für Sneasler (3/6):
+    - Als Sneasel erkannt mit 83.40% Confidence
+    - Als Galvantula erkannt mit 18.57% Confidence
+    - Als Salazzle erkannt mit 34.27% Confidence
+
+Snorlax              0.8889      98.88%              9              
+
+  Falsche Vorhersagen für Snorlax (1/9):
+    - Als Wailord erkannt mit 92.13% Confidence
+
+Snover               0.6667      77.90%              6              
+
+  Falsche Vorhersagen für Snover (2/6):
+    - Als Torterra erkannt mit 39.16% Confidence
+    - Als Quaxwell erkannt mit 35.95% Confidence
+
+Snubbull             1.0000      91.02%              8              
+Solosis              0.1667      60.78%              6              
+
+  Falsche Vorhersagen für Solosis (5/6):
+    - Als Duosion erkannt mit 49.48% Confidence
+    - Als Duosion erkannt mit 99.93% Confidence
+    - Als Minun erkannt mit 38.35% Confidence
+    - Als Swanna erkannt mit 26.00% Confidence
+    - Als Reuniclus erkannt mit 100.00% Confidence
+
+Solrock              0.4286      73.99%              7              
+
+  Falsche Vorhersagen für Solrock (4/7):
+    - Als Raichu (Alolan) erkannt mit 75.83% Confidence
+    - Als Ho-Oh erkannt mit 21.74% Confidence
+    - Als Teddiursa erkannt mit 43.45% Confidence
+    - Als Falinks erkannt mit 77.22% Confidence
+
+Spinda               0.7143      83.23%              7              
+
+  Falsche Vorhersagen für Spinda (2/7):
+    - Als Zangoose erkannt mit 48.95% Confidence
+    - Als Primeape erkannt mit 48.34% Confidence
+
+Spiritomb            0.8333      83.06%              6              
+
+  Falsche Vorhersagen für Spiritomb (1/6):
+    - Als Lurantis erkannt mit 19.23% Confidence
+
+Spoink               0.8571      88.43%              7              
+
+  Falsche Vorhersagen für Spoink (1/7):
+    - Als Arcanine erkannt mit 52.69% Confidence
+
+Spritzee             0.5000      72.03%              6              
+
+  Falsche Vorhersagen für Spritzee (3/6):
+    - Als Aromatisse erkannt mit 84.08% Confidence
+    - Als Corsola erkannt mit 43.79% Confidence
+    - Als Jumpluff erkannt mit 4.78% Confidence
+
+Stakataka            0.6667      78.69%              6              
+
+  Falsche Vorhersagen für Stakataka (2/6):
+    - Als Graveler (Alolan) erkannt mit 56.48% Confidence
+    - Als Lapras erkannt mit 33.29% Confidence
+
+Stantler             0.5000      52.04%              6              
+
+  Falsche Vorhersagen für Stantler (3/6):
+    - Als Wyrdeer erkannt mit 95.62% Confidence
+    - Als Jolteon erkannt mit 1.66% Confidence
+    - Als Pawmo erkannt mit 36.43% Confidence
+
+Staraptor            0.7143      66.71%              7              
+
+  Falsche Vorhersagen für Staraptor (2/7):
+    - Als Staravia erkannt mit 46.40% Confidence
+    - Als Talonflame erkannt mit 44.02% Confidence
+
+Staravia             0.6667      77.36%              6              
+
+  Falsche Vorhersagen für Staravia (2/6):
+    - Als Staraptor erkannt mit 68.52% Confidence
+    - Als Girafarig erkannt mit 2.90% Confidence
+
+Starmie              0.8571      90.64%              7              
+
+  Falsche Vorhersagen für Starmie (1/7):
+    - Als Poliwhirl erkannt mit 34.94% Confidence
+
+Steelix              0.4286      55.22%              7              
+
+  Falsche Vorhersagen für Steelix (4/7):
+    - Als Graveler erkannt mit 28.25% Confidence
+    - Als Shaymin (Sky) erkannt mit 23.19% Confidence
+    - Als Sandslash (Alolan) erkannt mit 54.45% Confidence
+    - Als Persian (Alolan) erkannt mit 59.69% Confidence
+
+Stonjourner          1.0000      79.52%              5              
+Stoutland            0.7143      69.54%              7              
+
+  Falsche Vorhersagen für Stoutland (2/7):
+    - Als Klinklang erkannt mit 26.38% Confidence
+    - Als Girafarig erkannt mit 4.30% Confidence
+
+Stufful              1.0000      85.94%              6              
+Stunfisk             0.6667      58.60%              6              
+
+  Falsche Vorhersagen für Stunfisk (2/6):
+    - Als Magnezone erkannt mit 3.03% Confidence
+    - Als Elekid erkannt mit 50.33% Confidence
+
+Stunfisk (Galarian)  0.6000      55.92%              5              
+
+  Falsche Vorhersagen für Stunfisk (Galarian) (2/5):
+    - Als Farfetch'd (Galarian) erkannt mit 21.11% Confidence
+    - Als Exeggutor erkannt mit 43.17% Confidence
+
+Stunky               0.5714      72.37%              7              
+
+  Falsche Vorhersagen für Stunky (3/7):
+    - Als Girafarig erkannt mit 5.29% Confidence
+    - Als Skuntank erkannt mit 99.47% Confidence
+    - Als Skuntank erkannt mit 34.63% Confidence
+
+Sudowoodo            0.6250      68.56%              8              
+
+  Falsche Vorhersagen für Sudowoodo (3/8):
+    - Als Girafarig erkannt mit 9.17% Confidence
+    - Als Turtwig erkannt mit 18.80% Confidence
+    - Als Pinsir erkannt mit 37.86% Confidence
+
+Suicune              0.8333      93.97%              6              
+
+  Falsche Vorhersagen für Suicune (1/6):
+    - Als Sylveon erkannt mit 87.15% Confidence
+
+Sunflora             1.0000      99.02%              6              
+Swadloon             0.6667      64.44%              6              
+
+  Falsche Vorhersagen für Swadloon (2/6):
+    - Als Victreebel erkannt mit 25.76% Confidence
+    - Als Scraggy erkannt mit 2.95% Confidence
+
+Swalot               1.0000      92.87%              6              
+Swampert             0.6000      81.30%              5              
+
+  Falsche Vorhersagen für Swampert (2/5):
+    - Als Clawitzer erkannt mit 24.97% Confidence
+    - Als Samurott erkannt mit 81.59% Confidence
+
+Swanna               0.6667      75.54%              6              
+
+  Falsche Vorhersagen für Swanna (2/6):
+    - Als Frigibax erkannt mit 95.35% Confidence
+    - Als Thundurus (Incarnate) erkannt mit 39.04% Confidence
+
+Swellow              0.8333      84.65%              6              
+
+  Falsche Vorhersagen für Swellow (1/6):
+    - Als Growlithe erkannt mit 10.31% Confidence
+
+Swirlix              0.5000      71.21%              6              
+
+  Falsche Vorhersagen für Swirlix (3/6):
+    - Als Blissey erkannt mit 52.29% Confidence
+    - Als Relicanth erkannt mit 66.28% Confidence
+    - Als Clefable erkannt mit 44.07% Confidence
+
+Swoobat              0.8571      72.40%              7              
+
+  Falsche Vorhersagen für Swoobat (1/7):
+    - Als Clamperl erkannt mit 39.31% Confidence
+
+Sylveon              0.8750      93.01%              8              
+
+  Falsche Vorhersagen für Sylveon (1/8):
+    - Als Audino erkannt mit 81.87% Confidence
+
+Talonflame           0.5000      70.39%              8              
+
+  Falsche Vorhersagen für Talonflame (4/8):
+    - Als Fletchinder erkannt mit 28.86% Confidence
+    - Als Zapdos (Galarian) erkannt mit 40.09% Confidence
+    - Als Throh erkannt mit 46.55% Confidence
+    - Als Blaziken erkannt mit 58.69% Confidence
+
+Tangela              0.8333      87.57%              6              
+
+  Falsche Vorhersagen für Tangela (1/6):
+    - Als Ivysaur erkannt mit 97.69% Confidence
+
+Tangrowth            0.5714      72.47%              7              
+
+  Falsche Vorhersagen für Tangrowth (3/7):
+    - Als Vaporeon erkannt mit 21.81% Confidence
+    - Als Manectric erkannt mit 45.16% Confidence
+    - Als Ivysaur erkannt mit 64.25% Confidence
+
+Tapu Fini            1.0000      88.32%              7              
+Tauros               0.7500      62.95%              8              
+
+  Falsche Vorhersagen für Tauros (2/8):
+    - Als Drowzee erkannt mit 10.63% Confidence
+    - Als Tauros (Blaze) erkannt mit 93.84% Confidence
+
+Tauros (Aqua)        0.0000      69.88%              7              
+
+  Falsche Vorhersagen für Tauros (Aqua) (7/7):
+    - Als Pangoro erkannt mit 78.54% Confidence
+    - Als Stakataka erkannt mit 69.18% Confidence
+    - Als Aggron erkannt mit 49.99% Confidence
+    - Als Tauros (Combat) erkannt mit 88.81% Confidence
+    - Als Tauros (Blaze) erkannt mit 60.38% Confidence
+    - Als Tauros erkannt mit 45.20% Confidence
+    - Als Tauros (Combat) erkannt mit 97.07% Confidence
+
+Tauros (Blaze)       0.2857      42.76%              7              
+
+  Falsche Vorhersagen für Tauros (Blaze) (5/7):
+    - Als Electabuzz erkannt mit 29.12% Confidence
+    - Als Naganadel erkannt mit 26.14% Confidence
+    - Als Lycanroc (Midnight) erkannt mit 23.03% Confidence
+    - Als Arcanine (Hisuian) erkannt mit 67.31% Confidence
+    - Als Moltres erkannt mit 37.15% Confidence
+
+Tauros (Combat)      0.1667      65.70%              6              
+
+  Falsche Vorhersagen für Tauros (Combat) (5/6):
+    - Als Tauros (Blaze) erkannt mit 97.96% Confidence
+    - Als Buzzwole erkannt mit 69.90% Confidence
+    - Als Tauros (Aqua) erkannt mit 69.27% Confidence
+    - Als Tauros (Blaze) erkannt mit 89.70% Confidence
+    - Als Fearow erkannt mit 19.63% Confidence
+
+Teddiursa            0.6000      78.03%              5              
+
+  Falsche Vorhersagen für Teddiursa (2/5):
+    - Als Raticate erkannt mit 54.78% Confidence
+    - Als Floatzel erkannt mit 36.23% Confidence
+
+Tentacool            0.5714      94.69%              7              
+
+  Falsche Vorhersagen für Tentacool (3/7):
+    - Als Tentacruel erkannt mit 90.40% Confidence
+    - Als Azumarill erkannt mit 95.19% Confidence
+    - Als Tentacruel erkannt mit 99.17% Confidence
+
+Tentacruel           0.6250      65.08%              8              
+
+  Falsche Vorhersagen für Tentacruel (3/8):
+    - Als Azumarill erkannt mit 27.85% Confidence
+    - Als Zapdos erkannt mit 13.55% Confidence
+    - Als Zapdos erkannt mit 18.92% Confidence
+
+Thievul              0.5714      70.43%              7              
+
+  Falsche Vorhersagen für Thievul (3/7):
+    - Als Mightyena erkannt mit 44.15% Confidence
+    - Als Rotom (Mow) erkannt mit 53.05% Confidence
+    - Als Girafarig erkannt mit 6.32% Confidence
+
+Throh                1.0000      94.62%              7              
+Thundurus (Incarnate) 1.0000      95.74%              5              
+Thwackey             0.7143      77.18%              7              
+
+  Falsche Vorhersagen für Thwackey (2/7):
+    - Als Dolliv erkannt mit 9.84% Confidence
+    - Als Braixen erkannt mit 55.46% Confidence
+
+Timburr              0.8333      89.51%              6              
+
+  Falsche Vorhersagen für Timburr (1/6):
+    - Als Slaking erkannt mit 81.38% Confidence
+
+Tinkaton             0.4286      52.11%              7              
+
+  Falsche Vorhersagen für Tinkaton (4/7):
+    - Als Gligar erkannt mit 72.36% Confidence
+    - Als Drilbur erkannt mit 78.21% Confidence
+    - Als Urshifu (Rapid Strike) erkannt mit 35.70% Confidence
+    - Als Cursola erkannt mit 28.61% Confidence
+
+Tinkatuff            0.2000      61.44%              5              
+
+  Falsche Vorhersagen für Tinkatuff (4/5):
+    - Als Exeggcute erkannt mit 16.90% Confidence
+    - Als Tinkaton erkannt mit 96.65% Confidence
+    - Als Probopass erkannt mit 47.27% Confidence
+    - Als Snubbull erkannt mit 48.44% Confidence
+
+Tirtouga             0.6667      76.07%              6              
+
+  Falsche Vorhersagen für Tirtouga (2/6):
+    - Als Varoom erkannt mit 47.85% Confidence
+    - Als Carracosta erkannt mit 80.38% Confidence
+
+Togedemaru           0.7143      83.47%              7              
+
+  Falsche Vorhersagen für Togedemaru (2/7):
+    - Als Pachirisu erkannt mit 69.19% Confidence
+    - Als Farfetch'd erkannt mit 34.92% Confidence
+
+Togekiss             0.3750      64.51%              8              
+
+  Falsche Vorhersagen für Togekiss (5/8):
+    - Als Butterfree erkannt mit 29.18% Confidence
+    - Als Seadra erkannt mit 48.77% Confidence
+    - Als Phanpy erkannt mit 39.29% Confidence
+    - Als Cresselia erkannt mit 31.40% Confidence
+    - Als Dewgong erkannt mit 71.00% Confidence
+
+Togetic              0.6667      74.10%              6              
+
+  Falsche Vorhersagen für Togetic (2/6):
+    - Als Togekiss erkannt mit 15.92% Confidence
+    - Als Sylveon erkannt mit 31.27% Confidence
+
+Torkoal              1.0000      85.87%              7              
+Tornadus (Incarnate) 0.6667      70.95%              6              
+
+  Falsche Vorhersagen für Tornadus (Incarnate) (2/6):
+    - Als Urshifu (Rapid Strike) erkannt mit 53.58% Confidence
+    - Als Slowking erkannt mit 34.03% Confidence
+
+Torracat             1.0000      88.85%              8              
+Torterra             0.5000      71.65%              8              
+
+  Falsche Vorhersagen für Torterra (4/8):
+    - Als Sudowoodo erkannt mit 10.36% Confidence
+    - Als Stunfisk erkannt mit 69.96% Confidence
+    - Als Scyther erkannt mit 19.69% Confidence
+    - Als Simisage erkannt mit 78.14% Confidence
+
+Totodile             0.5714      71.19%              7              
+
+  Falsche Vorhersagen für Totodile (3/7):
+    - Als Feraligatr erkannt mit 51.64% Confidence
+    - Als Seismitoad erkannt mit 3.39% Confidence
+    - Als Seadra erkannt mit 84.65% Confidence
+
+Toucannon            0.7143      89.52%              7              
+
+  Falsche Vorhersagen für Toucannon (2/7):
+    - Als Kommo-o erkannt mit 36.96% Confidence
+    - Als Trumbeak erkannt mit 94.00% Confidence
+
+Toxapex              0.8571      74.98%              7              
+
+  Falsche Vorhersagen für Toxapex (1/7):
+    - Als Metagross erkannt mit 27.86% Confidence
+
+Toxicroak            0.7143      92.93%              7              
+
+  Falsche Vorhersagen für Toxicroak (2/7):
+    - Als Quaquaval erkannt mit 84.85% Confidence
+    - Als Drapion erkannt mit 81.44% Confidence
+
+Toxtricity           0.7500      84.68%              4              
+
+  Falsche Vorhersagen für Toxtricity (1/4):
+    - Als Articuno (Galarian) erkannt mit 39.40% Confidence
+
+Tranquill            0.8333      77.76%              6              
+
+  Falsche Vorhersagen für Tranquill (1/6):
+    - Als Tauros erkannt mit 24.08% Confidence
+
+Trapinch             0.8571      71.57%              7              
+
+  Falsche Vorhersagen für Trapinch (1/7):
+    - Als Zapdos (Galarian) erkannt mit 44.10% Confidence
+
+Trevenant            0.8750      82.49%              8              
+
+  Falsche Vorhersagen für Trevenant (1/8):
+    - Als Mandibuzz erkannt mit 34.43% Confidence
+
+Tropius              1.0000      92.86%              8              
+Trumbeak             0.7143      74.60%              7              
+
+  Falsche Vorhersagen für Trumbeak (2/7):
+    - Als Centiskorch erkannt mit 4.04% Confidence
+    - Als Morpeko (Full Belly) erkannt mit 27.17% Confidence
+
+Tsareena             0.8571      88.75%              7              
+
+  Falsche Vorhersagen für Tsareena (1/7):
+    - Als Mienfoo erkannt mit 40.34% Confidence
+
+Turtonator           0.7143      79.85%              7              
+
+  Falsche Vorhersagen für Turtonator (2/7):
+    - Als Gumshoos erkannt mit 19.82% Confidence
+    - Als Buzzwole erkannt mit 45.83% Confidence
+
+Turtwig              0.5714      64.63%              7              
+
+  Falsche Vorhersagen für Turtwig (3/7):
+    - Als Grotle erkannt mit 55.07% Confidence
+    - Als Dolliv erkannt mit 43.93% Confidence
+    - Als Bellibolt erkannt mit 45.41% Confidence
+
+Typhlosion           0.5714      62.14%              7              
+
+  Falsche Vorhersagen für Typhlosion (3/7):
+    - Als Quilava erkannt mit 32.06% Confidence
+    - Als Quilava erkannt mit 53.88% Confidence
+    - Als Monferno erkannt mit 25.60% Confidence
+
+Typhlosion (Hisuian) 1.0000      95.83%              5              
+Tyranitar            0.5714      79.58%              7              
+
+  Falsche Vorhersagen für Tyranitar (3/7):
+    - Als Cacturne erkannt mit 64.93% Confidence
+    - Als Chesnaught erkannt mit 81.26% Confidence
+    - Als Oddish erkannt mit 68.20% Confidence
+
+Tyrantrum            0.8571      88.67%              7              
+
+  Falsche Vorhersagen für Tyrantrum (1/7):
+    - Als Barbaracle erkannt mit 60.05% Confidence
+
+Tyrunt               0.7500      96.41%              4              
+
+  Falsche Vorhersagen für Tyrunt (1/4):
+    - Als Poliwrath erkannt mit 94.77% Confidence
+
+Umbreon              0.5556      75.22%              9              
+
+  Falsche Vorhersagen für Umbreon (4/9):
+    - Als Oinkologne erkannt mit 61.65% Confidence
+    - Als Heracross erkannt mit 31.04% Confidence
+    - Als Lucario erkannt mit 47.58% Confidence
+    - Als Luxio erkannt mit 41.72% Confidence
+
+Unfezant             0.7143      89.12%              7              
+
+  Falsche Vorhersagen für Unfezant (2/7):
+    - Als Claydol erkannt mit 48.08% Confidence
+    - Als Tranquill erkannt mit 99.99% Confidence
+
+Unown                0.5000      70.84%              6              
+
+  Falsche Vorhersagen für Unown (3/6):
+    - Als Kadabra erkannt mit 71.62% Confidence
+    - Als Urshifu (Rapid Strike) erkannt mit 42.70% Confidence
+    - Als Frillish erkannt mit 14.62% Confidence
+
+Ursaluna             0.4000      55.19%              5              
+
+  Falsche Vorhersagen für Ursaluna (3/5):
+    - Als Primeape erkannt mit 49.67% Confidence
+    - Als Heatran erkannt mit 22.37% Confidence
+    - Als Noctowl erkannt mit 35.60% Confidence
+
+Ursaring             0.4286      61.09%              7              
+
+  Falsche Vorhersagen für Ursaring (4/7):
+    - Als Houndoom erkannt mit 33.48% Confidence
+    - Als Pawmo erkannt mit 4.68% Confidence
+    - Als Gourgeist (Large) erkannt mit 24.08% Confidence
+    - Als Cacturne erkannt mit 65.40% Confidence
+
+Urshifu (Rapid Strike) 0.7143      79.27%              7              
+
+  Falsche Vorhersagen für Urshifu (Rapid Strike) (2/7):
+    - Als Carracosta erkannt mit 26.37% Confidence
+    - Als Klefki erkannt mit 48.06% Confidence
+
+Urshifu (Single Strike) 0.2000      61.60%              5              
+
+  Falsche Vorhersagen für Urshifu (Single Strike) (4/5):
+    - Als Volcanion erkannt mit 34.14% Confidence
+    - Als Kubfu erkannt mit 21.35% Confidence
+    - Als Urshifu (Rapid Strike) erkannt mit 94.48% Confidence
+    - Als Urshifu (Rapid Strike) erkannt mit 98.05% Confidence
+
+Uxie                 0.8000      75.22%              5              
+
+  Falsche Vorhersagen für Uxie (1/5):
+    - Als Inteleon erkannt mit 58.07% Confidence
+
+Vanillish            0.8571      65.66%              7              
+
+  Falsche Vorhersagen für Vanillish (1/7):
+    - Als Vanilluxe erkannt mit 90.72% Confidence
+
+Vanilluxe            0.8571      88.21%              7              
+
+  Falsche Vorhersagen für Vanilluxe (1/7):
+    - Als Vanillish erkannt mit 99.65% Confidence
+
+Vaporeon             0.5000      69.04%              8              
+
+  Falsche Vorhersagen für Vaporeon (4/8):
+    - Als Brionne erkannt mit 78.42% Confidence
+    - Als Sylveon erkannt mit 3.25% Confidence
+    - Als Seadra erkannt mit 50.26% Confidence
+    - Als Salamence erkannt mit 88.57% Confidence
+
+Varoom               0.0000      59.86%              5              
+
+  Falsche Vorhersagen für Varoom (5/5):
+    - Als Pancham erkannt mit 78.23% Confidence
+    - Als Weezing erkannt mit 30.37% Confidence
+    - Als Weezing (Galarian) erkannt mit 38.42% Confidence
+    - Als Omastar erkannt mit 66.50% Confidence
+    - Als Revavroom erkannt mit 85.81% Confidence
+
+Venomoth             1.0000      75.21%              7              
+Venusaur             0.8571      82.47%              7              
+
+  Falsche Vorhersagen für Venusaur (1/7):
+    - Als Bulbasaur erkannt mit 36.04% Confidence
+
+Vespiquen            0.7143      71.73%              7              
+
+  Falsche Vorhersagen für Vespiquen (2/7):
+    - Als Emboar erkannt mit 69.32% Confidence
+    - Als Beautifly erkannt mit 16.73% Confidence
+
+Vibrava              0.3750      64.18%              8              
+
+  Falsche Vorhersagen für Vibrava (5/8):
+    - Als Scyther erkannt mit 48.53% Confidence
+    - Als Mismagius erkannt mit 29.65% Confidence
+    - Als Ferrothorn erkannt mit 45.51% Confidence
+    - Als Flygon erkannt mit 17.24% Confidence
+    - Als Cacturne erkannt mit 80.72% Confidence
+
+Victini              0.2857      66.07%              7              
+
+  Falsche Vorhersagen für Victini (5/7):
+    - Als Rapidash erkannt mit 65.68% Confidence
+    - Als Moltres (Galarian) erkannt mit 47.13% Confidence
+    - Als Gholdengo erkannt mit 39.29% Confidence
+    - Als Leafeon erkannt mit 54.08% Confidence
+    - Als Ponyta erkannt mit 56.90% Confidence
+
+Victreebel           0.7778      79.66%              9              
+
+  Falsche Vorhersagen für Victreebel (2/9):
+    - Als Simisage erkannt mit 37.51% Confidence
+    - Als Jynx erkannt mit 12.46% Confidence
+
+Vigoroth             0.5714      67.40%              7              
+
+  Falsche Vorhersagen für Vigoroth (3/7):
+    - Als Gardevoir erkannt mit 71.49% Confidence
+    - Als Seel erkannt mit 15.22% Confidence
+    - Als Zapdos (Galarian) erkannt mit 45.39% Confidence
+
+Vikavolt             0.5714      47.55%              7              
+
+  Falsche Vorhersagen für Vikavolt (3/7):
+    - Als Guzzlord erkannt mit 20.79% Confidence
+    - Als Eelektross erkannt mit 26.17% Confidence
+    - Als Beedrill erkannt mit 13.58% Confidence
+
+Vileplume            0.8750      87.62%              8              
+
+  Falsche Vorhersagen für Vileplume (1/8):
+    - Als Gloom erkannt mit 23.63% Confidence
+
+Vivillon             0.2000      61.54%              5              
+
+  Falsche Vorhersagen für Vivillon (4/5):
+    - Als Snubbull erkannt mit 71.44% Confidence
+    - Als Roserade erkannt mit 26.53% Confidence
+    - Als Combusken erkannt mit 55.90% Confidence
+    - Als Magmar erkannt mit 53.87% Confidence
+
+Volbeat              1.0000      96.08%              4              
+Volcanion            1.0000      87.46%              6              
+Vullaby              0.8571      78.89%              7              
+
+  Falsche Vorhersagen für Vullaby (1/7):
+    - Als Primeape erkannt mit 29.80% Confidence
+
+Wailmer              1.0000      97.80%              7              
+Wailord              0.5714      67.14%              7              
+
+  Falsche Vorhersagen für Wailord (3/7):
+    - Als Tirtouga erkannt mit 41.10% Confidence
+    - Als Eelektross erkannt mit 17.86% Confidence
+    - Als Popplio erkannt mit 18.00% Confidence
+
+Walrein              0.7500      73.68%              8              
+
+  Falsche Vorhersagen für Walrein (2/8):
+    - Als Slowking (Galarian) erkannt mit 17.26% Confidence
+    - Als Roserade erkannt mit 60.15% Confidence
+
+Wartortle            0.7500      70.51%              8              
+
+  Falsche Vorhersagen für Wartortle (2/8):
+    - Als Piplup erkannt mit 62.87% Confidence
+    - Als Latios erkannt mit 23.87% Confidence
+
+Watchog              0.8571      67.98%              7              
+
+  Falsche Vorhersagen für Watchog (1/7):
+    - Als Noctowl erkannt mit 20.96% Confidence
+
+Weavile              1.0000      99.96%              7              
+Weepinbell           0.7143      74.84%              7              
+
+  Falsche Vorhersagen für Weepinbell (2/7):
+    - Als Sableye erkannt mit 5.33% Confidence
+    - Als Stunfisk (Galarian) erkannt mit 19.91% Confidence
+
+Weezing              0.3333      63.64%              6              
+
+  Falsche Vorhersagen für Weezing (4/6):
+    - Als Pineco erkannt mit 1.48% Confidence
+    - Als Oricorio (Pa'u) erkannt mit 50.57% Confidence
+    - Als Exeggcute erkannt mit 81.24% Confidence
+    - Als Grimer erkannt mit 49.00% Confidence
+
+Weezing (Galarian)   0.6667      90.69%              6              
+
+  Falsche Vorhersagen für Weezing (Galarian) (2/6):
+    - Als Poliwhirl erkannt mit 61.09% Confidence
+    - Als Dusclops erkannt mit 84.45% Confidence
+
+Whimsicott           0.7143      82.18%              7              
+
+  Falsche Vorhersagen für Whimsicott (2/7):
+    - Als Arcanine erkannt mit 87.83% Confidence
+    - Als Rowlet erkannt mit 26.11% Confidence
+
+Whirlipede           0.4000      58.80%              5              
+
+  Falsche Vorhersagen für Whirlipede (3/5):
+    - Als Haunter erkannt mit 44.33% Confidence
+    - Als Corviknight erkannt mit 26.46% Confidence
+    - Als Corviknight erkannt mit 32.70% Confidence
+
+Whiscash             0.7500      69.62%              8              
+
+  Falsche Vorhersagen für Whiscash (2/8):
+    - Als Clawitzer erkannt mit 35.24% Confidence
+    - Als Clawitzer erkannt mit 84.36% Confidence
+
+Wigglytuff           0.6250      75.74%              8              
+
+  Falsche Vorhersagen für Wigglytuff (3/8):
+    - Als Exeggcute erkannt mit 19.53% Confidence
+    - Als Clefable erkannt mit 23.31% Confidence
+    - Als Golisopod erkannt mit 95.56% Confidence
+
+Wobbuffet            0.8571      80.57%              7              
+
+  Falsche Vorhersagen für Wobbuffet (1/7):
+    - Als Tangrowth erkannt mit 73.14% Confidence
+
+Wormadam (Plant)     0.8333      86.39%              6              
+
+  Falsche Vorhersagen für Wormadam (Plant) (1/6):
+    - Als Garbodor erkannt mit 18.66% Confidence
+
+Wormadam (Sandy)     1.0000      98.47%              7              
+Wormadam (Trash)     1.0000      89.30%              7              
+Wugtrio              0.4000      63.39%              5              
+
+  Falsche Vorhersagen für Wugtrio (3/5):
+    - Als Tauros erkannt mit 45.30% Confidence
+    - Als Swanna erkannt mit 23.58% Confidence
+    - Als Urshifu (Rapid Strike) erkannt mit 66.09% Confidence
+
+Wyrdeer              0.6667      77.86%              6              
+
+  Falsche Vorhersagen für Wyrdeer (2/6):
+    - Als Stantler erkannt mit 84.81% Confidence
+    - Als Corsola (Galarian) erkannt mit 41.73% Confidence
+
+Xatu                 0.7143      92.40%              7              
+
+  Falsche Vorhersagen für Xatu (2/7):
+    - Als Flapple erkannt mit 66.90% Confidence
+    - Als Eldegoss erkannt mit 80.82% Confidence
+
+Yanma                0.5714      79.09%              7              
+
+  Falsche Vorhersagen für Yanma (3/7):
+    - Als Togekiss erkannt mit 34.88% Confidence
+    - Als Sudowoodo erkannt mit 53.76% Confidence
+    - Als Scyther erkannt mit 66.23% Confidence
+
+Yanmega              0.7143      86.42%              7              
+
+  Falsche Vorhersagen für Yanmega (2/7):
+    - Als Ponyta erkannt mit 29.05% Confidence
+    - Als Yanma erkannt mit 92.89% Confidence
+
+Zangoose             0.5000      64.76%              6              
+
+  Falsche Vorhersagen für Zangoose (3/6):
+    - Als Mankey erkannt mit 4.17% Confidence
+    - Als Lugia erkannt mit 35.47% Confidence
+    - Als Lycanroc (Midnight) erkannt mit 53.82% Confidence
+
+Zapdos               0.8750      74.31%              8              
+
+  Falsche Vorhersagen für Zapdos (1/8):
+    - Als Sigilyph erkannt mit 12.79% Confidence
+
+Zapdos (Galarian)    0.6667      82.98%              6              
+
+  Falsche Vorhersagen für Zapdos (Galarian) (2/6):
+    - Als Buzzwole erkannt mit 66.26% Confidence
+    - Als Camerupt erkannt mit 56.53% Confidence
+
+Zebstrika            0.5000      49.76%              8              
+
+  Falsche Vorhersagen für Zebstrika (4/8):
+    - Als Unown erkannt mit 95.82% Confidence
+    - Als Hydreigon erkannt mit 5.52% Confidence
+    - Als Eevee erkannt mit 8.19% Confidence
+    - Als Throh erkannt mit 11.36% Confidence
+
+Zoroark              0.0000      38.48%              3              
+
+  Falsche Vorhersagen für Zoroark (3/3):
+    - Als Bombirdier erkannt mit 15.31% Confidence
+    - Als Incineroar erkannt mit 25.87% Confidence
+    - Als Salazzle erkannt mit 74.25% Confidence
+
+Zweilous             0.6667      74.19%              6              
+
+  Falsche Vorhersagen für Zweilous (2/6):
+    - Als Hydreigon erkannt mit 45.39% Confidence
+    - Als Golbat erkannt mit 41.07% Confidence
+
+Zygarde (10% Forme)  0.5000      72.07%              4              
+
+  Falsche Vorhersagen für Zygarde (10% Forme) (2/4):
+    - Als Furfrou erkannt mit 33.27% Confidence
+    - Als Umbreon erkannt mit 55.12% Confidence
+
+Zygarde (50% Forme)  0.6000      87.05%              5              
+
+  Falsche Vorhersagen für Zygarde (50% Forme) (2/5):
+    - Als Celesteela erkannt mit 72.49% Confidence
+    - Als Charmeleon erkannt mit 62.80% Confidence
+
+
+
+Gesamtgenauigkeit: 0.6775
+Durchschnittliche Confidence: 75.81%
+Anzahl Testbilder gesamt: 4571

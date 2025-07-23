@@ -8,9 +8,38 @@ import streamlit as st
 sys.path.insert(0, os.getcwd())
 from modelling.models.cat_boost.predict_battles import predict_battle
 
-
 # Page setup
 st.set_page_config(page_title="Pokémon Battle Predictor", page_icon="⚔️", layout="wide")
+
+#Pokeball
+st.markdown(
+    """
+    <style>
+    .circle-top {
+        width: 100px;
+        height: 100px;
+        background-color: white;
+        border-radius: 50%;
+        border: 20px solid black;
+        justify-self: center;
+        z-index: 10;
+        margin-top: -50px;
+    }
+    .top-rectangle {
+        width: 100%;
+        height: 100px;
+        background-color: red;
+        border: 5px solid black;
+        border-bottom: 20px solid black;
+    }
+   
+    </style>
+
+    <div class="top-rectangle"></div>
+    <div class="circle-top"></div>
+    """,
+    unsafe_allow_html=True
+)
 
 # Initialize session state for dynamic inputs on the left side
 if "your_pokemon_count" not in st.session_state:
@@ -94,3 +123,42 @@ if battle:
     else:
         st.error("No valid Pokémon for prediction.")
 
+#Pokeball
+st.markdown(
+    """
+    <style>
+    .low-rectangle {
+        width: 100%;
+        height: 100px;
+        background-color: white;
+        border: 5px solid black;
+        border-top: 20px solid black;
+        margin-bottom: -150px;
+        margin-top: 50px;
+    }
+    .cover-white {
+        width: 100%;
+        height: 50px;
+        background-color: white;
+        margin-top: -150px;
+    }
+    .circle-bottom {
+        z-index: 10;
+        margin-top: -50px;
+        margin-bottom: 50px;
+        width: 100px;
+        height: 100px;
+        background-color: white;
+        border-radius: 50%;
+        border: 20px solid black;
+        justify-self: center;
+    }
+    </style>
+
+    
+    <div class="low-rectangle"></div>
+    <div class="circle-bottom"></div>
+    <div class="cover-white"></div>
+    """,
+    unsafe_allow_html=True
+)
