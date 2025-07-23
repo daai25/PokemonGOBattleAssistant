@@ -1,0 +1,727 @@
+Abomasnow
+Absol
+Accelgor
+Aerodactyl
+Aggron
+Aipom
+Alakazam
+Alomomola
+Altaria
+Amaura
+Ambipom
+Amoonguss
+Ampharos
+Annihilape
+Anorith
+Appletun
+Araquanid
+Arbok
+Arboliva
+Arcanine
+Arcanine (Hisuian)
+Archen
+Archeops
+Arctibax
+Ariados
+Armaldo
+Armarouge
+Aromatisse
+Aron
+Articuno
+Articuno (Galarian)
+Audino
+Aurorus
+Avalugg
+Avalugg (Hisuian)
+Axew
+Azelf
+Azumarill
+Banette
+Barbaracle
+Basculin
+Bastiodon
+Baxcalibur
+Bayleef
+Beartic
+Beautifly
+Beedrill
+Beheeyem
+Bellibolt
+Bellossom
+Bergmite
+Bewear
+Bibarel
+Bisharp
+Blastoise
+Blaziken
+Blissey
+Boldore
+Boltund
+Bombirdier
+Bonsly
+Bouffalant
+Braixen
+Braviary
+Braviary (Hisuian)
+Breloom
+Brionne
+Bronzong
+Bruxish
+Bulbasaur
+Buneary
+Butterfree
+Buzzwole
+Cacturne
+Camerupt
+Carbink
+Carnivine
+Carracosta
+Castform
+Castform (Rainy)
+Castform (Snowy)
+Castform (Sunny)
+Celebi
+Celesteela
+Centiskorch
+Ceruledge
+Cetitan
+Cetoddle
+Chandelure
+Chansey
+Charizard
+Charjabug
+Charmeleon
+Chatot
+Cherrim (Overcast)
+Cherrim (Sunshine)
+Chesnaught
+Chespin
+Chimecho
+Chinchou
+Cinccino
+Cinderace
+Clamperl
+Clauncher
+Clawitzer
+Claydol
+Clefable
+Clefairy
+Clodsire
+Cloyster
+Cofagrigus
+Combusken
+Comfey
+Conkeldurr
+Corphish
+Corsola
+Corsola (Galarian)
+Corviknight
+Corvisquire
+Crabominable
+Crabrawler
+Cradily
+Crawdaunt
+Cresselia
+Crobat
+Crocalor
+Croconaw
+Crustle
+Cryogonal
+Cubone
+Cursola
+Dachsbun
+Darmanitan (Galarian)
+Darmanitan (Standard)
+Dartrix
+Darumaka
+Darumaka (Galarian)
+Decidueye
+Decidueye (Hisuian)
+Dedenne
+Deerling
+Delcatty
+Delphox
+Deoxys (Defense)
+Deoxys (Speed)
+Dewgong
+Dewott
+Dhelmise
+Diancie
+Diggersby
+Dodrio
+Dolliv
+Donphan
+Dragalge
+Dragapult
+Dragonair
+Dragonite
+Drakloak
+Drampa
+Drapion
+Drifblim
+Drifloon
+Drilbur
+Drizzile
+Drowzee
+Druddigon
+Dubwool
+Dugtrio
+Dugtrio (Alolan)
+Dunsparce
+Duosion
+Durant
+Dusclops
+Dusknoir
+Dustox
+Dwebble
+Eelektrik
+Eelektross
+Eevee
+Eldegoss
+Electabuzz
+Electivire
+Electrode
+Electrode (Hisuian)
+Elekid
+Elgyem
+Emboar
+Emolga
+Empoleon
+Entei
+Escavalier
+Espeon
+Espurr
+Excadrill
+Exeggcute
+Exeggutor
+Exeggutor (Alolan)
+Exploud
+Falinks
+Farfetch'd
+Farfetch'd (Galarian)
+Fearow
+Feraligatr
+Ferroseed
+Ferrothorn
+Flaaffy
+Flabebe
+Flapple
+Flareon
+Fletchinder
+Floatzel
+Floette
+Floragato
+Florges
+Flygon
+Forretress
+Fraxure
+Frigibax
+Frillish
+Frogadier
+Froslass
+Fuecoco
+Furfrou
+Furret
+Gabite
+Gallade
+Galvantula
+Garbodor
+Garchomp
+Gardevoir
+Gastrodon
+Genesect
+Gengar
+Geodude
+Geodude (Alolan)
+Gholdengo
+Gigalith
+Girafarig
+Giratina (Origin)
+Glaceon
+Glalie
+Gligar
+Gliscor
+Gloom
+Gogoat
+Golbat
+Goldeen
+Golduck
+Golem
+Golem (Alolan)
+Golett
+Golisopod
+Golurk
+Goodra
+Gorebyss
+Gothitelle
+Gothorita
+Gourgeist (Average)
+Gourgeist (Large)
+Gourgeist (Small)
+Gourgeist (Super)
+Grafaiai
+Granbull
+Graveler
+Graveler (Alolan)
+Greedent
+Greninja
+Grimer
+Grimer (Alolan)
+Grotle
+Grovyle
+Growlithe
+Growlithe (Hisuian)
+Grumpig
+Gumshoos
+Gurdurr
+Guzzlord
+Gyarados
+Hakamo-o
+Hariyama
+Hatterene
+Hattrem
+Haunter
+Hawlucha
+Haxorus
+Heatmor
+Heatran
+Heliolisk
+Heracross
+Herdier
+Hippopotas
+Hippowdon
+Hitmonchan
+Hitmonlee
+Hitmontop
+Ho-Oh
+Honchkrow
+Hoopa
+Houndoom
+Houndour
+Houndstone
+Huntail
+Hydreigon
+Hypno
+Illumise
+Incineroar
+Infernape
+Inteleon
+Ivysaur
+Jellicent
+Jirachi
+Jolteon
+Jumpluff
+Jynx
+Kabuto
+Kabutops
+Kadabra
+Kangaskhan
+Karrablast
+Kartana
+Kecleon
+Kingambit
+Kingdra
+Kingler
+Klang
+Kleavor
+Klefki
+Klinklang
+Koffing
+Komala
+Kommo-o
+Krabby
+Kricketune
+Krokorok
+Krookodile
+Kubfu
+Lairon
+Lampent
+Landorus (Incarnate)
+Lanturn
+Lapras
+Larvesta
+Latias
+Latios
+Leafeon
+Leavanny
+Ledian
+Lickilicky
+Lickitung
+Liepard
+Lileep
+Lilligant
+Linoone
+Linoone (Galarian)
+Litleo
+Lokix
+Lombre
+Lopunny
+Loudred
+Lucario
+Ludicolo
+Lugia
+Lumineon
+Lunatone
+Lurantis
+Luxio
+Luxray
+Lycanroc (Dusk)
+Lycanroc (Midday)
+Lycanroc (Midnight)
+Machamp
+Machoke
+Machop
+Magby
+Magcargo
+Magmar
+Magmortar
+Magnemite
+Magneton
+Magnezone
+Malamar
+Mamoswine
+Mandibuzz
+Manectric
+Mankey
+Mantine
+Mantyke
+Maractus
+Marowak
+Marowak (Alolan)
+Marshtomp
+Masquerain
+Maushold
+Mawile
+Medicham
+Meganium
+Melmetal
+Meltan
+Meowscarada
+Meowstic (Female)
+Meowstic (Male)
+Mesprit
+Metagross
+Metang
+Mew
+Mienfoo
+Mienshao
+Mightyena
+Milotic
+Miltank
+Minun
+Misdreavus
+Mismagius
+Moltres
+Moltres (Galarian)
+Monferno
+Morpeko (Full Belly)
+Mothim
+Mr. Mime
+Mr. Mime (Galarian)
+Mr. Rime
+Muk
+Muk (Alolan)
+Munchlax
+Munna
+Murkrow
+Musharna
+Naganadel
+Nidoking
+Nidoqueen
+Nidorina
+Nidorino
+Ninetales
+Ninetales (Alolan)
+Ninjask
+Noctowl
+Noivern
+Nosepass
+Nuzleaf
+Obstagoon
+Octillery
+Oddish
+Oinkologne
+Oinkologne (Female)
+Omanyte
+Omastar
+Onix
+Oranguru
+Oricorio (Baile)
+Oricorio (Pa'u)
+Oricorio (Pom-Pom)
+Oricorio (Sensu)
+Overqwil
+Pachirisu
+Palossand
+Palpitoad
+Pancham
+Pangoro
+Parasect
+Passimian
+Pawmo
+Pawmot
+Pawniard
+Pelipper
+Perrserker
+Persian
+Persian (Alolan)
+Phanpy
+Pidgeot
+Pidgeotto
+Pignite
+Piloswine
+Pineco
+Pinsir
+Piplup
+Plusle
+Poipole
+Politoed
+Poliwhirl
+Poliwrath
+Polteageist
+Ponyta
+Ponyta (Galarian)
+Popplio
+Porygon
+Porygon-Z
+Porygon2
+Primarina
+Primeape
+Prinplup
+Probopass
+Pumpkaboo (Average)
+Pumpkaboo (Large)
+Pumpkaboo (Small)
+Pumpkaboo (Super)
+Pupitar
+Purugly
+Pyroar
+Quagsire
+Quaquaval
+Quaxwell
+Quilava
+Quilladin
+Qwilfish
+Qwilfish (Hisuian)
+Raboot
+Raichu
+Raichu (Alolan)
+Raikou
+Rampardos
+Rapidash
+Rapidash (Galarian)
+Raticate
+Raticate (Alolan)
+Rayquaza
+Regice
+Regidrago
+Regieleki
+Regirock
+Registeel
+Relicanth
+Reuniclus
+Revavroom
+Rhydon
+Rhyhorn
+Rhyperior
+Ribombee
+Rillaboom
+Roggenrola
+Roselia
+Roserade
+Rotom
+Rotom (Frost)
+Rotom (Heat)
+Rotom (Mow)
+Rotom (Wash)
+Rowlet
+Rufflet
+Runerigus
+Sableye
+Salamence
+Salazzle
+Samurott
+Samurott (Hisuian)
+Sandshrew
+Sandshrew (Alolan)
+Sandslash
+Sandslash (Alolan)
+Sandygast
+Sawk
+Sawsbuck
+Sceptile
+Scizor
+Scolipede
+Scrafty
+Scraggy
+Scyther
+Seadra
+Seaking
+Sealeo
+Seel
+Seismitoad
+Serperior
+Servine
+Seviper
+Sharpedo
+Shaymin (Land)
+Shaymin (Sky)
+Shelgon
+Shellos
+Shiftry
+Shiinotic
+Sigilyph
+Simipour
+Simisage
+Simisear
+Sirfetch'd
+Skarmory
+Skeledirge
+Skiddo
+Skorupi
+Skrelp
+Skuntank
+Slaking
+Sliggoo
+Slowbro
+Slowbro (Galarian)
+Slowking
+Slowking (Galarian)
+Slowpoke
+Slowpoke (Galarian)
+Slurpuff
+Smoochum
+Sneasel
+Sneasel (Hisuian)
+Sneasler
+Snorlax
+Snover
+Snubbull
+Solosis
+Solrock
+Spinda
+Spiritomb
+Spoink
+Spritzee
+Stakataka
+Stantler
+Staraptor
+Staravia
+Starmie
+Steelix
+Stonjourner
+Stoutland
+Stufful
+Stunfisk
+Stunfisk (Galarian)
+Stunky
+Sudowoodo
+Suicune
+Sunflora
+Swadloon
+Swalot
+Swampert
+Swanna
+Swellow
+Swirlix
+Swoobat
+Sylveon
+Talonflame
+Tangela
+Tangrowth
+Tapu Fini
+Tauros
+Tauros (Aqua)
+Tauros (Blaze)
+Tauros (Combat)
+Teddiursa
+Tentacool
+Tentacruel
+Thievul
+Throh
+Thundurus (Incarnate)
+Thwackey
+Timburr
+Tinkaton
+Tinkatuff
+Tirtouga
+Togedemaru
+Togekiss
+Togetic
+Torkoal
+Tornadus (Incarnate)
+Torracat
+Torterra
+Totodile
+Toucannon
+Toxapex
+Toxicroak
+Toxtricity
+Tranquill
+Trapinch
+Trevenant
+Tropius
+Trumbeak
+Tsareena
+Turtonator
+Turtwig
+Typhlosion
+Typhlosion (Hisuian)
+Tyranitar
+Tyrantrum
+Tyrunt
+Umbreon
+Unfezant
+Unown
+Ursaluna
+Ursaring
+Urshifu (Rapid Strike)
+Urshifu (Single Strike)
+Uxie
+Vanillish
+Vanilluxe
+Vaporeon
+Varoom
+Venomoth
+Venusaur
+Vespiquen
+Vibrava
+Victini
+Victreebel
+Vigoroth
+Vikavolt
+Vileplume
+Vivillon
+Volbeat
+Volcanion
+Vullaby
+Wailmer
+Wailord
+Walrein
+Wartortle
+Watchog
+Weavile
+Weepinbell
+Weezing
+Weezing (Galarian)
+Whimsicott
+Whirlipede
+Whiscash
+Wigglytuff
+Wobbuffet
+Wormadam (Plant)
+Wormadam (Sandy)
+Wormadam (Trash)
+Wugtrio
+Wyrdeer
+Xatu
+Yanma
+Yanmega
+Zangoose
+Zapdos
+Zapdos (Galarian)
+Zebstrika
+Zoroark
+Zweilous
+Zygarde (10% Forme)
+Zygarde (50% Forme)
