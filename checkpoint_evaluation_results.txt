@@ -1,0 +1,2 @@
+checkpoint_epoch_10.keras: Loss = 3.3689, Accuracy = 0.4152
+checkpoint_epoch_20.keras: Loss = 2.5750, Accuracy = 0.5082

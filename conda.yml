@@ -24,3 +24,4 @@ dependencies:
       - requests
       - tensorflow
       - PyQt5
+      - torch
