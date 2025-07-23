@@ -38,9 +38,19 @@ After rigorous evaluation and cross-validation, the best performing model is the
 - Move selection
 - Overall battle performance
 
-The image recognition component utilizes a Convolutional Neural Network (CNN) trained on the Pokemon image dataset to identify Pokemon from photos.
+For detailed information about our machine learning approach, see the [Modelling Report](modelling_report.qmd).
 
-For detailed information about our approach, see the [Modelling Report](modelling_report.qmd).
+## Deep Learning Approach
+
+The image recognition component of our system employs deep learning techniques to identify Pokemon from photos:
+
+- **CFAR Model**: A lightweight convolutional neural network for basic image classification
+- **Custom CNN**: Advanced architecture with batch normalization and regularization techniques
+- **Transfer Learning**: EfficientNetB0 pre-trained model adapted for Pokemon recognition
+
+Our iterative approach explored multiple architectures to balance accuracy and computational requirements, with each model offering different trade-offs in performance and resource usage.
+
+For comprehensive details about our deep learning implementations, see the [Deep Learning Report](deeplearning_report.qmd).
 
 ## Project Documentation
 
@@ -48,5 +58,6 @@ This documentation provides comprehensive details on:
 
 - [Data Collection & Processing](data_report.qmd)
 - [Modelling Approach & Results](modelling_report.qmd)
+- [Deep Learning Implementation](deeplearning_report.qmd)
 - [Evaluation Metrics & Performance](evaluation.qmd)
 - [Project Development Process](project_charta.qmd)

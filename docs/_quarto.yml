@@ -3,7 +3,7 @@ project:
   output-dir: build
 
 website:
-  title: "Sample Project"
+  title: "Pokemon Go Battle Assistant"
   search: true
   sidebar:
     style: "floating"
@@ -13,6 +13,7 @@ website:
       - project_charta.qmd
       - data_report.qmd
       - modelling_report.qmd
+      - deeplearning_report.qmd
       - evaluation.qmd
 
 bibliography: refs.bib
