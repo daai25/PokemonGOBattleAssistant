@@ -116,7 +116,7 @@ def predict_and_display_results(img_path):
 if __name__ == "__main__":
     # Example usage
     # You can replace this with your own image path
-    test_image_path = "../data_acquisition/image_dataset/final_pokemon_dataset/test/Pikachu/1.jpg"
+    test_image_path = "../data_acquisition/image_dataset/final_pokemon_dataset/test/Abomasnow/2cb212651187af5b87471d6c25ff1d69e8545415e3ea9908dce593f1f3b12794.jpg"
     
     if os.path.exists(test_image_path):
         predict_and_display_results(test_image_path)
