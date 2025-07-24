@@ -18,13 +18,20 @@ dependencies:
       - scrapy
       - selenium
       - beautifulsoup4
+<<<<<<< HEAD
       - pandas
+=======
+>>>>>>> image_database
       - imagehash
       - duckduckgo-search
       - pillow
       - requests
       - tensorflow
       - PyQt5
+<<<<<<< HEAD
       - torch
       - streamlit
       - catboost
+=======
+      - torch
+>>>>>>> image_database
