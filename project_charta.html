@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>project_charta – Sample Project</title>
+<title>project_charta – Pokemon Go Battle Assistant</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -96,7 +96,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Sample Project</a> 
+      <a href="./">Pokemon Go Battle Assistant</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -109,7 +109,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">About This Documentation</span></a>
+ <span class="menu-text">Pokemon GO Battle Assistant</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -132,6 +132,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./deeplearning_report.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Deep Learning Report</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./evaluation.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Evaluation</span></a>
   </div>
@@ -149,11 +155,25 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#project-charta" id="toc-project-charta" class="nav-link active" data-scroll-target="#project-charta">Project Charta</a>
   <ul class="collapse">
   <li><a href="#problem-definition" id="toc-problem-definition" class="nav-link" data-scroll-target="#problem-definition">Problem Definition</a></li>
-  <li><a href="#situation-assessment" id="toc-situation-assessment" class="nav-link" data-scroll-target="#situation-assessment">Situation Assessment</a></li>
+  <li><a href="#situation-assessment" id="toc-situation-assessment" class="nav-link" data-scroll-target="#situation-assessment">Situation Assessment</a>
+  <ul class="collapse">
+  <li><a href="#constraints" id="toc-constraints" class="nav-link" data-scroll-target="#constraints">Constraints</a></li>
+  <li><a href="#risks" id="toc-risks" class="nav-link" data-scroll-target="#risks">Risks</a></li>
+  </ul></li>
   <li><a href="#project-goals-and-success-criteria" id="toc-project-goals-and-success-criteria" class="nav-link" data-scroll-target="#project-goals-and-success-criteria">Project Goals and Success Criteria</a></li>
-  <li><a href="#data-mining-goals" id="toc-data-mining-goals" class="nav-link" data-scroll-target="#data-mining-goals">Data Mining Goals</a></li>
+  <li><a href="#data-mining-goals" id="toc-data-mining-goals" class="nav-link" data-scroll-target="#data-mining-goals">Data Mining Goals</a>
+  <ul class="collapse">
+  <li><a href="#battle-outcome-prediction-classification" id="toc-battle-outcome-prediction-classification" class="nav-link" data-scroll-target="#battle-outcome-prediction-classification">Battle Outcome Prediction (Classification)</a></li>
+  <li><a href="#image-recognition-classification" id="toc-image-recognition-classification" class="nav-link" data-scroll-target="#image-recognition-classification">Image Recognition (Classification)</a></li>
+  </ul></li>
   <li><a href="#project-plan" id="toc-project-plan" class="nav-link" data-scroll-target="#project-plan">Project Plan</a></li>
-  <li><a href="#roles-and-contact-details" id="toc-roles-and-contact-details" class="nav-link" data-scroll-target="#roles-and-contact-details">Roles and Contact Details</a></li>
+  <li><a href="#roles-and-contact-details" id="toc-roles-and-contact-details" class="nav-link" data-scroll-target="#roles-and-contact-details">Roles and Contact Details</a>
+  <ul class="collapse">
+  <li><a href="#caleb-boerma" id="toc-caleb-boerma" class="nav-link" data-scroll-target="#caleb-boerma">Caleb Boerma</a></li>
+  <li><a href="#diego-de-jong" id="toc-diego-de-jong" class="nav-link" data-scroll-target="#diego-de-jong">Diego De Jong</a></li>
+  <li><a href="#dylan-baumann" id="toc-dylan-baumann" class="nav-link" data-scroll-target="#dylan-baumann">Dylan Baumann</a></li>
+  <li><a href="#max-vangsted" id="toc-max-vangsted" class="nav-link" data-scroll-target="#max-vangsted">Max Vangsted</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="project_charta.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
@@ -168,39 +188,71 @@ ul.task-list li input[type="checkbox"] {
 <h1>Project Charta</h1>
 <section id="problem-definition" class="level2">
 <h2 class="anchored" data-anchor-id="problem-definition">Problem Definition</h2>
-<p>Formulate the problem and important information about the domain and/or business area in which the product is to be developed: What exactly is the problem and the expected benefit of the project? Why should we undertake this effort?<br>
-This includes a summary of the most important findings from the user analysis: relevant segments and user groups. Describe the problems and needs of the users of the product to be developed.</p>
-<p>Stakeholders: List the people involved in and affected by the project. Describe their goals and relationships with each other. Visualisation in the form of a stakeholder map can provide a quick overview.</p>
-<p>You can reference more detailed analyses such as individual “personas” or interviews in separate documents in the appendix.</p>
+<p>New players coming to Pokemon Go are going to struggle with the highly complex combat system. There is much to consider such as type weaknesses, charged moves, fast moves, pokemon stats, and more.</p>
+<p>Another problem that new players will have is identifying the many different pokemon and learning their names. Given that there are over 800 pokemon in pokemon go, it’ll be no easy task.</p>
 </section>
 <section id="situation-assessment" class="level2">
 <h2 class="anchored" data-anchor-id="situation-assessment">Situation Assessment</h2>
-<p>Describe the available resources (personnel, material, (software) tools, infrastructure, etc.) and time as well as restrictions and constraints. Possible risks that may arise during the project are also identified.</p>
+<p>We are developing a <strong>Pokémon battle assistant</strong> that recommends the best Pokemon choices for players during battles. Additionally, we are creating an <strong>image recognition model</strong> that identifies Pokémon based on images and outputs their names.</p>
+<p>We will use Python libraries such as <code>pandas</code>, <code>selenium</code>, and <code>csv</code> for data processing and automation. Our data source and battle simulations will rely entirely on <a href="https://pvpoke.com">pvpoke.com</a>. ChatGPT will assist us with coding and other support tasks. As for models we will use the following models <code>Linear Regression</code>, <code>Random Forest</code>, <code>Gradient Boosing</code>, and <code>Categorical Boost (CatBoost)</code>.</p>
+<section id="constraints" class="level3">
+<h3 class="anchored" data-anchor-id="constraints">Constraints</h3>
+<ul>
+<li>The project must be completed within <strong>4 weeks</strong>, requiring careful planning and time management.</li>
+<li>The team size is limited to four members</li>
+<li>Complete dependency on pvpoke.com for battle data and simulations; potential risk if the site changes or becomes unavailable.</li>
+<li>The image recognition model’s accuracy depends on the quality and quantity of training data.</li>
+</ul>
+</section>
+<section id="risks" class="level3">
+<h3 class="anchored" data-anchor-id="risks">Risks</h3>
+<ul>
+<li>Potential changes in pvpoke.com’s site structure or access policies could disrupt data gathering and simulations.</li>
+<li>Insufficient training data or poor labeling could reduce image recognition model performance.</li>
+<li>Integration challenges between the battle assistant and the image recognition model or difficulties with Python libraries.</li>
+<li>The tight 4-week timeline may limit thorough testing, optimization, and documentation.</li>
+<li>Risk of scope creep if project goals are not clearly defined and managed.</li>
+</ul>
+</section>
 </section>
 <section id="project-goals-and-success-criteria" class="level2">
 <h2 class="anchored" data-anchor-id="project-goals-and-success-criteria">Project Goals and Success Criteria</h2>
-<p>When is the project successful from a client/stakeholder perspective: Formulate (qualitative) objectives, wherever possible, corresponding key metrics and the target values to be achieved within the project.</p>
-<p>It is also often helpful to specify what is explicitly excluded from the project objectives (out of scope).</p>
+<p>For our battle assistant to be successful it needs to boost the winrate for new players overall while utilizing multiple aspects for pokemon fights.</p>
+<p>For our image recognition to be successful it should be able to recognize a pokemon and output the correct name with a high accuracy rate.</p>
 </section>
 <section id="data-mining-goals" class="level2">
 <h2 class="anchored" data-anchor-id="data-mining-goals">Data Mining Goals</h2>
-<p>Map the problem definition, datasets to be used and primary objective onto a data mining task, e.g.:</p>
+<section id="battle-outcome-prediction-classification" class="level3">
+<h3 class="anchored" data-anchor-id="battle-outcome-prediction-classification">Battle Outcome Prediction (Classification)</h3>
 <ul>
-<li>Classification</li>
-<li>Regression</li>
-<li>Clustering</li>
-<li>Outlier Detection</li>
-<li>Association rule learning (market basket analysis)</li>
-<li>Recommender System</li>
-<li>Visualisation</li>
-<li>…</li>
+<li>Input Data: Battle simulation dataset (<code>data_acquisition/vectorized_data/battle_data_numeric.csv</code>)</li>
+<li>Task: Binary classification to predict which Pokémon wins (left vs.&nbsp;right)</li>
+<li>Target Variable: <code>winner</code> (1 = left wins, 0 = right wins)</li>
+<li>Metrics and Targets:
+<ul>
+<li>Accuracy ≥ 0.79</li>
+<li>F1-score ≥ 0.78</li>
+</ul></li>
+<li>Goal: Provide reliable win‐probabilities to inform user decisions in real-time.</li>
 </ul>
-<p>Along with the definition of the actual technical problem (category) to be solved, the project goals must be mapped onto quitable quantitative metrics and corresponding target values. For example, for a classification task one might specify an <em>F-score</em> of 0.9 as a minimal requirement for an acceptable solution.<br>
-Such a requirement should be aligned with the overall project goals and/or literature references or justified by other references, respectively.</p>
+</section>
+<section id="image-recognition-classification" class="level3">
+<h3 class="anchored" data-anchor-id="image-recognition-classification">Image Recognition (Classification)</h3>
+<ul>
+<li>Input Data: Pokémon image dataset (<code>data_acquisition/image_dataset/final_pokemon_dataset</code>)</li>
+<li>Task: Multi-class classification to identify Pokémon species (727 classes)</li>
+<li>Target Variable: <code>pokemon_name</code></li>
+<li>Metrics and Targets:
+<ul>
+<li>Top-1 Accuracy ≥ 0.90</li>
+<li>Precision &amp; Recall ≥ 0.88</li>
+</ul></li>
+<li>Goal: Enable seamless user input via image upload with high confidence.</li>
+</ul>
+</section>
 </section>
 <section id="project-plan" class="level2">
 <h2 class="anchored" data-anchor-id="project-plan">Project Plan</h2>
-<p>Divide the project into individual phases, describe them briefly and draw up a preliminary timetable, e.g.&nbsp;as a Gantt chart:</p>
 <div id="fig-project-plan" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-project-plan-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -211,35 +263,103 @@ Figure&nbsp;1: Project Plan
 </figcaption>
 </figure>
 </div>
-<p>See <a href="https://mermaid.js.org/syntax/gantt.html">Mermaid syntax for Gantt charts</a>. It might not be displayed correctly in Safari → use Chrome. <a href="https://mermaid.live/">Live editor with export functionality</a></p>
-<pre class="mermaid"><code>gantt
-    title A Gantt Diagram
-    dateFormat YYYY-MM-DD
-    tickInterval 5day
-    section Project Understanding
-        Define problem,     :a1, 2024-07-01, 1d
-        Determine project goals     :a2, 2024-07-01, 1d
-        List available resources     :a3, 2024-07-02, 1d
-        Set data mining goals    :a4, 2024-07-03, 1d
-        Create project plan    :a5, 2024-07-03, 1d
-        Project checkpoint: milestone, m1, 2024-07-04, 4m
-    section Data Acquisition and Exploration
-        Acquire data :a6, 2024-07-02, 2d
-        Exploratory data analysis   :a7, 2024-07-03, 2d
-        
-    section Modelling
-        Create initial model   :a8, 2024-07-09, 1d
-        Additional feature engineering :a9, 2024-07-10, 1d
-        Prepare modelling report :a10, 2024-07-10, 2h
-    section Evaluation
-        Prepare presentation :a10, 2024-07-10, 2h
-        Project presentation : milestone, m2, 2024-07-11, 4m</code></pre>
 </section>
 <section id="roles-and-contact-details" class="level2">
 <h2 class="anchored" data-anchor-id="roles-and-contact-details">Roles and Contact Details</h2>
-<p>List the people involved in the development work here with their role titles, tasks and contact details</p>
+<section id="caleb-boerma" class="level3">
+<h3 class="anchored" data-anchor-id="caleb-boerma">Caleb Boerma</h3>
+<p><strong>Roles:</strong></p>
+<ul>
+<li>Battle Simulator Architect<br>
+</li>
+<li>Gradient Boosting &amp; CatBoost Model Developer<br>
+</li>
+<li>Web App Contributor</li>
+</ul>
+<p><strong>Tasks:</strong></p>
+<ul>
+<li>Designed and implemented the 1v1 battle simulation engine<br>
+</li>
+<li>Developed and tuned Gradient Boosting and CatBoost models for battle prediction<br>
+</li>
+<li>Assisted with building and integrating the Streamlit web interface</li>
+</ul>
+<p><strong>Contact Info:</strong></p>
+<ul>
+<li>Email: <a href="mailto:Boermaca@mail.gvsu.edu">Boermaca@mail.gvsu.edu</a></li>
+<li>Github: https://github.com/Calebb2202</li>
+</ul>
+</section>
+<section id="diego-de-jong" class="level3">
+<h3 class="anchored" data-anchor-id="diego-de-jong">Diego De Jong</h3>
+<p><strong>Roles:</strong></p>
+<ul>
+<li>Battle Simulator Contributor<br>
+</li>
+<li>Linear Regression Model Developer<br>
+</li>
+<li>Web App Engineer</li>
+</ul>
+<p><strong>Tasks:</strong></p>
+<ul>
+<li>Assisted in creating the battle simulation framework<br>
+</li>
+<li>Implemented the Linear Regression baseline model for battle outcome prediction<br>
+</li>
+<li>Built and deployed the final Streamlit web app application</li>
+</ul>
+<p><strong>Contact Info:</strong></p>
+<ul>
+<li>Email: <a href="mailto:dejondie@mail.gvsu.edu">dejondie@mail.gvsu.edu</a></li>
+<li>Github: https://github.com/Dasnapplel</li>
+</ul>
+</section>
+<section id="dylan-baumann" class="level3">
+<h3 class="anchored" data-anchor-id="dylan-baumann">Dylan Baumann</h3>
+<p><strong>Roles:</strong></p>
+<ul>
+<li>Image Pipeline Engineer<br>
+</li>
+<li>Deep Learning Model Developer</li>
+</ul>
+<p><strong>Tasks:</strong></p>
+<ul>
+<li>Scraped and cleaned image data for the deep learning pipeline<br>
+</li>
+<li>Developed and trained CFAR, CNN, and transfer-learning models for Pokémon classification</li>
+</ul>
+<p><strong>Contact Info:</strong></p>
+<ul>
+<li>Email: <a href="mailto:baumadyl@students.zhaw.ch">baumadyl@students.zhaw.ch</a></li>
+<li>Github: https://github.com/baumadyl01</li>
+</ul>
+</section>
+<section id="max-vangsted" class="level3">
+<h3 class="anchored" data-anchor-id="max-vangsted">Max Vangsted</h3>
+<p><strong>Roles:</strong></p>
+<ul>
+<li>Data Acquisition Specialist<br>
+</li>
+<li>Random Forest Model Developer<br>
+</li>
+<li>Deep Learning Model Collaborator</li>
+</ul>
+<p><strong>Tasks:</strong></p>
+<ul>
+<li>Scraped initial Pokémon stats, moves, and types; performed vectorization<br>
+</li>
+<li>Implemented the Random Forest classifier for battle prediction<br>
+</li>
+<li>Contributed to the deep learning image classification project</li>
+</ul>
+<p><strong>Contact Info:</strong></p>
+<ul>
+<li>Email: <a href="mailto:vangsmax@students.zhaw.ch">vangsmax@students.zhaw.ch</a></li>
+<li>Github: https://github.com/vangmax</li>
+</ul>
 
 
+</section>
 </section>
 </section>
 
@@ -316,7 +436,7 @@ Figure&nbsp;1: Project Plan
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/daai25\.github\.io\/PokemonGOBattleAssistant\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

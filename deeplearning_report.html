@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>modelling_report – Pokemon Go Battle Assistant</title>
+<title>deeplearning_report – Pokemon Go Battle Assistant</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -67,6 +67,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="styles.css">
@@ -81,7 +84,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./modelling_report.html">Modelling Report</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./deeplearning_report.html">Deep Learning Report</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -126,13 +129,13 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./modelling_report.html" class="sidebar-item-text sidebar-link active">
+  <a href="./modelling_report.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Modelling Report</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./deeplearning_report.html" class="sidebar-item-text sidebar-link">
+  <a href="./deeplearning_report.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Deep Learning Report</span></a>
   </div>
 </li>
@@ -152,25 +155,31 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#modelling-report" id="toc-modelling-report" class="nav-link active" data-scroll-target="#modelling-report">Modelling Report</a>
+  <li><a href="#deep-learning-report" id="toc-deep-learning-report" class="nav-link active" data-scroll-target="#deep-learning-report">Deep Learning Report</a>
   <ul class="collapse">
-  <li><a href="#initial-situation" id="toc-initial-situation" class="nav-link" data-scroll-target="#initial-situation">Initial situation</a></li>
+  <li><a href="#initial-situation" id="toc-initial-situation" class="nav-link" data-scroll-target="#initial-situation">Initial Situation</a></li>
   <li><a href="#model-descriptions" id="toc-model-descriptions" class="nav-link" data-scroll-target="#model-descriptions">Model Descriptions</a>
   <ul class="collapse">
-  <li><a href="#logistic-regression-model" id="toc-logistic-regression-model" class="nav-link" data-scroll-target="#logistic-regression-model">Logistic Regression Model</a></li>
-  <li><a href="#random-forest-model" id="toc-random-forest-model" class="nav-link" data-scroll-target="#random-forest-model">Random Forest Model</a></li>
-  <li><a href="#gradient-boosting-model" id="toc-gradient-boosting-model" class="nav-link" data-scroll-target="#gradient-boosting-model">Gradient Boosting Model</a></li>
-  <li><a href="#category-boosting-model-catboost" id="toc-category-boosting-model-catboost" class="nav-link" data-scroll-target="#category-boosting-model-catboost">Category Boosting Model (CatBoost)</a></li>
+  <li><a href="#cfar-model" id="toc-cfar-model" class="nav-link" data-scroll-target="#cfar-model">CFAR Model</a></li>
+  <li><a href="#cnn-model" id="toc-cnn-model" class="nav-link" data-scroll-target="#cnn-model">CNN Model</a></li>
+  <li><a href="#pre-trained-cnn-model-efficientnetb0-transfer-learning" id="toc-pre-trained-cnn-model-efficientnetb0-transfer-learning" class="nav-link" data-scroll-target="#pre-trained-cnn-model-efficientnetb0-transfer-learning">Pre-trained CNN Model (EfficientNetB0, Transfer Learning)</a></li>
   </ul></li>
-  <li><a href="#results-of-cat-boost" id="toc-results-of-cat-boost" class="nav-link" data-scroll-target="#results-of-cat-boost">Results of Cat Boost</a>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a>
   <ul class="collapse">
-  <li><a href="#model-visualizations" id="toc-model-visualizations" class="nav-link" data-scroll-target="#model-visualizations">Model Visualizations</a></li>
+  <li><a href="#cfar-model-1" id="toc-cfar-model-1" class="nav-link" data-scroll-target="#cfar-model-1">CFAR Model</a></li>
+  <li><a href="#cnn-model-1" id="toc-cnn-model-1" class="nav-link" data-scroll-target="#cnn-model-1">CNN Model</a></li>
+  <li><a href="#pre-trained-cnn-model" id="toc-pre-trained-cnn-model" class="nav-link" data-scroll-target="#pre-trained-cnn-model">Pre-trained CNN Model</a></li>
   </ul></li>
   <li><a href="#model-interpretation" id="toc-model-interpretation" class="nav-link" data-scroll-target="#model-interpretation">Model Interpretation</a></li>
-  <li><a href="#conclusions-and-next-steps" id="toc-conclusions-and-next-steps" class="nav-link" data-scroll-target="#conclusions-and-next-steps">Conclusions and next steps</a></li>
+  <li><a href="#conclusions-and-next-steps" id="toc-conclusions-and-next-steps" class="nav-link" data-scroll-target="#conclusions-and-next-steps">Conclusions and Next Steps</a>
+  <ul class="collapse">
+  <li><a href="#limitations" id="toc-limitations" class="nav-link" data-scroll-target="#limitations">Limitations</a></li>
+  <li><a href="#future-work" id="toc-future-work" class="nav-link" data-scroll-target="#future-work">Future Work</a></li>
+  <li><a href="#deployment" id="toc-deployment" class="nav-link" data-scroll-target="#deployment">Deployment</a></li>
+  </ul></li>
   </ul></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="modelling_report.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="deeplearning_report.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
@@ -178,134 +187,418 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="modelling-report" class="level1">
-<h1>Modelling Report</h1>
-<p>Summarization of details of the modelling activities.</p>
+<section id="deep-learning-report" class="level1">
+<h1>Deep Learning Report</h1>
+<p>This report summarizes the details of the deep learning activities for Pokémon image classification.</p>
 <section id="initial-situation" class="level2">
-<h2 class="anchored" data-anchor-id="initial-situation">Initial situation</h2>
-<p>Our aim of the modellng is to be able to accurately predict who the winner of a pokemon battle is when given two pokemon. The data set used is the (pokemon_data.csv) Our independant variables are all of the stats for the pokemon (type, moves, attack, defence, etc.), and our dependant variable is the ‘win’ variable. We created several models, including Logistic Regression, Random Forest, and Gradient Boosting. For our final product, we will be using the Gradient Boosting Model.</p>
+<h2 class="anchored" data-anchor-id="initial-situation">Initial Situation</h2>
+<p>Our aim for the deep learning component is to accurately identify Pokémon from images, which complements the battle prediction system. This visual recognition capability allows users to upload images of Pokémon they encounter and get immediate battle strategy recommendations.</p>
+<p>The dataset used consists of Pokémon images collected from various sources and organized into a structured format in the <code>data_acquisition/image_dataset/final_pokemon_dataset</code> directory, with separate train and test folders.</p>
+<p>Our independent variables are the pixel values of the Pokémon images, and our dependent variable is the Pokémon species label. We created three different deep learning models: a CFAR (Convolutional Filter and Response) model, a custom CNN (Convolutional Neural Network), and a pre-trained transfer learning model using EfficientNetB0.</p>
 <ul>
-<li>Aim of the modelling - consistent with <em>Data Mining Goals</em> in the project charta</li>
-<li>Data set(s) and/or feature set used (references to the data report)</li>
-<li>Description of the independent variables and (if applicable) the target variable</li>
-<li>Type of model used or developed</li>
+<li><strong>Aim of the modeling</strong>: Create an accurate image classifier that can identify Pokémon species from images</li>
+<li><strong>Dataset used</strong>: Collection of Pokémon images organized by species in the final_pokemon_dataset folder</li>
+<li><strong>Independent variables</strong>: Image pixel values (RGB channels)</li>
+<li><strong>Target variable</strong>: Pokémon species name</li>
+<li><strong>Types of models used</strong>: CFAR, CNN, and pre-trained EfficientNetB0</li>
 </ul>
 </section>
 <section id="model-descriptions" class="level2">
 <h2 class="anchored" data-anchor-id="model-descriptions">Model Descriptions</h2>
-<p>Overview of the models used and/or implemented and their configurations - Detailed description of the model used (e.g.&nbsp;literature references, specification of the software library, exact module, version or other implementation details etc.) - Graphical representation of the modelling pipeline - If applicable: link to the code of the modelling pipeline, version information in code repository, configuration files - If possible, links to the artefacts of the executed modelling pipeline (training experiment) - Link to the literature in which the model/method is described - Hyperparameters</p>
-<section id="logistic-regression-model" class="level3">
-<h3 class="anchored" data-anchor-id="logistic-regression-model">Logistic Regression Model</h3>
-<p><strong>Model Explanation:</strong> The logistic regression model works by predicting the probability of a binary outcome by applying a sigmoid function to a weighted sum of input features.</p>
-<p><strong>Application:</strong> As an initial baseline, logistic regression was trained alongside our ensemble models. While computationally efficient and straightforward to interpret, it plateaued at ~50% accuracy—no better than random guessing—so we discontinued its development early.</p>
-<p><strong>Software Library:</strong> Python version 3.15.5: pandas, numpy, and sklearn libraries</p>
-</section>
-<section id="random-forest-model" class="level3">
-<h3 class="anchored" data-anchor-id="random-forest-model">Random Forest Model</h3>
-<p><strong>Model Explanation:</strong> The random forest model works by making predictions by combining the results of many decision trees, each trained on random subsets of the data and features, which improves accuracy and reduces overfitting.</p>
-<p><strong>Application:</strong> After hyperparameter tuning via grid search, the random forest classifier achieved ~69% validation accuracy. Although competitive with gradient boosting’s ~72%, its treatment of categorical Pokémon type features proved slightly less effective, leading us to concentrate further efforts on boosting methods.</p>
-<p><strong>Software Library:</strong> Python version 3.13.5: os, pandas, numpy, matplotlib.pyplot, seaborn, sklearn.model_selection, sklearn.ensemble, sklearn.metrics, sklearn.preprocessing, joblib</p>
-</section>
-<section id="gradient-boosting-model" class="level3">
-<h3 class="anchored" data-anchor-id="gradient-boosting-model">Gradient Boosting Model</h3>
-<p><strong>Model Explanation:</strong> The gradient boosting model is an ensemble technique that builds decision trees sequentially, where each new tree is trained to correct the errors (residuals) of the previous ensemble. It optimizes a loss function via gradient descent in function space, reducing bias and improving predictive performance.</p>
-<p><strong>Application:</strong> Leveraging iterative feature engineering—such as stat ratio features—the gradient boosting model’s performance climbed to ~75% accuracy. However, feature‐importance analysis revealed underweighting of categorical type attributes, motivating a search for a model with stronger native categorical support.</p>
-<p><strong>Software Library:</strong> Python version 3.13.5: os, pandas, numpy, matplotlib.pyplot, seaborn, sklearn.model_selection, sklearn.ensemble, sklearn.metrics, sklearn.preprocessing, joblib</p>
-</section>
-<section id="category-boosting-model-catboost" class="level3">
-<h3 class="anchored" data-anchor-id="category-boosting-model-catboost">Category Boosting Model (CatBoost)</h3>
-<div class="catboost-highlight">
-<div class="chosen-model">
-Chosen Model
+<p>This section provides an overview of the three deep learning models implemented for Pokémon image classification.</p>
+<section id="cfar-model" class="level3">
+<h3 class="anchored" data-anchor-id="cfar-model">CFAR Model</h3>
+<p>The CFAR (Convolutional Filter and Response) model is a lightweight convolutional neural network designed for basic Pokémon image classification.</p>
+<ul>
+<li><strong>Implementation details</strong>:
+<ul>
+<li>Library: TensorFlow/Keras</li>
+<li>Input shape: 64x64x3 (RGB images)</li>
+<li>Architecture:
+<ul>
+<li>3 convolutional layers (32, 64, and 128 filters)</li>
+<li>3 max pooling layers</li>
+<li>1 dense hidden layer (256 neurons)</li>
+<li>Output layer with softmax activation</li>
+</ul></li>
+<li>Optimizer: Adam</li>
+<li>Loss function: Categorical cross-entropy</li>
+<li>Training: 30 epochs with validation after each epoch</li>
+</ul></li>
+<li><strong>Modeling pipeline</strong>:</li>
+</ul>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+    subgraph input [Input]
+    I[64x64x3 RGB Image]
+    end
+    
+    subgraph conv1 [Layer 1]
+    C1[Conv2D 32 Filters] --&gt; MP1[MaxPooling]
+    end
+    
+    subgraph conv2 [Layer 2]
+    C2[Conv2D 64 Filters] --&gt; MP2[MaxPooling]
+    end
+    
+    subgraph conv3 [Layer 3]
+    C3[Conv2D 128 Filters] --&gt; MP3[MaxPooling]
+    end
+    
+    subgraph dense [Dense Layers]
+    F[Flatten] --&gt; D1[Dense 256 neurons]
+    D1 --&gt; Out[Output Layer]
+    end
+    
+    I --&gt; C1
+    MP1 --&gt; C2
+    MP2 --&gt; C3
+    MP3 --&gt; F
+    
+    style input fill:#e1f5fe
+    style conv1 fill:#ffecb3
+    style conv2 fill:#ffecb3
+    style conv3 fill:#ffecb3
+    style dense fill:#e8f5e9
+</pre>
 </div>
-<p><strong>Model Explanation:</strong> The CatBoost model is a gradient boosting algorithm designed for handling categorical features natively. It uses ordered boosting and symmetrical trees to reduce overfitting, automatically encodes categorical variables, and often achieves high accuracy with minimal preprocessing.</p>
-<p><strong>Application:</strong> By adopting CatBoost, which natively encodes categorical variables, we immediately saw validation accuracy jump to ~78%. With additional fine-tuning of iterations, learning rate, and tree depth, performance rose to ~79%. Feature importance plots confirmed that Pokémon types were now appropriately prioritized, solidifying CatBoost as our final production model.</p>
-<p><strong>Software Library:</strong> Python version 3.13.5: os, sys, argparse, subprocess, pandas, numpy, matplotlib.pyplot, seaborn, sklearn.model_selection, sklearn.metrics, catboost</p>
+<p></p></figure><p></p>
 </div>
+</div>
+</div>
+<p><em>The diagram above illustrates the architecture of the CFAR model. Starting with an input RGB image (64x64x3), the data flows through three convolutional layers with increasing filter sizes (32, 64, and 128), each followed by a MaxPooling operation to reduce dimensionality. The feature maps from the final convolutional layer are flattened and passed through a dense layer with 256 neurons, which connects to the output layer for classification. This sequential structure enables the model to progressively extract and refine features from the input images before making the final classification decision.</em></p>
+<ul>
+<li><strong>Code link</strong>: <code>deployment/image_classification/cfar/train_pokemon_classifier_cfar.py</code></li>
+<li><strong>Hyperparameters</strong>:
+<ul>
+<li>Learning rate: Default for Adam optimizer</li>
+<li>Batch size: 32</li>
+<li>Image size: 64x64 pixels</li>
+<li>No data augmentation</li>
+</ul></li>
+</ul>
+</section>
+<section id="cnn-model" class="level3">
+<h3 class="anchored" data-anchor-id="cnn-model">CNN Model</h3>
+<p>The CNN model is a more advanced deep learning architecture with multiple convolutional layers designed for improved feature extraction and classification accuracy.</p>
+<ul>
+<li><strong>Implementation details</strong>:
+<ul>
+<li>Library: TensorFlow/Keras</li>
+<li>Input shape: 64x64x3 (RGB images)</li>
+<li>Architecture:
+<ul>
+<li>4 convolutional layers with batch normalization and dropout</li>
+<li>Each layer has double convolution layers with increasing filter sizes (32→64→128→256)</li>
+<li>Max pooling after each layer</li>
+<li>Flatten layer followed by dense layer (512 neurons)</li>
+<li>Output layer with softmax activation</li>
+</ul></li>
+<li>Optimizer: Adam with configurable learning rate</li>
+<li>Loss function: Categorical cross-entropy</li>
+<li>Training: Up to 80 epochs with early stopping and learning rate reduction</li>
+</ul></li>
+<li><strong>Modeling pipeline</strong>:</li>
+</ul>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+    subgraph input [Input]
+    I[64x64x3 RGB Image]
+    end
+    
+    subgraph aug [Data Augmentation]
+    A1[Random Rotation] --&gt; A2[Width/Height Shifts]
+    A2 --&gt; A3[Shear Transform]
+    A3 --&gt; A4[Zoom]
+    A4 --&gt; A5[Horizontal Flip]
+    end
+    
+    subgraph conv1 [Layer 1]
+    C1A[Conv2D 32] --&gt; BN1A[BatchNorm]
+    BN1A --&gt; C1B[Conv2D 32] 
+    C1B --&gt; BN1B[BatchNorm]
+    BN1B --&gt; MP1[MaxPooling]
+    MP1 --&gt; D1[Dropout 0.25]
+    end
+    
+    subgraph conv2 [Layer 2]
+    C2A[Conv2D 64] --&gt; BN2A[BatchNorm]
+    BN2A --&gt; C2B[Conv2D 64] 
+    C2B --&gt; BN2B[BatchNorm]
+    BN2B --&gt; MP2[MaxPooling]
+    MP2 --&gt; D2[Dropout 0.25]
+    end
+    
+    subgraph conv3 [Layer 3]
+    C3A[Conv2D 128] --&gt; BN3A[BatchNorm]
+    BN3A --&gt; C3B[Conv2D 128] 
+    C3B --&gt; BN3B[BatchNorm]
+    BN3B --&gt; MP3[MaxPooling]
+    MP3 --&gt; D3[Dropout 0.25]
+    end
+    
+    subgraph conv4 [Layer 4]
+    C4A[Conv2D 256] --&gt; BN4A[BatchNorm]
+    BN4A --&gt; C4B[Conv2D 256] 
+    C4B --&gt; BN4B[BatchNorm]
+    BN4B --&gt; MP4[MaxPooling]
+    MP4 --&gt; D4[Dropout 0.25]
+    end
+    
+    subgraph dense [Dense Layers]
+    F[Flatten] --&gt; DL1[Dense 512]
+    DL1 --&gt; BN5[BatchNorm]
+    BN5 --&gt; D5[Dropout 0.5]
+    D5 --&gt; Out[Output Layer]
+    end
+    
+    I --&gt; A1
+    A5 --&gt; C1A
+    D1 --&gt; C2A
+    D2 --&gt; C3A
+    D3 --&gt; C4A
+    D4 --&gt; F
+    
+    style input fill:#e1f5fe
+    style aug fill:#e8f5e9
+    style conv1 fill:#ffecb3
+    style conv2 fill:#ffe082
+    style conv3 fill:#ffd54f
+    style conv4 fill:#ffca28
+    style dense fill:#e8f5e9
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p><em>The diagram above illustrates the more complex CNN architecture used for Pokémon classification. This model features four convolutional layers with progressively increasing filter sizes (32→64→128→256), each implementing a double convolution pattern. The pipeline begins with data augmentation techniques (rotation, shifts, shear, zoom, and flipping) that enhance the training dataset and improve generalization. Every layer follows the same structure: two convolutional layers, each followed by batch normalization, then max pooling, and finally dropout (0.25) to prevent overfitting. After the convolutional layers, the data is flattened and passed through a dense layer with 512 neurons, followed by batch normalization and a higher dropout rate (0.5) before the final classification layer. This architecture significantly outperforms the simpler CFAR model by incorporating modern deep learning techniques like batch normalization and employing a deeper structure for more sophisticated feature extraction.</em></p>
+<ul>
+<li><strong>Code link</strong>: <code>deployment/image_classification/CNN/train_pokemon_classifier_cnn.py</code></li>
+<li><strong>Hyperparameters</strong>:
+<ul>
+<li>Learning rate: 0.001 (with reduction on plateau)</li>
+<li>Batch size: 32</li>
+<li>Image size: 64x64 pixels</li>
+<li>Dropout rates: 0.25 for convolutional layers, 0.5 for dense layer</li>
+<li>Data augmentation parameters: rotation, shifts, shear, zoom, horizontal flip</li>
+</ul></li>
+</ul>
+</section>
+<section id="pre-trained-cnn-model-efficientnetb0-transfer-learning" class="level3">
+<h3 class="anchored" data-anchor-id="pre-trained-cnn-model-efficientnetb0-transfer-learning">Pre-trained CNN Model (EfficientNetB0, Transfer Learning)</h3>
+<p>The third and most effective model uses <strong>EfficientNetB0</strong>, a modern and scalable convolutional neural network architecture pre-trained on the ImageNet dataset. Through <strong>transfer learning</strong>, the model leverages learned visual features and adapts them to the Pokémon image classification task with minimal training from scratch.</p>
+<p>Training was conducted in two phases:</p>
+<ul>
+<li><strong>Phase 1</strong>: The EfficientNetB0 base was frozen, and only the custom classification head was trained.<br>
+</li>
+<li><strong>Phase 2</strong>: The base model was partially unfrozen and fine-tuned using a lower learning rate.</li>
+</ul>
+<p>To improve generalization, a strong <strong>data augmentation pipeline</strong> was applied. This increased the model’s robustness to real-world image variability such as different lighting, angles, and scales.</p>
+<ul>
+<li><strong>Augmentation techniques included</strong>:
+<ul>
+<li>Random horizontal flipping<br>
+</li>
+<li>Random rotation<br>
+</li>
+<li>Random zoom<br>
+</li>
+<li>Contrast adjustment<br>
+</li>
+<li>Brightness adjustment</li>
+</ul></li>
+</ul>
+<p>The model architecture consists of EfficientNetB0 (with <code>include_top=False</code>) as the feature extractor, followed by:</p>
+<ul>
+<li>Global Average Pooling to reduce dimensionality<br>
+</li>
+<li>A Dense layer with 128 neurons and ReLU activation<br>
+</li>
+<li>Dropout layer (rate: 0.5) to prevent overfitting<br>
+</li>
+<li>A Softmax output layer for multi-class classification</li>
+</ul>
+<section id="technical-summary" class="level4">
+<h4 class="anchored" data-anchor-id="technical-summary">Technical Summary</h4>
+<ul>
+<li><strong>Input shape</strong>: 224x224x3 RGB images<br>
+</li>
+<li><strong>Loss function</strong>: Sparse categorical cross-entropy<br>
+</li>
+<li><strong>Optimizer</strong>: Adam
+<ul>
+<li>Learning rate: 1e-4 (frozen base), 1e-5 (fine-tuning)<br>
+</li>
+</ul></li>
+<li><strong>Batch size</strong>: 16<br>
+</li>
+<li><strong>Training epochs</strong>: 40 (early stopping applied)<br>
+</li>
+<li><strong>Callbacks</strong>:
+<ul>
+<li>EarlyStopping with <code>patience=5</code> and weight restoration</li>
+<li>Custom callback <code>SaveEveryN</code> saving checkpoints every 10 epochs</li>
+</ul></li>
+</ul>
+</section>
+<section id="model-pipeline" class="level4">
+<h4 class="anchored" data-anchor-id="model-pipeline">Model Pipeline</h4>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+    subgraph input [Input]
+    I[224x224x3 RGB Image]
+    end
+ 
+    subgraph aug [Data Augmentation]
+    A1[Random Flip] --&gt; A2[Random Rotation]
+    A2 --&gt; A3[Random Zoom]
+    A3 --&gt; A4[Random Contrast]
+    A4 --&gt; A5[Random Brightness]
+    end
+ 
+    subgraph preproc [Preprocessing]
+    P[EfficientNet Preprocessing]
+    end
+ 
+    subgraph base [Base Model]
+    EB[EfficientNetB0 Pretrained\non ImageNet]
+    end
+ 
+    subgraph head [Classification Head]
+    GAP[Global Average Pooling] --&gt; D1[Dense 128]
+    D1 --&gt; DO[Dropout 0.5]
+    DO --&gt; Out[Output Layer]
+    end
+ 
+    subgraph training [Training Process]
+    T1[Phase 1: Frozen Base\n40 Epochs, LR=1e-4] --&gt; T2[Phase 2: Fine-tuning\nLower LR=1e-5]
+    end
+ 
+    I --&gt; A1
+    A5 --&gt; P
+    P --&gt; EB
+    EB --&gt; GAP
+    Out --&gt; training
+ 
+    style input fill:#e1f5fe
+    style aug fill:#fff9c4
+    style preproc fill:#f3e5f5
+    style base fill:#ffccbc
+    style head fill:#e8f5e9
+    style training fill:#e0f2f1
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p><em>This diagram shows the entire processing pipeline: the input image is augmented, preprocessed, passed through the EfficientNetB0 base model, and finally classified through a custom dense head. The two-phase training approach ensures both rapid convergence and effective fine-tuning.</em></p>
 </section>
 </section>
-<section id="results-of-cat-boost" class="level2">
-<h2 class="anchored" data-anchor-id="results-of-cat-boost">Results of Cat Boost</h2>
-<p>Context: a 0 in the Label value mean that the right pokemon won and a 1 meaning that the left pokemon won</p>
-<p><strong>Accuracy:</strong> 0.7910</p>
-<p><strong>Precision:</strong> 0.7920</p>
-<p><strong>Recall:</strong> 0.7791</p>
-<p><strong>F1 Score:</strong> 0.7855</p>
-<p><strong>Classification Report:</strong></p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Label</th>
-<th style="text-align: right;">Precision</th>
-<th style="text-align: right;">Recall</th>
-<th style="text-align: right;">F1-Score</th>
-<th style="text-align: right;">Support</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>0</td>
-<td style="text-align: right;">0.79</td>
-<td style="text-align: right;">0.80</td>
-<td style="text-align: right;">0.80</td>
-<td style="text-align: right;">2035</td>
-</tr>
-<tr class="even">
-<td>1</td>
-<td style="text-align: right;">0.79</td>
-<td style="text-align: right;">0.78</td>
-<td style="text-align: right;">0.79</td>
-<td style="text-align: right;">1965</td>
-</tr>
-<tr class="odd">
-<td>accuracy</td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;">0.79</td>
-<td style="text-align: right;">4000</td>
-</tr>
-<tr class="even">
-<td>macro avg</td>
-<td style="text-align: right;">0.79</td>
-<td style="text-align: right;">0.79</td>
-<td style="text-align: right;">0.79</td>
-<td style="text-align: right;">4000</td>
-</tr>
-<tr class="odd">
-<td>weighted avg</td>
-<td style="text-align: right;">0.79</td>
-<td style="text-align: right;">0.79</td>
-<td style="text-align: right;">0.79</td>
-<td style="text-align: right;">4000</td>
-</tr>
-</tbody>
-</table>
-<section id="model-visualizations" class="level3">
-<h3 class="anchored" data-anchor-id="model-visualizations">Model Visualizations</h3>
-<p><img src="pics/roc_curve.png" class="img-fluid" style="width:70.0%"></p>
-<p><img src="pics/confusion_matrix.png" class="img-fluid" style="width:70.0%"></p>
-<p style="text-align:center; font-size:1.4em;">
-<strong>Model Pipeline</strong>
-</p>
-<p align="center">
-<img src="pics/cat_model_pipeline.png" class="img-fluid" style="width:85.0%">
-</p>
+</section>
+<section id="results" class="level2">
+<h2 class="anchored" data-anchor-id="results">Results</h2>
+<p>The performance of each model varies based on their architecture complexity and training approach. Our model development followed an iterative process: we first implemented the lightweight CFAR model alongside a basic CNN architecture. Based on the promising results of the CNN approach, we further refined the CNN architecture by adding batch normalization, dropout layers, and implementing double convolution patterns. As a third strategy, we adopted transfer learning by training an EfficientNetB0 pre-trained model to expand our comparison of different deep learning approaches.</p>
+<section id="cfar-model-1" class="level3">
+<h3 class="anchored" data-anchor-id="cfar-model-1">CFAR Model</h3>
+<ul>
+<li>Training accuracy: ~95%</li>
+<li>Validation accuracy: ~24%</li>
+<li>Simple architecture leads to faster training but lower accuracy</li>
+<li>Best suited for quick prototyping or when computational resources are limited</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="pics/training_history_cfar.png" class="img-fluid figure-img"></p>
+<figcaption>Training History for CFAR Model</figcaption>
+</figure>
+</div>
+<p><em>The figure above shows the training history of the CFAR model over 30 epochs. The left plot displays accuracy metrics, where training accuracy (blue line) steadily increases to approximately 95% while validation accuracy (orange line) plateaus around 24%, indicating significant overfitting. The right plot shows loss metrics, with training loss (blue) decreasing to near zero while validation loss (orange) increases dramatically after the initial epochs, further confirming the model’s poor generalization abilities.</em></p>
+</section>
+<section id="cnn-model-1" class="level3">
+<h3 class="anchored" data-anchor-id="cnn-model-1">CNN Model</h3>
+<ul>
+<li>Training accuracy: ~70-75%</li>
+<li>Validation accuracy: ~65%</li>
+<li>The addition of batch normalization and dropout layers significantly reduces overfitting</li>
+<li>Multiple convolutional layers allow for hierarchical feature learning</li>
+<li>Early stopping and learning rate reduction help optimize training</li>
+<li>Visualization tools provide insights into training progress</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="pics/training_history_cnn.png" class="img-fluid figure-img"></p>
+<figcaption>Training History for CNN Model</figcaption>
+</figure>
+</div>
+<p><em>The figure above illustrates the CNN model’s training history over 50 epochs. The accuracy plot (left) shows a more balanced progression between training (blue) and test/validation (orange) accuracy, both reaching approximately 70-75%. The loss plot (right) demonstrates how both training and test losses decrease steadily and remain relatively close together throughout training. This indicates the CNN model achieves better generalization performance than the CFAR model, with the regularization techniques (batch normalization and dropout) effectively mitigating overfitting.</em></p>
+</section>
+<section id="pre-trained-cnn-model" class="level3">
+<h3 class="anchored" data-anchor-id="pre-trained-cnn-model">Pre-trained CNN Model</h3>
+<ul>
+<li>Training accuracy: ~45%</li>
+<li>Validation accuracy: ~65%</li>
+<li>Two-phase training approach allows for fine-tuning while avoiding catastrophic forgetting</li>
+<li>Higher resolution input (224x224) captures more details but requires more computational resources</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="pics/training_history_EfficientNet.png" class="img-fluid figure-img"></p>
+<figcaption>Accuracy over Epochs for Pre-trained EfficientNetB0 Model</figcaption>
+</figure>
+</div>
+<p><em>This graph shows the EfficientNetB0 model’s training performance over 50 epochs. The validation accuracy (orange) improves rapidly in early epochs, demonstrating transfer learning’s efficiency. We observe a drop at epoch 40 during the transition from Phase 1 (frozen base) to Phase 2 (fine-tuning), followed by quick recovery. Final validation accuracy reaches ~65%, confirming our two-phase approach effectively adapts pre-trained knowledge to Pokémon classification while preventing catastrophic forgetting.</em></p>
 </section>
 </section>
 <section id="model-interpretation" class="level2">
 <h2 class="anchored" data-anchor-id="model-interpretation">Model Interpretation</h2>
-<p>Our final CatBoost model achieved the highest accuracy (~79%) but also provided clear insights into feature importance. Categorical type features—critical for Pokémon effectiveness—are now weighted appropriately, as evidenced by SHAP and importance rankings.<br>
-- Errors predominantly occur in edge‐case matchups with rare type combinations, suggesting further data augmentation could help.<br>
-- The model is robust against overfitting, thanks to CatBoost’s ordered boosting and built-in regularization.</p>
+<p>Our experiments with three architectures yield clear insights: - EfficientNetB0 currently performs similarly to our CNN (~65% validation accuracy), but has significantly greater potential for improvement through further fine-tuning - CNN offers balanced performance-resource trade-off (65% accuracy with moderate training time) - CFAR provides rapid prototyping capability but suffers from significant overfitting - Data augmentation is essential for all models to generalize effectively - EfficientNetB0’s pre-trained knowledge can be better leveraged with more extensive adaptation techniques</p>
 </section>
 <section id="conclusions-and-next-steps" class="level2">
-<h2 class="anchored" data-anchor-id="conclusions-and-next-steps">Conclusions and next steps</h2>
-<p>We conclude that CatBoost is the optimal choice for our 1v1 battle prediction task, balancing accuracy, interpretability, and categorical feature handling.<br>
-- Limitations: current dataset may underrepresent niche type interactions and extreme stat spreads.<br>
-- Deployment: package the trained CatBoost model implemented into our application - Limitations: current dataset may underrepresent niche type interactions and extreme stat spreads.<br>
-- Deployment: package the trained CatBoost model implemented into our application</p>
+<h2 class="anchored" data-anchor-id="conclusions-and-next-steps">Conclusions and Next Steps</h2>
+<p>While both CNN and EfficientNetB0 models currently achieve similar performance (~65% validation accuracy), we recommend the EfficientNetB0 model for deployment due to its greater potential for optimization. Our three-model approach demonstrates that transfer learning offers a promising path forward for Pokémon image classification, especially with additional fine-tuning.</p>
+<section id="limitations" class="level3">
+<h3 class="anchored" data-anchor-id="limitations">Limitations</h3>
+<ul>
+<li>Current performance of all models depends on dataset quality and diversity</li>
+<li>Visually similar Pokémon remain challenging to differentiate</li>
+<li>EfficientNetB0 requires more computational resources but has significant room for improvement</li>
+<li>Further fine-tuning of the pre-trained layers is necessary to fully leverage ImageNet knowledge</li>
+</ul>
+</section>
+<section id="future-work" class="level3">
+<h3 class="anchored" data-anchor-id="future-work">Future Work</h3>
+<ul>
+<li>More extensive fine-tuning of EfficientNetB0, especially unfreezing more layers gradually</li>
+<li>Expand dataset diversity with more poses and environments</li>
+<li>Explore more advanced transfer learning techniques to better adapt ImageNet knowledge</li>
+<li>Optimize for mobile via model quantization</li>
+<li>Implement more sophisticated data augmentation techniques specifically for Pokémon images</li>
+<li>Develop model ensembles combining CNN and EfficientNetB0 strengths</li>
+</ul>
+</section>
+<section id="deployment" class="level3">
+<h3 class="anchored" data-anchor-id="deployment">Deployment</h3>
+<ul>
+<li>GUI testing application already developed (<code>pokemon_classifier_app.py</code>) for internal validation</li>
+<li>Web-based interface for online Pokémon recognition via our website</li>
+</ul>
 
 
+</section>
 </section>
 </section>
 

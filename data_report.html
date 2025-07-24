@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>data_report – Sample Project</title>
+<title>data_report – Pokemon Go Battle Assistant</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -96,7 +96,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Sample Project</a> 
+      <a href="./">Pokemon Go Battle Assistant</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -109,7 +109,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">About This Documentation</span></a>
+ <span class="menu-text">Pokemon GO Battle Assistant</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -132,6 +132,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./deeplearning_report.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Deep Learning Report</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./evaluation.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Evaluation</span></a>
   </div>
@@ -148,16 +154,25 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#data-report" id="toc-data-report" class="nav-link active" data-scroll-target="#data-report">Data Report</a>
   <ul class="collapse">
-  <li><a href="#raw-data" id="toc-raw-data" class="nav-link" data-scroll-target="#raw-data">Raw data</a>
+  <li><a href="#raw-data" id="toc-raw-data" class="nav-link" data-scroll-target="#raw-data">Raw Data</a>
   <ul class="collapse">
   <li><a href="#overview-raw-datasets" id="toc-overview-raw-datasets" class="nav-link" data-scroll-target="#overview-raw-datasets">Overview Raw Datasets</a></li>
-  <li><a href="#details-dataset-1" id="toc-details-dataset-1" class="nav-link" data-scroll-target="#details-dataset-1">Details Dataset 1</a></li>
+  <li><a href="#details-dataset-1-pokemon-stats-rankings" id="toc-details-dataset-1-pokemon-stats-rankings" class="nav-link" data-scroll-target="#details-dataset-1-pokemon-stats-rankings">Details Dataset 1: Pokemon Stats &amp; Rankings</a></li>
+  <li><a href="#details-dataset-2-battle-simulation-data" id="toc-details-dataset-2-battle-simulation-data" class="nav-link" data-scroll-target="#details-dataset-2-battle-simulation-data">Details Dataset 2: Battle Simulation Data</a></li>
+  <li><a href="#details-dataset-3-pokemon-image-dataset" id="toc-details-dataset-3-pokemon-image-dataset" class="nav-link" data-scroll-target="#details-dataset-3-pokemon-image-dataset">Details Dataset 3: Pokemon Image Dataset</a></li>
+  </ul></li>
+  <li><a href="#dataset-3" id="toc-dataset-3" class="nav-link" data-scroll-target="#dataset-3">Dataset 3</a>
+  <ul class="collapse">
+  <li><a href="#objective" id="toc-objective" class="nav-link" data-scroll-target="#objective">Objective</a></li>
+  <li><a href="#data-sources" id="toc-data-sources" class="nav-link" data-scroll-target="#data-sources">Data Sources</a></li>
+  <li><a href="#post-processing-quality-assurance" id="toc-post-processing-quality-assurance" class="nav-link" data-scroll-target="#post-processing-quality-assurance">Post-Processing &amp; Quality Assurance</a></li>
+  <li><a href="#directory-structure" id="toc-directory-structure" class="nav-link" data-scroll-target="#directory-structure">Directory Structure</a></li>
   </ul></li>
   <li><a href="#processed-data" id="toc-processed-data" class="nav-link" data-scroll-target="#processed-data">Processed Data</a>
   <ul class="collapse">
   <li><a href="#overview-processed-datasets" id="toc-overview-processed-datasets" class="nav-link" data-scroll-target="#overview-processed-datasets">Overview Processed Datasets</a></li>
-  <li><a href="#details-processed-dataset-1" id="toc-details-processed-dataset-1" class="nav-link" data-scroll-target="#details-processed-dataset-1">Details Processed Dataset 1</a></li>
-  <li><a href="#details-processed-dataset-2" id="toc-details-processed-dataset-2" class="nav-link" data-scroll-target="#details-processed-dataset-2">Details Processed Dataset 2</a></li>
+  <li><a href="#details-processed-dataset-1-vectorized-pokemon-dataset" id="toc-details-processed-dataset-1-vectorized-pokemon-dataset" class="nav-link" data-scroll-target="#details-processed-dataset-1-vectorized-pokemon-dataset">Details Processed Dataset 1: Vectorized Pokemon Dataset</a></li>
+  <li><a href="#details-processed-dataset-2-battle-outcome-dataset" id="toc-details-processed-dataset-2-battle-outcome-dataset" class="nav-link" data-scroll-target="#details-processed-dataset-2-battle-outcome-dataset">Details Processed Dataset 2: Battle Outcome Dataset</a></li>
   </ul></li>
   </ul></li>
   </ul>
@@ -171,10 +186,10 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="data-report" class="level1">
 <h1>Data Report</h1>
-<p>All information on the data used in the project is compiled in the data report in order to ensure the traceability and reproducibility of the results and to enable a systematic expansion of the database.</p>
-<p>Typically, in the exploratory analysis of the acquired raw data, quality and other issues are identified, which require pre-processing, merging of individual datasets and feature engineering into processed datasets. Therefore, this template provides a separate section for the processed data, which then serves as a starting point for the modelling activities. This needs to be adapted to the specific project requirements.</p>
+<p>All information on the data used in the Pokemon GO Battle Assistant project is compiled in this data report to ensure traceability and reproducibility of the results and to enable systematic expansion of the database.</p>
+<p>The project utilizes three main data sources: Pokemon statistics and moves from the <a href="https://pvpoke.com/rankings/">PvPoke rankings site</a>, battle simulation data from the <a href="https://pvpoke.com/battle/">PvPoke battles site</a>, and image datasets collected through the Python library <code>duckduckgo_search</code>. These raw datasets undergo preprocessing and feature engineering to create processed datasets suitable for machine learning model development.</p>
 <section id="raw-data" class="level2">
-<h2 class="anchored" data-anchor-id="raw-data">Raw data</h2>
+<h2 class="anchored" data-anchor-id="raw-data">Raw Data</h2>
 <section id="overview-raw-datasets" class="level3">
 <h3 class="anchored" data-anchor-id="overview-raw-datasets">Overview Raw Datasets</h3>
 <table class="caption-top table">
@@ -186,38 +201,57 @@ ul.task-list li input[type="checkbox"] {
 <thead>
 <tr class="header">
 <th>Name</th>
-<th>Quelle</th>
+<th>Source</th>
 <th>Storage location</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Dataset 1</td>
-<td>Name/short description of the data source</td>
-<td>Link and/or short description of the location where the data is stored, e.g.&nbsp;accessible to the team</td>
+<td>Pokemon Stats &amp; Rankings</td>
+<td>PvPoke.com CSV dataset</td>
+<td><code>data_acquisition/processed_data/all_overall_rankings.csv</code></td>
 </tr>
 <tr class="even">
-<td>Dataset 2</td>
-<td>…</td>
-<td>…</td>
+<td>Battle Simulation Data</td>
+<td>PvPoke.com Battle Simulator</td>
+<td><code>data_acquisition/vectorized_data/battle_data_numeric.csv</code></td>
+</tr>
+<tr class="odd">
+<td>Pokemon Image Dataset</td>
+<td>DuckDuckGo Search API, PokémonDB, coloringpages101.com</td>
+<td><code>data_acquisition/image_dataset/final_pokemon_dataset/</code></td>
 </tr>
 </tbody>
 </table>
+<p><strong>Note</strong>: The Pokemon Stats &amp; Rankings dataset was subsequently vectorized and stored as <code>all_overall_rankings_vectorized.csv</code> in the <code>data_acquisition/vectorized_data/</code> directory for machine learning model development.</p>
 </section>
-<section id="details-dataset-1" class="level3">
-<h3 class="anchored" data-anchor-id="details-dataset-1">Details Dataset 1</h3>
+<section id="details-dataset-1-pokemon-stats-rankings" class="level3">
+<h3 class="anchored" data-anchor-id="details-dataset-1-pokemon-stats-rankings">Details Dataset 1: Pokemon Stats &amp; Rankings</h3>
 <ul>
-<li>Description of what information the dataset contains</li>
-<li>Details of the data source/provider</li>
-<li>Information on data procurement: description and possibly references to resources (download scripts, tools, online services, …). Any new team member should be able to acquire the data indepentendently following these instructions.</li>
-<li>Legal aspects of data use, licences, etc.</li>
-<li>Data governance aspects: Categorisation of the data based on internal business requirements, e.g.&nbsp;public, business-relevant, personal</li>
-<li>If applicable: categorisation into dependent (target variable, regressor) and independent (regressor) variables</li>
-<li>…</li>
+<li><strong>Description</strong>: Contains comprehensive Pokemon statistics, battle performance metrics, movesets, and meta rankings for PvP battles</li>
+<li><strong>Data source</strong>:
+<ul>
+<li>Originally: <a href="https://pvpoke.com/rankings/">PvPoke.com rankings page</a> via web scraping</li>
+<li>Final source: Comprehensive CSV dataset from PvPoke.com with detailed Pokemon battle statistics</li>
+</ul></li>
+<li><strong>Data procurement</strong>:
+<ul>
+<li>Initial approach: Web scraping using Selenium WebDriver and BeautifulSoup
+<ul>
+<li>Automated extraction of Pokemon attack/defense/stamina stats, fast moves, charged moves, and recommended movesets</li>
+<li>Scripts: <code>Poke_stats_Scraper.ipynb</code></li>
+</ul></li>
+<li>Final approach: Found a more comprehensive CSV dataset with detailed battle metrics and Pokemon parameters
+<ul>
+<li>This dataset provided extensive information including Stat Product, CP, Level, Charged Move Counts, and Buddy Distance</li>
+</ul></li>
+</ul></li>
+<li><strong>Legal aspects</strong>: Public data available for educational/research purposes</li>
+<li><strong>Data governance</strong>: Public data, no personal information</li>
+<li><strong>Variables</strong>: Pokemon name, Score, Pokedex number, Type 1 &amp; 2, Attack, Defense, Stamina stats, Stat Product, CP, Fast Move, Charged Moves, Charged Move Counts, Buddy Distance, Charged Move Cost</li>
 </ul>
 <section id="data-catalogue" class="level4">
 <h4 class="anchored" data-anchor-id="data-catalogue">Data Catalogue</h4>
-<p>The data catalogue basically represents an extended schema of a relational database.</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 20%">
@@ -238,34 +272,519 @@ ul.task-list li input[type="checkbox"] {
 <tbody>
 <tr class="odd">
 <td>1</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>Pokemon</td>
+<td>String</td>
+<td>Pokemon species names</td>
+<td>Unique identifier for each Pokemon</td>
 </tr>
 <tr class="even">
 <td>2</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>Score</td>
+<td>Float</td>
+<td>0-100</td>
+<td>Overall battle performance rating</td>
 </tr>
 <tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>3</td>
+<td>Dex</td>
+<td>Integer</td>
+<td>1-1000+</td>
+<td>Pokedex number identifier</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Type 1</td>
+<td>String</td>
+<td>Pokemon type name</td>
+<td>Primary type of the Pokemon</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Type 2</td>
+<td>String</td>
+<td>Pokemon type name or “none”</td>
+<td>Secondary type of the Pokemon (if any)</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>Attack</td>
+<td>Float</td>
+<td>50-300</td>
+<td>Attack stat value</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>Defense</td>
+<td>Float</td>
+<td>50-300</td>
+<td>Defense stat value</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>Stamina</td>
+<td>Integer</td>
+<td>80-500</td>
+<td>HP/Stamina stat value</td>
+</tr>
+<tr class="odd">
+<td>9</td>
+<td>Stat Product</td>
+<td>Integer</td>
+<td>1000000-3000000</td>
+<td>Combined stat product (Attack × Defense × Stamina)</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>Level</td>
+<td>Float</td>
+<td>1-50</td>
+<td>Pokemon level for battle league</td>
+</tr>
+<tr class="odd">
+<td>11</td>
+<td>CP</td>
+<td>Integer</td>
+<td>0-1500</td>
+<td>Combat Power value</td>
+</tr>
+<tr class="even">
+<td>12</td>
+<td>Fast Move</td>
+<td>String</td>
+<td>Move names</td>
+<td>Fast attack move for battle</td>
+</tr>
+<tr class="odd">
+<td>13</td>
+<td>Charged Move 1</td>
+<td>String</td>
+<td>Move names</td>
+<td>Primary charged attack move</td>
+</tr>
+<tr class="even">
+<td>14</td>
+<td>Charged Move 2</td>
+<td>String</td>
+<td>Move names</td>
+<td>Secondary charged attack move</td>
+</tr>
+<tr class="odd">
+<td>15</td>
+<td>Charged Move 1 Count</td>
+<td>Integer</td>
+<td>1-20+</td>
+<td>Energy requirement for Charged Move 1</td>
+</tr>
+<tr class="even">
+<td>16</td>
+<td>Charged Move 2 Count</td>
+<td>Integer</td>
+<td>1-20+</td>
+<td>Energy requirement for Charged Move 2</td>
+</tr>
+<tr class="odd">
+<td>17</td>
+<td>Buddy Distance</td>
+<td>Integer</td>
+<td>1-20</td>
+<td>Walking distance (km) required as buddy</td>
+</tr>
+<tr class="even">
+<td>18</td>
+<td>Charged Move Cost</td>
+<td>Integer</td>
+<td>10000-100000</td>
+<td>Stardust cost to unlock second charged move</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="if-applicable-entity-relationship-diagram" class="level4">
-<h4 class="anchored" data-anchor-id="if-applicable-entity-relationship-diagram">If applicable: Entity Relationship Diagram</h4>
-</section>
 <section id="data-quality" class="level4">
 <h4 class="anchored" data-anchor-id="data-quality">Data Quality</h4>
+<ul>
+<li><strong>Completeness</strong>: 727 unique Pokemon entries with complete stat information in the final dataset</li>
+<li><strong>Accuracy</strong>: Data validated against official game statistics</li>
+<li><strong>Consistency</strong>: Standardized naming conventions and data formats</li>
+<li><strong>Duplicates</strong>: No duplicates in the final dataset (originally found 2 duplicate entries - Clodsire, Golisopod)</li>
+</ul>
 </section>
+</section>
+<section id="details-dataset-2-battle-simulation-data" class="level3">
+<h3 class="anchored" data-anchor-id="details-dataset-2-battle-simulation-data">Details Dataset 2: Battle Simulation Data</h3>
+<ul>
+<li><strong>Description</strong>: Contains vectorized numeric data from simulated 1v1 Pokemon battles for predicting battle outcomes</li>
+<li><strong>Data source</strong>: <a href="https://pvpoke.com/battle/">PvPoke.com battle simulator</a> combined with Pokemon statistics dataset</li>
+<li><strong>Data procurement</strong>:
+<ul>
+<li>Web scraping using Selenium WebDriver</li>
+<li>20,000 battle scenarios simulated (generated using random sampling with Python’s random number generator)</li>
+</ul></li>
+<li><strong>Legal aspects</strong>: Public simulation tool, data used for educational purposes</li>
+<li><strong>Data governance</strong>: Public data, computational results from simulator</li>
+<li><strong>Variables</strong>: Pokemon types, moves, stats, and battle outcomes (win/loss)</li>
+</ul>
+<section id="data-catalogue-1" class="level4">
+<h4 class="anchored" data-anchor-id="data-catalogue-1">Data Catalogue</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 23%">
+<col style="width: 6%">
+<col style="width: 25%">
+<col style="width: 34%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Column index</th>
+<th>Column name</th>
+<th>Datatype</th>
+<th>Values (Range, validation rules)</th>
+<th>Short description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>pokemon_winner</td>
+<td>String</td>
+<td>Pokemon species name</td>
+<td>Winner Pokemon name</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>pokemon_loser</td>
+<td>String</td>
+<td>Pokemon species name</td>
+<td>Loser Pokemon name</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>left_pokemon_type_1</td>
+<td>Integer</td>
+<td>0-17</td>
+<td>Primary type of left Pokemon (encoded)</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>left_pokemon_type_2</td>
+<td>Integer</td>
+<td>0-17</td>
+<td>Secondary type of left Pokemon (encoded)</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>left_pokemon_fast_move</td>
+<td>Integer</td>
+<td>Move ID</td>
+<td>Fast move ID of left Pokemon</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>left_pokemon_charge_move_1</td>
+<td>Integer</td>
+<td>Move ID</td>
+<td>First charged move ID of left Pokemon</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>left_pokemon_charge_move_2</td>
+<td>Integer</td>
+<td>Move ID</td>
+<td>Second charged move ID of left Pokemon</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>left_pokemon_fast_move_type</td>
+<td>Integer</td>
+<td>0-17</td>
+<td>Type of fast move for left Pokemon (encoded)</td>
+</tr>
+<tr class="odd">
+<td>9</td>
+<td>left_pokemon_charge_move_1_type</td>
+<td>Integer</td>
+<td>0-17</td>
+<td>Type of first charged move for left Pokemon</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>left_pokemon_charge_move_2_type</td>
+<td>Integer</td>
+<td>0-17</td>
+<td>Type of second charged move for left Pokemon</td>
+</tr>
+<tr class="odd">
+<td>11</td>
+<td>left_pokemon_dex</td>
+<td>Integer</td>
+<td>1-1000+</td>
+<td>Pokedex number of left Pokemon</td>
+</tr>
+<tr class="even">
+<td>12</td>
+<td>left_pokemon_attack</td>
+<td>Float</td>
+<td>0.0-300.0</td>
+<td>Attack stat of left Pokemon</td>
+</tr>
+<tr class="odd">
+<td>13</td>
+<td>left_pokemon_defense</td>
+<td>Float</td>
+<td>0.0-300.0</td>
+<td>Defense stat of left Pokemon</td>
+</tr>
+<tr class="even">
+<td>14</td>
+<td>left_pokemon_stamina</td>
+<td>Integer</td>
+<td>0-500</td>
+<td>Stamina stat of left Pokemon</td>
+</tr>
+<tr class="odd">
+<td>15</td>
+<td>left_pokemon_overall</td>
+<td>Float</td>
+<td>0.0-100.0</td>
+<td>Overall performance rating of left Pokemon</td>
+</tr>
+<tr class="even">
+<td>16</td>
+<td>right_pokemon_type_1</td>
+<td>Integer</td>
+<td>0-17</td>
+<td>Primary type of right Pokemon (encoded)</td>
+</tr>
+<tr class="odd">
+<td>17</td>
+<td>right_pokemon_type_2</td>
+<td>Integer</td>
+<td>0-17</td>
+<td>Secondary type of right Pokemon (encoded)</td>
+</tr>
+<tr class="even">
+<td>18</td>
+<td>right_pokemon_fast_move</td>
+<td>Integer</td>
+<td>Move ID</td>
+<td>Fast move ID of right Pokemon</td>
+</tr>
+<tr class="odd">
+<td>19</td>
+<td>right_pokemon_charge_move_1</td>
+<td>Integer</td>
+<td>Move ID</td>
+<td>First charged move ID of right Pokemon</td>
+</tr>
+<tr class="even">
+<td>20</td>
+<td>right_pokemon_charge_move_2</td>
+<td>Integer</td>
+<td>Move ID</td>
+<td>Second charged move ID of right Pokemon</td>
+</tr>
+<tr class="odd">
+<td>21</td>
+<td>right_pokemon_fast_move_type</td>
+<td>Integer</td>
+<td>0-17</td>
+<td>Type of fast move for right Pokemon (encoded)</td>
+</tr>
+<tr class="even">
+<td>22</td>
+<td>right_pokemon_charge_move_1_type</td>
+<td>Integer</td>
+<td>0-17</td>
+<td>Type of first charged move for right Pokemon</td>
+</tr>
+<tr class="odd">
+<td>23</td>
+<td>right_pokemon_charge_move_2_type</td>
+<td>Integer</td>
+<td>0-17</td>
+<td>Type of second charged move for right Pokemon</td>
+</tr>
+<tr class="even">
+<td>24</td>
+<td>right_pokemon_dex</td>
+<td>Integer</td>
+<td>1-1000+</td>
+<td>Pokedex number of right Pokemon</td>
+</tr>
+<tr class="odd">
+<td>25</td>
+<td>right_pokemon_attack</td>
+<td>Float</td>
+<td>0.0-300.0</td>
+<td>Attack stat of right Pokemon</td>
+</tr>
+<tr class="even">
+<td>26</td>
+<td>right_pokemon_defense</td>
+<td>Float</td>
+<td>0.0-300.0</td>
+<td>Defense stat of right Pokemon</td>
+</tr>
+<tr class="odd">
+<td>27</td>
+<td>right_pokemon_stamina</td>
+<td>Integer</td>
+<td>0-500</td>
+<td>Stamina stat of right Pokemon</td>
+</tr>
+<tr class="even">
+<td>28</td>
+<td>right_pokemon_overall</td>
+<td>Float</td>
+<td>0.0-100.0</td>
+<td>Overall performance rating of right Pokemon</td>
+</tr>
+<tr class="odd">
+<td>29</td>
+<td>winner</td>
+<td>Integer</td>
+<td>0 or 1</td>
+<td>Battle outcome (1 = left Pokemon wins, 0 = right)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="data-quality-1" class="level4">
+<h4 class="anchored" data-anchor-id="data-quality-1">Data Quality</h4>
+<ul>
+<li><strong>Completeness</strong>: 20,000 battles with complete information for both Pokemon</li>
+<li><strong>Balance</strong>: Near-equal distribution of win/loss outcomes for predictive modeling</li>
+<li><strong>Consistency</strong>: All categorical variables consistently encoded using reference dictionaries</li>
+<li><strong>Preprocessing</strong>: All features numerically encoded for direct use in machine learning models</li>
+</ul>
+</section>
+</section>
+<section id="details-dataset-3-pokemon-image-dataset" class="level3">
+<h3 class="anchored" data-anchor-id="details-dataset-3-pokemon-image-dataset">Details Dataset 3: Pokemon Image Dataset</h3>
+</section>
+</section>
+<section id="dataset-3" class="level2">
+<h2 class="anchored" data-anchor-id="dataset-3">Dataset 3</h2>
+<section id="objective" class="level3">
+<h3 class="anchored" data-anchor-id="objective">Objective</h3>
+<p><em>Dataset 3</em> was created to build a diverse, high-quality, and robust Pokémon image dataset, suitable for applications in computer vision such as object detection, classification, and few-shot learning. The focus was on:</p>
+<ul>
+<li>Integrating multiple complementary data sources (official and unofficial)</li>
+<li>Removing duplicates using hash-based similarity checks</li>
+<li>Ensuring high data quality through manual and automated filtering</li>
+<li>Applying structured post-processing and dataset organization</li>
+</ul>
+<hr>
+</section>
+<section id="data-sources" class="level3">
+<h3 class="anchored" data-anchor-id="data-sources">Data Sources</h3>
+<p>The images were collected via custom Python scripts from three distinct sources</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="pics/scraping.png" class="img-fluid figure-img" width="650"></p>
+<figcaption>Dataset Generation Process</figcaption>
+</figure>
+</div>
+<section id="official-sprites-from-pokémondb" class="level4">
+<h4 class="anchored" data-anchor-id="official-sprites-from-pokémondb">1. Official Sprites from PokémonDB</h4>
+<ul>
+<li><strong>Script:</strong> <code>scrape_official_sprites.py</code><br>
+</li>
+<li>Up to 16 different sprite sets per Pokémon (e.g., <em>red-blue</em>, <em>home</em>, <em>scarlet-violet</em>)<br>
+</li>
+<li>Shadow forms were excluded<br>
+</li>
+<li>Stored in Pokémon-specific subfolders with SHA256-based filenames to prevent duplication</li>
+</ul>
+</section>
+<section id="coloring-pages-from-coloringpages101.com" class="level4">
+<h4 class="anchored" data-anchor-id="coloring-pages-from-coloringpages101.com">2. Coloring Pages from coloringpages101.com</h4>
+<ul>
+<li><strong>Script:</strong> <code>scrape_coloring_pages.py</code><br>
+</li>
+<li>Automatically crawled category and detail pages using regular expressions and name normalization</li>
+<li>Downloaded all available PNG files into the corresponding Pokémon folders<br>
+</li>
+<li>These black-and-white line drawings have clean, high-contrast edges — ideal for training models on shape or contour recognition</li>
+</ul>
+</section>
+<section id="duckduckgo-image-search" class="level4">
+<h4 class="anchored" data-anchor-id="duckduckgo-image-search">3. DuckDuckGo Image Search</h4>
+<ul>
+<li><strong>Script:</strong> <code>image_downloader_ddg.py</code><br>
+</li>
+<li>Target: at least 30 visually distinct images per Pokémon<br>
+</li>
+<li>Duplicate filtering:
+<ul>
+<li><strong>Byte-level:</strong> SHA256 hash</li>
+<li><strong>Visual-level:</strong> Perceptual hash (phash) with Hamming distance ≤ 5<br>
+</li>
+</ul></li>
+<li>Images were compressed and stored as JPEGs (quality = 50%) for storage efficiency</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="post-processing-quality-assurance" class="level3">
+<h3 class="anchored" data-anchor-id="post-processing-quality-assurance">Post-Processing &amp; Quality Assurance</h3>
+<section id="renaming-with-perceptual-hash" class="level4">
+<h4 class="anchored" data-anchor-id="renaming-with-perceptual-hash">Renaming with Perceptual Hash</h4>
+<ul>
+<li><strong>Script:</strong> <code>rename_images_by_hash.py</code><br>
+</li>
+<li>All images renamed based on their perceptual hash<br>
+</li>
+<li>Ensures uniqueness, removes duplicates, and enforces naming consistency</li>
+</ul>
+</section>
+<section id="manual-image-review-cropping-pokémon-cards" class="level4">
+<h4 class="anchored" data-anchor-id="manual-image-review-cropping-pokémon-cards">Manual Image Review &amp; Cropping (Pokémon Cards)</h4>
+<ul>
+<li><strong>Tool:</strong> <code>image_review_gui.py</code> (built with PyQt5)<br>
+</li>
+<li>Desktop tool for manually inspecting, selecting, and cropping images<br>
+</li>
+<li>Key use case: <strong>cropping Pokémon card images</strong> to isolate just the artwork and remove backgrounds or frames<br>
+</li>
+<li>Features:
+<ul>
+<li>Grid-based image preview (8 columns)</li>
+<li>Multi-selection and cropping (overwrite original files)</li>
+<li>Progress tracking with <code>done_folders.json</code></li>
+<li>Dual-person workflow (folders are split between two users via a simple flag)</li>
+</ul></li>
+</ul>
+</section>
+<section id="dataset-splitting-for-training" class="level4">
+<h4 class="anchored" data-anchor-id="dataset-splitting-for-training">Dataset Splitting for Training</h4>
+<ul>
+<li><strong>Script:</strong> <code>split_train_test_dataset.py</code><br>
+</li>
+<li>Automatically splits each Pokémon folder into an 80% training and 20% test set<br>
+</li>
+<li>The split is performed randomly to ensure unbiased distribution of images<br>
+</li>
+<li>Final structure reflects common deep learning pipelines</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="directory-structure" class="level3">
+<h3 class="anchored" data-anchor-id="directory-structure">Directory Structure</h3>
+<p>The dataset is organized into a standard structure for supervised image classification. The root folder final_pokemon_dataset/ contains two subfolders: train/ and test/, representing an 80:20 split.</p>
+<pre class="plaintext"><code>project_root/
+├── final_pokemon_dataset/
+│   ├── train/
+│   │   └── Abomasnow/
+│   │   └── Electabuzz/
+│   │   └── Totodile/
+│   │   ...
+│   └── test/
+│       └── Abomasnow/
+│       └── Electabuzz/
+│       └── Totodile/
+│       ...</code></pre>
 </section>
 </section>
 <section id="processed-data" class="level2">
@@ -281,42 +800,77 @@ ul.task-list li input[type="checkbox"] {
 <thead>
 <tr class="header">
 <th>Name</th>
-<th>Quelle</th>
+<th>Source</th>
 <th>Storage location</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Processed Dataset 1</td>
-<td>Name/short description of the data source</td>
-<td>Link and/or short description of the location where the data is stored, e.g.&nbsp;accessible to the team</td>
+<td>Vectorized Pokemon Dataset</td>
+<td>Pokemon Stats &amp; Rankings</td>
+<td><code>data_acquisition/vectorized_data/all_overall_rankings_vectorized.csv</code></td>
 </tr>
 <tr class="even">
-<td>Processed Dataset 2</td>
-<td>…</td>
-<td>…</td>
+<td>Battle Outcome Dataset</td>
+<td>Battle Simulation Data</td>
+<td><code>data_acquisition/vectorized_data/battle_data_numeric.csv</code></td>
+</tr>
+<tr class="odd">
+<td>Image Training Dataset</td>
+<td>Pokemon Image Dataset</td>
+<td><code>data_acquisition/image_dataset/final_pokemon_dataset/</code></td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="details-processed-dataset-1" class="level3">
-<h3 class="anchored" data-anchor-id="details-processed-dataset-1">Details Processed Dataset 1</h3>
+<section id="details-processed-dataset-1-vectorized-pokemon-dataset" class="level3">
+<h3 class="anchored" data-anchor-id="details-processed-dataset-1-vectorized-pokemon-dataset">Details Processed Dataset 1: Vectorized Pokemon Dataset</h3>
 <ul>
-<li>Description of what information the dataset contains</li>
-<li>Details and reasons for the processing steps -&gt; Traceability and ensuring reproducibility</li>
-<li>How can the data be accessed? Description, scripts, tools, …</li>
-<li>…</li>
+<li><strong>Description</strong>: Vectorized version of the Pokemon Stats &amp; Rankings dataset for machine learning applications</li>
+<li><strong>Processing steps</strong>:
+<ul>
+<li>Removal of duplicate entries</li>
+<li>Vectorization of categorical features (Pokemon types, moves)</li>
+<li>Feature engineering: type effectiveness calculations, stat ratios, move type diversity</li>
+<li>Encoding of categorical variables using numerical mapping dictionaries</li>
+<li>Normalization of numerical features</li>
+<li>Preparation for model input</li>
+</ul></li>
+<li><strong>Vectorization process</strong>:
+<ul>
+<li>Categorical features converted to numerical representations using mapping dictionaries</li>
+<li>Types, fast moves, and charged moves encoded using dedicated mapping files:
+<ul>
+<li><code>data_acquisition/dictionarie/type_to_number.csv</code></li>
+<li><code>data_acquisition/dictionarie/fast_move_to_number.csv</code></li>
+<li><code>data_acquisition/dictionarie/charged_move_to_number.csv</code></li>
+</ul></li>
+<li>Vectorization performed in <code>pokemon_vectorization.ipynb</code></li>
+</ul></li>
+<li><strong>Access method</strong>: CSV file accessible via pandas DataFrame loading</li>
 </ul>
-<section id="data-catalogue-1" class="level4">
-<h4 class="anchored" data-anchor-id="data-catalogue-1">Data Catalogue</h4>
+<section id="data-catalogue-2" class="level4">
+<h4 class="anchored" data-anchor-id="data-catalogue-2">Data Catalogue</h4>
+<ul>
+<li>Vectorized feature set with all categorical variables converted to numerical representations</li>
+<li>Standardized numerical ranges for model compatibility</li>
+<li>Preserves all information from the original dataset in machine learning-ready format</li>
+</ul>
 </section>
-<section id="if-applicable-entity-relationship-diagram-1" class="level4">
-<h4 class="anchored" data-anchor-id="if-applicable-entity-relationship-diagram-1">If applicable: Entity Relationship Diagram</h4>
 </section>
-</section>
-<section id="details-processed-dataset-2" class="level3">
-<h3 class="anchored" data-anchor-id="details-processed-dataset-2">Details Processed Dataset 2</h3>
-<p>…</p>
+<section id="details-processed-dataset-2-battle-outcome-dataset" class="level3">
+<h3 class="anchored" data-anchor-id="details-processed-dataset-2-battle-outcome-dataset">Details Processed Dataset 2: Battle Outcome Dataset</h3>
+<ul>
+<li><strong>Description</strong>: The battle_data_numeric.csv dataset is already processed and ready for machine learning</li>
+<li><strong>Processing steps</strong>:
+<ul>
+<li>Categorical variables (Pokemon types, moves) numerically encoded using reference dictionaries</li>
+<li>Feature pairing to represent both Pokemon in each battle scenario</li>
+<li>Balancing of win/loss outcomes for unbiased model training</li>
+<li>Normalization of numerical features where appropriate</li>
+</ul></li>
+<li><strong>Access method</strong>: Structured CSV with all features in numeric format, directly suitable for ML model training</li>
+</ul>
 
 
 </section>
@@ -396,7 +950,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/daai25\.github\.io\/PokemonGOBattleAssistant\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

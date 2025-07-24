@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>evaluation – Sample Project</title>
+<title>evaluation – Pokemon Go Battle Assistant</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -96,7 +96,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Sample Project</a> 
+      <a href="./">Pokemon Go Battle Assistant</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -109,7 +109,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">About This Documentation</span></a>
+ <span class="menu-text">Pokemon GO Battle Assistant</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -132,6 +132,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./deeplearning_report.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Deep Learning Report</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./evaluation.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Evaluation</span></a>
   </div>
@@ -146,7 +152,15 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#evaluation" id="toc-evaluation" class="nav-link active" data-scroll-target="#evaluation">Evaluation</a></li>
+  <li><a href="#evaluation" id="toc-evaluation" class="nav-link active" data-scroll-target="#evaluation">Evaluation</a>
+  <ul class="collapse">
+  <li><a href="#do-results-meet-user-needs" id="toc-do-results-meet-user-needs" class="nav-link" data-scroll-target="#do-results-meet-user-needs">Do results meet user needs?</a></li>
+  <li><a href="#continue-the-project" id="toc-continue-the-project" class="nav-link" data-scroll-target="#continue-the-project">Continue the project?</a></li>
+  <li><a href="#planning-of-the-deployment" id="toc-planning-of-the-deployment" class="nav-link" data-scroll-target="#planning-of-the-deployment">Planning of the deployment</a></li>
+  <li><a href="#additional-data-mining-iteration-if-we-were-to-continue" id="toc-additional-data-mining-iteration-if-we-were-to-continue" class="nav-link" data-scroll-target="#additional-data-mining-iteration-if-we-were-to-continue">Additional data mining iteration (if we were to continue)</a></li>
+  <li><a href="#enhance-the-pre-trained-efficientnetb0-model-with" id="toc-enhance-the-pre-trained-efficientnetb0-model-with" class="nav-link" data-scroll-target="#enhance-the-pre-trained-efficientnetb0-model-with">Enhance the pre-trained EfficientNetB0 model with:</a></li>
+  <li><a href="#governance-and-ethical-considerations" id="toc-governance-and-ethical-considerations" class="nav-link" data-scroll-target="#governance-and-ethical-considerations">Governance and ethical considerations</a></li>
+  </ul></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="evaluation.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
@@ -158,26 +172,44 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="evaluation" class="level1">
 <h1>Evaluation</h1>
-<p>This protocol summarises the decisions from the evaluation of the data mining phase, which are made, for example, in a workshop together with the client and other stakeholders.</p>
-<p>Decide:</p>
+<section id="do-results-meet-user-needs" class="level3">
+<h3 class="anchored" data-anchor-id="do-results-meet-user-needs">Do results meet user needs?</h3>
+<p>Yes – the battle prediction model and image classifier satisfy the requirements for the Pokémon GO Battle Assistant.</p>
+</section>
+<section id="continue-the-project" class="level3">
+<h3 class="anchored" data-anchor-id="continue-the-project">Continue the project?</h3>
+<p>No – we will not proceed with further development at this time.</p>
+</section>
+<section id="planning-of-the-deployment" class="level3">
+<h3 class="anchored" data-anchor-id="planning-of-the-deployment">Planning of the deployment</h3>
 <ul>
-<li>Do results meet user needs?</li>
-<li>Continuation of the project yes/no</li>
-<li>Planning of the deployment</li>
-<li>Carry out an additional data mining iteration
-<ul>
-<li>Acquire more or different data</li>
-<li>Improvements in the modelling</li>
-<li>Address governance issues</li>
-<li>or ethical considerations</li>
-<li>…</li>
-</ul></li>
+<li>Package the CatBoost battle predictor and the CNN image classifier as REST endpoints.<br>
+</li>
+<li>Integrate into the existing web/mobile application for real‐time use.</li>
 </ul>
-<p>Any presentation material created for such a workshop should also be stored in the <code>docs</code> folder.</p>
-<p>It is important to list who was involved in the decisions and when they were made.</p>
-<p>The structure and level of detail of this protocol should be tailored to the customs of the relevant organisation and the requirements of the decision-makers. It might include already a high level description of the envisioned product to be deployed.</p>
+</section>
+<section id="additional-data-mining-iteration-if-we-were-to-continue" class="level3">
+<h3 class="anchored" data-anchor-id="additional-data-mining-iteration-if-we-were-to-continue">Additional data mining iteration (if we were to continue)</h3>
+<ul>
+<li>Expand the image dataset with more Pokémon from Pokémon GO to improve classification coverage.<br>
+</li>
+<li>Introduce further feature engineering on battle data to increase accuracy above 0.79.</li>
+</ul>
+</section>
+<section id="enhance-the-pre-trained-efficientnetb0-model-with" class="level3">
+<h3 class="anchored" data-anchor-id="enhance-the-pre-trained-efficientnetb0-model-with">Enhance the pre-trained EfficientNetB0 model with:</h3>
+<ul>
+<li>More extensive fine-tuning of deeper layers</li>
+<li>More sophisticated data augmentation techniques</li>
+<li>Implement support for missing Pokémon species to increase coverage</li>
+</ul>
+</section>
+<section id="governance-and-ethical-considerations" class="level3">
+<h3 class="anchored" data-anchor-id="governance-and-ethical-considerations">Governance and ethical considerations</h3>
+<p>No governance issues or ethical concerns were encountered.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -253,7 +285,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/daai25\.github\.io\/PokemonGOBattleAssistant\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
