@@ -103,6 +103,13 @@ flowchart LR
     I[64x64x3 RGB Image]
     end
     
+    subgraph aug [Data Augmentation]
+    A1[Random Rotation] --> A2[Width/Height Shifts]
+    A2 --> A3[Shear Transform]
+    A3 --> A4[Zoom]
+    A4 --> A5[Horizontal Flip]
+    end
+    
     subgraph conv1 [Layer 1]
     C1A[Conv2D 32] --> BN1A[BatchNorm]
     BN1A --> C1B[Conv2D 32] 
@@ -142,13 +149,15 @@ flowchart LR
     D5 --> Out[Output Layer]
     end
     
-    I --> C1A
+    I --> A1
+    A5 --> C1A
     D1 --> C2A
     D2 --> C3A
     D3 --> C4A
     D4 --> F
     
     style input fill:#e1f5fe
+    style aug fill:#e8f5e9
     style conv1 fill:#ffecb3
     style conv2 fill:#ffe082
     style conv3 fill:#ffd54f
@@ -156,7 +165,7 @@ flowchart LR
     style dense fill:#e8f5e9
 ```
 
-*The diagram above illustrates the more complex CNN architecture used for Pokémon classification. This model features four convolutional layers with progressively increasing filter sizes (32→64→128→256), each implementing a double convolution pattern. Every layer follows the same structure: two convolutional layers, each followed by batch normalization, then max pooling, and finally dropout (0.25) to prevent overfitting. After the convolutional layers, the data is flattened and passed through a dense layer with 512 neurons, followed by batch normalization and a higher dropout rate (0.5) before the final classification layer. This architecture significantly outperforms the simpler CFAR model by incorporating modern deep learning techniques like batch normalization and employing a deeper structure for more sophisticated feature extraction.*
+*The diagram above illustrates the more complex CNN architecture used for Pokémon classification. This model features four convolutional layers with progressively increasing filter sizes (32→64→128→256), each implementing a double convolution pattern. The pipeline begins with data augmentation techniques (rotation, shifts, shear, zoom, and flipping) that enhance the training dataset and improve generalization. Every layer follows the same structure: two convolutional layers, each followed by batch normalization, then max pooling, and finally dropout (0.25) to prevent overfitting. After the convolutional layers, the data is flattened and passed through a dense layer with 512 neurons, followed by batch normalization and a higher dropout rate (0.5) before the final classification layer. This architecture significantly outperforms the simpler CFAR model by incorporating modern deep learning techniques like batch normalization and employing a deeper structure for more sophisticated feature extraction.*
 
 
 - **Code link**: `deployment/image_classification/CNN/train_pokemon_classifier_cnn.py`
@@ -169,69 +178,82 @@ flowchart LR
 
 
 
-### Pre-trained CNN Model (Transfer Learning)
-This model leverages the EfficientNetB0 architecture pre-trained on ImageNet, with fine-tuning for Pokémon classification.
-
-- **Implementation details**:
-  - Library: TensorFlow/Keras
-  - Input shape: 224x224x3 (RGB images, higher resolution)
-  - Architecture:
-    - EfficientNetB0 base model (pre-trained on ImageNet)
-    - Global Average Pooling
-    - Dense layer with 128 neurons
-    - Dropout layer (0.5)
-    - Output layer with softmax activation
-  - Two-phase training:
-    - Initial training with frozen base model
-    - Fine-tuning with unfrozen base model at lower learning rate
-  - Optimizer: Adam with different learning rates for each phase
-  - Loss function: Sparse categorical cross-entropy
-
-- **Modeling pipeline**:
-  1. Loading dataset using TensorFlow's image_dataset_from_directory
-  2. Data preprocessing with caching and prefetching for improved performance
-  3. Advanced data augmentation
-  4. Two-phase training (frozen base model, then fine-tuning)
-  5. Custom callback for saving checkpoints every 10 epochs
-  6. Final model saving and accuracy visualization
-
-  ```{mermaid}
+### Pre-trained CNN Model (EfficientNetB0, Transfer Learning)
+ 
+The third and most effective model uses **EfficientNetB0**, a modern and scalable convolutional neural network architecture pre-trained on the ImageNet dataset. Through **transfer learning**, the model leverages learned visual features and adapts them to the Pokémon image classification task with minimal training from scratch.
+ 
+Training was conducted in two phases:
+ 
+- **Phase 1**: The EfficientNetB0 base was frozen, and only the custom classification head was trained.  
+- **Phase 2**: The base model was partially unfrozen and fine-tuned using a lower learning rate.
+ 
+To improve generalization, a strong **data augmentation pipeline** was applied. This increased the model's robustness to real-world image variability such as different lighting, angles, and scales.
+ 
+- **Augmentation techniques included**:
+  - Random horizontal flipping  
+  - Random rotation  
+  - Random zoom  
+  - Contrast adjustment  
+  - Brightness adjustment  
+ 
+The model architecture consists of EfficientNetB0 (with `include_top=False`) as the feature extractor, followed by:
+ 
+- Global Average Pooling to reduce dimensionality  
+- A Dense layer with 128 neurons and ReLU activation  
+- Dropout layer (rate: 0.5) to prevent overfitting  
+- A Softmax output layer for multi-class classification  
+ 
+#### Technical Summary
+ 
+- **Input shape**: 224x224x3 RGB images  
+- **Loss function**: Sparse categorical cross-entropy  
+- **Optimizer**: Adam  
+  - Learning rate: 1e-4 (frozen base), 1e-5 (fine-tuning)  
+- **Batch size**: 16  
+- **Training epochs**: 40 (early stopping applied)  
+- **Callbacks**:
+  - EarlyStopping with `patience=5` and weight restoration
+  - Custom callback `SaveEveryN` saving checkpoints every 10 epochs
+ 
+#### Model Pipeline
+ 
+```{mermaid}
 flowchart LR
     subgraph input [Input]
     I[224x224x3 RGB Image]
     end
-    
+ 
     subgraph aug [Data Augmentation]
     A1[Random Flip] --> A2[Random Rotation]
     A2 --> A3[Random Zoom]
     A3 --> A4[Random Contrast]
     A4 --> A5[Random Brightness]
     end
-    
+ 
     subgraph preproc [Preprocessing]
     P[EfficientNet Preprocessing]
     end
-    
+ 
     subgraph base [Base Model]
     EB[EfficientNetB0 Pretrained\non ImageNet]
     end
-    
+ 
     subgraph head [Classification Head]
     GAP[Global Average Pooling] --> D1[Dense 128]
     D1 --> DO[Dropout 0.5]
     DO --> Out[Output Layer]
     end
-    
+ 
     subgraph training [Training Process]
-    T1[Phase 1: Frozen Base\nLearning Rate: 1e-4] --> T2[Phase 2: Fine-tuning\nLearning Rate: 1e-5]
+    T1[Phase 1: Frozen Base\n40 Epochs, LR=1e-4] --> T2[Phase 2: Fine-tuning\nLower LR=1e-5]
     end
-    
+ 
     I --> A1
     A5 --> P
     P --> EB
     EB --> GAP
     Out --> training
-    
+ 
     style input fill:#e1f5fe
     style aug fill:#fff9c4
     style preproc fill:#f3e5f5
@@ -239,15 +261,8 @@ flowchart LR
     style head fill:#e8f5e9
     style training fill:#e0f2f1
 ```
-
-- **Code link**: `deployment/image_classification/train_pokemon_classifier.py`
-- **Hyperparameters**:
-  - Initial learning rate: 1e-4 (frozen base), 1e-5 (fine-tuning)
-  - Batch size: 16
-  - Image size: 224x224 pixels
-  - Dropout rate: 0.5
-  - Data augmentation: random flips, rotation, zoom, contrast, brightness
-  - Early stopping patience: 5 epochs
+ 
+*This diagram shows the entire processing pipeline: the input image is augmented, preprocessed, passed through the EfficientNetB0 base model, and finally classified through a custom dense head. The two-phase training approach ensures both rapid convergence and effective fine-tuning.*
 
 ## Results
 The performance of each model varies based on their architecture complexity and training approach. Our model development followed an iterative process: we first implemented the lightweight CFAR model alongside a basic CNN architecture. Based on the promising results of the CNN approach, we further refined the CNN architecture by adding batch normalization, dropout layers, and implementing double convolution patterns. As a third strategy, we adopted transfer learning by training an EfficientNetB0 pre-trained model to expand our comparison of different deep learning approaches.
@@ -275,37 +290,40 @@ The performance of each model varies based on their architecture complexity and 
 *The figure above illustrates the CNN model's training history over 50 epochs. The accuracy plot (left) shows a more balanced progression between training (blue) and test/validation (orange) accuracy, both reaching approximately 70-75%. The loss plot (right) demonstrates how both training and test losses decrease steadily and remain relatively close together throughout training. This indicates the CNN model achieves better generalization performance than the CFAR model, with the regularization techniques (batch normalization and dropout) effectively mitigating overfitting.*
 
 ### Pre-trained CNN Model
-- Training accuracy: ~95-98%
-- Validation accuracy: ~90-95%
-- Highest performance among the three models
-- Transfer learning significantly reduces training time and improves generalization
+- Training accuracy: ~45%
+- Validation accuracy: ~65%
 - Two-phase training approach allows for fine-tuning while avoiding catastrophic forgetting
 - Higher resolution input (224x224) captures more details but requires more computational resources
 
+![Accuracy over Epochs for Pre-trained EfficientNetB0 Model](pics/training_history_EfficientNet.png)
+
+*This graph shows the EfficientNetB0 model's training performance over 50 epochs. The validation accuracy (orange) improves rapidly in early epochs, demonstrating transfer learning's efficiency. We observe a drop at epoch 40 during the transition from Phase 1 (frozen base) to Phase 2 (fine-tuning), followed by quick recovery. Final validation accuracy reaches ~65%, confirming our two-phase approach effectively adapts pre-trained knowledge to Pokémon classification while preventing catastrophic forgetting.*
+
 ## Model Interpretation
-- The pre-trained EfficientNetB0 model offers the best performance due to its transfer learning approach, leveraging knowledge from ImageNet
-- The custom CNN model provides a good balance between performance and computational requirements
-- The CFAR model offers the fastest training and inference but with lower accuracy
-- Data augmentation proves crucial for all models to generalize well, especially with limited training data
-- The hierarchical feature learning in deeper models (CNN and EfficientNetB0) allows for better understanding of Pokémon visual characteristics
+Our experiments with three architectures yield clear insights:
+- EfficientNetB0 currently performs similarly to our CNN (~65% validation accuracy), but has significantly greater potential for improvement through further fine-tuning
+- CNN offers balanced performance-resource trade-off (65% accuracy with moderate training time)
+- CFAR provides rapid prototyping capability but suffers from significant overfitting
+- Data augmentation is essential for all models to generalize effectively
+- EfficientNetB0's pre-trained knowledge can be better leveraged with more extensive adaptation techniques
 
 ## Conclusions and Next Steps
-The deep learning models developed for Pokémon image classification provide a strong foundation for the battle assistant application. The pre-trained EfficientNetB0 model offers the best performance and should be the primary choice for production deployment.
+While both CNN and EfficientNetB0 models currently achieve similar performance (~65% validation accuracy), we recommend the EfficientNetB0 model for deployment due to its greater potential for optimization. Our three-model approach demonstrates that transfer learning offers a promising path forward for Pokémon image classification, especially with additional fine-tuning.
 
 ### Limitations
-- Model performance depends on the quality and diversity of the training dataset
-- Some visually similar Pokémon species may be challenging to distinguish
-- Deep learning models require significant computational resources for training
+- Current performance of all models depends on dataset quality and diversity
+- Visually similar Pokémon remain challenging to differentiate
+- EfficientNetB0 requires more computational resources but has significant room for improvement
+- Further fine-tuning of the pre-trained layers is necessary to fully leverage ImageNet knowledge
 
 ### Future Work
-- Expand the dataset with more diverse Pokémon images and poses
-- Experiment with more advanced architectures like Vision Transformers
-- Implement model quantization for faster inference on mobile devices
-- Create an ensemble of models for improved robustness
-- Develop explainability tools to understand which features the models use for classification
+- More extensive fine-tuning of EfficientNetB0, especially unfreezing more layers gradually
+- Expand dataset diversity with more poses and environments
+- Explore more advanced transfer learning techniques to better adapt ImageNet knowledge
+- Optimize for mobile via model quantization
+- Implement more sophisticated data augmentation techniques specifically for Pokémon images
+- Develop model ensembles combining CNN and EfficientNetB0 strengths
 
 ### Deployment
-- The trained models can be deployed as part of a web or mobile application
-- A simple GUI application has been developed for testing (`pokemon_classifier_app.py`)
-- Models can be converted to TensorFlow Lite for mobile deployment
-- Integration with the battle prediction system will provide a complete Pokémon battle assistant solution
+- GUI testing application already developed (`pokemon_classifier_app.py`) for internal validation
+- Web-based interface for online Pokémon recognition via our website

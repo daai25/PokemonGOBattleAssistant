@@ -7,6 +7,8 @@ subtitle: "A Machine Learning-Based Battle Prediction System"
 
 The Pokemon GO Battle Assistant is an advanced prediction system that uses machine learning to help trainers make strategic decisions in Pokemon GO battles. By analyzing Pokemon statistics, battle mechanics, and historical performance data, our system predicts battle outcomes with high accuracy and provides recommendations for optimal team composition.
 
+Our system currently supports 727 Pokémon species, covering the vast majority of creatures available in Pokémon GO.
+
 ## Key Features
 
 - **Battle Outcome Prediction**: Predicts the winner of 1v1 Pokemon battles using machine learning models

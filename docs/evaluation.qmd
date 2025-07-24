@@ -14,5 +14,10 @@ No – we will not proceed with further development at this time.
 - Expand the image dataset with more Pokémon from Pokémon GO to improve classification coverage.  
 - Introduce further feature engineering on battle data to increase accuracy above 0.79.
 
+### Enhance the pre-trained EfficientNetB0 model with:
+  - More extensive fine-tuning of deeper layers
+  - More sophisticated data augmentation techniques
+  - Implement support for missing Pokémon species to increase coverage
+
 ### Governance and ethical considerations
 No governance issues or ethical concerns were encountered.

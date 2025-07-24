@@ -9,7 +9,7 @@ The project utilizes three main data sources: Pokemon statistics and moves from 
 |----------------|-----------------------------------------|--------------------------------------------------------------------------|
 | Pokemon Stats & Rankings | PvPoke.com CSV dataset | `data_acquisition/processed_data/all_overall_rankings.csv` |
 | Battle Simulation Data | PvPoke.com Battle Simulator | `data_acquisition/vectorized_data/battle_data_numeric.csv` |
-| Pokemon Image Dataset | DuckDuckGo Search API | `data_acquisition/image_dataset/compressed_dataset_pokemon_images/` |
+| Pokemon Image Dataset | DuckDuckGo Search API, PokémonDB, coloringpages101.com | `data_acquisition/image_dataset/final_pokemon_dataset/` |
 
 **Note**: The Pokemon Stats & Rankings dataset was subsequently vectorized and stored as `all_overall_rankings_vectorized.csv` in the `data_acquisition/vectorized_data/` directory for machine learning model development.
 
@@ -107,40 +107,101 @@ The project utilizes three main data sources: Pokemon statistics and moves from 
 - **Consistency**: All categorical variables consistently encoded using reference dictionaries
 - **Preprocessing**: All features numerically encoded for direct use in machine learning models
 
-### Details Dataset 3: Pokemon Image Dataset <span style="color: red;">Need to change</span>
-- **Description**: Image collection of Pokemon sprites for computer vision model training
-- **Data source**: DuckDuckGo Search API for image retrieval
-- **Data procurement**: 
-  - Automated image search and download using DuckDuckGo API
-  - Image filtering and quality control to ensure Pokemon-only content
-  - Image compression and standardization for model training
-  - Scripts: `download_images_duckduckgo.py`, `compress_images.py`, `delete_similar_images.py`
-- **Legal aspects**: Images sourced from public search results, fair use for research/educational purposes
-- **Data governance**: Public images, no personal data
-- **Variables**: 
-    Image pixel data, Pokemon species labels
+### Details Dataset 3: Pokemon Image Dataset
 
-#### Data Catalogue
-| Column index | Column name | Datatype | Values (Range, validation rules) | Short description |
-|---|---|---|---|---|
-| 1 | image_path | String | File path to image | Location of Pokemon image file |
-| 2 | pokemon_name | String | Pokemon species name | Ground truth label for image |
-| 3 | image_size | Tuple | (width, height) in pixels | Standardized image dimensions |
-| 4 | file_format | String | .jpg, .png | Image file format |
-
-#### Data Quality
-- **Coverage**: 727 Pokemon species with multiple image variants per species
-- **Quality Control**: Manual and automated filtering to remove non-Pokemon images
-- **Standardization**: Images compressed and resized for consistent model input
-- **Duplicates**: Similar images removed using hash comparison algorithms
+## Dataset 3
+ 
+### Objective
+ 
+*Dataset 3* was created to build a diverse, high-quality, and robust Pokémon image dataset, suitable for applications in computer vision such as object detection, classification, and few-shot learning. The focus was on:
+ 
+- Integrating multiple complementary data sources (official and unofficial)
+- Removing duplicates using hash-based similarity checks
+- Ensuring high data quality through manual and automated filtering
+- Applying structured post-processing and dataset organization
+ 
+---
+ 
+### Data Sources
+ 
+The images were collected via custom Python scripts from three distinct sources
+ 
+![Dataset Generation Process](pics/scraping.png){fig-cap="Illustration of the Pokémon image scraping and dataset preparation pipeline." width=650px}
+ 
+ 
+#### 1. Official Sprites from PokémonDB  
+- **Script:** `scrape_official_sprites.py`  
+- Up to 16 different sprite sets per Pokémon (e.g., *red-blue*, *home*, *scarlet-violet*)  
+- Shadow forms were excluded  
+- Stored in Pokémon-specific subfolders with SHA256-based filenames to prevent duplication
+ 
+#### 2. Coloring Pages from coloringpages101.com  
+- **Script:** `scrape_coloring_pages.py`  
+- Automatically crawled category and detail pages using regular expressions and name normalization
+- Downloaded all available PNG files into the corresponding Pokémon folders  
+- These black-and-white line drawings have clean, high-contrast edges — ideal for training models on shape or contour recognition
+ 
+#### 3. DuckDuckGo Image Search  
+- **Script:** `image_downloader_ddg.py`  
+- Target: at least 30 visually distinct images per Pokémon  
+- Duplicate filtering:
+  - **Byte-level:** SHA256 hash
+  - **Visual-level:** Perceptual hash (phash) with Hamming distance ≤ 5  
+- Images were compressed and stored as JPEGs (quality = 50%) for storage efficiency
+ 
+---
+ 
+### Post-Processing & Quality Assurance
+ 
+#### Renaming with Perceptual Hash  
+- **Script:** `rename_images_by_hash.py`  
+- All images renamed based on their perceptual hash  
+- Ensures uniqueness, removes duplicates, and enforces naming consistency
+ 
+#### Manual Image Review & Cropping (Pokémon Cards)  
+- **Tool:** `image_review_gui.py` (built with PyQt5)  
+- Desktop tool for manually inspecting, selecting, and cropping images  
+- Key use case: **cropping Pokémon card images** to isolate just the artwork and remove backgrounds or frames  
+- Features:
+  - Grid-based image preview (8 columns)
+  - Multi-selection and cropping (overwrite original files)
+  - Progress tracking with `done_folders.json`
+  - Dual-person workflow (folders are split between two users via a simple flag)
+ 
+#### Dataset Splitting for Training  
+- **Script:** `split_train_test_dataset.py`  
+- Automatically splits each Pokémon folder into an 80% training and 20% test set  
+- The split is performed randomly to ensure unbiased distribution of images  
+- Final structure reflects common deep learning pipelines
+ 
+---
+ 
+### Directory Structure
+ 
+The dataset is organized into a standard structure for supervised image classification. The root folder final_pokemon_dataset/ contains two subfolders: train/ and test/, representing an 80:20 split.
+ 
+```plaintext
+project_root/
+├── final_pokemon_dataset/
+│   ├── train/
+│   │   └── Abomasnow/
+│   │   └── Electabuzz/
+│   │   └── Totodile/
+│   │   ...
+│   └── test/
+│       └── Abomasnow/
+│       └── Electabuzz/
+│       └── Totodile/
+│       ...
+```
 
 ## Processed Data
-### Overview Processed Datasets <span style="color: red;">Need to change</span>
+### Overview Processed Datasets
 | Name | Source | Storage location |
 |----------------|-----------------------------------------|--------------------------------------------------------------------------|
 | Vectorized Pokemon Dataset | Pokemon Stats & Rankings | `data_acquisition/vectorized_data/all_overall_rankings_vectorized.csv` |
 | Battle Outcome Dataset | Battle Simulation Data | `data_acquisition/vectorized_data/battle_data_numeric.csv` |
-| Image Training Dataset | Pokemon Image Dataset | `processed_data/image_dataset/train_test_split/` |
+| Image Training Dataset | Pokemon Image Dataset | `data_acquisition/image_dataset/final_pokemon_dataset/` |
 
 ### Details Processed Dataset 1: Vectorized Pokemon Dataset
 - **Description**: Vectorized version of the Pokemon Stats & Rankings dataset for machine learning applications
@@ -173,12 +234,3 @@ The project utilizes three main data sources: Pokemon statistics and moves from 
   - Balancing of win/loss outcomes for unbiased model training
   - Normalization of numerical features where appropriate
 - **Access method**: Structured CSV with all features in numeric format, directly suitable for ML model training
-
-### Details Processed Dataset 3: Image Training Dataset <span style="color: red;">Need to change</span>
-- **Description**: Preprocessed and augmented image dataset for computer vision model training
-- **Processing steps**:
-  - Image resizing to standard dimensions (224x224 pixels)
-  - Data augmentation (rotation, scaling, color adjustment)
-  - Train/validation/test split with stratified sampling
-  - Conversion to tensor format for deep learning frameworks
-- **Access method**: Directory structure with organized train/val/test folders
