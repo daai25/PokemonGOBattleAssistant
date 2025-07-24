@@ -80,15 +80,15 @@ flowchart LR
 
 
 ### CNN Model
-The CNN model is a more advanced deep learning architecture with multiple convolutional blocks designed for improved feature extraction and classification accuracy.
+The CNN model is a more advanced deep learning architecture with multiple convolutional layers designed for improved feature extraction and classification accuracy.
 
 - **Implementation details**:
   - Library: TensorFlow/Keras
   - Input shape: 64x64x3 (RGB images)
   - Architecture:
-    - 4 convolutional blocks with batch normalization and dropout
-    - Each block has double convolution layers with increasing filter sizes (32→64→128→256)
-    - Max pooling after each block
+    - 4 convolutional layers with batch normalization and dropout
+    - Each layer has double convolution layers with increasing filter sizes (32→64→128→256)
+    - Max pooling after each layer
     - Flatten layer followed by dense layer (512 neurons)
     - Output layer with softmax activation
   - Optimizer: Adam with configurable learning rate
@@ -103,7 +103,7 @@ flowchart LR
     I[64x64x3 RGB Image]
     end
     
-    subgraph conv1 [Block 1]
+    subgraph conv1 [Layer 1]
     C1A[Conv2D 32] --> BN1A[BatchNorm]
     BN1A --> C1B[Conv2D 32] 
     C1B --> BN1B[BatchNorm]
@@ -111,7 +111,7 @@ flowchart LR
     MP1 --> D1[Dropout 0.25]
     end
     
-    subgraph conv2 [Block 2]
+    subgraph conv2 [Layer 2]
     C2A[Conv2D 64] --> BN2A[BatchNorm]
     BN2A --> C2B[Conv2D 64] 
     C2B --> BN2B[BatchNorm]
@@ -119,7 +119,7 @@ flowchart LR
     MP2 --> D2[Dropout 0.25]
     end
     
-    subgraph conv3 [Block 3]
+    subgraph conv3 [Layer 3]
     C3A[Conv2D 128] --> BN3A[BatchNorm]
     BN3A --> C3B[Conv2D 128] 
     C3B --> BN3B[BatchNorm]
@@ -127,7 +127,7 @@ flowchart LR
     MP3 --> D3[Dropout 0.25]
     end
     
-    subgraph conv4 [Block 4]
+    subgraph conv4 [Layer 4]
     C4A[Conv2D 256] --> BN4A[BatchNorm]
     BN4A --> C4B[Conv2D 256] 
     C4B --> BN4B[BatchNorm]
@@ -156,7 +156,7 @@ flowchart LR
     style dense fill:#e8f5e9
 ```
 
-*The diagram above illustrates the more complex CNN architecture used for Pokémon classification. This model features four convolutional blocks with progressively increasing filter sizes (32→64→128→256), each implementing a double convolution pattern. Every block follows the same structure: two convolutional layers, each followed by batch normalization, then max pooling, and finally dropout (0.25) to prevent overfitting. After the convolutional blocks, the data is flattened and passed through a dense layer with 512 neurons, followed by batch normalization and a higher dropout rate (0.5) before the final classification layer. This architecture significantly outperforms the simpler CFAR model by incorporating modern deep learning techniques like batch normalization and employing a deeper structure for more sophisticated feature extraction.*
+*The diagram above illustrates the more complex CNN architecture used for Pokémon classification. This model features four convolutional layers with progressively increasing filter sizes (32→64→128→256), each implementing a double convolution pattern. Every layer follows the same structure: two convolutional layers, each followed by batch normalization, then max pooling, and finally dropout (0.25) to prevent overfitting. After the convolutional layers, the data is flattened and passed through a dense layer with 512 neurons, followed by batch normalization and a higher dropout rate (0.5) before the final classification layer. This architecture significantly outperforms the simpler CFAR model by incorporating modern deep learning techniques like batch normalization and employing a deeper structure for more sophisticated feature extraction.*
 
 
 - **Code link**: `deployment/image_classification/CNN/train_pokemon_classifier_cnn.py`
@@ -164,7 +164,7 @@ flowchart LR
   - Learning rate: 0.001 (with reduction on plateau)
   - Batch size: 32
   - Image size: 64x64 pixels
-  - Dropout rates: 0.25 for convolutional blocks, 0.5 for dense layer
+  - Dropout rates: 0.25 for convolutional layers, 0.5 for dense layer
   - Data augmentation parameters: rotation, shifts, shear, zoom, horizontal flip
 
 
@@ -266,7 +266,7 @@ The performance of each model varies based on their architecture complexity and 
 - Training accuracy: ~70-75%
 - Validation accuracy: ~65% 
 - The addition of batch normalization and dropout layers significantly reduces overfitting
-- Multiple convolutional blocks allow for hierarchical feature learning
+- Multiple convolutional layers allow for hierarchical feature learning
 - Early stopping and learning rate reduction help optimize training
 - Visualization tools provide insights into training progress
 
