@@ -7,7 +7,7 @@ import os
 import json
 
 # === 1. Parameters ===
-dataset_folder = os.path.join(os.path.dirname(__file__), "..", "..", "..", "data_acquisition", "image_dataset", "final_pokemon_dataset")
+dataset_folder = os.path.join(os.path.dirname(__file__), "..", "..", "..", "data_acquisition", "image_dataset", "dataset", "final_pokemon_dataset")
 img_height, img_width = 224, 224
 batch_size = 8
 seed = 123
@@ -27,6 +27,11 @@ val_ds = image_dataset_from_directory(
     batch_size=batch_size
 )
 
+# Further split validation dataset into validation and test datasets
+val_size = int(0.2 * len(val_ds))  # 20% for validation, 80% for test
+val_ds = val_ds.take(val_size)
+test_ds = val_ds.skip(val_size)
+
 class_names = train_ds.class_names
 print("Pokémon classes:", class_names)
 
@@ -34,6 +39,7 @@ print("Pokémon classes:", class_names)
 AUTOTUNE = tf.data.AUTOTUNE
 train_ds = train_ds.cache().shuffle(1000).prefetch(buffer_size=AUTOTUNE)
 val_ds = val_ds.cache().prefetch(buffer_size=AUTOTUNE)
+test_ds = test_ds.cache().prefetch(buffer_size=AUTOTUNE)
 
 # === 4. Data augmentation ===
 data_augmentation = tf.keras.Sequential([
@@ -88,7 +94,7 @@ class SaveEveryN(tf.keras.callbacks.Callback):
 save_every_10_cb = SaveEveryN(10, checkpoint_dir)
 
 # === 9. Train frozen base model ===
-initial_epochs = 20
+initial_epochs = 40
 history = model.fit(
     train_ds,
     validation_data=val_ds,
